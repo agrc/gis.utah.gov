@@ -62,33 +62,38 @@ function etlRow(row): StewardshipRecord | null {
     return null;
   }
 
-  return {
-    id: row.get('id'),
-    displayName: row.get('displayName'),
-    tableName: row.get('tableName'),
-    category: row.get('category'),
-    indexStatus: row.get('indexStatus') as StewardshipRecord['indexStatus'],
-    source:
-      row
-        .get('dataSource')
-        ?.split(',')
-        .map((source: string) => source.trim())
-        .filter((source: string) => source !== '') ?? [],
-    dataType: toProductTypeEnum(row.get('productType')),
-    description: row.get('description'),
-    inActionUrl: row.get('inActionUrl'),
-    productPage: row.get('productPage'),
-    hub: {
-      title: row.get('displayName'),
-      itemId: row.get('itemId'),
-      organization: row.get('hubOrganization'),
-      hubName: row.get('hubName'),
-    },
-    server: {
-      layerId: Number(row.get('serverLayerId')),
-      serviceName: row.get('serverServiceName'),
-      host: row.get('serverHost'),
-    },
-    openSgid: row.get('openSGIDtableName'),
-  };
+  try {
+    return {
+      id: row.get('id'),
+      displayName: row.get('displayName'),
+      tableName: row.get('tableName'),
+      category: row.get('category'),
+      indexStatus: row.get('indexStatus') as StewardshipRecord['indexStatus'],
+      source:
+        row
+          .get('dataSource')
+          ?.split(',')
+          .map((source: string) => source.trim())
+          .filter((source: string) => source !== '') ?? [],
+      dataType: toProductTypeEnum(row.get('productType')),
+      description: row.get('description'),
+      inActionUrl: row.get('inActionUrl'),
+      productPage: row.get('productPage'),
+      hub: {
+        title: row.get('displayName'),
+        itemId: row.get('itemId'),
+        organization: row.get('hubOrganization'),
+        hubName: row.get('hubName'),
+      },
+      server: {
+        layerId: Number(row.get('serverLayerId')),
+        serviceName: row.get('serverServiceName'),
+        host: row.get('serverHost'),
+      },
+      openSgid: row.get('openSGIDtableName'),
+    };
+  } catch (error) {
+    console.error(`Error processing row id: ${row.id}`);
+    throw error;
+  }
 }
