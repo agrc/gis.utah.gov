@@ -81,6 +81,10 @@ export const contacts: Contacts = {
     name: 'Michelle Horning',
     phone: '801-536-4128',
   },
+  developers: {
+    email: 'ugrc-developers@utah.gov',
+    name: 'UGRC Developers',
+  },
   discover: {
     agency: 'UGRC',
     email: 'jdadams@utah.gov',
