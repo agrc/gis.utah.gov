@@ -1983,17 +1983,17 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah UTA Light Rail Stations': {
-    itemId: 'bb8f7bc8871b4a7594bcc037631073e7',
-    name: 'Utah UTA Light Rail Stations',
+    itemId: 'cd624fc1390f439194c8d7b0e3160829',
+    name: 'TRAX Light Rail Stations',
     featureServiceId: 'LightRailStations_UTA',
-    openSgid: 'transportation.uta_light_rail_stations',
+    openSgid: '',
     layerId: 0,
   },
   'Utah UTA Commuter Rail Stations': {
     itemId: 'b2f18e5a61bc416498959581113171e4',
     name: 'FrontRunner Commuter Rail Stations',
     featureServiceId: 'UTACommuterRailStations',
-    openSgid: 'transportation.uta_commuter_rail_stations',
+    openSgid: '',
     layerId: 0,
   },
   'Utah Railroad Mileposts': {
@@ -2007,7 +2007,7 @@ export const dataPages: DownloadMetadata = {
     itemId: '98907358050d4848aaf04b5ec22d7a95',
     name: 'UTA FrontRunner Commuter Rail Route Centerline',
     featureServiceId: 'UTACommuterRailRoutes',
-    openSgid: 'transportation.uta_commuter_rail_routes',
+    openSgid: '',
     layerId: 0,
   },
   'Utah Urban Areas Census 2020': {
@@ -2018,10 +2018,10 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah UTA Light Rail Routes': {
-    itemId: 'fd41770e917344e4adef8be71a0a6741',
-    name: 'Utah UTA Light Rail Routes',
+    itemId: 'dc9f692da15e4f81a8dd9238b5cf7d90',
+    name: 'UTA TRAX Light Rail Routes',
     featureServiceId: 'UTALightRailRoutes',
-    openSgid: 'transportation.uta_light_rail_routes',
+    openSgid: '',
     layerId: 0,
   },
   'Utah Ports Of Entry': {
