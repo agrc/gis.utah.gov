@@ -1992,7 +1992,7 @@ export const dataPages: DownloadMetadata = {
   'Utah UTA Commuter Rail Stations': {
     itemId: 'b2f18e5a61bc416498959581113171e4',
     name: 'FrontRunner Commuter Rail Stations',
-    featureServiceId: 'FrontRunnerStations',
+    featureServiceId: 'UTACommuterRailStations',
     openSgid: 'transportation.uta_commuter_rail_stations',
     layerId: 0,
   },
@@ -2006,7 +2006,7 @@ export const dataPages: DownloadMetadata = {
   'Utah UTA Commuter Rail Routes': {
     itemId: '98907358050d4848aaf04b5ec22d7a95',
     name: 'UTA FrontRunner Commuter Rail Route Centerline',
-    featureServiceId: 'FrontRunnerCenterline',
+    featureServiceId: 'UTACommuterRailRoutes',
     openSgid: 'transportation.uta_commuter_rail_routes',
     layerId: 0,
   },
