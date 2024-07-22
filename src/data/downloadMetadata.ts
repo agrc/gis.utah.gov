@@ -2615,7 +2615,7 @@ export const dataPages: DownloadMetadata = {
   'Utah State Fuel Sites': {
     itemId: '8d9bc67285fb421fb15d55342148ac1e',
     name: 'Utah State Fuel Sites',
-    featureServiceId: 'StateFuelSites',
+    featureServiceId: null,
     openSgid: '',
     layerId: 0,
   },
