@@ -1383,7 +1383,7 @@ export const dataPages: DownloadMetadata = {
   'Utah Licensed Health Care Facilities': {
     itemId: '925570c858174b2aa04dbec0896cee91',
     name: 'Utah Licensed Health Care Facilities',
-    featureServiceId: 'UtahLicensedHealthCareFacilities',
+    featureServiceId: 'LicensedHealthCareFacilities',
     openSgid: 'health.licensed_health_care_facilities',
     layerId: 0,
   },
