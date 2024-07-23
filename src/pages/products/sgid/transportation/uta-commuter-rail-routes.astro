@@ -4,6 +4,7 @@ import Layout from '@layouts/DataPage.astro';
 import type { IMetadata, IPageMetadata } from '@models/types';
 import { ProductType, SgidCategory } from '@models/types';
 
+import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
 
@@ -49,6 +50,10 @@ const page: IPageMetadata = {
 
     <Contacts contactKey="uta" />
   </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
 

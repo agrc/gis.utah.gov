@@ -1992,7 +1992,16 @@ export const dataPages: DownloadMetadata = {
   'Utah UTA Commuter Rail Stations': {
     itemId: 'b2f18e5a61bc416498959581113171e4',
     name: 'FrontRunner Commuter Rail Stations',
+    featureServiceHost: 'https://maps.rideuta.com/server/rest/services/Hosted/',
     featureServiceId: 'FrontRunnerStations',
+    openSgid: '',
+    layerId: 0,
+  },
+  'Utah UTA Commuter Rail Routes': {
+    itemId: '98907358050d4848aaf04b5ec22d7a95',
+    name: 'UTA FrontRunner Commuter Rail Route Centerline',
+    featureServiceHost: 'https://maps.rideuta.com/server/rest/services/Hosted/',
+    featureServiceId: 'UTA_FrontRunner_Commuter_Rail_Centerline',
     openSgid: '',
     layerId: 0,
   },
@@ -2001,13 +2010,6 @@ export const dataPages: DownloadMetadata = {
     name: 'Utah Railroad Mileposts',
     featureServiceId: 'Railroad_Mileposts',
     openSgid: 'transportation.railroad_mileposts',
-    layerId: 0,
-  },
-  'Utah UTA Commuter Rail Routes': {
-    itemId: '98907358050d4848aaf04b5ec22d7a95',
-    name: 'UTA FrontRunner Commuter Rail Route Centerline',
-    featureServiceId: 'FrontRunnerCenterline',
-    openSgid: '',
     layerId: 0,
   },
   'Utah Urban Areas Census 2020': {
