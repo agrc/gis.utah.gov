@@ -238,7 +238,7 @@ async function downloadMetadataCheck(row) {
   const name = row.get(getFieldName('hubName'));
   const metadata = downloadMetadata.dataPages[name];
 
-  if (!metadata || metadata.featureServiceId === null) {
+  if (!metadata || metadata.featureServiceId === undefined) {
     return;
   }
 

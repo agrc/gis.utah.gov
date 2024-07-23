@@ -9,18 +9,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "glob": "^10.3.10",
-    "google-auth-library": "^9.6.3",
-    "google-spreadsheet": "^4.1.1",
+    "glob": "^11.0.0",
+    "google-auth-library": "^9.11.0",
+    "google-spreadsheet": "^4.1.2",
     "gray-matter": "^4.0.3",
     "knex": "^3.1.0",
-    "ky": "^1.2.2",
+    "ky": "^1.4.0",
     "lodash.startcase": "^4.4.0",
-    "node-html-parser": "^6.1.12",
+    "node-html-parser": "^6.1.13",
     "prompts": "^2.4.2",
-    "tedious": "^18.2.1",
+    "tedious": "^18.3.0",
     "unist-util-find": "^3.0.0",
-    "uuid": "^9.0.1",
-    "yaml": "^2.4.1"
+    "uuid": "^10.0.0",
+    "yaml": "^2.4.5"
   }
 }
