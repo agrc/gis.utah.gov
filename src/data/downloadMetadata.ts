@@ -1373,13 +1373,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'health.health_care_districts',
     layerId: 0,
   },
-  'Utah Health Care Facilities': {
-    itemId: 'f5e5d7c717c946fe9cd6f2c8d0bf8d86',
-    name: 'Utah Health Care Facilities',
-    featureServiceId: 'UtahHealthCareFacilities',
-    openSgid: 'health.health_care_facilities',
-    layerId: 0,
-  },
   'Utah Licensed Health Care Facilities': {
     itemId: '925570c858174b2aa04dbec0896cee91',
     name: 'Utah Licensed Health Care Facilities',
