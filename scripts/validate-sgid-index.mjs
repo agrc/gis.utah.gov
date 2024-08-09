@@ -5,7 +5,7 @@ import ky from 'ky';
 import ProgressBar from 'progress';
 import * as tsImport from 'ts-import';
 import { v4 as uuid } from 'uuid';
-import { validateOpenDataUrl, validateOpenSgidTableName, validateUrl } from './utilities.mjs';
+import { slugify, validateOpenDataUrl, validateOpenSgidTableName, validateUrl } from './utilities.mjs';
 
 const downloadMetadata = await tsImport.load('../src/data/downloadMetadata.ts');
 
@@ -191,13 +191,20 @@ async function itemId(row) {
     'Utah SHPO': 'UtahSHPO',
   };
 
-  const org = hubData.data.attributes.slug
-    ? hubData.data.attributes.slug.split('::')[0]
+  const slug = hubData.data.attributes.slug;
+
+  const correctSlug = slugify(hubData.data.attributes.name);
+  if (slug.split('::')[1] !== correctSlug) {
+    recordError(`slug: "${slug}" does not match hub name: "${hubData.data.attributes.name}". You may need to temporarily rename the item in Hub and then change it back to fix it.`, row);
+  }
+
+  const org = slug
+    ? slug.split('::')[0]
     : orgLookup[hubData.data.attributes.organization];
 
   if (!org) {
     recordError(
-      `No hubOrganization could be found! slug: "${hubData.data.attributes.slug}" organization: "${hubData.data.attributes.organization}"`,
+      `No hubOrganization could be found! slug: "${slug}" organization: "${hubData.data.attributes.organization}"`,
       row,
     );
   }

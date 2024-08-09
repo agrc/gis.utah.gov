@@ -1,3 +1,4 @@
+import * as changeCase from 'change-case';
 import knex from 'knex';
 import ky from 'ky';
 
@@ -140,4 +141,12 @@ export async function validateOpenDataUrl(url) {
     data: response.data[0],
     message: 'valid open data url',
   };
+}
+
+export function slugify(name) {
+  return changeCase.kebabCase(
+    name
+      .toLowerCase()
+      .replace('\'', '')
+  );
 }

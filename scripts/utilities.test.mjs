@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { validateOpenDataUrl, validateOpenSgidTableName, validateUrl } from './utilities.mjs';
+import { slugify, validateOpenDataUrl, validateOpenSgidTableName, validateUrl } from './utilities.mjs';
 
 describe('validateUrl', () => {
   it('handles a valid url', async () => {
@@ -64,6 +64,19 @@ describe('validateOpenDataUrl', () => {
     it(`should return ${test[1]} for ${test[0]}`, async () => {
       const result = await validateOpenDataUrl(test[0]);
       assert.equal(result.valid, test[1]);
+    });
+  }
+});
+
+describe('slugify', () => {
+  const tests = [
+    ['Utah H3 Hexes Level 5', 'utah-h3-hexes-level-5'],
+    ['Name with an apostrophe hell\'o', 'name-with-an-apostrophe-hello'],
+  ]
+
+  for (const [input, expected] of tests) {
+    it(`slugifies ${input} to ${expected}`, () => {
+      assert.equal(slugify(input), expected);
     });
   }
 });
