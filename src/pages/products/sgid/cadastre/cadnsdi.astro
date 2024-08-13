@@ -16,7 +16,7 @@ import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
 export const metadata: IMetadata = {
-  pageTitle: 'CADNSDI GIS Version v2.3',
+  pageTitle: 'CADNSDI GIS Data',
   pageDescription: `The full version of the PLSS, including townships, sections, quarter sections, quarter quarter sections, and PLSS points.`,
   stewards: ['UGRC', 'BLM'],
   type: ProductType.ALL_GEOMETRIES,
@@ -27,6 +27,7 @@ const page: IPageMetadata = {
   ...metadata,
   application: '',
   updateHistory: [
+    'August 1, 2024',
     'December 15, 2020',
     'October 15, 2019',
     'January 15, 2019',
@@ -36,8 +37,8 @@ const page: IPageMetadata = {
   ],
   links: [
     {
-      title: 'CadNSDI GIS Version 2.3',
-      url: 'https://drive.google.com/uc?id=13DUod-JnR2W7JLbRM1wjS-bCDrRs93Ij&export=download',
+      title: '2024 CadNSDI GIS Data',
+      url: 'https://drive.usercontent.google.com/download?id=1BiLLawS9uDVpPF-09ISK3M8odQZz2mgb&export=download',
     },
   ],
 };
@@ -50,9 +51,8 @@ const page: IPageMetadata = {
     <p>
       The Bureau of Land Management (BLM) Geographic Coordinate Data Base (GCDB) is a collection of geographic
       information representing the United States Public Land Survey System (PLSS) and other official surveys. This
-      version of the GCDB data is published from the Utah PLSS Fabric v2.2; which uses BLM's official survey records
-      including Cadastral survey plats and field notes supplemented with local survey records and geodetic control
-      information.
+      version of the GCDB data was provided by BLM and uses their official survey records including Cadastral survey
+      plats and field notes supplemented with local survey records and geodetic control information.
     </p>
   </Fragment>
 
