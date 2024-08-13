@@ -15,17 +15,7 @@ const banner = await getImage({ src: image, format: 'webp' });
 ---
 
 <div
-  class="relative z-[1] flex h-[150px] max-h-[150px] w-full justify-end border-b-2
-    border-primary
-    bg-cover
-    before:absolute
-    before:inset-0
-    before:bg-gradient-to-r
-    before:from-primary
-    before:via-secondary
-    before:to-transparent
-    before:opacity-60
-    dark:border-zinc-900/85"
+  class="relative z-[1] flex h-[150px] max-h-[150px] w-full justify-end border-b-2 border-primary bg-cover before:absolute before:inset-0 before:bg-gradient-to-r before:from-primary before:via-secondary before:to-transparent before:opacity-60 dark:border-zinc-900/85"
   style={{
     backgroundImage: `url(${banner.src})`,
   }}

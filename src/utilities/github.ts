@@ -30,7 +30,6 @@ export const getGithubReleases = async (repo: string) => {
   return releaseMetadata;
 };
 
-
 export const getAllContributors = async (repo: string) => {
   const contributors = await recursiveFetch(repo);
 
