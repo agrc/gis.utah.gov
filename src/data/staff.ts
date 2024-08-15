@@ -1,21 +1,5 @@
 export const staff = [
   {
-    name: 'Matt Peters',
-    team: 'Team Lead',
-    phone: '385-202-3297',
-    email: 'mpeters@utah.gov',
-    x: '@MattUGRC',
-    tags: ['vision', 'strategy', 'leadership', 'management', 'new opportunities'],
-  },
-  {
-    name: 'Nathan Kota',
-    team: 'Team Manager',
-    phone: '385-226-1875',
-    email: 'nathankota@utah.gov',
-    x: '@nathankota',
-    tags: ['collaboration', 'partnerships', 'budgets', 'new projects', 'ongoing support'],
-  },
-  {
     name: 'Zach Beck',
     team: 'Data Team',
     phone: '801-433-8422',
