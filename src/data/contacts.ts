@@ -66,8 +66,9 @@ export const contacts: Contacts = {
   ],
   change_manager: {
     agency: 'UGRC',
-    email: 'MPeters@utah.gov',
-    name: 'Matt Peters',
+    email: 'MichaelFoulger@utah.gov',
+    name: 'Michael Foulger',
+    phone: '801-652-2258',
   },
   contours: {
     agency: 'UGRC',
@@ -157,11 +158,6 @@ export const contacts: Contacts = {
   gisac: [
     {
       agency: 'UGRC',
-      email: 'mpeters@utah.gov',
-      name: 'Matt Peters',
-    },
-    {
-      agency: 'UGRC',
       email: 'gbunce@utah.gov',
       name: 'Greg Bunce',
     },
@@ -235,9 +231,9 @@ export const contacts: Contacts = {
   },
   luca_liaison: {
     agency: 'UGRC',
-    email: 'MPeters@utah.gov',
-    name: 'Matt Peters',
-    phone: '385-202-3297',
+    email: 'GBunce@utah.gov',
+    name: 'Greg Bunce',
+    phone: '801-349-0039',
   },
   luca_trainer: {
     agency: 'Census',
@@ -269,9 +265,9 @@ export const contacts: Contacts = {
   ],
   newsletter: {
     agency: 'UGRC',
-    email: 'MPeters@utah.gov',
-    name: 'Matt Peters',
-    phone: '385-202-3297',
+    email: 'sgourley@utah.gov',
+    name: 'Steve Gourley',
+    phone: '385-202-3394',
   },
   nhd: {
     agency: 'DNR',
@@ -401,9 +397,9 @@ export const contacts: Contacts = {
   },
   trails: {
     agency: 'UGRC',
-    email: 'MPeters@utah.gov',
-    name: 'Matt Peters',
-    phone: '385-202-3297',
+    email: 'GBunce@utah.gov',
+    name: 'Greg Bunce',
+    phone: '801-349-0039',
   },
   turn: [
     {
@@ -436,9 +432,9 @@ export const contacts: Contacts = {
     phone: '801-538-3665',
   },
   ugrc_director: {
-    email: 'mpeters@utah.gov',
-    name: 'Matt Peters',
-    phone: '385-202-3297',
+    email: '-',
+    name: 'Laura Ault',
+    phone: '-',
   },
   ugs: {
     agency: 'DNR',
