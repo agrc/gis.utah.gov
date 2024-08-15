@@ -1982,13 +1982,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'transportation.uta_light_rail_stations',
     layerId: 0,
   },
-  'Utah UTA Commuter Rail Stations': {
-    itemId: '6fd39acf47884e1dbe6c303e40f1367a',
-    name: 'Utah UTA Commuter Rail Stations',
-    featureServiceId: 'UTACommuterRailStations',
-    openSgid: 'transportation.uta_commuter_rail_stations',
-    layerId: 0,
-  },
   'Utah Railroad Mileposts': {
     itemId: '894928d3d26b44a9b71ebdd99bb05650',
     name: 'Utah Railroad Mileposts',
