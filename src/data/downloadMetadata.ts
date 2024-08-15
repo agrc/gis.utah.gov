@@ -2003,13 +2003,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'demographic.urban_areas_census_2020',
     layerId: 0,
   },
-  'Utah UTA Light Rail Routes': {
-    itemId: 'fd41770e917344e4adef8be71a0a6741',
-    name: 'Utah UTA Light Rail Routes',
-    featureServiceId: 'UTALightRailRoutes',
-    openSgid: 'transportation.uta_light_rail_routes',
-    layerId: 0,
-  },
   'Utah Ports Of Entry': {
     itemId: '73441947b3f342b880edcb3d8cdd7ea2',
     name: 'Utah Ports Of Entry',
