@@ -2657,16 +2657,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: undefined,
     layerId: 0,
   },
-  'UTA Routes and Ridership': {
-    itemId: 'hosted by UTA',
-    name: 'UTA Routes and Ridership',
-    externalHubOrganization: 'rideuta',
-    oddHubName: 'uta-routes-and-most-recent-ridership',
-    featureServiceId: 'UTA_Routes_0419',
-    featureServiceHost: 'https://services.arcgis.com/5QAphMT1g51Tw2X4/ArcGIS/rest/services/',
-    openSgid: 'transportation.uta_routes_and_ridership',
-    layerId: 0,
-  },
   'UTA Stops and Ridership': {
     externalHubOrganization: 'rideuta',
     itemId: 'hosted by UTA',
