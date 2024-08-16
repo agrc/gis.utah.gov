@@ -734,7 +734,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah Oil Gas Fields': {
     externalHubOrganization: 'utahDNR',
-    itemId: 'hosted by DOGM',
+    itemId: 'hosted by OGM',
     name: 'Utah Oil Gas Fields',
     featureServiceId: 'Oil_and_Gas_Fields',
     openSgid: 'energy.oil_gas_fields',
@@ -786,7 +786,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah Oil Gas Wells': {
     externalHubOrganization: 'utahDNR',
-    itemId: 'hosted by DOGM',
+    itemId: 'hosted by OGM',
     name: 'Utah Oil Gas Wells',
     featureServiceId: 'viewAGRC_WellData_Surf',
     openSgid: 'energy.oil_gas_wells',
@@ -795,14 +795,14 @@ export const dataPages: DownloadMetadata = {
     oddHubName: 'utah-oil-and-gas-well-locations',
   },
   'Utah Oil Gas Wells Down Holes': {
-    itemId: 'hosted by DOGM',
+    itemId: 'hosted by OGM',
     name: 'Utah Oil Gas Wells Down Holes',
     featureServiceId: undefined,
     openSgid: undefined,
     layerId: 0,
   },
   'Utah Oil Gas Wells Paths': {
-    itemId: 'hosted by DOGM',
+    itemId: 'hosted by OGM',
     name: 'Utah Oil Gas Wells Paths',
     featureServiceId: undefined,
     openSgid: undefined,

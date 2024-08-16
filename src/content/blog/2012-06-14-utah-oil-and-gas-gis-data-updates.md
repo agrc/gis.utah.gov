@@ -13,9 +13,9 @@ cover_image_alt: utah oil and gas wells
 
 Utah Oil and Gas Well GIS Data
 
-<p>As a reminder, the GIS dataset depicting Utah Oil and Gas Wells is updated nightly on UGRC's ArcSDE (v.10) database server, via a database connection to the Division of Oil, Gas and Mining (DOGM).</p>
+<p>As a reminder, the GIS dataset depicting Utah Oil and Gas Wells is updated nightly on UGRC's ArcSDE (v.10) database server, via a database connection to the Oil, Gas, and Mining Division (OGM).</p>
 <p>The updated feature classes include Energy.DNROilGasWells, Energy.DNROilGasWells_HDBottom, and Energy.DNROilGasWells_HDPath. The latter two represent the bottom of the hole and 2D drilling path for horizontally drilled wells.</p>
-<p>Also, the GIS dataset depicting Utah Oil and Gas Wells Unit polygons was updated today from data sent from DOGM. This data is updated periodically as needed.</p>
+<p>Also, the GIS dataset depicting Utah Oil and Gas Wells Unit polygons was updated today from data sent from OGM. This data is updated periodically as needed.</p>
 <p>A snapshot of the datasets mentioned above, together with Oil and Gas Field polygons was exported to shapefile and file geodatabase formats. These files are downloadable, via a browser, from the SGID ftp site using the second link below.</p>
 <p>Additional information:</p>
 <ul>
