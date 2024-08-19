@@ -403,7 +403,7 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'cadastre.uintah_county_parcels',
     layerId: 0,
   },
-    'Utah Uintah County Parcels LIR': {
+  'Utah Uintah County Parcels LIR': {
     itemId: '8d60384263fc4335a955a042091f3d89',
     name: 'Utah Uintah County Parcels LIR',
     featureServiceId: 'Parcels_Uintah_LIR',

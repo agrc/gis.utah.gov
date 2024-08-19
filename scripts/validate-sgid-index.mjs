@@ -195,12 +195,13 @@ async function itemId(row) {
 
   const correctSlug = slugify(hubData.data.attributes.name);
   if (slug.split('::')[1] !== correctSlug) {
-    recordError(`slug: "${slug}" does not match hub name: "${hubData.data.attributes.name}". You may need to temporarily rename the item in Hub and then change it back to fix it.`, row);
+    recordError(
+      `slug: "${slug}" does not match hub name: "${hubData.data.attributes.name}". You may need to temporarily rename the item in Hub and then change it back to fix it.`,
+      row,
+    );
   }
 
-  const org = slug
-    ? slug.split('::')[0]
-    : orgLookup[hubData.data.attributes.organization];
+  const org = slug ? slug.split('::')[0] : orgLookup[hubData.data.attributes.organization];
 
   if (!org) {
     recordError(
