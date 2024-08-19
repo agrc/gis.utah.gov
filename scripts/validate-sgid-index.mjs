@@ -3,6 +3,7 @@ import { GoogleAuth, auth } from 'google-auth-library';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import jsonToMarkdown from 'json-to-markdown-table';
 import ky from 'ky';
+import random from 'lodash/random';
 import ProgressBar from 'progress';
 import * as tsImport from 'ts-import';
 import { v4 as uuid } from 'uuid';
@@ -12,7 +13,7 @@ function retry(client) {
   axiosRetry(client, {
     retries: 7,
     retryDelay: (retryCount) => {
-      const randomNumberMS = _.random(1000, 8000);
+      const randomNumberMS = random.random(1000, 8000);
       return Math.min(4 ** retryCount + randomNumberMS, maximumBackoff);
     },
     retryCondition: (error) => error.response.status === 429,

@@ -16,6 +16,7 @@
     "knex": "^3.1.0",
     "ky": "^1.4.0",
     "lodash.capitalize": "^4.2.1",
+    "lodash.random": "^3.2.0",
     "pg": "^8.12.0",
     "progress": "^2.0.3",
     "ts-import": "^5.0.0-beta.0",
