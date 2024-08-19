@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "@octokit/rest": "^21.0.1",
+    "axios-retry": "^4.5.0",
     "change-case": "^5.4.4",
     "fast-xml-parser": "^4.4.1",
     "glob": "^11.0.0",
