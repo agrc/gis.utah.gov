@@ -14,7 +14,7 @@ function retry(client) {
     retries: 7,
     retryDelay: (retryCount) => {
       const randomNumberMS = random(1000, 8000);
-      return Math.min(4 ** retryCount + randomNumberMS, maximumBackoff);
+      return Math.min(4 ** retryCount + randomNumberMS, 20000);
     },
     retryCondition: (error) => error.response.status === 429,
   });
