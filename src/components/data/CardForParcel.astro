@@ -44,27 +44,32 @@ const getFeatureServiceUrl = (metadata: IHubDownload) =>
           <span class="font-semibold text-primary dark:text-zinc-200">Last update · </span>{lastUpdate}
         </p>
       </div>
-      <div class="justify-between pb-2 lg:flex">
-        <ul>
-          <li>
-            <ExternalLink href={lirOpenData}>{county} county land information record parcels</ExternalLink> in the SGID on
-            ArcGIS.
-          </li>
-          <li>
-            <ExternalLink href={getFeatureServiceUrl(lirMetadata)}>{county} county LIR feature service</ExternalLink>
-          </li>
-          {
-            lirMetadata ? (
+      {
+        lirMetadata && (
+          <div class="justify-between pb-2 lg:flex">
+            <ul>
               <li>
-                <Clipboard title="Open SGID sample query" value={`select * from ${lirMetadata.openSgid} limit 10;`} />
+                <ExternalLink href={lirOpenData}>{county} county land information record parcels</ExternalLink> in the
+                SGID on ArcGIS.
               </li>
-            ) : null
-          }
-        </ul>
-        <p class="self-center">
-          <span class="font-semibold text-primary dark:text-zinc-200">Last update · </span>{lastUpdateLir}
-        </p>
-      </div>
+              <li>
+                <ExternalLink href={getFeatureServiceUrl(lirMetadata)}>
+                  {county} county LIR feature service
+                </ExternalLink>
+              </li>
+              {lirMetadata ? (
+                <li>
+                  <Clipboard title="Open SGID sample query" value={`select * from ${lirMetadata.openSgid} limit 10;`} />
+                </li>
+              ) : null}
+            </ul>
+            <p class="self-center">
+              <span class="font-semibold text-primary dark:text-zinc-200">Last update · </span>
+              {lastUpdateLir}
+            </p>
+          </div>
+        )
+      }
       <div class:list={[website || app ? 'border-t border-black/20 pt-1 dark:border-white/20' : null]}>
         {
           website && (
