@@ -3,7 +3,7 @@ import { GoogleAuth, auth } from 'google-auth-library';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import jsonToMarkdown from 'json-to-markdown-table';
 import ky from 'ky';
-import random from 'lodash/random';
+import random from 'lodash/random.js';
 import ProgressBar from 'progress';
 import * as tsImport from 'ts-import';
 import { v4 as uuid } from 'uuid';
