@@ -13,7 +13,7 @@ function retry(client) {
   axiosRetry(client, {
     retries: 7,
     retryDelay: (retryCount) => {
-      const randomNumberMS = random.random(1000, 8000);
+      const randomNumberMS = random(1000, 8000);
       return Math.min(4 ** retryCount + randomNumberMS, maximumBackoff);
     },
     retryCondition: (error) => error.response.status === 429,
