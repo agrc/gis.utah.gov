@@ -352,8 +352,12 @@ for (const row of rows) {
   }
 
   if (changed) {
-    await row.save();
-    updatedRowsCount++;
+    try {
+      await row.save();
+      updatedRowsCount++;
+    } catch (error) {
+      recordError(`save error: ${error.message}`, row);
+    }
   }
 }
 
