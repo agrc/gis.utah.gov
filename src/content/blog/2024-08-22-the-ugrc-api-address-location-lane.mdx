@@ -12,7 +12,7 @@ cover_image_alt: ugrc social card
 import centerlineImage from '@images/blog/2024-08-22-the-ugrc-api-address-location-lane/centerline-address-match-example.png';
 import { Image } from 'astro:assets';
 
-The [UGRC API](https://api.mapserv.utah.gov/) is a valuable resource for [address locating](https://api.mapserv.utah.gov/docs/v1/endpoints/geocoding/). We are proud to offer this service to you for free, however it's not the only solution for your addressing questions. Let's explore the layers that enable the address locating `/geocode` endpoint to help you understand what this service offers and its limitations.
+The [UGRC API](https://api.mapserv.utah.gov/) is a valuable resource for [locating an address](https://api.mapserv.utah.gov/docs/v1/endpoints/geocoding/). We are proud to offer this service to you for free, however, it's not the only solution for your address locating. Let's explore the layers that enable the `/geocode` endpoint to help you understand what this service offers and its limitations.
 
 ## The foundational data
 
@@ -34,7 +34,7 @@ Road centerlines and address points are two different datasets that work togethe
   alt="A line indicating fiction street with a circle at the 25% location along the segment"
 />
 
-To understand why, lets break down what happens with a match on the road centerlines with an example. Consider the input street address is `125 South Fiction Street`. The road centerline data has a segment representing Fiction Street with attributes defining the address range for that segment e.g. 100-200. This guarantees that any address on this segment will have numbers between 100 and 200. Since 125 falls within the address range of the segment, the road centerline address locator will provide a match that is 25% along the line segment in the positive direction. However, the exact location of the address along the segment is not known; It may not exist in terms of a structure, mail delivery, or the availability of 911 services. **If you are solving or validating for mail delivery, 911 response, voter registration, etc., this is not an accurate solution.** You may need to evaluate services provided by the [USPS](https://www.usps.com/) or [Smarty](https://smarty.com/) to validate mail delivery.
+To understand why, lets break down what happens with a match on the road centerlines with an example. Consider the input street address is `125 South Fiction Street`. The road centerline data has a segment representing Fiction Street with attributes defining the address range for that segment e.g. 100-200. This guarantees that any address on this segment will have numbers between 100 and 200. Since 125 falls within the address range of the segment, the road centerline address locator will provide a match that is 25% along the line segment in the positive direction. However, the exact location of the address along the segment is not known; It may not exist in terms of a structure, mail delivery, or the availability of 911 services. **If you are solving or validating for mail delivery, this is not an accurate solution and you may need to evaluate services provided by the [USPS](https://www.usps.com/) or [Smarty](https://smarty.com/).**
 
 Address location matches solved by the address points do represent a geographic location that has been assigned a US Postal Service (USPS) address by the local address authority (i.e., county or municipality) but does not necessarily receive mail. For example, mail may be delivered to a post office box.
 
