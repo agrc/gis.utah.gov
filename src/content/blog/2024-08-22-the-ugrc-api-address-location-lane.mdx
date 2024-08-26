@@ -1,23 +1,45 @@
 ---
-title: The ugrc api address location lane
+title: The UGRC API address location lane
 author: Steve Gourley
 description: >-
-  The UGRC API is an awesome free service for address locating that we are very
-  proud to offer, but it's not the only solution. Read this to understand the
-  limitations and capabilities of our geocoding endpoint.
+  The UGRC API is a mature service that provides address locating. We are very proud to offer this service for free, but it's not the only solution for every addressing problem. Read this to understand the limitations and capabilities of our geocoding endpoint.
 date: '2024-08-22T23:47:42.633Z'
 category: API
 cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-{/* remove if not using images
-import { Image } from 'astro:assets'; */}
+import centerlineImage from '@images/blog/2024-08-22-the-ugrc-api-address-location-lane/centerline-address-match-example.png';
+import { Image } from 'astro:assets';
 
-{/* remove if not using an image
-import myImage from '@images/blog/2024-08-22-the-ugrc-api-address-location-lane/image.png'; */}
+The [UGRC API](https://api.mapserv.utah.gov/) is a valuable resource for [address locating](https://api.mapserv.utah.gov/docs/v1/endpoints/geocoding/). We are proud to offer this service to you for free, however it's not the only solution for your addressing questions. Let's explore the layers that enable the address locating `/geocode` endpoint to help you understand what this service offers and its limitations.
 
-My blog post content starts here.
+## The foundational data
 
-{/* remove if not using an image
-<Image src={myImage} loading="eager" alt="A sample image" /> */}
+The UGRC provides authoritative GIS data for Utah through the [SGID](/products/sgid/sgid-index/). By aggregating data from local governments and standardizing it, we are able to offer this comprehensive statewide resource. Our address locating endpoint provides excellent address match rates because of the collaborative efforts of our local address authority partners and their dedicated work. Together, we maintain two foundational datasets that power the UGRC API -- [address points](/products/sgid/location/address-points/) and [road centerlines](/products/sgid/transportation/road-centerlines/). The [zip codes](/products/sgid/boundaries/zip-codes/) and [address systems](/products/sgid/location/address-system-quadrants/) participate and are worth mentioning but we won't be discussing them further.
+
+The road centerlines and address point data is regularly updated, with the "Big 5" counties (Salt Lake, Utah, Davis, Weber, Washington) providing monthly updates. While the other counties provide updates on a less frequent schedule, the "Big 5" cover approximately 80% of Utah's population, ensuring great coverage in densely populated areas. Stay informed about the latest updates by following the [SGID Update](/blog/categories/sgid-updates/) blog category.
+
+## The data limitations
+
+While the UGRC API address locating endpoint is a powerful service, it's important to be aware of its limitations. The accuracy of our data depends on the quality and timeliness of the data provided by our address authority partners. In rural counties, where resources and funding may be limited, data gaps exist. This is most pronounced in counties like Juab, Piute, Uintah, and Sevier. We are working hard to improve the data quality, especially in these areas, but it's a work in progress. These data characteristics make it problematic to solely use our API for address validation for mail delivery, 911 response, or voter registration types of questions.
+
+## Road centerlines versus address points
+
+Road centerlines and address points are two different datasets that work together to provide the best address location match rates. By default, both datasets are used to provide the solution and address points have priority in the case of a tie. The UGRC API provides which dataset solved your request in the response and you are able to specify which data participates in the match using the `locator` optional input. This is important since the road centerlines are used to determine the location of an address along a road segment, while the address points are used to determine the exact location of an address. By using both datasets together, you will get the best match rate our data can provide. But a match on the road centerlines has a different meaning than a match on the address points. But if you are zooming, routing, extracting data, or looking for a generalized location for analysis a match on the road centerlines is a great option.
+
+<Image
+  src={centerlineImage}
+  width={800}
+  alt="A line indicating fiction street with a circle at the 25% location along the segment"
+/>
+
+To understand why, lets break down what happens with a match on the road centerlines with an example. Consider the input street address is `125 South Fiction Street`. The road centerline data has a segment representing Fiction Street with attributes defining the address range for that segment e.g. 100-200. This guarantees that any address on this segment will have numbers between 100 and 200. Since 125 falls within the address range of the segment, the road centerline address locator will provide a match that is 25% along the line segment in the positive direction. However, the exact location of the address along the segment is not known; It may not exist in terms of a structure, mail delivery, or the availability of 911 services. **If you are solving or validating for mail delivery, 911 response, voter registration, etc., this is not an accurate solution.** You may need to evaluate services provided by the [USPS](https://www.usps.com/) or [Smarty](https://smarty.com/) to validate mail delivery.
+
+Address location matches solved by the address points do represent a geographic location that has been assigned a US Postal Service (USPS) address by the local address authority (i.e., county or municipality) but does not necessarily receive mail. For example, mail may be delivered to a post office box.
+
+## The UGRC benefit
+
+The UGRC API address locating endpoint is a free service that provides the most comprehensive government-sourced GIS address data available for Utah. We are able to communicate with our address authorities to fix any issues you may encounter with the data quickly. This feedback loop ensures that the data is always improving and that you are getting the best address locating service possible. We provide excellent customer service and timely responses to your questions and concerns. We are here to help you get the most out of our data.
+
+Please carefully evaluate if the UGRC API is the right choice for your addressing needs. If address verification and validation are terms that come to mind, distill what that means to you and your needs. If you are looking for a generalized location for analysis, the UGRC API is a great choice. If you are looking for a precise location for mail delivery, 911 response, voter registration, etc., you may need to evaluate other services.
