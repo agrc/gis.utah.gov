@@ -36,7 +36,7 @@ Road centerlines and address points are two different datasets that work togethe
 
 To understand why, lets break down what happens with a match on the road centerlines with an example. Consider the input street address is `125 South Fiction Street`. The road centerline data has a segment representing Fiction Street with attributes defining the address range for that segment e.g. 100-200. This guarantees that any address on this segment will have numbers between 100 and 200. Since 125 falls within the address range of the segment, the road centerline address locator will provide a match that is 25% along the line segment in the positive direction. However, the exact location of the address along the segment is not known; It may not exist in terms of a structure, mail delivery, or the availability of 911 services. **If you are solving or validating for mail delivery, this is not an accurate solution and you may need to evaluate services provided by the [USPS](https://www.usps.com/) or [Smarty](https://smarty.com/).**
 
-Address location matches solved by the address points do represent a geographic location that has been assigned a US Postal Service (USPS) address by the local address authority (i.e., county or municipality) but does not necessarily receive mail. For example, mail may be delivered to a post office box.
+Address location matches solved by the address points represent a geographic location that has been assigned a civic address by the local address authority (i.e., county or municipality) but does not necessarily receive mail. For example, mail may be delivered to a post office box.
 
 ## The UGRC benefit
 
