@@ -39,7 +39,7 @@ function getSnippetFromMarkdown(markdown: string, type: 'md' | 'mdx'): string {
   }
 
   // remove any non-text nodes such as ESM imports in MDX files
-  remove(parsedMarkdown, (node) => !['paragraph', 'heading', 'text'].includes(node.type));
+  remove(parsedMarkdown, (node) => !['paragraph', 'heading', 'text', 'link'].includes(node.type));
 
   return toString(parsedMarkdown, { includeImageAlt: false }).slice(0, 200) ?? 'a blog post';
 }
