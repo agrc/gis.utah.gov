@@ -19,6 +19,8 @@ import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
+import download from '@downloads/product-sgid/cadastre/ExpandedParcelDataSharingImplementationGuidelinesDRAFT.pdf?url';
+import download from '@downloads/product-sgid/cadastre/Working Group Recommendations 5.19.16.docx?url';
 
 export const metadata: IMetadata = {
   pageTitle: 'Utah Parcels',
@@ -387,10 +389,11 @@ const countyMetadata = [
       The Land Information Records (LIR) work group organized by the Governor's Office of Management and Budget has
       facilitated a voluntary sharing of tax roll parcel data from County Assessors to support public safety, economic
       development, transportation, planning and the provisions of public services. In May of 2016, the Land Information
-      Records work group released its <ExternalLink
-        href="https://drive.google.com/file/d/1E3ks5ndjMKiZqS5b7N6a3_1paJK0jHi_"
-        >Land Use Information Records Recommendations</ExternalLink
-      >.
+      Records work group released its 
+     <a href={src/downloads/product-sgid/cadastre/Working Group Recommendations 5.19.16.docx}>Land Use Information Records Recommendations
+    </a> and 
+    <a href={src/downloads/product-sgid/cadastre/ExpandedParcelDataSharingImplementationGuidelinesDRAFT.pdf}
+      >Expanded Parcel Data Sharing Implementation Guidelines</a>.
     </p>
     <h4>Updates</h4>
     <p>
