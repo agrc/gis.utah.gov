@@ -236,7 +236,7 @@ async function itemId(row) {
 
   let changed = false;
   for (const field in newData) {
-    if (row.get(field) !== newData[field]) {
+    if (row.get(field) !== (newData[field] ?? '')) {
       row.set(field, newData[field]);
       changed = true;
     }
