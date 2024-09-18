@@ -106,6 +106,7 @@ function trimFields(row) {
   for (const field in fieldNames) {
     const cellValue = row.get(getFieldName(field));
     if (cellValue && cellValue.trim() !== cellValue) {
+      console.log(`cell trim update ${field}: "${cellValue}" != "${cellValue.trim()}" in ${row.get('displayName')}`);
       row.set(getFieldName(field), cellValue.trim());
       changed = true;
     }
@@ -158,6 +159,7 @@ async function idGuid(row) {
   const cellValue = row.get(getFieldName('id'));
 
   if (!cellValue) {
+    console.log(`item id update in ${row.get('displayName')}`);
     row.set('id', uuid());
 
     return true;
@@ -237,6 +239,7 @@ async function itemId(row) {
   let changed = false;
   for (const field in newData) {
     if (row.get(field) !== (newData[field] ?? '')) {
+      console.log(`item id updates ${field}: "${row.get(field)}" != "${newData[field]}" in ${row.get('displayName')}`);
       row.set(field, newData[field]);
       changed = true;
     }
