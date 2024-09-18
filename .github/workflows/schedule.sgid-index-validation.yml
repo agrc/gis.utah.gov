@@ -61,6 +61,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           show-progress: false
+          sparse-checkout: |
+            scripts
+            src/data
 
       - name: ⎔ Setup Node.js
         uses: actions/setup-node@v4
