@@ -1,5 +1,13 @@
 export const staff = [
   {
+    name: 'Laura Ault',
+    team: 'Team Lead',
+    phone: '801 550-7754',
+    email: 'lault@utah.gov',
+    x: '',
+    tags: ['vision', 'strategy', 'leadership', 'collaboration', 'new opportunities',],
+  },
+  {
     name: 'Zach Beck',
     team: 'Data Team',
     phone: '801-433-8422',
