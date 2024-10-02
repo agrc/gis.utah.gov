@@ -11,13 +11,20 @@ cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-{/* remove if not using images
-import { Image } from 'astro:assets'; */}
+What happens to all those cardboard boxes you toss in the blue bin? What do I do with this can of paint I’ve had for the last fifteen years that I keep saying I’ll use up, but never do? Where do tree clippings and other yard waste go? For many of us, these and many other objects we dispose of seem to vanish once we throw them in the appropriate receptacle. But, like love, hope, and cockroaches, trash never truly vanishes, so waste management is a key component of healthy, happy societies. That’s why the Utah Department of Environmental Quality's Division of Waste Management and Radiation Control (DWMRC), in collaboration with the Utah Geospatial Resource Center (UGRC), have recently published several resources to help you find where to deposit your recyclables and see what the future of waste management in Utah looks like.
 
-{/* remove if not using an image
-import myImage from '@images/blog/2024-09-30-dwmrc-and-ugrc-release-map-to-help-utahns-recycle-better/image.png'; */}
+These resources include a map and dashboard that not only show the locations of landfills, household hazardous waste (HHW) collection centers, and incinerators (you know, for that haunted vase you got from your great uncle that whispers in the night sometimes), but also presents important data that helps improve transparency between government agencies and the general public.
 
-My blog post content starts here.
+These data products are part of a larger effort to improve the way we manage waste in the United States. According to the Environmental Protection Agency, the US generated about 4.9 pounds of municipal solid waste (MSW) per person per day in 2018 ([1](https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/national-overview-facts-and-figures-materials)). That’s a lot of cockroaches that will never truly disappear. As we work toward processing waste more efficiently (and producing less of it in the first place), projects like this one give us a clear understanding of where waste is coming from, where its going, and what systems could be improved. So, the next question is, how did we create these data products, and what do they mean for waste management efforts?
 
-{/* remove if not using an image
-<Image src={myImage} loading="eager" alt="A sample image" /> */}
+Let’s start with the process. First, UGRC extracts the data from DWMRC’s SalesForce database, which houses the reporting forms sent in by municipal and state waste management facilities. Since every waste management facility in Utah is required to report their data on standardized forms, there was a large volume of data to work with, and more is added every week. 
+
+Once the tabular data are organized and cleaned, we use pandas scripts to perform calculations and gather statistics from the reports. These scripts run fully automated so that the statistics will be updated as new data are entered into the database. The fully automated process saves time, money, and helps to prevent human error.
+
+Even if you don’t have a haunted vase from a long-lost relative lying around (perhaps we should all check?), there are plenty of reasons why having access to this data is a good thing. First and foremost, the map serves as a reference for where you can dispose of any other haunted articles you have in your possession and regular items such as paint cans, batteries, and furniture. The map also points out recycling centers and has been used by organizations such as the Utah Recycling Alliance to help spread awareness about recycling efforts ([2](https://www.utahrecyclingalliance.org/post/utah-s-new-recycling-data-initiative)). Just knowing where and how to recycle can help people to actually do it. 
+
+Another benefit of this project is transparency. Utahns deserve to know how the government is using taxpayer’s dollars to promote effective waste management practices in our state. With these data products, the average person can see important metrics such as the percentage of waste materials that were recycled in Utah and how many gallons of used oil were collected for recycling. Having these metrics publicly available adds an extra layer of accountability for waste management facilities, DWMRC.
+
+This project is one of many collaborative efforts between UGRC and other state and federal agencies. At UGRC, our mission is to “encourage and facilitate the effective use of geospatial information and technology for Utah.” ([3](https://gis.utah.gov/about/) Working with DWMRC to produce these data products is just one of the many ways we advocate for data-driven decision making and public access to geospatial data in Utah. 
+
+You can learn more about our other projects on UGRC's [blog](https://gis.utah.gov/blog/) and in our [quarterly newsletter](https://cdn.forms-content.sg-form.com/61e82d28-f0d5-11ec-847c-a26809937a38). For more information on waste management in Utah and these data products in particular, please reach out to Stevie Norcross at DWMRC (stevienorcross@utah.gov) or Jake Adams at UGRC (jdadams@utah.gov).
