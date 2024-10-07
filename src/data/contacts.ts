@@ -545,4 +545,9 @@ export const contacts: Contacts = {
     name: 'Greg Bunce',
     phone: '801-349-0039',
   },
+dwmrc: {
+  agency: 'DWMRC',
+  email: 'stevienorcross@utah.gov',
+  name: 'Stevie Norcross',
+},
 };
