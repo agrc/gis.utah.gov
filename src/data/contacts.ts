@@ -544,17 +544,17 @@ export const contacts: Contacts = {
     email: 'GBunce@utah.gov',
     name: 'Greg Bunce',
     phone: '801-349-0039',
-  }, 
-dwmrc: [
-  {
-    agency: 'UGRC',
-    email: 'jdadams@utah.gov',
-    name: 'Jacob Adams',
   },
-  {
-  agency: 'DWMRC',
-  email: 'stevienorcross@utah.gov',
-  name: 'Stevie Norcross',
-  },
-],
+  dwmrc: [
+    {
+      agency: 'UGRC',
+      email: 'jdadams@utah.gov',
+      name: 'Jacob Adams',
+    },
+    {
+      agency: 'DWMRC',
+      email: 'stevienorcross@utah.gov',
+      name: 'Stevie Norcross',
+    },
+  ],
 };
