@@ -5,7 +5,7 @@ export const staff = [
     phone: '801 550-7754',
     email: 'lault@utah.gov',
     x: '',
-    tags: ['vision', 'strategy', 'leadership', 'collaboration', 'new opportunities',],
+    tags: ['vision', 'strategy', 'leadership', 'collaboration', 'new opportunities'],
   },
   {
     name: 'Zach Beck',
