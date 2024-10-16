@@ -123,13 +123,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'boundaries.zip_code_areas',
     layerId: 0,
   },
-  'Utah Metro Townships': {
-    itemId: '103c6dc6764747079919c20927f40a9f',
-    name: 'Utah Metro Townships',
-    featureServiceId: 'UtahMetroTownships',
-    openSgid: 'boundaries.metro_townships',
-    layerId: 0,
-  },
   'US States': {
     itemId: '221d727bbc044ce99dc05fbce913b4a1',
     name: 'US States',
