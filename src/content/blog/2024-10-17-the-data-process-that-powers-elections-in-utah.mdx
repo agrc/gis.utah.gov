@@ -1,5 +1,5 @@
 ---
-title: The data process that powers elections in utah
+title: The Data Process That Powers Elections in Utah
 author: Miriam Seely
 description: >-
   As you prepare for election day this year, learn more about how geospatial
@@ -10,13 +10,16 @@ cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-{/* remove if not using images
-import { Image } from 'astro:assets'; */}
+import Contacts from '@components/page/Contacts.astro';
 
-{/* remove if not using an image
-import myImage from '@images/blog/2024-10-17-the-data-process-that-powers-elections-in-utah/image.png'; */}
+With the cool winds blowing in, fall is officially upon us. That means a few things: warm sweaters, yellow aspen trees, and everyone's favorite method of acquiring a free sticker: voting! Election Day will be on Tuesday, November 5th, 2024. If you aren't registered to vote, you can learn how over on [vote.utah.gov](http://vote.utah.gov). Once you're registered, you can either vote by mail or in person. In both cases, where you vote and how your vote is counted are determined by geospatial data maintained by UGRC and local government authorities.
 
-My blog post content starts here.
+UGRC might not be able to make the beautiful autumn hues of red, orange, and yellow stay longer than their natural time, but we are charged with safekeeping the data that makes elections in Utah possible. An example of these data are the digital polygon representations of voting precinct boundaries. Maintaining these boundaries requires collaboration, organization, and a great attention to detail. Part of [our mission](https://gis.utah.gov/about/) as geospatial leaders in Utah is to “ensure a high level of coordination among Utah GIS users and effective, efficient use of GIS resources.” And boy oh boy, does making elections happen demand a lot of coordination. So, let's take a moment and get to know what's involved with keeping the data side of democracy alive.
 
-{/* remove if not using an image
-<Image src={myImage} loading="eager" alt="A sample image" /> */}
+All 29 counties in the state of Utah employ public servants who manage surveying, recording, and verifying their county boundaries and voting precincts. These individuals, often County Recorders and County Clerks, submit their data to UGRC many months before election day. Every county sends in slightly different datasets according to the needs and circumstances of that county. UGRC adjusts each incoming dataset to fit a standardized schema and ensure accuracy of the information. The completed boundaries are used in elections at all levels, including city, county, state, and federal elections.
+
+Without these geographic boundaries, votes could be double-counted, counted in the wrong county, or not counted at all. That's why each dataset must pass a rigorous screening process to ensure accuracy. Once ballots have been sent out prior to election day, these boundaries cannot be altered or adjusted in any way until after the election results have been certified. After the election, voters can access election outcome maps available on Utah's official [election results website](https://electionresults.utah.gov/results/public/utah/elections/PrimaryCD2Recount2024).
+
+The State of Utah's use of GIS in election operations is part of a wider effort to include geospatial technology in democratic processes in the United States. According to a [2022 report](https://nsgic.memberclicks.net/assets/docs/GEE/2022_October_StateElectionDirectorReport_final.pdf) prepared by the National States Geographic Information Council, 90% of states in the US report that their voter registration system will incorporate GIS within the next five years. This is great news for voters; it means greater accuracy, transparency, and clarity for US elections.
+
+You can learn more about how UGRC is using data to improve life in Utah on our blog. For questions or concerns regarding election data and ballot areas in Utah, please reach out to <Contacts inline subject={frontmatter.title} contactKey='boundaries' />.
