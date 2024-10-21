@@ -395,6 +395,7 @@
     "uncategorized",
     "underserved",
     "Unprotracted",
+    "UPDES",
     "uplan",
     "UREZ",
     "URMCC",
@@ -439,11 +440,7 @@
     "Yampa",
     "zipcode"
   ],
-  "cSpell.enableFiletypes": [
-    "astro",
-    "markdown",
-    "mdx"
-  ],
+  "cSpell.enableFiletypes": ["astro", "markdown", "mdx"],
   "[astro]": {
     "editor.wordWrapColumn": 120,
     "editor.defaultFormatter": "astro-build.astro-vscode"
