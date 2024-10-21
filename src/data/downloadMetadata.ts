@@ -1012,10 +1012,13 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah DWQ Groundwater Permits': {
-    itemId: 'eb1bb5fbe37d43f1aa002b19dd678ac5',
+    itemId: 'hosted by DEQ',
+    externalHubOrganization: 'utahDEQ',
+    oddHubName: 'Utah Groundwater Permits',
     name: 'Utah DWQ Groundwater Permits',
-    featureServiceId: 'DWQGroundwaterPermits',
-    openSgid: 'environment.dwq_groundwater_permits',
+    featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
+    featureServiceId: 'Groundwater_Permits_gdb',
+    openSgid: undefined,
     layerId: 0,
   },
   'Utah DWQ Mercury In Fish Tissue': {
