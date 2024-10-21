@@ -2048,8 +2048,8 @@ export const dataPages: DownloadMetadata = {
   'Utah Airport Locations': {
     itemId: 'ae01b2d088f64c0fb989c2592e7e4f89',
     name: 'Utah Airport Locations',
-    featureServiceId: undefined,
-    openSgid: undefined,
+    featureServiceId: 'AirportLocations',
+    openSgid: 'transportation.airport_locations',
     layerId: 0,
   },
   'Utah Transmission Lines': {
