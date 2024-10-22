@@ -35,7 +35,12 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Section title="Use the service" titlePosition="center" slot="downloads">
-    <ul class="md:row-gap-10 list-none md:grid md:grid-cols-2 md:gap-8">
+    <h2 class="mx-auto block text-2xl font-light tracking-tight text-slate-700">
+      Your first <span class="font-semibold">successful</span> request in <span class="text-wavy-600 font-semibold"
+        >3</span
+      > steps.
+    </h2>
+    <ul class="md:row-gap-10 mx-auto max-w-2xl list-none px-6 md:mt-3 md:grid md:grid-cols-1 md:gap-8">
       <li>
         <div class="flex">
           <div class="flex-shrink-0 md:self-center">
@@ -67,24 +72,6 @@ const page: IPageMetadata = {
           </div>
           <div class="ml-4">
             <h5 class="text-zinc-600 dark:text-zinc-50">
-              Confirm your email<p class="text-base font-normal text-zinc-700 dark:text-zinc-200">
-                Confirm ownership and control spam and bots.
-              </p>
-            </h5>
-          </div>
-        </div>
-      </li>
-      <li class="mt-10 md:mt-0">
-        <div class="flex">
-          <div class="flex-shrink-0 md:self-center">
-            <div
-              class="te xt-3xl flex size-12 items-center justify-center rounded-md border border-secondary bg-secondary/75 font-black text-white drop-shadow-lg md:size-20 md:text-7xl dark:border-white/80 dark:bg-white/20"
-            >
-              3
-            </div>
-          </div>
-          <div class="ml-4">
-            <h5 class="text-zinc-600 dark:text-zinc-50">
               Generate an API key<p class="text-base font-normal text-zinc-700 dark:text-zinc-200">
                 Keep track of usage analytics and authorize requests.
               </p>
@@ -98,7 +85,7 @@ const page: IPageMetadata = {
             <div
               class="te xt-3xl flex size-12 items-center justify-center rounded-md border border-secondary bg-secondary/75 font-black text-white drop-shadow-lg md:size-20 md:text-7xl dark:border-white/80 dark:bg-white/20"
             >
-              4
+              3
             </div>
           </div>
           <div class="ml-4">
