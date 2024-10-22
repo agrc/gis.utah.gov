@@ -19,6 +19,11 @@ export async function validateUrl(url) {
     response = await ky(url, {
       throwHttpErrors: false,
       redirect: 'manual',
+      timeout: 15000,
+      headers: {
+        'User-Agent':
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36',
+      },
     });
   } catch (error) {
     return {
@@ -144,9 +149,5 @@ export async function validateOpenDataUrl(url) {
 }
 
 export function slugify(name) {
-  return changeCase.kebabCase(
-    name
-      .toLowerCase()
-      .replace('\'', '')
-  );
+  return changeCase.kebabCase(name.toLowerCase().replace("'", ''));
 }
