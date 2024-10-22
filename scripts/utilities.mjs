@@ -149,5 +149,5 @@ export async function validateOpenDataUrl(url) {
 }
 
 export function slugify(name) {
-  return changeCase.kebabCase(name.toLowerCase().replace("'", ''));
+  return changeCase.kebabCase(name.toLowerCase().replace(/'/g, ''));
 }
