@@ -1003,13 +1003,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: undefined,
     layerId: 0,
   },
-  'Utah DWQ Assessment Units': {
-    itemId: '0f39afb3b29d4c0a8abf7c46ed2e0354',
-    name: 'Utah DWQ Assessment Units',
-    featureServiceId: 'DWQAssessmentUnits',
-    openSgid: 'environment.dwq_assessment_units',
-    layerId: 0,
-  },
   'Utah DWQ Groundwater Permits': {
     itemId: 'hosted by DEQ',
     externalHubOrganization: 'utahDEQ',
