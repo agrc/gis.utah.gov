@@ -43,7 +43,17 @@ export const createNewBlogPost = (slug, blog, date) => {
 
   fs.writeFileSync(filePath, frontmatter, 'utf-8');
   fs.mkdirSync(folderPath);
-  fs.writeFileSync(`${folderPath}/.placeholder`, 'delete this file if you are not adding images', 'utf-8');
+  fs.writeFileSync(
+    `${folderPath}/.placeholder`,
+    `The purpose of this file is to create a temporary folder place holder since git does not preserve empty folders.
+
+1. Delete this file if there will be no blog post images since the folder has no purpose.
+2. Delete this file after adding images since git will preserve the folder and this file has no purpose.
+
+This file should not be merged into main.
+`,
+    'utf-8',
+  );
 };
 
 if (process.env.NODE_ENV !== 'test') {
