@@ -15,7 +15,7 @@ export const contacts: Contacts = {
   },
   address_points: {
     agency: 'UGRC',
-    email: 'zbeck@utah.gov',
+    email: 'ZBeck@utah.gov',
     name: 'Zach Beck',
     phone: '801-538-3072',
   },
@@ -225,9 +225,9 @@ export const contacts: Contacts = {
   },
   locators: {
     agency: 'UGRC',
-    email: 'GBunce@utah.gov',
-    name: 'Greg Bunce',
-    phone: '801-349-0039',
+    email: 'ZBeck@utah.gov',
+    name: 'Zach Beck',
+    phone: '801-433-8422',
   },
   luca_liaison: {
     agency: 'UGRC',
