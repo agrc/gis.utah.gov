@@ -60,8 +60,8 @@ export const contacts: Contacts = {
     },
     {
       agency: 'UGRC',
-      email: 'GBunce@utah.gov',
-      name: 'Greg Bunce',
+      email: 'jdadams@utah.gov',
+      name: 'Jake Adams',
     },
   ],
   change_manager: {
@@ -231,9 +231,9 @@ export const contacts: Contacts = {
   },
   luca_liaison: {
     agency: 'UGRC',
-    email: 'GBunce@utah.gov',
-    name: 'Greg Bunce',
-    phone: '801-349-0039',
+    email: 'jdadams@utah.gov',
+    name: 'Jake Adams',
+    phone: '385-499-0586',
   },
   luca_trainer: {
     agency: 'Census',
@@ -397,9 +397,9 @@ export const contacts: Contacts = {
   },
   trails: {
     agency: 'UGRC',
-    email: 'GBunce@utah.gov',
-    name: 'Greg Bunce',
-    phone: '801-349-0039',
+    email: 'jdadams@utah.gov',
+    name: 'Jake Adams',
+    phone: '385-499-0786',
   },
   turn: [
     {
