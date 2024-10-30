@@ -16,14 +16,6 @@ export const staff = [
     tags: ['cartography', 'address points', 'base maps', 'configurable apps', 'python'],
   },
   {
-    name: 'Greg Bunce',
-    team: 'Data Team Lead',
-    phone: '801-349-0039',
-    email: 'gbunce@utah.gov',
-    x: '@bunce_greg',
-    tags: ['SGID', 'transportation', 'collaboration', '911', 'data management'],
-  },
-  {
     name: 'Scott Davis',
     team: 'Development Team',
     phone: '801-699-7187',
