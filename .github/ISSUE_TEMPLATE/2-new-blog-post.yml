@@ -29,12 +29,11 @@ body:
       description: Who is writing the blog?
       options:
         - Denise Peterson
-        - Greg Bunce
         - Hang Chou
         - Jake Adams
-        - Matt Peters
+        - Laura Ault
         - Michael Foulger
-        - Nathan Kota
+        - Miriam Seely
         - Rick Kelson
         - Scott Davis
         - Sean Fernandez
