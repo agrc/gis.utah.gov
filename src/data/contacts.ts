@@ -233,7 +233,6 @@ export const contacts: Contacts = {
     agency: 'UGRC',
     email: 'jdadams@utah.gov',
     name: 'Jake Adams',
-    phone: '385-499-0786',
   },
   luca_trainer: {
     agency: 'Census',
