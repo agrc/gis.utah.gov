@@ -110,9 +110,9 @@ export const contacts: Contacts = {
   },
   emergencyzones: {
     agency: 'UGRC',
-    email: 'GBunce@utah.gov',
-    name: 'Greg Bunce',
-    phone: '801-349-0039',
+    email: 'hchou@utah.gov',
+    name: 'Hank Chou',
+    phone: '435-319-0307',
   },
   ewa: {
     agency: 'DEQ',
@@ -291,9 +291,9 @@ export const contacts: Contacts = {
   },
   os_places: {
     agency: 'UGRC',
-    email: 'GBunce@utah.gov',
-    name: 'Greg Bunce',
-    phone: '801-349-0039',
+    email: 'hchou@utah.gov',
+    name: 'Hank Chou',
+    phone: '435-319-0307',
   },
   palletjack: {
     agency: 'UGRC',
@@ -540,9 +540,9 @@ export const contacts: Contacts = {
   },
   zip_codes: {
     agency: 'UGRC',
-    email: 'GBunce@utah.gov',
-    name: 'Greg Bunce',
-    phone: '801-349-0039',
+    email: 'hchou@utah.gov',
+    name: 'Hank Chou',
+    phone: '435-319-0307',
   },
   dwmrc: [
     {
