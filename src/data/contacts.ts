@@ -155,13 +155,12 @@ export const contacts: Contacts = {
     email: 'STDavis@utah.gov',
     name: 'Scott Davis',
   },
-  gisac: [
-    {
-      agency: 'UGRC',
-      email: 'gbunce@utah.gov',
-      name: 'Greg Bunce',
-    },
-  ],
+  gisac: {
+    agency: 'UGRC',
+    email: 'lault@utah.gov',
+    name: 'Laura Ault',
+    phone: '801-550-7754',
+  },
   google_imagery: {
     agency: 'UGRC',
     email: 'jdadams@utah.gov',
@@ -431,9 +430,9 @@ export const contacts: Contacts = {
     phone: '801-538-3665',
   },
   ugrc_director: {
-    email: '-',
+    email: 'lault@utah.gov',
     name: 'Laura Ault',
-    phone: '-',
+    phone: '801-550-7754',
   },
   ugs: {
     agency: 'DNR',
