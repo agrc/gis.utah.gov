@@ -1,8 +1,8 @@
 ---
-title: Supporting emergency dispatch through software migration
+title: Supporting Emergency Dispatch Through Software Migration
 author: Miriam Seely
 description: >-
-  No matter what the emergency is, UGRC is seeking to provide location
+  No matter what the emergency is, UGRC is working to provide location
   intelligence solutions to improve emergency response in Utah.
 date: '2024-11-06T18:19:40.894Z'
 category: Collaboration
@@ -16,7 +16,19 @@ import { Image } from 'astro:assets'; */}
 {/* remove if not using an image
 import myImage from '@images/blog/2024-11-06-supporting-emergency-dispatch-through-software-migration/image.png'; */}
 
-My blog post content starts here.
+Have you seen any geese flying overhead lately? As the weather turns colder and the first snowflakes fall, many migratory bird species are making their way to warmer climates. Geese, with their iconic V-shaped flying formation, are an excellent example of an efficient migration. See, they don't just fly in that pattern for fun or to show off. The V-shaped pattern actually helps to decrease air resistance over the birds' wings, making the flight much more efficient than flying solo. This helps them save precious energy and caloric resources as they make their long journey south. Geese give us a good example of how all migrations should be: efficient, time-saving, and resource-conserving. So, when we talk about software migrations, we ought to take a page out of the avian book.
+
+Software migrations generally don't take us to sunnier places, at least not intentionally (if you've ever migrated to a new software and found yourself capable of teleportation, please let us know. We'd like to try it!). But migrating to new software can increase efficiency, streamline workflows, and open up new possibilities for everyone involved. Having the best possible software is especially important in emergency management, which is why UGRC has partnered with Utah's Public Safety Answering Point (PSAP) call centers to upgrade the software they use to handle 911 calls across the state. 
+
+Every time you dial 911 (whether your emergency involves geese or not), your call is routed to a specific PSAP communications center depending on your location. These PSAPs are responsible for ensuring emergency responders get to where they need to be as fast as possible. In the past, this was accomplished without any GIS involved. Each PSAP maintained their own records of addresses and locations in their dispatch area and used these to tell first responders where to go. This system relied on the knowledge the PSAP and local responders had of that area.
+
+Today's 911 systems include more than just matching an address heard over the phone to one in a table. Through Next Generation 911 (NG911), dispatchers can access exact point locations on a real-time map. This is accomplished through geovalidation, a process by which addresses and real-world locations are verified to ensure spatial accuracy. UGRC already maintains several data layers that are involved in this process, including Address Points, Roads, and PSAP boundaries. Backed by these statewide datasets and GIS-enabled systems, dispatchers can greatly speed up the time it takes to handle a 911 call and respond to an emergency situation.
+
+This new system requires several software upgrades. UGRC has partnered with Motorola to assist all 28 PSAPs in Utah with migrating to the new system. We use Python scripts to standardize schema submitted by each PSAP and ensure the data meets standards set by the National Emergency Number Association (NENA). UGRC also manually appends additional roads and address points where necessary to ensure first responders have the latest available information. 
+
+In addition to managing the statewide datasets and supporting the new software migration, UGRC also provides training to PSAP personnel so that they can run their own systems independently. The long-term goal of this ongoing project is to fully automate the data process behind 911. This effort not only improves emergency response times for Utah residents, but also bolsters communication between PSAPs and other government authorities. It means increased location accuracy, faster response times, and ultimately, more lives saved because of 911 and all the incredible people who make it possible.
+
+UGRC's supportive role in this software migration is just one of the many ways we are fulfilling our mission to “facilitate programs and activities to implement GIS technology across the state.” You can learn more about our other projects on our blog. For questions regarding NG911, PSAPs, and emergency management data in Utah, please reach out to Hank Chou (contact card).
 
 {/* remove if not using an image
 <Image src={myImage} loading="eager" alt="A sample image" /> */}
