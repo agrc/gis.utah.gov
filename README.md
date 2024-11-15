@@ -131,6 +131,8 @@ import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 
 ### images
 
+In order to insert an image into your content, please include these lines of code at the top:
+
 - markdown
 
   ```mdx
@@ -144,6 +146,15 @@ import DefinitionListItem from '@components/page/DefinitionListItem.astro';
   import { Image } from 'astro:assets';
   import photo from '@images/pillar/image.phg';
   ---
+
+  <Image src={photo} alt="text describing the image to a non sighted person" />
+  ```
+
+You should place this line of code in the spot where you want the image to appear in the content:
+
+- astro
+
+```astro
 
   <Image src={photo} alt="text describing the image to a non sighted person" />
   ```
@@ -163,7 +174,7 @@ import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 > [!IMPORTANT]
 > Please do not put email addresses directly into content.
 
-Contacts are managed in a [typescript file](./src/data/contacts.ts).
+Contacts are managed in a [typescript file](./src/data/contacts.ts). At the top of your content, please include the following line of code:
 
 - markdown
 
@@ -172,7 +183,22 @@ Contacts are managed in a [typescript file](./src/data/contacts.ts).
   ---
 
   import import Contacts from '@components/page/Contacts.astro';
+  ```
 
+- astro
+
+  ```astro
+  ---
+  import import Contacts from '@components/page/Contacts.astro'; 
+  ```
+
+In line with the text where you want the contact to appear, include this line of code:
+
+- markdown
+
+  ```mdx
+  ---
+  ---
   <Contacts contactKey="ugrc" subject={frontmatter.title} />
   ```
 
@@ -180,11 +206,10 @@ Contacts are managed in a [typescript file](./src/data/contacts.ts).
 
   ```astro
   ---
-  import import Contacts from '@components/page/Contacts.astro';
-  ---
-
   <Contacts contactKey="ugrc" subject={frontmatter.title} />
   ```
+
+The contactKey should match the key found in the typescript file.
 
 ### SGID Index Validation
 
