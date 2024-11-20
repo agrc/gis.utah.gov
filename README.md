@@ -131,7 +131,7 @@ import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 
 ### images
 
-In order to insert an image into your content, please include these lines of code at the top:
+Images used in content should always have lowercase file names and should be uploaded to the folder created for your content. Cover images of blog posts should have an aspect ratio of 1200x360. In order to insert an image into the body of your content, please include these lines of code at the top:
 
 - markdown
 
@@ -158,6 +158,8 @@ You should place this line of code in the spot where you want the image to appea
 
   <Image src={photo} alt="text describing the image to a non sighted person" />
   ```
+
+Remember to delete the placeholder file for your image after you have uploaded your images to the content folder. If you are not including images, be sure to delete the placeholder file before the content is merged.
 
 ### font matter
 
@@ -224,7 +226,7 @@ The validation scripts performs the following checks:
 - Validates that `openSgidTableName` is a valid table name in the Open SGID database.
 - Validates that `productPage` is a valid path relative to <https://gis.utah.gov/> or an external URL.
 - Adds a new guid value for `id` if it is empty.
-- Validates the `itemId` is a valid AGOL item and auto-populates the following fields: 
+- Validates the `itemId` is a valid AGOL item and auto-populates the following fields:
   - `hubName`
   - `hubOrganization`
   - `serverHost`
