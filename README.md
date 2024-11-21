@@ -131,6 +131,18 @@ import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 
 ### images
 
+All images should have lowercase file names with words separated by hyphens, AKA kebab case. e.g.: `my-gis-day.png`.
+
+Images should be organized into their pillar folder. e.g.: `/src/images/pillar-documentation/*`.
+
+When you create a new blog post using the issue template, a folder for images will be automatically created in `/src/images/pillar-blog/{blog-slug}/`. This folder will include a .placeholder file.
+
+Aliases for these paths are available in the [tsconfig](./tsconfig.json) and are the suggested way to import assets. e.g.: `@images/blog/{blog-slug}` is equivalent to `/src/images/pillar-blog/{blog-slug}/`.
+
+If you wish to change the default cover card or social sharing image for the content, you will need to update the `cover_image` property with an image having an aspect ratio of 1200x630 pixels.
+
+In order to insert an image into the body of your content, please include these lines of code at the top:
+
 - markdown
 
   ```mdx
@@ -148,6 +160,17 @@ import DefinitionListItem from '@components/page/DefinitionListItem.astro';
   <Image src={photo} alt="text describing the image to a non sighted person" />
   ```
 
+You should place this line of code in the spot where you want the image to appear in the content:
+
+- astro
+
+```astro
+
+  <Image src={photo} alt="text describing the image to a non sighted person" />
+  ```
+
+When editing blog posts created by the issue template, remember to delete the placeholder file after you have uploaded your images or when you decide you are not going to include images. The placeholder file should not be merged with the blog post.
+
 ### font matter
 
 - `title: Title` - the title of the content
@@ -163,7 +186,7 @@ import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 > [!IMPORTANT]
 > Please do not put email addresses directly into content.
 
-Contacts are managed in a [typescript file](./src/data/contacts.ts).
+Contacts are managed in a [typescript file](./src/data/contacts.ts). At the top of your content, please include the following line of code:
 
 - markdown
 
@@ -172,7 +195,22 @@ Contacts are managed in a [typescript file](./src/data/contacts.ts).
   ---
 
   import import Contacts from '@components/page/Contacts.astro';
+  ```
 
+- astro
+
+  ```astro
+  ---
+  import import Contacts from '@components/page/Contacts.astro'; 
+  ```
+
+In line with the text where you want the contact to appear, include this line of code:
+
+- markdown
+
+  ```mdx
+  ---
+  ---
   <Contacts contactKey="ugrc" subject={frontmatter.title} />
   ```
 
@@ -180,11 +218,10 @@ Contacts are managed in a [typescript file](./src/data/contacts.ts).
 
   ```astro
   ---
-  import import Contacts from '@components/page/Contacts.astro';
-  ---
-
   <Contacts contactKey="ugrc" subject={frontmatter.title} />
   ```
+
+The contactKey should match the key found in the typescript file.
 
 ### SGID Index Validation
 
@@ -199,7 +236,7 @@ The validation scripts performs the following checks:
 - Validates that `openSgidTableName` is a valid table name in the Open SGID database.
 - Validates that `productPage` is a valid path relative to <https://gis.utah.gov/> or an external URL.
 - Adds a new guid value for `id` if it is empty.
-- Validates the `itemId` is a valid AGOL item and auto-populates the following fields: 
+- Validates the `itemId` is a valid AGOL item and auto-populates the following fields:
   - `hubName`
   - `hubOrganization`
   - `serverHost`
