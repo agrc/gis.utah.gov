@@ -131,15 +131,15 @@ import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 
 ### images
 
-All images should have lowercase file names with words separated by hyphons aka kebab case. e.g.: `gis-day.png`.
+All images should have lowercase file names with words separated by hyphens, AKA kebab case. e.g.: `my-gis-day.png`.
 
 Images should be organized into their pillar folder. e.g.: `/src/images/pillar-documentation/*`.
 
-Blog posts started with the issue template will create a folder for your images in `/src/images/pillar-blog/{blog-slug}/`.
+When you create a new blog post using the issue template, a folder for images will be automatically created in `/src/images/pillar-blog/{blog-slug}/`. This folder will include a .placeholder file.
 
 Aliases for these paths are available in the [tsconfig](./tsconfig.json) and are the suggested way to import assets. e.g.: `@images/blog/{blog-slug}` is equivalent to `/src/images/pillar-blog/{blog-slug}/`.
 
-To update a blog post card and or the social sharing image for any page, update the pages or posts `cover_image` property with an image having an aspect ratio of 1200x630 pixels. 
+If you wish to change the default cover card or social sharing image for the content, you will need to update the `cover_image` property with an image having an aspect ratio of 1200x630 pixels.
 
 In order to insert an image into the body of your content, please include these lines of code at the top:
 
