@@ -169,7 +169,7 @@ You should place this line of code in the spot where you want the image to appea
   <Image src={photo} alt="text describing the image to a non sighted person" />
   ```
 
-Remember to delete the placeholder file for your image after you have uploaded your images to the content folder. If you are not including images, be sure to delete the placeholder file before the content is merged.
+When editing blog posts created by the issue template, remember to delete the placeholder file after you have uploaded your images or when you decide you are not going to include images. The placeholder file should not be merged with the blog post.
 
 ### font matter
 
