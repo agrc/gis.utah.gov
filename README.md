@@ -131,7 +131,17 @@ import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 
 ### images
 
-Images used in content should always have lowercase file names and should be uploaded to the folder created for your content. Cover images of blog posts should have an aspect ratio of 1200x360. In order to insert an image into the body of your content, please include these lines of code at the top:
+All images should have lowercase file names with words separated by hyphons aka kebab case. e.g.: `gis-day.png`.
+
+Images should be organized into their pillar folder. e.g.: `/src/images/pillar-documentation/*`.
+
+Blog posts started with the issue template will create a folder for your images in `/src/images/pillar-blog/{blog-slug}/`.
+
+Aliases for these paths are available in the [tsconfig](./tsconfig.json) and are the suggested way to import assets. e.g.: `@images/blog/{blog-slug}` is equivalent to `/src/images/pillar-blog/{blog-slug}/`.
+
+To update a blog post card and or the social sharing image for any page, update the pages or posts `cover_image` property with an image having an aspect ratio of 1200x630 pixels. 
+
+In order to insert an image into the body of your content, please include these lines of code at the top:
 
 - markdown
 
