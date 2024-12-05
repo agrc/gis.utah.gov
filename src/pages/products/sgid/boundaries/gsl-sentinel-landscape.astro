@@ -27,7 +27,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [],
+  updateHistory: [`2024`],
   hub: {
     ...dataPages[metadata.pageTitle],
   },
@@ -64,7 +64,7 @@ const page: IPageMetadata = {
     </GridForMoreResources>
   </Section>
 
-  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Great Salt Lake" href="/products/sgid/water/great-salt-lake/"
         >2016 water level of the Great Salt Lake</CardWithSmallLink
