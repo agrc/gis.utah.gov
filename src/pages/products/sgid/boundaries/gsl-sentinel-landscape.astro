@@ -6,7 +6,6 @@ import { ProductType, SgidCategory } from '@models/types';
 
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
-import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
@@ -19,8 +18,8 @@ import { removeDateRange } from '@utils/data';
 
 export const metadata: IMetadata = {
   pageTitle: 'Utah GSL Sentinel Landscape Boundary',
-  pageDescription: `Federally established boundary identifying the area of the Great Salt Lake Sentinel Landscape.`,
-  stewards: ['UGRC'],
+  pageDescription: `The federally established boundary identifying the area of the Great Salt Lake Sentinel Landscape.`,
+  stewards: ['Department of Veterans Affairs'],
   type: ProductType.POLYGON,
   category: SgidCategory.BOUNDARIES,
   secondaryCategory: SgidCategory.PLANNING,
@@ -54,9 +53,7 @@ const page: IPageMetadata = {
     <HubDownloads {...page.hub} />
   </Section>
 
-  <UpdateHistory slot="update-history" updates={page.updateHistory} />
-
-  <Section title="More resources" slot="more-resources" titlePosition="center">
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
     <GridForMoreResources>
       <CardWithPopularLink title="Sentinel Landscape Partnership" href="https://sentinellandscapes.org/"
         >Working together to achieve landscape conservation and climate resilience goals.</CardWithPopularLink
@@ -69,7 +66,7 @@ const page: IPageMetadata = {
 
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
-      <CardWithSmallLink title="Great Salt Lake" href="products/sgid/water/great-salt-lake/"
+      <CardWithSmallLink title="Great Salt Lake" href="/products/sgid/water/great-salt-lake/"
         >2016 water level of the Great Salt Lake</CardWithSmallLink
       >
       <CardWithSmallLink title="Lakes" href="/products/sgid/water/nhd-lakes/">NHD Lakes</CardWithSmallLink>
