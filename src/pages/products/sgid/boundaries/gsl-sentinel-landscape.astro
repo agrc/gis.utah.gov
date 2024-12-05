@@ -1,0 +1,76 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+import { removeDateRange } from '@utils/data';
+
+export const metadata: IMetadata = {
+  pageTitle: 'Utah GSL Sentinel Landscape Boundary',
+  pageDescription: `The federally established boundary identifying the area of the Great Salt Lake Sentinel Landscape.`,
+  stewards: ['Department of Veterans Affairs'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.BOUNDARIES,
+  secondaryCategory: SgidCategory.PLANNING,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`2024`],
+  hub: {
+    ...dataPages[metadata.pageTitle],
+  },
+  config: { skipInDepth: true },
+};
+---
+
+<Layout {...page} pageTitle={removeDateRange(page.pageTitle)} subTitle={page.updateHistory[0]}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The dataset contains a polygon representing the Great Salt Lake Sentinel Landscape (GSLSL) Boundary. The GSLSL was
+      established in 2024 to align interests, maximize resources, and build resilience in military installations,
+      communities, and ecosystems within the Great Salt Lake Basin. The boundary of the GSLSL was created using insight
+      from federal agencies, state and local governments, and non-governmental organizations. The purpose of this
+      dataset is to help current and future partners of the Great Salt Lake Sentinel Landscape spatially understand the
+      area where conservation efforts may align with the goals of the Sentinel Landscape Partnership to best leverage
+      funding opportunities.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Sentinel Landscape Partnership" href="https://sentinellandscapes.org/"
+        >Working together to achieve landscape conservation and climate resilience goals.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Great Salt Lake" href="https://greatsaltlake.utah.gov/"
+        >Protecting and preserving the Great Salt Lake.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Great Salt Lake" href="/products/sgid/water/great-salt-lake/"
+        >2016 water level of the Great Salt Lake</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Lakes" href="/products/sgid/water/nhd-lakes/">NHD Lakes</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

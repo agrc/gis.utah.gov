@@ -60,6 +60,13 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'boundaries.conservation_zones',
     layerId: 0,
   },
+  'Utah GSL Sentinel Landscape Boundary': {
+    itemId: '5800151340884560b5c9d5598a770d8b',
+    name: 'Utah GSL Sentinel Landscape Boundary',
+    featureServiceId: 'GSL_SentinelLandscapeBoundary',
+    openSgid: 'boundaries.gsl_sentinel_landscape_boundary',
+    layerId: 0,
+  },
   'Utah Wilderness BLM Suitability': {
     itemId: '0edc4466143e4c57960e9eb5df05f233',
     name: 'Utah Wilderness BLM Suitability',
