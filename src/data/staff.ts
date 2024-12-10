@@ -8,6 +8,14 @@ export const staff = [
     tags: ['vision', 'strategy', 'leadership', 'collaboration', 'new opportunities'],
   },
   {
+    name: 'Erik Neemann',
+    team: 'Data Team Lead',
+    phone: '801-349-0039',
+    email: 'emneemann@utah.gov',
+    x: '@erik_geospatial',
+    tags: ['data', '911', 'sgid', 'collaboration', 'python'],
+  },
+  {
     name: 'Zach Beck',
     team: 'Data Team',
     phone: '801-433-8422',
