@@ -205,7 +205,7 @@ const page: IStandardPageMetadata = {
       actionUrl:
         'https://raster.utah.gov/?cat=.5%20Meter%20%7B2022%20Fish%20Springs%20LiDAR%7D&title=Fish%20Springs%202022%20Topo-Bathy%20LiDAR',
     },
-   {
+    {
       title: '2022 Western & Eastern Utah',
       actionText: 'Download from Raster',
       actionUrl:
@@ -215,7 +215,7 @@ const page: IStandardPageMetadata = {
 };
 
 const projectAssets = {
-    westernEastern: [
+  westernEastern: [
     {
       title: 'Download project reports',
       url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/west-east-utah-2022/WesternEasternUtah_2022_Reports.zip',
@@ -676,19 +676,24 @@ const projectAssets = {
   </Section>
   <Section {...page.section[28]}>
     <a href={westernEastern2022Map.src} slot="image">
-      <Image src={westernEastern2022Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={westernEastern2022Map}
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2022 UGRC, the Utah Division of Emergency Management, the Natural Resource Conservation Service (NRCS), the
       U.S. Forest Service (USFS), and the Federal Emergency Management Agency (FEMA) acquired ~19,466 square miles of 2
-      and 8 points per meter Quality Level 1 & 2 Lidar for portions of Western and Eastern Utah. The 0.5 and 1 meter resolution bare earth DEMs
-      and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are
-      available from <ExternalLink href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink>. This
-      elevation data was collected between June and October, 2022.
+      and 8 points per meter Quality Level 1 & 2 Lidar for portions of Western and Eastern Utah. The 0.5 and 1 meter
+      resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy
+      and are available for download. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >. This elevation data was collected between June and October, 2022.
     </p>
     <DirectDownloads title="Project assets" links={projectAssets.westernEastern} />
   </Section>
-
 
   <Section {...page.section[27]}>
     <a href={fishSprings2022Map.src} slot="image">
@@ -710,8 +715,8 @@ const projectAssets = {
     <p>
       During 2020 UGRC, the Utah Division of Emergency Management, the Natural Resource Conservation Service (NRCS), the
       U.S. Forest Service (USFS), and the Federal Emergency Management Agency (FEMA) acquired ~13,686 square miles of 2
-      and 8 points per meter Quality Level 1 & 2 Lidar for portions of Utah. The 0.5 and 1 meter resolution bare earth DEMs
-      in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are
+      and 8 points per meter Quality Level 1 & 2 Lidar for portions of Utah. The 0.5 and 1 meter resolution bare earth
+      DEMs in .tif format have a 10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are
       available from <ExternalLink href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink>. This
       elevation data was collected between August and November, 2020.
     </p>
@@ -741,9 +746,9 @@ const projectAssets = {
     >
     <p>
       During 2020 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Division of Emergency Management
-      acquired ~5,143 square miles of 2 points per meter Quality Level 2 Lidar for portions of Central and Southern Utah.
-      The 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical
-      RMSE accuracy and are available for download. The LAS point clouds are available from <ExternalLink
+      acquired ~5,143 square miles of 2 points per meter Quality Level 2 Lidar for portions of Central and Southern
+      Utah. The 1 meter resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm
+      vertical RMSE accuracy and are available for download. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
       >. This elevation data was collected between September and October, 2020.
     </p>
