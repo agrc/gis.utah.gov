@@ -3,14 +3,14 @@ import type { Contacts } from '@models/types';
 export const contacts: Contacts = {
   address_grids: {
     agency: 'UGRC',
-    email: 'GBunce@utah.gov',
-    name: 'Greg Bunce',
-    phone: '385-202-3297',
+    email: 'michaelfoulger@utah.gov',
+    name: 'Michael Foulger',
+    phone: '385-652-2258',
   },
   address_network: {
     agency: 'UGRC',
-    email: 'GBunce@utah.gov',
-    name: 'Greg Bunce',
+    email: 'emneemann@utah.gov',
+    name: 'Erik Neemann',
     phone: '385-202-3297',
   },
   address_points: {
@@ -331,9 +331,9 @@ export const contacts: Contacts = {
   },
   roads: {
     agency: 'UGRC',
-    email: 'GBunce@utah.gov',
-    name: 'Greg Bunce',
-    phone: '801-349-0039',
+    email: 'michaelfoulger@utah.gov',
+    name: 'Michael Foulger',
+    phone: '801-652-2258',
   },
   sgid: [
     {
@@ -491,8 +491,8 @@ export const contacts: Contacts = {
   },
   voter_count_tool: {
     agency: 'UGRC',
-    email: 'GBunce@utah.gov',
-    name: 'Greg Bunce',
+    email: 'emneemann@utah.gov',
+    name: 'Erik Neemann',
     phone: '801-349-0039',
   },
   voting: {
