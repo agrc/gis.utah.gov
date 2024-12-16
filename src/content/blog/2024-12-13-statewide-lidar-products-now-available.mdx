@@ -5,14 +5,14 @@ description: >-
   We are thrilled to announce the completion of the Lidar baseline for the state
   of Utah, a project that has been more than ten years in the making.
 date: '2024-12-13T17:26:48.506Z'
-category: UGRC
-cover_image: /src/images/pillar-blog/default-social-card.png
+category: Collaboration
+cover_image: /src/images/blog/2024-12-13-statewide-lidar-products-now-available/lidar_covercard.png'
 cover_image_alt: ugrc social card
 ---
 
 import myImage from '@images/blog/2024-12-13-statewide-lidar-products-now-available/lidarpointcloud.png';
 
-import myImage2 from '@images/blog/2024-12-13-statewide-lidar-products-now-available/lidardem.png';
+import myImage2 from '@images/blog/2024-12-13-statewide-lidar-products-now-available/shadedrelief.png';
 
 import { Image } from 'astro:assets';
 
@@ -26,20 +26,14 @@ So, Lidar. It's actually an acronym that stands for “Light Detection and Rangi
 
 This image, made of reflected pulses of light, is called a point cloud. Each point represents the spot where a pulse bounced off a tree, building, or other object. By aggregating these points together, we can put together a high-resolution image that can help us measure topography, elevation, vegetation, and much more. These images can be combined, or mosaicked, together to form larger maps of entire cities, counties, or, as of just a few weeks ago, the entire state of Utah.
 
-<Image src={myImage2} loading="eager" alt= "Digital elevation model." />
+<Image src={myImage2} loading="eager" alt= "A shaded relief map of the area around Duchesne, Utah." />
 
-Collecting Lidar data is no simple task. You can take those aviator goggles off now; we won't actually be flying in any planes. That part has already been done by many vendors contracted by UGRC to collect Lidar data. In addition to the pilots collecting the data, UGRC has partnered with the [United States Geological Survey](https://www.usgs.gov/) to aggregate the data and ensure accuracy. We also have spearheaded grant applications and a competitive bid process for our contractors. Through our partnerships with USGS and many others, we have been able to make high-resolution Lidar data available for every square inch of our beautiful state.
+Collecting Lidar data is no simple task. You can take those aviator goggles off now; we won't actually be flying in any planes. That part has already been done by many vendors contracted by UGRC to collect Lidar data. In addition to the pilots collecting the data, UGRC has partnered with the [United States Geological Survey](https://www.usgs.gov/) to aggregate the data and ensure accuracy. We also have spearheaded grant applications and a competitive bid process for our contractors. Through our partnerships with USGS and many others, we have been able to make high-resolution Lidar products available for every square inch of our beautiful state.
 
-So, why does it matter? There's already lots of data, even Lidar data, available for Utah. So why do we need high-resolution Lidar? Well, first let's take a look at the difference high resolution data can make. Pictured below are some Digital Elevation Models, also called DEMs. These are elevation maps that were derived from Lidar data.
-
-(I will be inserting the graphic that goes here tomorrow)
-
-On the left hand side is a low-resolution DEM, and on the right hand-side is a high-resolution DEM taken from our newly completed Lidar baseline. Zooming in, we can see clear differences in quality and cell size between the two.
-
-Now, imagine you need to build a new school, hospital, or bridge in the area depicted in the DEM. Which model would you rather use? Having higher resolution data doesn't just mean the picture looks nicer. It means that each pixel is a better representation of the real world; so when urban planners, construction managers, and everyday homeowners want to draft up a new building, they have more accurate data to work with.
+So, why does it matter? There's already lots of data, even Lidar data, available for Utah. So why do we need high-resolution Lidar? Having higher resolution data doesn't just mean the picture looks nicer. It means that each pixel is a better representation of the real world; so when urban planners, construction managers, and everyday homeowners want to draft up a new building, they have more accurate data to work with.
 
 High-resolution Lidar is beneficial for nature's builders too. Gathering Lidar data is a relatively non-invasive way to assess habitat for wildlife and can help us find solutions to protect Utah's native species. Lidar data can delineate beaver dams, model streams and rivers, and quantify forest canopies. Beyond biological assessment, Lidar data can also be used to map geological hazards, potential flood zones, and fire-prone areas. The potential for Lidar products is enormous, and that's exactly why UGRC has poured so much time and attention into acquiring the best possible data.
 
-So, we've got all this super cool data that can do super cool things. What's next for Utah? UGRC has already acquired Lidar data for the entire state of Utah, so now we are working to create a variety of elevation products that will be available for download, including digital models like the ones pictured above. These products will be available for download on our [Raster Data Discovery](https://raster.utah.gov/) website.
+So, we've got all this super cool data that can do super cool things. What's next? UGRC has already acquired Lidar data for the entire state of Utah, so now we are working to create a variety of elevation products that will be available for download, including digital models like the ones pictured above. We will be combining, or mosaicking, existing elevation models to create larger, more convenient tiles at 1 meter resolution. These products will be available for download on our [Raster Data Discovery](https://raster.utah.gov/) website. We also acquired Lidar data for the Salt Lake Valley floor in 2023 and anticipate these data becoming publicly available in the coming months.
 
 This project is part of UGRC's [mission](/about/) to “ensure a high level of coordination among Utah GIS users and effective, efficient use of GIS resources.” You can learn more about other ongoing projects on [our blog](/blog/). For more information about Lidar acquisition and analysis in Utah, please reach out to <Contacts inline subject={frontmatter.title} contactKey='elevation' />.
