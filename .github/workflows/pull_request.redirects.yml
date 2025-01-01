@@ -51,7 +51,7 @@ jobs:
           cwd: ./scripts
 
       - name: ✍️ Updating PR Comment
-        uses: thollander/actions-comment-pull-request@v2
+        uses: thollander/actions-comment-pull-request@v3
         with:
           comment_tag: validation-results
           message: |
