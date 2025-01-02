@@ -72,7 +72,8 @@
     },
   },
   "include": [
-    "src/**/*"
+    ".astro/types.d.ts",
+    "**/*"
   ],
   "exclude": [
     "dist",
