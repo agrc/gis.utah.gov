@@ -2,19 +2,21 @@
 import BlogPost from '@layouts/BlogPost.astro';
 import Layout from '@layouts/FullWidth.astro';
 
+import { render } from 'astro:content';
+
 import { getBlogPosts, slugify, type DecoratedBlogEntry } from '@utils/collections';
 
 import Section from '@components/page/Section.astro';
 
 export async function getStaticPaths() {
   return (await getBlogPosts(true)).map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: post.id },
     props: post,
   }));
 }
 
 const post = Astro.props as DecoratedBlogEntry;
-const { Content } = await post.render();
+const { Content } = await render(post);
 ---
 
 <Layout

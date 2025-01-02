@@ -13,7 +13,7 @@ const getLastModifiedTime = (path: string) => {
     return new Date();
   }
 
-  const updated = execSync(`git log -1 --pretty="format:%cI" ./src/content/blog/${path}`).toString();
+  const updated = execSync(`git log -1 --pretty="format:%cI" ${path}`).toString();
 
   return !updated ? new Date() : new Date(updated);
 };
@@ -59,17 +59,17 @@ export async function getBlogPosts(all = false): Promise<DecoratedBlogEntry[]> {
     .sort((b, a) => a.data.date.valueOf() - b.data.date.valueOf())
     .map((post): DecoratedBlogEntry => {
       // uncomment out this log to help debug markdown parsing issues
-      // console.log(`decorating post: ${post.id}`);
+      // console.log(`decorating post: ${post.filePath}`);
 
-      const documentType = post.id.split('.').pop() as 'md' | 'mdx';
+      const documentType = post.filePath?.split('.').pop() as 'md' | 'mdx';
 
       return {
         ...post,
         data: {
           ...post.data,
-          snippet: getSnippetFromMarkdown(post.body, documentType),
-          estimatedReadTime: getReadingTimeFromMarkdown(post.body),
-          lastUpdated: getLastModifiedTime(post.id),
+          snippet: getSnippetFromMarkdown(post.body ?? '', documentType),
+          estimatedReadTime: getReadingTimeFromMarkdown(post.body ?? ''),
+          lastUpdated: getLastModifiedTime(post.filePath ?? ''),
         },
       };
     });

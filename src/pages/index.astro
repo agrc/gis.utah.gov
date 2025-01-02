@@ -78,7 +78,7 @@ const posts = (await getBlogPosts()).slice(0, 3);
             title={post.data.title}
             snippet={post.data.snippet}
             date={post.data.date}
-            slug={post.slug}
+            slug={post.id}
             estimatedReadingTime={post.data.estimatedReadTime}
           />
         ))
