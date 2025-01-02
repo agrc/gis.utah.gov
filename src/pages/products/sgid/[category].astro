@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 }
 
 // filter and find all pages for the given category
-const pages = (await Astro.glob<IDataCategory>('../**/*.astro'))
+const pages = Object.values<IDataCategory>(import.meta.glob('../**/*.astro', { eager: true }))
   .filter((page) => {
     const inCategory = [
       page.metadata?.category?.toLowerCase(),
