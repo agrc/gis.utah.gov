@@ -193,7 +193,7 @@ This again gives us the table we're familiar with by this point:
 
 So why didn't we just lead with `pivot_table`? First, this is a more limited and specific case of pivoting for when you want to perform one of the common aggregator functions (Which functions are those? As usual, [StackOverflow to the rescue](https://stackoverflow.com/questions/53943319/what-are-all-pandas-agg-functions)! Basically, it'll try anything you throw at it, but there are some common ones.).
 
-`pivot` and `unstack`/`stack` will apply to other situations where an earlier analysis step gives you a hierarchically indexed data structure or creates columns with categorical group identifier. It can also be useful to reshape the results of joins into the wide format expected by GIS software.
+`pivot` and `unstack`/`stack` will apply to other situations where an earlier analysis step gives you a hierarchically indexed data structure or creates columns with categorical group identifiers. It can also be useful to reshape the results of joins into the wide format expected by GIS software.
 
 But more importantly to me, understanding what the `unstack` and `pivot` methods were doing helped me to really grasp how `pivot_table` works. My data exploration often begins with the thought "what happens if I group the data by this column?" and flows from there. If you're always working with the same type of data, maybe you don't have to go through that exploration phase and can go straight to `pivot_table`. But that's one of the perks of working at UGRC: we're often looking at very different datasets from one project to the next.
 
