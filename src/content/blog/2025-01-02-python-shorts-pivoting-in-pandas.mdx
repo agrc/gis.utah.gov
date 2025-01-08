@@ -1,7 +1,7 @@
 ---
 title: 'Python Shorts: Pivoting in Pandas'
 author: Jake Adams
-date: '2025-01-02T16:00:00.000Z'
+date: '2025-01-08T16:00:00.000Z'
 category: Developer
 tags:
   - python
@@ -19,7 +19,7 @@ import { Image } from 'astro:assets';
 
 When we analyze a GIS layer, we often want to use one of the attributes to group the features and see how other attributes differ amongst the groups. For many GISers, it's second nature to do this visually by mapping a layer by unique values or graduated symbols based on numerical values.
 
-However, at the end of the day, we're not paid just to make pretty maps (except for a lucky few who are)—we're called upon to answer questions using the attributes in our data. How do housing attributes vary across counties? What are the correlations between income, education, and location? How does land use type affect species diversity? The data supporting these answers can be shown with a map, a table, a chart, or even just a handful of numerical values.
+However, at the end of the day, we're not paid just to make pretty maps (except for a lucky few who are)—we're called upon to answer questions using the attributes in our data: how do housing attributes vary across counties? What are the correlations between income, education, and location? How does land use type affect species diversity? The data supporting these answers can be shown with a map, a table, a chart, or even just a handful of numerical values.
 
 To answer these questions, we have to mold, transform, and reshape our data tables. Pandas provides several tools for doing this, but knowing which one to use isn't always immediately obvious.
 
@@ -33,10 +33,12 @@ Most GIS datasets are "wide" by nature. Each row in the table is an individual f
 
 You can think of wide data as being focused on an individual subject or record with a bunch of columns storing different values or observations (hence this also being referred to as "record" format). Here's an example municipality feature class with a handful of different attributes.
 
+<div style="overflow-x: auto;">
 | Name   | Pop2000 | Pop2010 | Pop2020 | Area  | Class       | SHAPE       |
 | ------ | ------- | ------- | ------- | ----- | ----------- | ----------- |
 | City A | 2439    | 2785    | 3254    | 2.75  | Minor       | \<polygon\> |
 | City B | 125836  | 113957  | 153290  | 12.49 | County Seat | \<polygon\> |
+</div>
 
 In contrast, a long table has multiple rows for each subject, each row containing an observation or data point differentiated from others for that subject by a categorical value stored in one or more separate columns. This categorical value may be a timestamp, or it could be a broader grouping variable. This is also called "stacked" format because observations are stacked on top of each other.
 
