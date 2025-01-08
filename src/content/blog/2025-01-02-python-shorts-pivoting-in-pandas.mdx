@@ -23,7 +23,7 @@ However, at the end of the day, we're not paid just to make pretty maps (except 
 
 To answer these questions, we have to mold, transform, and reshape our data tables. Pandas provides several tools for doing this, but knowing which one to use isn't always immediately obvious.
 
-Today we'll use the [Housing Unit Inventory](https://gis.utah.gov/products/sgid/planning/housing-unit-inventory/) (HUI) and Pandas' `unstack`, `pivot`, and `pivot_table` to investigate how the type of housing units built (single-family, townhome, apartment, etc) has changed over time.
+Today we'll use the [Housing Unit Inventory](https://gis.utah.gov/products/sgid/planning/housing-unit-inventory/) (HUI) and Pandas' `unstack`, `pivot`, and `pivot_table` methods to investigate how the type of housing units built (single-family, townhome, apartment, etc) has changed over time.
 
 ## Data Has Body Types? Wide Versus Long
 
@@ -113,7 +113,7 @@ This is because our new series is itself a very long dataset. Each row has a sin
 
 ## Widening Through `unstack`
 
-Because our series has a hierarchical MultiIndex, we can use Pandas' ['unstack'](https://pandas.pydata.org/docs/user_guide/reshaping.html#stack-and-unstack) to widen our data to something a little more useful.
+Because our series has a hierarchical MultiIndex, we can use Pandas' ['unstack'](https://pandas.pydata.org/docs/user_guide/reshaping.html#stack-and-unstack) method to widen our data to something a little more useful.
 
 `unstack` takes a long dataset that has a single observation per row and uses the categorical values in the innermost MultiIndex level to create new columns. Now, you have a proper two-dimensional wide dataframe whose index is the remaining index level(s), whose columns are the values of the innermost index level, and whose values are the observations put in their proper place according to the resulting matrix.
 
@@ -175,10 +175,12 @@ This again gives us the table we're familiar with by this point:
 
 <Image src={PivotTable} loading="eager" alt="Are you tired of this table yet?" />
 
-So why didn't we just lead with this? First, this is a more limited and specific case of pivoting for when you want to perform one of the common aggregator functions (Which functions are those? As usual, [StackOverflow to the rescue](https://stackoverflow.com/questions/53943319/what-are-all-pandas-agg-functions)! Basically, it'll try anything you throw at it, but there are some common ones.).
+## Coming Full Circle
+
+So why didn't we just lead with `pivot_table`? First, this is a more limited and specific case of pivoting for when you want to perform one of the common aggregator functions (Which functions are those? As usual, [StackOverflow to the rescue](https://stackoverflow.com/questions/53943319/what-are-all-pandas-agg-functions)! Basically, it'll try anything you throw at it, but there are some common ones.).
 
 `pivot` and `unstack`/`stack` will apply to other situations where an earlier analysis step gives you a hierarchically indexed data structure or creates columns with categorical group identifier. It can also be useful to reshape the results of joins into the wide format expected by GIS software.
 
-But more importantly to me, understanding what `unstack` and `pivot` were doing helped me to really grasp how `pivot_tables` works. My data exploration often begins with the thought process "what happens if I group the data by this column?" and flows from there. If you're always working with the same type of data, maybe you don't have to go through that exploration phase and can go straight to `pivot_table`. But that's one of the perks of working at UGRC: we're often looking at very different datasets from one project to the next.
+But more importantly to me, understanding what the `unstack` and `pivot` methods were doing helped me to really grasp how `pivot_table` works. My data exploration often begins with the thought "what happens if I group the data by this column?" and flows from there. If you're always working with the same type of data, maybe you don't have to go through that exploration phase and can go straight to `pivot_table`. But that's one of the perks of working at UGRC: we're often looking at very different datasets from one project to the next.
 
-I hope this exploration into the theory of data table shapes and examples of some of the reshaping tools available helps you better understand what tools to use when your data need a little love.
+I hope you found this exploration into both theory and examples of some of the data reshaping tools available in Pandas useful. When you're first learning Pandas, it can often feel like you're missing one small—but vital—part of the puzzle that's keeping you from the analysis you're after. Now you've got the understanding and tools to wrangle your data and deliver stunning insights (ok, maybe at least just useful insights...).
