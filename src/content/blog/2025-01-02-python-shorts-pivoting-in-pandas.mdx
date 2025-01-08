@@ -157,6 +157,10 @@ hui_dataframe.groupby(["BLT_DECADE", "SUBTYPE"])["UNIT_COUNT"].sum()
   alt="It's got the same values as the unstacked dataframe but a different column order."
 />
 
+## Melt Me Down
+
+We've been focused on going from long to wide, but Pandas also has tools for going from wide to long. It's [`melt`](https://pandas.pydata.org/docs/user_guide/reshaping.html#melt-and-wide-to-long) function allows you to automatically do the transformation I did by hand to the table at the beginning- choose a column (or columns) as ID variables and stack the rest of the value columns into two "variable" and "value" columns.
+
 ## But Can It Do Pivot Tables?
 
 Ask someone what makes them an Excel expert, and chances are you'll hear "pivot tables" in their explanation. This combines the three steps we've done to the HUI data so far: grouping the data by categorical columns, performing some aggregation function on a numerical column, and pivoting the results into an easy-to-parse two-dimensional table.
