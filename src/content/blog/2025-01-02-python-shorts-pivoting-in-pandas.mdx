@@ -109,7 +109,11 @@ However, if we try to plot the series out, the x-axis uses each unique combinati
 hui_dataframe.groupby(["BLT_DECADE", "SUBTYPE"])["UNIT_COUNT"].sum().plot(kind="bar", figsize=(10, 6))
 ```
 
-<Image src={UnstackedPlot} loading="eager" alt="Too many axis labels." />
+<Image
+  src={UnstackedPlot}
+  loading="eager"
+  alt="The x-axis is overwhelmed with labels and it's impossible to tell which label belongs to which bar."
+/>
 
 This is because our new series is itself a very long dataset. Each row has a single numerical value and two categorical values, which in this case are exposed through the MultiIndex rather than being individual columns themselves. We could probably mess around with matplotlib axes and get a good plot out of this, but there's a simpler way.
 
@@ -125,7 +129,7 @@ For example:
 hui_dataframe.groupby(["BLT_DECADE", "SUBTYPE"])["UNIT_COUNT"].sum().unstack()
 ```
 
-<Image src={StackedDataframe} loading="eager" alt="A pretty two-dimensional dataframe table." />
+<Image src={StackedDataframe} loading="eager" />
 
 (Note that this is a great way to catch inconsistencies in your data, like the `health_care` and `townhomes` entries that snuck in the latest update. We're working on fixing those.)
 
@@ -137,7 +141,11 @@ hui_dataframe.groupby(["BLT_DECADE", "SUBTYPE"])["UNIT_COUNT"].sum()
              .plot(kind="bar", stacked=True, figsize=(10, 6))
 ```
 
-<Image src={StackedPlot} loading="eager" alt="A stacked bar chart showing the unit count by subtype per decade." />
+<Image
+  src={StackedPlot}
+  loading="eager"
+  alt="A stacked bar chart showing the unit count by subtype per decade that is legible and easy to interpret."
+/>
 
 Now we have a much more understandable graph that makes it easier to pick out trends, like the overall housing slump in the 80s, the near disappearance of new mobile homes, and the relative decrease in new stand-alone single home construction in the last 15 years.
 
@@ -156,7 +164,7 @@ hui_dataframe.groupby(["BLT_DECADE", "SUBTYPE"])["UNIT_COUNT"].sum()
 <Image
   src={StackedDataframe}
   loading="eager"
-  alt="It's got the same values as the unstacked dataframe but a different column order."
+  alt="The pivoted DataFrame has the same values as the unstacked dataframe but a different column order."
 />
 
 ## Melt Me Down
@@ -175,7 +183,11 @@ pd.pivot_table(hui_dataframe, values="UNIT_COUNT", index="BLT_DECADE", columns="
 
 This again gives us the table we're familiar with by this point:
 
-<Image src={PivotTable} loading="eager" alt="Are you tired of this table yet?" />
+<Image
+  src={PivotTable}
+  loading="eager"
+  alt="The resulting DataFrame looks similar to the previous unstacked and pivoted DataFrames"
+/>
 
 ## Coming Full Circle
 
