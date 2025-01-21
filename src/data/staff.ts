@@ -16,6 +16,14 @@ export const staff = [
     tags: ['data', '911', 'sgid', 'collaboration', 'python'],
   },
   {
+    name: 'Chris Wnek',
+    team: 'Project Management',
+    phone: '385-589-3603',
+    email: 'chrisw@utah.gov',
+    x: '',
+    tags: ['collaboration', 'partnerships', 'budgets', 'new projects', 'ongoing support'],
+  },
+  {
     name: 'Zach Beck',
     team: 'Data Team',
     phone: '801-433-8422',
