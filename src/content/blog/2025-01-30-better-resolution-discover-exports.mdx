@@ -1,0 +1,85 @@
+---
+title: 'Getting Better Resolution from Discover Exports'
+author: Jake Adams
+date: '2025-01-30T16:00:00.000Z'
+category: Discover
+tags:
+  - ArcGIS Pro
+  - Discover
+  - Aerial Imagery
+cover_image: /src/images/pillar-blog/2025-01-02-python-shorts-pivoting-in-pandas/reshaping_pivot.png
+cover_image_alt: the python logo
+---
+
+import NormalExport from '@images/blog/2025-01-30-better-resolution-discover-exports/normal_export.png';
+import OutputSettings from '@images/blog/2025-01-30-better-resolution-discover-exports/output_settings.png';
+import PrintToPDFSettings from '@images/blog/2025-01-30-better-resolution-discover-exports/print_to_pdf_settings.png';
+import ProScreenshot from '@images/blog/2025-01-30-better-resolution-discover-exports/pro_screenshot.png';
+import SizeComparison from '@images/blog/2025-01-30-better-resolution-discover-exports/size_comparison.png';
+import VisualComparison from '@images/blog/2025-01-30-better-resolution-discover-exports/visual_comparison.png';
+
+import { Image } from 'astro:assets';
+
+Have you ever added one of our WMTS [Discover imagery layers](/products/discover) to a map covering a large extent (a small-scale map) in ArcGIS Pro and tried to export it to a large PDF, only to have the imagery come out blurry? We've been banging our heads against this problem and finally found a workaround.
+
+## The problem
+
+When you create a layout in ArcGIS Pro and add a map frame, the frame has a certain scale based on the extent you set for the map. This scale defines the sizes for all map elements rendered, both vector and raster layers as well as labels. As the scale changes, so do vector symbol sizes and the level-of-detail requested from raster tile services like our WMTS-based Discover imagery and basemap services or the Esri imagery basemap.
+
+For those who produce large printed maps, you're probably familiar with the "Reference scale" setting in a map's properties. This lets you lock in a scale while you work on your symbology in the map view when you're constantly zooming in and out and panning around.
+
+Unfortunately, this reference scale does not impact raster tile layers—the renderer will alway request tiles at a certain [level of detail](https://www.esri.com/arcgis-blog/products/product/mapping/web-map-zoom-levels-updated/) based on the scale specified in the layout. For example, a map scale of 1:520,000 may request level 11 (1:288,895.277144) tiles and then resample the images to 1:520,000, leading to blurry imagery. Here is a 1:1 crop of a 34"x44" 1:520,000-scale map covering the entire state of Utah exported at 300dpi.
+
+<Image src={NormalExport} loading="eager" alt="" />
+
+See how blurry the imagery is? The farm fields look like jpeg artifact noise and the urban areas are just a jumble of grey pixels.
+
+Now compare that to a screenshot of the map view in ArcGIS Pro zoomed in to roughly the same extent. The fields are much more crisp, and you can make out individual larger buildings.
+
+<Image src={ProScreenshot} loading="eager" alt="" />
+
+I've heard this is a conscious design decision to prevent massive tile requests resulting from a large jump in scales. Each scale level will have four times the number of tiles of the scale above it. For example, let's consider a layout with a map scale of 1:520,000 that has a reference scale of 1:120,000. The 1:520,000 layout map scale would grab tiles at zoom level 11, while the reference scale of 1:120,000 would grab at tiles at zoom level 13. Even with just a two zoom level difference, this is 16 times more tiles, 16 times more network traffic, 16 times more WMTS server load, and 16 times more data processed during the export.
+
+## The workaround
+
+The best way we've found to trick the renderer to request tiles at a higher level of detail is to double or triple the layout size along with a reciprocal decrease in the export DPI when exporting to jpeg. By changing the layout size, the scale of the map frame within the layout is also scaled. Our 1:520,000 scale frame is now 1:173,333, so the renderer will request image tiles at this new, larger scale. Now, instead of our 34"x44" @ 300dpi map, we triple it to 102"x132" @ 100dpi.
+
+While that sounds huge, because we also scaled the output jpeg's dpi, the two resulting jpegs have the same dimensions in pixels. The drastic difference in their file sizes hints at the much greater detail in the x3/100dpi version.
+
+<Image src={SizeComparison} loading="eager" alt="" />
+
+This is confirmed when you compare the two images side by side. The scaled-up version has much clearer imagery consistent with what we'd expect from panning around in the map view.
+
+<Image src={VisualComparison} loading="eager" alt="" />
+
+However, if you also have vector symbols on your map, you'll need to remember to set a reference scale consistent with the original scale. So, for our 34"x44" map our final settings look like this:
+
+<div class="width: 30%;">
+
+| Setting                  | Value       |
+| ------------------------ | ----------- |
+| Layout Size              | 102" x 132" |
+| Map Frame Scale          | 1:173,333   |
+| Map Reference Scale      | 1:520,000   |
+| Export Layout File Type  | JPEG        |
+| Export Layout Resolution | 100 DPI     |
+| Export Layout Height     | 13,200      |
+| Export Layout Width      | 10,200      |
+
+</div>
+
+<Image src={OutputSettings} loading="eager" alt="" />
+
+## But what about PDFs?
+
+Sometimes a PDF can be easier to print or distribute, but the workaround above relies on exporting your map as a jpeg. There are a couple ways to package the resulting image as a PDF. First, you can load it into an image editor that can export to PDF like Photoshop or GIMP. Just be sure your final document size is set to your desired final print dimensions.
+
+If you have Adobe Acrobat installed (the full version, not just Acrobat Reader), you can open the jpeg in Acrobat and try to save it from there. However, it appears that Acrobat will compute the output dimensions based on the jpeg's pixel dimensions and dpi, so by default you'll still get the 3x scaled size. To fix this, you can either use the Preflight tool to reset the PDF size, or, more simply, just print it to PDF using the Adobe PDF print driver.
+
+Once you're in the print dialog, select "Adobe PDF" as the printer then select "Properties." Go to the "Adobe PDF Settings" tab and select your desired output size in the "Adobe PDF Page Size" dropdown. If you need a custom size not listed, you can click "Add..." to add your new page size to the dropdown list. Now you can hit "Print" and it will ask you where to save a new PDF at your desired size.
+
+<Image src={PrintToPDFSettings} loading="eager" alt="" />
+
+Now you can export and print maps with as much detail as you'd like in your imagery.
+
+Happy mapping!
