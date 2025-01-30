@@ -60,4 +60,5 @@ In the end, the TowerScout model detected 6,324 potential towers with a confiden
 The final steps in the project will include enriching the geospatial data with additional attributes and building a web map for DHHS to use in Legionella outbreak investigations. The additional attributes will include things like the nearest address, county, municipality (if applicable), zip code, small health statistical area, health department, etc., for a given cooling tower.
 
 [^1]: Controlling Legionella in Cooling Towers, accessed July 03, 2023. [https://www.cdc.gov/legionella/wmp/control-toolkit/cooling-towers.html](https://www.cdc.gov/legionella/wmp/control-toolkit/cooling-towers.html).
+
 [^2]: CDC Procedures for Identifying Cooling Towers, access July 03, 2023. [https://www.cdc.gov/legionella/health-depts/environmental-inv-resources/id-cooling-towers.html](https://www.cdc.gov/legionella/health-depts/environmental-inv-resources/id-cooling-towers.html)

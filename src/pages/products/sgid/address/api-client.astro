@@ -37,7 +37,7 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   updateHistory: [
-    releaseMetadata?.published_at ?? false
+    (releaseMetadata?.published_at ?? false)
       ? dateFormatter.format(new Date(releaseMetadata.published_at ?? ''))
       : `<a href="https://github.com/agrc/api-client/releases">GitHub Release History</a>`,
   ],

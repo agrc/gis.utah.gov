@@ -97,12 +97,21 @@ While traditionally we think of GIS as a tool for making maps and creating and m
 #### Sources
 
 [^gim]: GIM International. 2015. "Bringing Geography into Everything". https://www.gim-international.com/content/news/bringing-geography-into-everything-gim-international-interviews-ed-parsons (accessed February 13, 2020).
+
 [^location]: gimbal https://gimbal.com/location-data-guide/
+
 [^voice]: vectorified https://vectorified.com/download-image#voice-command-icon-4.jpg
+
 [^geospatialnext]: fashionretail. https://fashionretail.blog/2018/06/11/internet-of-things-in-fashion/
+
 [^locationdata]: 123rf. https://www.123rf.com/photo_75188771_stock-vector-black-binary-code-on-white-background-algorithm-binary-data-code-decryption-and-encoding-row-matrix-.html
+
 [^economist]: The Economist. 2017. "[The world’s most valuable resource is no longer oil, but data](https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data)". The Economist. May 6, 2017.
+
 [^toonders]: Toonders, Joris. 2014. "[Data Is the New Oil of the Digital Economy](https://www.wired.com/insights/2014/07/data-new-oil-digital-economy/)". Wired. July 2014.
+
 [^collaboration]: tapetapnetworks. https://www.taptapnetworks.com/bridging-the-gap-the-next-frontier-for-mobile-and-physical-commerce/
+
 [^bhageshpur]: Bhageshpur, Kiran. 2019. "[Data Is The New Oil - And That's A Good Thing](https://www.forbes.com/sites/forbestechcouncil/2019/11/15/data-is-the-new-oil-and-thats-a-good-thing/#1d3b1a037304)". Forbes. Nov 15, 2019.
+
 [^tribolet]: Tribolet, Anna. 2020. "What is UGRC Doing to Support the Next Wave of Geospatial Technology?". State of Utah, Department of Technology Services.
