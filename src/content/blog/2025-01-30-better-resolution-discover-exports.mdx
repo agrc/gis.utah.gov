@@ -28,7 +28,7 @@ When you create a layout in ArcGIS Pro and add a map frame, the frame has a cert
 
 For those who produce large printed maps, you're probably familiar with the "Reference scale" setting in a map's properties. This lets you lock in a scale while you work on your symbology in the map view when you're constantly zooming in and out and panning around.
 
-Unfortunately, this reference scale does not impact raster tile layers—the renderer will alway request tiles at a certain [level of detail](https://www.esri.com/arcgis-blog/products/product/mapping/web-map-zoom-levels-updated/) based on the scale specified in the layout. For example, a map scale of 1:520,000 may request level 11 (1:288,895.277144) tiles and then resample the images to 1:520,000, leading to blurry imagery. Here is a 1:1 crop of a 34"x44" 1:520,000-scale map covering the entire state of Utah exported at 300dpi.
+Unfortunately, this reference scale does not impact raster tile layers—the renderer will always request tiles at a certain [level of detail](https://www.esri.com/arcgis-blog/products/product/mapping/web-map-zoom-levels-updated/) based on the scale specified in the layout. For example, a map scale of 1:520,000 may request level 11 (1:288,895.277144) tiles and then resample the images to 1:520,000, leading to blurry imagery. Here is a 1:1 crop of a 34"x44" 1:520,000-scale map covering the entire state of Utah exported at 300dpi.
 
 <Image src={NormalExport} loading="lazy" alt="" />
 
