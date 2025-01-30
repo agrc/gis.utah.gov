@@ -9,6 +9,7 @@ cover_image: /src/images/pillar-blog/2023-07-05-introducing-palletjack/palletjac
 cover_image_alt: palletjack does lots of the repetitive work for you
 ---
 
+import { YouTube } from '@astro-community/astro-embed-youtube';
 import Contacts from '@components/page/Contacts.astro';
 
 _From the I Love Being Lazy department_
@@ -31,14 +32,13 @@ Because the ArcGIS API for Python (the library that hooks us into hosted feature
 
 Don't want to read? Watch the recording of the palletjack presentation at UGIC's 2023 conference instead!
 
-<iframe
-  class="mx-auto aspect-video w-full max-w-4xl rounded-lg border-2 border-black shadow-xl"
-  src="https://www.youtube.com/embed/iDXmzKIV1mg?si=hDFs45obVOao2Blj"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
-></iframe>
+<div class="mx-auto w-full max-w-4xl">
+  <YouTube
+    class="aspect-video max-w-full rounded-lg border-2 border-black shadow-xl"
+    id="iDXmzKIV1mg"
+    playlabel="Jake introduces palletjack at UGIC 2023"
+  />
+</div>
 
 ## Step One: Extract Data from External Sources
 
