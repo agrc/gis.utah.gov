@@ -17,6 +17,7 @@ const page: IStandardPageMetadata = {
   pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
     { title: 'Blurry, missing, or stuck tiles' },
+    { title: 'Blurry WMTS imagery in large exports in ArcGIS Pro' },
     { title: 'WMS layers not exporting' },
     { title: 'Small text or symbology in QGIS' },
     { title: 'Printing web maps with locked down links' },
@@ -52,6 +53,15 @@ const page: IStandardPageMetadata = {
   </Section>
   <Section {...page.section[1]}>
     <p>
+      When exporting large layouts (like a 34"x44" map covering the entire state) that cover a large extent you may
+      notice imagery from one of our WMTS services is blurry. This is caused by the relationship between the map's scale
+      and the level of detail requested from Discover. We've put together a <a
+        href="/blog/2025-01-30-better-resolution-discover-exports">blog post</a
+      > covering the causes and our preferred workaround.
+    </p>
+  </Section>
+  <Section {...page.section[2]}>
+    <p>
       If you are using a WMS connection, you may find that the Discover layer doesn't show up when you export or print
       your map. This is due to a technical limitation of the WMS protocol. The only fixes are to use WMTS, export at a
       lower resolution, or use a local copy (for aerial imagery).
@@ -80,7 +90,7 @@ const page: IStandardPageMetadata = {
       without clogging the server.
     </p>
   </Section>
-  <Section {...page.section[2]}>
+  <Section {...page.section[3]}>
     <p>
       When using the base map services in QGIS, you may experience small text and symbology when using bilinear or cubic
       resampling at scales other than the normal <ExternalLink
@@ -99,7 +109,7 @@ const page: IStandardPageMetadata = {
       >, and the "out" method at values greater than <code>1.00</code>.
     </p>
   </Section>
-  <Section {...page.section[3]}>
+  <Section {...page.section[4]}>
     <p>
       As explained in the <a href="/documentation/discover/licensed-imagery/">licensed imagery documentation</a>, public
       web maps using licensed services must use a link that is locked down to the URL of the server (usually your ArcGIS
