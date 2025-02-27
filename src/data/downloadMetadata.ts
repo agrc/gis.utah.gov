@@ -970,7 +970,7 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah DWMRC Hazardous Waste and Used Oil Facilities': {
-    itemId: 'a2a995f3b2214451a45f4860da9673ec',
+    itemId: 'hosted by DEQ',
     externalHubOrganization: 'utahDEQ',
     oddHubName: 'Hazardous Waste and Used Oil',
     name: 'Utah DWMRC Hazardous Waste and Used Oil Facilities',
@@ -980,7 +980,7 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah DWMRC Low Level Waste Disposal and Uranium Mill Facilities': {
-    itemId: '1b8903e5de5646f182166529ca2ad98a',
+    itemId: 'hosted by DEQ',
     externalHubOrganization: 'utahDEQ',
     oddHubName: 'Low Level Waste Disposal and Uranium Mills WMRC',
     name: 'Utah DWMRC Low Level Waste Disposal and Uranium Mill Facilities',
@@ -990,7 +990,7 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah DWMRC Solid Waste Facilities': {
-    itemId: '2c08b5537b3949ce80cb9b76e68c7f2b',
+    itemId: 'hosted by DEQ',
     externalHubOrganization: 'utahDEQ',
     oddHubName: 'Solid Waste Facilities gdb',
     name: 'Utah DWMRC Solid Waste Facilities',
