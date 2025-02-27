@@ -970,10 +970,13 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah DWMRC Hazardous Waste and Used Oil Facilities': {
-    itemId: '8e9e6310622043bca68ffc2298959126',
+    itemId: 'a2a995f3b2214451a45f4860da9673ec',
+    externalHubOrganization: 'utahDEQ',
+    oddHubName: 'Hazardous Waste and Used Oil',
     name: 'Utah DWMRC Hazardous Waste and Used Oil Facilities',
-    featureServiceId: 'DWMRCHazWasteUsedOilFacilities',
-    openSgid: 'environment.dwmrc_hazardous_waste_and_used_oil_facilities',
+    featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/'
+    featureServiceId: 'data_GEO_HW',
+    openSgid: undefined,
     layerId: 0,
   },
   'Utah DWMRC Low Level Waste Disposal and Uranium Mill Facilities': {
