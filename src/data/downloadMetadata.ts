@@ -990,10 +990,13 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah DWMRC Solid Waste Facilities': {
-    itemId: '1ce0d598a0e440558c63535661dc2399',
+    itemId: '2c08b5537b3949ce80cb9b76e68c7f2b',
+    externalHubOrganization: 'utahDEQ',
+    oddHubName: 'Solid Waste Facilities_gdb',
     name: 'Utah DWMRC Solid Waste Facilities',
-    featureServiceId: 'DWMRCSolidWasteFacilities',
-    openSgid: 'environment.dwmrc_solid_waste_facilities',
+    featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/'
+    featureServiceId: 'Solid_Waste_Facilities_gdb',
+    openSgid: undefined,
     layerId: 0,
   },
   'Utah DWQ Assessed Lakes': {
