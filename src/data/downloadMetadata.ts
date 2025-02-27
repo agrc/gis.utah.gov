@@ -974,7 +974,7 @@ export const dataPages: DownloadMetadata = {
     externalHubOrganization: 'utahDEQ',
     oddHubName: 'Hazardous Waste and Used Oil',
     name: 'Utah DWMRC Hazardous Waste and Used Oil Facilities',
-    featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/'
+    featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
     featureServiceId: 'data_GEO_HW',
     openSgid: undefined,
     layerId: 0,
@@ -984,7 +984,7 @@ export const dataPages: DownloadMetadata = {
     externalHubOrganization: 'utahDEQ',
     oddHubName: 'Low Level Waste Disposal and Uranium Mills WMRC',
     name: 'Utah DWMRC Low Level Waste Disposal and Uranium Mills',
-    featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/'
+    featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
     featureServiceId: 'Low_Level_Waste_Disposal_and_Uranium_Mills_WMRC',
     openSgid: undefined,
     layerId: 0,
@@ -994,7 +994,7 @@ export const dataPages: DownloadMetadata = {
     externalHubOrganization: 'utahDEQ',
     oddHubName: 'Solid Waste Facilities_gdb',
     name: 'Utah DWMRC Solid Waste Facilities',
-    featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/'
+    featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
     featureServiceId: 'Solid_Waste_Facilities_gdb',
     openSgid: undefined,
     layerId: 0,
