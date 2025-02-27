@@ -979,11 +979,11 @@ export const dataPages: DownloadMetadata = {
     openSgid: undefined,
     layerId: 0,
   },
-  'Utah DWMRC Low Level Waste Disposal and Uranium Mills': {
+  'Utah DWMRC Low Level Waste Disposal and Uranium Mill Facilities': {
     itemId: '1b8903e5de5646f182166529ca2ad98a',
     externalHubOrganization: 'utahDEQ',
     oddHubName: 'Low Level Waste Disposal and Uranium Mills WMRC',
-    name: 'Utah DWMRC Low Level Waste Disposal and Uranium Mills',
+    name: 'Utah DWMRC Low Level Waste Disposal and Uranium Mill Facilities',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
     featureServiceId: 'Low_Level_Waste_Disposal_and_Uranium_Mills_WMRC',
     openSgid: undefined,
