@@ -24,7 +24,7 @@ define(['esri.map'], function (Map) {
 });
 ```
 
-So I headed over to <a href="https://dojotoolkit.org/chat">#dojo</a> to see if the experts had any ideas. Fortunately for me,&nbsp;<a href="https://twitter.com/brianarn">brianarn</a>&nbsp;was there and was aware of the problem. After some brain storming, we came up with the idea to use a custom loader plugin for loading ESRI modules. Since the build system doesn't try to flatten modules that are imported with nested requires, we hoped that importing them through the plugin would solve my problem. The plugin was a relatively simple implementation:
+So I headed over to <a href="https://dojotoolkit.org/chat">#dojo</a> to see if the experts had any ideas. Fortunately for me,&nbsp;<a href="https://x.com/brianarn">brianarn</a>&nbsp;was there and was aware of the problem. After some brain storming, we came up with the idea to use a custom loader plugin for loading ESRI modules. Since the build system doesn't try to flatten modules that are imported with nested requires, we hoped that importing them through the plugin would solve my problem. The plugin was a relatively simple implementation:
 
 ```js
 define(function () {
@@ -57,4 +57,4 @@ define(['app/EsriLoader!esri/map'], function (Map) {
 
 Using the plugin to load ESRI module effectively prevents the build system from trying to include them in your layer files thus allowing the build script to complete successfully. Of course, none of this hacking would be needed if ESRI would just <a href="https://ideas.arcgis.com/ideaView?id=087E00000004JOzIAM">release their source code</a>. :)
 
-If you find a better way of getting around this problem or have any other suggestions please let me know at <a href="https://twitter.com/SThomasDavis">@SThomasDavis</a>.
+If you find a better way of getting around this problem or have any other suggestions please let me know at <a href="https://x.com/SThomasDavis">@SThomasDavis</a>.

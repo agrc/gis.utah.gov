@@ -19,7 +19,7 @@ You need to be informed when data are replaced, abandoned or retired, or no long
 
 ## Processing Change with Porter
 
-UGRC uses the public [agrc/porter](https://github.com/agrc/porter/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) repository hosted on GitHub to inform you about changes in the SGID. The issues in this repository provide transparency about our intent and progress while allowing public feedback throughout the process. We also post notices for each issue on our social media channels using the [#ugrcporter](https://twitter.com/hashtag/ugrcporter) hashtag; like and subscribe!
+UGRC uses the public [agrc/porter](https://github.com/agrc/porter/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) repository hosted on GitHub to inform you about changes in the SGID. The issues in this repository provide transparency about our intent and progress while allowing public feedback throughout the process. We also post notices for each issue on our social media channels using the [#ugrcporter](https://x.com/hashtag/ugrcporter) hashtag; like and subscribe!
 
 We know these platforms don't reach everyone who needs to know about these changes--please know that we are trying our best 💙️. We are continuing to innovate and explore ways to improve our communication.
 

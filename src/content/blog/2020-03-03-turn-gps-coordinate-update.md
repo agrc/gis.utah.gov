@@ -29,8 +29,8 @@ If you have a project tied to any of these stations please recollect positions o
 
 To view these stations on a map and get additional information you can view the following twitter posts:
 
-- [Notification with GPS Map](https://twitter.com/UTSurveyor/status/1234914446486585344)
-- [Notification with Station List](https://twitter.com/UTSurveyor/status/1234915989055107072)
-- [Notification with GPS Map](https://twitter.com/UTSurveyor/status/1234916459698016256)
+- [Notification with GPS Map](https://x.com/UTSurveyor/status/1234914446486585344)
+- [Notification with Station List](https://x.com/UTSurveyor/status/1234915989055107072)
+- [Notification with GPS Map](https://x.com/UTSurveyor/status/1234916459698016256)
 
 We will continue to provide updates and information via twitter, so please follow the above account and share this information with others.

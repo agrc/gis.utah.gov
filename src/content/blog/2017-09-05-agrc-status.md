@@ -21,7 +21,7 @@ When outages occur, UGRC will use the status website to let users know that:
 1. The suspected cause of the issue, and
 1. When the issue will be resolved
 
-UGRC will continue to use [X](https://twitter.com/MapUtah) with the hash tag [#utmap](https://twitter.com/hashtag/utmap) to disseminate information about outages and other interesting news. But, UGRC recognizes X _does not_ reach all our users. Not every GIS user has a X account and not every person with a X account comprehensively reads our posts.
+UGRC will continue to use [X](https://x.com/MapUtah) with the hash tag [#utmap](https://x.com/hashtag/utmap) to disseminate information about outages and other interesting news. But, UGRC recognizes X _does not_ reach all our users. Not every GIS user has a X account and not every person with a X account comprehensively reads our posts.
 
 Lastly, if there are other systems that you would like us to track, let us know.
 

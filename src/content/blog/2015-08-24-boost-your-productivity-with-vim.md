@@ -24,7 +24,7 @@ cover_image_alt: ugrc social card
 <p>
 <blockquote class="twitter-tweet" lang="en">
 <p lang="en" dir="ltr">Every year, the average Vim user saves over 4 seconds in accumulated time not having to reach for their mouse…</p>
-<p>&mdash; I Am Devloper (@iamdevloper) <a href="https://twitter.com/iamdevloper/status/451792390865833984">April 3, 2014</a></p></blockquote>
+<p>&mdash; I Am Devloper (@iamdevloper) <a href="https://x.com/iamdevloper/status/451792390865833984">April 3, 2014</a></p></blockquote>
 <p>There are endless tutorials available for you to learn Vim. After learning just a few of the basics I made it my practice to add one or two new commands to <a href="https://www.evernote.com/l/ABdguLm6UtRExY8VU_EZWbfJvRKE6rpjTCM">my personal reference</a> on a regular basis. After a few weeks you&#39;ll wonder how you ever lived without it.</p>
 <p>There are a few drawbacks that come to mind. Firstly, after a few months of using Vim, your fingers will start automatically typing commands into non-Vim interfaces. This can get annoying. Also, you&#39;ve probably already realized that the learning curve is pretty steep. If you are not in a code editor on a daily basis then it&#39;s probably not worth the investment.</p>
 <p>But if you&#39;re in the mood to boost your productivity and give your poor mouse a break you may want to play some <a href="https://www.vimgolf.com/">vim golf</a> and see how it goes. :)</p>
