@@ -29,4 +29,4 @@ New roads were added and road names and address ranges were updated for the foll
 
 #### UDOT Route System
 
-- Visit the [SGID LRS page](/products/sgid/transportation/road-centerlines/) for information on UDOT's Advanced LRS (ALRS) data.
+- Visit the [SGID LRS page](/products/sgid/transportation/highway-routes-lrs/) for information on UDOT's Advanced LRS (ALRS) data.
