@@ -528,9 +528,9 @@ export const contacts: Contacts = {
   },
   wetlands: {
     agency: 'Utah Geological Survey',
-    email: 'dmenuz@utah.gov',
-    name: 'Diane Menuz',
-    phone: '801-538-7436',
+    email: 'pgoodwin@utah.gov',
+    name: 'Pete Goodwin',
+    phone: '801-537-3130',
   },
   wfrc: {
     agency: 'WFRC',
