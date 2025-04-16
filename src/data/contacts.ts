@@ -408,14 +408,8 @@ export const contacts: Contacts = {
     },
     {
       agency: 'UGRC',
-      email: 'denisepeterson@utah.gov',
-      name: 'Denise Peterson',
-      phone: '385-392-4011',
-    },
-    {
-      agency: 'UGRC',
-      email: 'sfernandez@utah.gov',
-      name: 'Sean Fernandez',
+      email: 'turngps-admin@utah.gov',
+      name: 'TURN GPS administrators',
     },
   ],
   udot: {
