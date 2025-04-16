@@ -1,10 +1,11 @@
 ---
-title: Utah Acquires High Resolution Aerial Photography License
-published: false
+title: 'Utah Acquires High Resolution Aerial Photography License'
 author: Bert Granberg
-date: 2015-02-02 16:00:36 -0700
-category: SGID Updates
-tags: []
+date: '2015-02-02T16:00:00.000Z'
+category: Discover
+tags:
+  - Discover
+  - Aerial Imagery
 cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
