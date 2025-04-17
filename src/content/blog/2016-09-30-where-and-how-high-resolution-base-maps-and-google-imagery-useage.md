@@ -1,19 +1,13 @@
 ---
-title: Where and How? High Resolution Base Maps and Google Imagery Usage
-published: false
+title: 'Where and How? High Resolution Base Maps and Google Imagery Usage'
 author: Bert Granberg
-date: 2016-09-30T16:55:53.000Z
+date: '2016-09-30T16:00:00.000Z'
 category: Discover
 tags:
-  - aerial photography
-  - cad
-  - discover
-  - google
-  - imagery
-  - orthophotography
-  - web services
-  - wms
-  - wmts
+  - Discover
+  - Aerial Imagery
+  - WMS
+  - WMTS
 cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
@@ -32,12 +26,12 @@ While high resolution aerial photography is potentially valuable anywhere in the
 
 Here are several overview-scale observations:
 
-- Use is highest in the urban areas but includes all settled areas or areas with economic development or along transportation corridors. Many rural areas are thrilled to finally have access to 6" imagery for use on their own mapping systems.
-- The 111 survey respondents (of 270+ organizations with user accounts) estimated usage at their organization, that when totaled suggested almost 1000 daily users across the state.
-- The imagery is used by a diverse set of levels and sectors of the public sector (and private sector partners), to support a great variety of needs.
-- Respondents cited benefits from improving their data quality and collection efficiency, that resulted in improved analysis to support decision-making.
-- 80% of respondents report a high level of satisfaction and perceived value (an 8, 9, or 10 out of 10).
-- Image quality, resolution, horizontal positioning of the imagery, and update frequency are all important but in varying degrees to different organizations.
-- The web service delivery mechanism provides efficient access to the aerial photography. Speed increases last Fall were a significant improvement. CAD users report more issues (than GIS users) with their software's ability to consume the web services.
+  - Use is highest in the urban areas but includes all settled areas or areas with economic development or along transportation corridors. Many rural areas are thrilled to finally have access to 6" imagery for use on their own mapping systems.
+  - The 111 survey respondents (of 270+ organizations with user accounts) estimated usage at their organization, that when totaled suggested almost 1000 daily users across the state.
+  - The imagery is used by a diverse set of levels and sectors of the public sector (and private sector partners), to support a great variety of needs.
+  - Respondents cited benefits from improving their data quality and collection efficiency, that resulted in improved analysis to support decision-making.
+  - 80% of respondents report a high level of satisfaction and perceived value (an 8, 9, or 10 out of 10).
+  - Image quality, resolution, horizontal positioning of the imagery, and update frequency are all important but in varying degrees to different organizations.
+  - The web service delivery mechanism provides efficient access to the aerial photography. Speed increases last Fall were a significant improvement. CAD users report more issues (than GIS users) with their software's ability to consume the web services.
 
 Information from the recent user survey and from server logs that describe and depict usage will greatly impact the imagery recommendations and business plan (currently in progress) that UGRC will present to the UMIP Steering Committee and partners, as we consider next steps in this arena.
