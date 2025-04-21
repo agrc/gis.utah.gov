@@ -6,6 +6,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import Banner from '@components/Banner.astro';
 import BaseHead from '@components/BaseHead.astro';
 import Footer from '@components/Footer.astro';
+import Qualtrics from '@components/Qualtrics.astro';
 import Search from '@components/Search.astro';
 import SocialMedia from '@components/SocialMedia.astro';
 
@@ -93,6 +94,7 @@ const { pageTitle = 'UGRC', pillar, bannerHeading, pageDescription = SITE_DESCRI
     <footer>
       <SocialMedia />
       <Footer />
+      <Qualtrics activeSurvey={true} />
     </footer>
   </body>
 </html>
