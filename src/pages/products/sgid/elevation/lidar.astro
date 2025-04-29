@@ -41,6 +41,7 @@ import washingtonCounty2017Map from '@images/sgid/lidar_washington_co_coverage.p
 import washakie2017Map from '@images/sgid/lidar_wvw_coverage.png';
 import zionNP2015Map from '@images/sgid/lidar_zion_np_2015_coverage.png';
 import westernEastern2022Map from '@images/sgid/lidar_western_eastern_utah_2022_coverage.png';
+import usfs2023Map from '@images/sgid/lidar_usfs_utah_2023_coverage.png';
 
 import { stripeSections } from '@utils/page';
 
@@ -211,10 +212,30 @@ const page: IStandardPageMetadata = {
       actionUrl:
         'https://raster.utah.gov/?catGroup=.5%20Meter%20%7B2022%20Western%20Eastern%20Utah%20LiDAR%7D,1%20Meter%20%7B2022%20Western%20Eastern%20Utah%20LiDAR%7D&title=Western%20Eastern%20Utah%202022%20LiDAR',
     },
+    {
+      title: '2023 U.S. Forest Service',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?cat=.5%20Meter%20%7B2023%20USFS%20LiDAR%7D&title=U.S.%20Forest%20Service%202023%20LiDAR',
+    },
   ]),
 };
 
 const projectAssets = {
+  usfs2023: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/usfs-r4-2023/NV_USFSR4_D23_2023_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/usfs-r4-2023/NV_USFSR4_D23_2023_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/usfs-r4-2023/NV_USFSR4_D23_2023_shps.zip',
+    },
+  ],
   westernEastern: [
     {
       title: 'Download project reports',
@@ -674,6 +695,27 @@ const projectAssets = {
       For more information about Lidar visit <a href="/documentation/sgid/exploring-lidar/">Exploring Lidar</a>.
     </p>
   </Section>
+
+  <Section {...page.section[29]}>
+    <a href={usfs2023Map.src} slot="image">
+      <Image
+        src={usfs2023Map}
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
+    >
+    <p>
+      During 2023 the U.S. Forest Service (USFS) acquired ~778 square miles of 8 points per meter Quality Level 1 Lidar for portions of Utah. 
+      The 0.5 resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy
+      and are available for download. The LAS point clouds are available from <ExternalLink
+        href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
+      >. This elevation data was collected between June and October, 2022. 
+      Please note this dataset is in the Albers projection (NAD 1983 (2011) Contiguous USA Albers).
+    </p>
+    <DirectDownloads title="Project assets" links={projectAssets.usfs2023} />
+  </Section>
+
   <Section {...page.section[28]}>
     <a href={westernEastern2022Map.src} slot="image">
       <Image
