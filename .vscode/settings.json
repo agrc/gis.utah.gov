@@ -440,7 +440,11 @@
     "Yampa",
     "zipcode"
   ],
-  "cSpell.enableFiletypes": ["astro", "markdown", "mdx"],
+  "cSpell.enableFiletypes": [
+    "astro",
+    "markdown",
+    "mdx"
+  ],
   "[astro]": {
     "editor.wordWrapColumn": 120,
     "editor.defaultFormatter": "astro-build.astro-vscode"
@@ -449,7 +453,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[mdx]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never"
+    }
   },
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
