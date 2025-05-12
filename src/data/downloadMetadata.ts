@@ -536,13 +536,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: undefined,
     layerId: 0,
   },
-  'Utah Weather Stations': {
-    itemId: 'f325911db6d9499fb935494c01fc3f94',
-    name: 'Utah Weather Stations',
-    featureServiceId: undefined,
-    openSgid: undefined,
-    layerId: 0,
-  },
   'Utah NWS Forecast Zones': {
     itemId: '93be75b42d864e889bcc3bbbf3a0dbfe',
     name: 'Utah NWS Forecast Zones',
@@ -2192,13 +2185,6 @@ export const dataPages: DownloadMetadata = {
   'Utah Stations': {
     itemId: '8a07fdbd2013420fa22eecc8fb2903ff',
     name: 'Utah Stations',
-    featureServiceId: undefined,
-    openSgid: undefined,
-    layerId: 0,
-  },
-  'Utah DDW Irrigated Crop Consumptive Use Zones': {
-    itemId: 'c5d8aef2d211443eb1e70c2ff0d87fc9',
-    name: 'Utah DDW Irrigated Crop Consumptive Use Zones',
     featureServiceId: undefined,
     openSgid: undefined,
     layerId: 0,
