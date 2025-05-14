@@ -35,13 +35,13 @@ import sanpeteValley2018Map from '@images/sgid/lidar_sanpete_valley_2018_coverag
 import southern2018Map from '@images/sgid/lidar_southern_utah_2018_coverage.png';
 import southern2020Map from '@images/sgid/lidar_southern_utah_2020_coverage.png';
 import strawberryRiver2019Map from '@images/sgid/lidar_strawberry_river_2019_coverage.png';
+import usfs2023Map from '@images/sgid/lidar_usfs_utah_2023_coverage.png';
 import wasatch2006Map from '@images/sgid/lidar_wasatch_front_2006_coverage.png';
 import wasatchFront2013Map from '@images/sgid/lidar_wasatch_front_2013-2014_coverage.png';
 import washingtonCounty2017Map from '@images/sgid/lidar_washington_co_coverage.png';
+import westernEastern2022Map from '@images/sgid/lidar_western_eastern_utah_2022_coverage.png';
 import washakie2017Map from '@images/sgid/lidar_wvw_coverage.png';
 import zionNP2015Map from '@images/sgid/lidar_zion_np_2015_coverage.png';
-import westernEastern2022Map from '@images/sgid/lidar_western_eastern_utah_2022_coverage.png';
-import usfs2023Map from '@images/sgid/lidar_usfs_utah_2023_coverage.png';
 
 import { stripeSections } from '@utils/page';
 
@@ -654,6 +654,7 @@ const projectAssets = {
     <a href={lidarSamples.src} slot="image">
       <Image
         src={lidarSamples}
+        loading="eager"
         width="400"
         alt="A map with project boundary"
         class="w-full max-w-[400px] rounded-lg"
@@ -700,18 +701,19 @@ const projectAssets = {
     <a href={usfs2023Map.src} slot="image">
       <Image
         src={usfs2023Map}
+        loading="lazy"
         width="400"
         alt="A map with project boundary"
         class="w-full max-w-[400px]"
       /></a
     >
     <p>
-      During 2023 the U.S. Forest Service (USFS) acquired ~778 square miles of 8 points per meter Quality Level 1 Lidar for portions of Utah. 
-      The 0.5 resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a 10.0cm vertical RMSE accuracy
-      and are available for download. The LAS point clouds are available from <ExternalLink
+      During 2023 the U.S. Forest Service (USFS) acquired ~778 square miles of 8 points per meter Quality Level 1 Lidar
+      for portions of Utah. The 0.5 resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a
+      10.0cm vertical RMSE accuracy and are available for download. The LAS point clouds are available from <ExternalLink
         href="https://apps.nationalmap.gov/downloader">The National Map</ExternalLink
-      >. This elevation data was collected between June and October, 2022. 
-      Please note this dataset is in the Albers projection (NAD 1983 (2011) Contiguous USA Albers).
+      >. This elevation data was collected between June and October, 2022. Please note this dataset is in the Albers
+      projection (NAD 1983 (2011) Contiguous USA Albers).
     </p>
     <DirectDownloads title="Project assets" links={projectAssets.usfs2023} />
   </Section>
@@ -723,6 +725,7 @@ const projectAssets = {
         width="400"
         alt="A map with project boundary"
         class="w-full max-w-[400px]"
+        loading="lazy"
       /></a
     >
     <p>
@@ -739,7 +742,13 @@ const projectAssets = {
 
   <Section {...page.section[27]}>
     <a href={fishSprings2022Map.src} slot="image">
-      <Image src={fishSprings2022Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={fishSprings2022Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       In 2022 the U.S. Geological Survey (USGS) acquired 29.5 square miles of 8 points per meter Quality Level 1
@@ -752,7 +761,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[26]}>
     <a href={femaHQ2020Map.src} slot="image">
-      <Image src={femaHQ2020Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={femaHQ2020Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2020 UGRC, the Utah Division of Emergency Management, the Natural Resource Conservation Service (NRCS), the
@@ -766,7 +781,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[25]}>
     <a href={loganRiver2020Map.src} slot="image">
-      <Image src={loganRiver2020Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={loganRiver2020Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2020 Utah State University, Utah Water Research Laboratory acquired ~216 square miles of 8 points per meter
@@ -781,6 +802,7 @@ const projectAssets = {
     <a href={centralSouthern2020Map.src} slot="image">
       <Image
         src={centralSouthern2020Map}
+        loading="lazy"
         width="400"
         alt="A map with project boundary"
         class="w-full max-w-[400px]"
@@ -800,6 +822,7 @@ const projectAssets = {
     <a href={northernCentral2020Map.src} slot="image">
       <Image
         src={northernCentral2020Map}
+        loading="lazy"
         width="400"
         alt="A map with project boundary"
         class="w-full max-w-[400px]"
@@ -821,7 +844,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[22]}>
     <a href={southern2020Map.src} slot="image">
-      <Image src={southern2020Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={southern2020Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2020 UGRC and the Utah Division of Emergency Management acquired ~9,740 square miles of 2 and 8 points per
@@ -835,7 +864,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[21]}>
     <a href={kaneCounty2019Map.src} slot="image">
-      <Image src={kaneCounty2019Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={kaneCounty2019Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2019 UGRC and the Utah Division of Emergency Management acquired ~6,114 square miles of 2 points per meter
@@ -851,6 +886,7 @@ const projectAssets = {
     <a href={strawberryRiver2019Map.src} slot="image">
       <Image
         src={strawberryRiver2019Map}
+        loading="lazy"
         width="400"
         alt="A map with project boundary"
         class="w-full max-w-[400px]"
@@ -869,7 +905,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[19]}>
     <a href={uintahHeber2018Map.src} slot="image">
-      <Image src={uintahHeber2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={uintahHeber2018Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2018 the Federal Emergency Management Agency (FEMA) acquired ~4,693 square miles of 2 and 8 points per
@@ -883,7 +925,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[18]}>
     <a href={boxElder2018Map.src} slot="image">
-      <Image src={boxElder2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={boxElder2018Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2018 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Geological Survey (UGS) acquired
@@ -897,7 +945,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[17]}>
     <a href={northern2018Map.src} slot="image">
-      <Image src={northern2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={northern2018Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2018 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Geological Survey (UGS) acquired
@@ -911,7 +965,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[16]}>
     <a href={central2018Map.src} slot="image">
-      <Image src={central2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={central2018Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2018 UGRC, the Utah Division of Emergency Management, the Natural Resource Conservation Service (NRCS), and
@@ -924,7 +984,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[15]}>
     <a href={southern2018Map.src} slot="image">
-      <Image src={southern2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={southern2018Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2018 UGRC, Utah Division of Emergency Management, US National Park Service, and US Forest Service acquired
@@ -938,7 +1004,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[14]}>
     <a href={sanpeteValley2018Map.src} slot="image">
-      <Image src={sanpeteValley2018Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={sanpeteValley2018Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2018 UGRC, the Natural Resource Conservation Service (NRCS), and the Utah Geological Survey (UGS) acquired
@@ -952,7 +1024,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[13]}>
     <a href={millsite2017Map.src} slot="image">
-      <Image src={millsite2017Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={millsite2017Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During the Fall of 2017 UGRC and the U.S. Department of Agriculture, Natural Resources Conservation Service
@@ -966,7 +1044,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[12]}>
     <a href={washakie2017Map.src} slot="image">
-      <Image src={washakie2017Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={washakie2017Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During the Spring of 2017 UGRC and the Utah Department of Natural Resources, Division of Water Resources acquired
@@ -982,6 +1066,7 @@ const projectAssets = {
     <a href={washingtonCounty2017Map.src} slot="image">
       <Image
         src={washingtonCounty2017Map}
+        loading="lazy"
         width="400"
         alt="A map with project boundary"
         class="w-full max-w-[400px]"
@@ -999,7 +1084,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[10]}>
     <a href={kanab2016Map.src} slot="image">
-      <Image src={kanab2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={kanab2016Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       In 2016 the Natural Resource Conservation Service (NRCS) acquired Lidar around Fredonia, AZ that covers ~150
@@ -1013,7 +1104,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[9]}>
     <a href={bear2016Map.src} slot="image">
-      <Image src={bear2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={bear2016Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During the Fall of 2016 UGRC, Cache and Weber County, and the Utah Department of Emergency Management acquired
@@ -1028,7 +1125,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[8]}>
     <a href={gsl2016Map.src} slot="image">
-      <Image src={gsl2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={gsl2016Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During the Fall of 2016 UGRC, Utah Geological Survey, and the Utah Division of Forestry, Fire and State Lands
@@ -1048,6 +1151,7 @@ const projectAssets = {
     <a href={monroeMountain2016Map.src} slot="image">
       <Image
         src={monroeMountain2016Map}
+        loading="lazy"
         width="400"
         alt="A map with project boundary"
         class="w-full max-w-[400px]"
@@ -1066,7 +1170,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[6]}>
     <a href={forge2016Map.src} slot="image">
-      <Image src={forge2016Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={forge2016Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During the Fall of 2016 UGRC and the Utah Geological Survey acquired ~205 square miles of 8 points per meter
@@ -1081,7 +1191,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[5]}>
     <a href={rivers2015Map.src} slot="image">
-      <Image src={rivers2015Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={rivers2015Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During late Fall of 2015 the Utah Division of Forestry, Fire & State Lands and the U.S. National Park Service
@@ -1097,7 +1213,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[4]}>
     <a href={zionNP2015Map.src} slot="image">
-      <Image src={zionNP2015Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={zionNP2015Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2015 and 2016 the U.S. Geological Survey and the U.S. Park Service acquired ~239 square miles of 2 and 8
@@ -1111,7 +1233,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[3]}>
     <a href={wasatchFront2013Map.src} slot="image">
-      <Image src={wasatchFront2013Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={wasatchFront2013Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During the Fall of 2013 and the Spring of 2014 UGRC and partners acquired 1,422 square miles of 8 points per meter
@@ -1126,7 +1254,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[2]}>
     <a href={gsl2011Map.src} slot="image">
-      <Image src={gsl2011Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={gsl2011Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2011 UGRC and Utah Geological Survey (UGS) acquired ~1,870 square miles of .85 meter Lidar for areas
@@ -1141,7 +1275,13 @@ const projectAssets = {
   </Section>
   <Section {...page.section[1]}>
     <a href={wasatch2006Map.src} slot="image">
-      <Image src={wasatch2006Map} width="400" alt="A map with project boundary" class="w-full max-w-[400px]" /></a
+      <Image
+        src={wasatch2006Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
     >
     <p>
       During 2006 UGRC and partners acquired ~1,283 square miles of a combination of 1, 1.25, and 2 meter bare-earth
