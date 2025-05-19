@@ -1292,7 +1292,7 @@ export const dataPages: DownloadMetadata = {
   'Utah Quaternary Faults': {
     itemId: '9c85978d0fb54570bc60bec467e2fa7f',
     name: 'Utah Quaternary Faults',
-    featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis',
+    featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/',
     featureServiceId: 'Utah_Quaternary_Faults_20201207',
     externalHubOrganization: 'utahDNR',
     openSgid: 'geoscience.quaternary_faults',
