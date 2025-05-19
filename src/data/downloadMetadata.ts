@@ -1296,7 +1296,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: 'Utah_Quaternary_Faults_20201207',
     externalHubOrganization: 'utahDNR',
     openSgid: 'geoscience.quaternary_faults',
-    layerId: 0,
+    layerId: 1,
   },
   'Utah Geologic Markers': {
     itemId: '744b09835f6d42c997083cb1d723804e',
