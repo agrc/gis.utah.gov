@@ -42,6 +42,7 @@ import washingtonCounty2017Map from '@images/sgid/lidar_washington_co_coverage.p
 import westernEastern2022Map from '@images/sgid/lidar_western_eastern_utah_2022_coverage.png';
 import washakie2017Map from '@images/sgid/lidar_wvw_coverage.png';
 import zionNP2015Map from '@images/sgid/lidar_zion_np_2015_coverage.png';
+import moab2025Map from '@images/sgid/lidar_moab_utah_2025_coverage.png';
 
 import { stripeSections } from '@utils/page';
 
@@ -218,10 +219,30 @@ const page: IStandardPageMetadata = {
       actionUrl:
         'https://raster.utah.gov/?cat=.5%20Meter%20%7B2023%20USFS%20LiDAR%7D&title=U.S.%20Forest%20Service%202023%20LiDAR',
     },
+    {
+      title: '2025 Moab Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?cat=.5%20Meter%20%7B2025%20Moab%20Utah%20LiDAR%7D&title=Moab%20Utah%202025%20LiDAR',
+    },
   ]),
 };
 
 const projectAssets = {
+  moab2025: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/moab-2025/Moab_Utah_2025_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/moab-2025/Moab_Utah_2025_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/moab-2025/Moab_Utah_2025_shps.zip',
+    },
+  ],
   usfs2023: [
     {
       title: 'Download project reports',
@@ -695,6 +716,25 @@ const projectAssets = {
     <p>
       For more information about Lidar visit <a href="/documentation/sgid/exploring-lidar/">Exploring Lidar</a>.
     </p>
+  </Section>
+
+  <Section {...page.section[30]}>
+    <a href={moab2025Map.src} slot="image">
+      <Image
+        src={moab2025Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
+    >
+    <p>
+      During 2025 Grand County, UT acquired ~31 square miles of 8 points per meter Quality Level 1 Lidar
+      of Moab City. The 0.5 resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a
+      10.0cm vertical RMSE accuracy and are available for download. This elevation data was collected 
+      March 23rd, 2025.
+    </p>
+    <DirectDownloads title="Project assets" links={projectAssets.moab2025} />
   </Section>
 
   <Section {...page.section[29]}>
