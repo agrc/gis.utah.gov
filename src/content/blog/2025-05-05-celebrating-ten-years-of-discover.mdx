@@ -1,0 +1,74 @@
+---
+title: Celebrating Ten Years of Discover
+author: Miriam Seely
+description: >-
+  We are celebrating 10 years of the Discover Basemap and Imagery Service this
+  month! Discover is our one-stop shop for high-resolution aerial imagery and
+  custom Utah basemaps, all available on our website for free and licensed use.
+date: '2025-05-27T09:08:26.922Z'
+category: Discover
+cover_image: /src/images/pillar-blog/2025-05-05-celebrating-ten-years-of-discover/discover_cover_logo2.png
+cover_image_alt: discover imagery and basemaps
+---
+
+import myImage from '@images/blog/2025-05-05-celebrating-ten-years-of-discover/discover_usage_2025.png';
+import { Image } from 'astro:assets';
+import Contacts from '@components/page/Contacts.astro';
+
+We are celebrating 10 years of the Discover Basemap and Imagery Server this month! [Discover](/products/discover/) is our one-stop shop for aerial imagery and custom Utah basemap services, all available from UGRC for free to public and licensed users. Our nearly 2,000 registered accounts include government agencies such as the Utah Department of Transportation, the Utah Department of Public Safety, the Utah Division of Wildlife Resources, and the Utah Division of Forestry, Fire, and State Lands. We also serve a wide variety of local governments, K-12 and higher education, and many other organizations that use the services to benefit the lives of everyday citizens in Utah.
+
+## So, where did Discover come from?
+
+Before we implemented the current Discover service, UGRC utilized a platform called [ArcGIS Image Server](https://enterprise.arcgis.com/en/image/latest/get-started/windows/what-is-arcgis-image-server-.htm). It was available for public and private use, but connections made to the service created a heavy digital load on our ArcGIS Server. This resulted in a number of problems for both UGRC and our user base; the services experienced rendering latency and occasional downtime. While this old service did provide significant customization options for imagery and topographic maps, it was not the best solution.
+
+For a period of time, UGRC resolved Utah's need for high-resolution aerial imagery through contracts with federal programs. These programs provided a patchwork of imagery every couple of years, but in 2012, those programs came to an end. Thus, we needed a new solution.
+
+## From Giza to Discover
+
+Shortly after aerial imagery through federal programs was no longer available, UGRC began working with Google and [Sanborn](https://sanborn.com/) to create an appliance called Giza, which serves Google imagery as WMS and WMTS. UGRC was one of the earliest adopters of this new Google imagery program, especially among state geospatial offices. We developed a Utah-specific version of Giza and named it Discover. In 2015, Discover officially launched as Utah's premier source for aerial imagery and dynamic basemaps.
+
+## Challenges to Overcome
+
+UGRC's new service worked the first time without a hitch and nothing remotely bad ever happened. There were so few bugs in the system, it may as well have been the pristine, barren landscape of Antarctica. There wasn't even one user complaint … said no developer ever, right? Like any new technology, there were more than a few hurdles to jump over in order to create a streamlined, modernized server for Utah. Many of those hurdles had to do with one unique aspect of Discover: serving millions of pre-cached cloud-based tiles to users on different platforms.
+
+When you view services through Discover, you may think you are looking at a one really big image of Utah. But, this image of Utah is actually composed of millions of image 'tiles', all mosaicked together into a series (just like in a real mosaic floor or ceiling, it takes many colorful tiles to make up the whole artwork). These tiles are pre-cached to increase rendering speed and allow for seamless transitions as you pan or zoom between them. They render so quickly, that many users don't even realize there is more than one tile to begin with.
+
+However, some of these tiles didn't quite play nice at first. Some of them were so-called 'sticky tiles': when the user zoomed in or out, the other nearby tiles would zoom in or out as well, but sticky tiles would be stuck at the previous zoom level as though glued in place. Other problems included 'delinquent tiles', which were tiles that didn't show up in the service at all. Apparently, those tiles had somewhere better to be. And many of the other perfectly innocent tiles were hampered by slow rendering speeds.
+
+Luckily, through our team's dedicated troubleshooting, these issues were resolved and new solutions were implemented. Nowadays, all the tiles provide a seamless user experience for those who rely on aerial imagery and basemaps to do their jobs. The Discover services available today are cloud-based, utilize Node.js and a Postgres database with all usage metrics stored in Google BigQuery. This system was built to last, and in the last ten years, we've seen some amazing use cases. Just take a look at this map depicting where Discover is being accessed in Utah:
+
+<Image
+  src={myImage}
+  loading="eager"
+  alt="The majority of imagery tiles accessed through Discover have been along the Wasatch Front, but there is still significant usage all throughout Utah."
+/>
+
+## The Enduring Impact of Publicly Available Imagery
+
+As of the writing of this article, Discover has seen over 5.4 billion requests over its lifetime. Each of these requests represents a pan or zoom made by a wide variety of users, from government agencies to engineering firms to data managers. These entities use the services for all kinds of workflows, including many that impact people in Utah every single day.
+
+For example, the [Utah Division of Emergency Management](https://dem.utah.gov/) uses aerial imagery to safeguard Utah's future and help mitigate the effects of natural disasters in our state. In their words:
+
+> "The Division and all our partners in every jurisdiction at every level, rely on high-resolution imagery to respond to, recover from, and mitigate disaster that can affect every single citizen of Utah.
+
+> Everyone, regardless of whether they live in an urban or rural area, deserves the best response possible from the division which necessitates having the best information possible to do our jobs."
+
+The [Utah Department of Transportation](https://www.udot.utah.gov/connect/) also uses aerial imagery in their daily work, helping every one of us get to where we need to go. Corey Unger, the spatial technologies manager at UDOT, had this to say about Discover:
+
+> “High quality aerial imagery, like that provided by UGRC is a valuable resource for various UDOT departments. It aids in fatal crash reviews, design processes, and environmental surveys. Designers utilize it for basemaps and asset location verification, while the LRS department relies on it for updating road information. The 6-inch resolution imagery is particularly preferred for its accuracy and detail, crucial for tasks like ADA ramp placement and road design.”
+
+We are proud to provide the services for these incredible agencies, as well as many others. Throughout the state, all kinds of decision makers are using aerial imagery for:
+
+- Water budgeting and distribution
+- Rural public land issues
+- 811 Call-Before-You-Dig center
+- Broadband access expansion
+- 911 and emergency response
+- Natural resources management
+- Infrastructure/Asset Management
+
+The list could go on and on!
+
+The wide variety of use cases for Discover is truly what's worth celebrating. The basemaps and imagery wouldn't be worth much if they just sat around collecting dust. But, because of the amazing people we've had the joy of working with, those services become more than just pixels on a screen. Over the last ten years, we have had the opportunity to see these products transform lives and bolster data-driven decision making in our state. From the background processes that underpin everyday life, to the emergency management practices made possible through well-maintained data, Discover is just one way we “encourage and facilitate the effective use of geospatial information and technology for Utah.”
+
+You can [sign up for Discover](/products/discover/) and learn more about what we provide on our website. For further questions or inquiries, please reach out to <Contacts inline subject={frontmatter.title} contactKey='elevation' />.
