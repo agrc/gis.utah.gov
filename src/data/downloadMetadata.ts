@@ -1746,15 +1746,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: undefined,
     layerId: 0,
   },
-  'Utah Agricultural Protection Areas': {
-    itemId: 'ed0761f06af54f9286b21b2894d6b708',
-    externalHubOrganization: 'UDAF',
-    name: 'Utah Agricultural Protection Areas',
-    featureServiceHost: 'https://services3.arcgis.com/yC31bwKMuDkJHWO8/arcgis/rest/services/',
-    featureServiceId: 'Agricultural_Protection_Areas',
-    openSgid: undefined,
-    layerId: 0,
-  },
   'Utah Tax Areas 2024': {
     itemId: '5360fd4cd20847099074542faafd990c',
     name: 'Utah Tax Areas 2024',
