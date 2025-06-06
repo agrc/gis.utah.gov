@@ -1676,13 +1676,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: undefined,
     layerId: 0,
   },
-  'Utah Urban Interface Areas': {
-    itemId: '75fc277292c34760900bb27d8a8152fb',
-    name: 'Utah Urban Interface Areas',
-    featureServiceId: undefined,
-    openSgid: undefined,
-    layerId: 0,
-  },
   'Utah Water Related Land Use': {
     itemId: 'e3e7fc9316bb4ad09474401ff46e734f',
     name: 'Utah Water Related Land Use',
