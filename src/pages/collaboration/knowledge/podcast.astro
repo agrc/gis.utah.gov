@@ -1,0 +1,188 @@
+---
+import Layout from '@layouts/FullWidth.astro';
+
+import { Pillar, type IStandardPageMetadata } from '@models/types';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import Section from '@components/page/Section.astro';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  pageTitle: 'UGRC Geospatial Podcast',
+  pageDescription: 'The UGRC podcast.',
+  pillar: Pillar.COLLABORATION,
+  section: stripeSections([
+    {
+      title: `The UGRC Geospatial Podcast`,
+    },
+  ]),
+};
+---
+
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
+  <Section {...page.section[0]}>
+    <ul class="space-y-4">
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span
+          >Episode 15 - Reflecting on 30 years in Geospatial- A conversation with Matt Peters - former UGRC Director,
+          traveler, geographer, and avid cyclist</span
+        >
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source
+            src="/audio/Episode 15 - Reflecting on 30 years in Geospatial- A conversation with Matt Peters - former UGRC Director, traveler, geographer, and avid cyclist.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span
+          >Episode 14 - Wildlife Tracking and Monitoring in Utah- A Conversation with Blair Stringham of Utah's Wildlife
+          Migration Initiative</span
+        >
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source
+            src="/audio/Episode 14 - Wildlife Tracking and Monitoring in Utah- A Conversation with Blair Stringham of Utah's Wildlife Migration Initiative.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span
+          >Episode 13 - Air Quality in Utah- A Conversation with Lexie Wilson of the Utah Department of Environmental
+          Quality</span
+        >
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source
+            src="/audio/Episode 13 - Air Quality in Utah- A Conversation with Lexie Wilson of the Utah Department of Environmental Quality.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span
+          >Episode 12 - Water in Utah- Part 3 - Deidre Beck from DEQ's Division of Drinking Water on the importance of
+          securing safe drinking water in Utah</span
+        >
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source
+            src="/audio/Episode 12 - Water in Utah- Part 3 - Deidre Beck from DEQ's Division of Drinking Water on the importance of securing safe drinking water in Utah.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span
+          >Episode 11 - Water in Utah- Part 2 - Lee Eschler from DNR's Division of Water Rights on water allocation and
+          monitoring in Utah</span
+        >
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source
+            src="/audio/Episode 11 - Water in Utah- Part 2 - Lee Eschler from DNR's Division of Water Rights on water allocation and monitoring in Utah.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span
+          >Episode 10 - Water in Utah- Part 1 - Aaron Austin from DNR's Division of Water Resources on Utah's water
+          supply</span
+        >
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source
+            src="/audio/Episode 10 - Water in Utah- Part 1 - Aaron Austin from DNR's Division of Water Resources on Utah's water supply.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span>Episode 9 - Lynda Bell from NOAA-NGS on datums, the National Spatial Reference Frame, and the PLSS</span>
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source
+            src="/audio/Episode 9 - Lynda Bell from NOAA-NGS on datums, the National Spatial Reference Frame, and the PLSS.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span>Episode 8 - Bert Granberg from WFRC and the role of the MPO</span>
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source src="/audio/Episode 8 - Bert Granberg from WFRC and the role of the MPO.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span
+          >Episode 7 - Next-Generation 911 and the Role of Geospatial Data (a conversation with Tina Mathieu from the
+          Weber Area Dispatch 911)</span
+        >
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source
+            src="/audio/Episode 7 - Next-Generation 911 and the Role of Geospatial Data (a conversation with Tina Mathieu from the Weber Area Dispatch 911).mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span>Episode 6 - The Utah Department of Health (covid-19 and outbreaks)</span>
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source
+            src="/audio/Episode 6 - The Utah Department of Health (covid-19 and outbreaks).mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span>Episode 5 - We're all in this together (a smorgasbord of news and happenings from around the state)</span>
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source
+            src="/audio/Episode 5 - We're all in this together (a smorgasbord of news and happenings from around the state).mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span>Episode 4 - Kate Staley at SITLA</span>
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source src="/audio/Episode 4 - Kate Staley at SITLA.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span>Episode 3 - The Survey Corner with Sean Fernandez</span>
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source src="/audio/Episode 3 - The Survey Corner with Sean Fernandez.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 border-b border-gray-300 pb-4 md:grid-cols-2">
+        <span>Episode 2 - Buck Ehler at the Utah Department of Natural Resources</span>
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source
+            src="/audio/Episode 2 -  Buck Ehler at the Utah Department of Natural Resources.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-4 pb-4 md:grid-cols-2">
+        <span>Episode 1 - News from the state GIS office</span>
+        <audio controls controlslist="nodownload" preload="metadata">
+          <source src="/audio/Episode 1 - News from the state GIS office.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+    </ul>
+  </Section>
+</Layout>
