@@ -7640,7 +7640,7 @@
     "source": ["UGRC"],
     "dataType": 1,
     "description": "Address points",
-    "inActionUrl": "https://addressediting.utah.gov/",
+    "inActionUrl": "",
     "productPage": "/products/sgid/address",
     "hub": {
       "title": "Address Points",
