@@ -1,0 +1,28 @@
+---
+title: There's a New ZIP Code in Town
+author: Erik Neemann
+description: >-
+  The USPS has added a new ZIP Code for Lehi, 84048.
+date: '2025-08-01T15:00:00Z'
+category: SGID Updates
+tags:
+  - sgid
+  - usps
+  - zip codes
+cover_image: /src/images/pillar-blog/default-social-card.png
+cover_image_alt: ugrc sgid default social card
+---
+
+import myImage from '@images/blog/2025-08-01-theres-a-new-zip-code-in-town/new_lehi_zip_code.png';
+import { Image } from 'astro:assets';
+import Contacts from '@components/page/Contacts.astro';
+
+As growth in Utah County presses onward, the United States Postal Service (USPS) has added 84048 as a [new ZIP code](https://about.usps.com/newsroom/local-releases/ut/2025/0530-usps-adds-new-zip-code-in-rapidly-growing-lehi-area.htm) for Lehi city. As of 1 July, 84048 was officially added for northern Lehi city, as shown in blue hatching in the simple ZIP code areas map below. In order to capture this change, we worked with Lehi city and Utah county to obtain an approximate polygon representation of the new ZIP code area. It has now been added to our [ZIP code areas](/products/sgid/boundaries/zip-codes/) data, and included in the UGRC API geocoding endpoint. We’ve also updated attributes on our [road centerlines](/products/sgid/transportation/road-centerlines/) and [address point](/products/sgid/location/address-points/) data to reflect the new ZIP code and recommend other users capture this change, where applicable. By our count, about 11,500 address points fall within the new ZIP code. The previous ZIP code covering this area (84043), will continue to be used for the rest of Lehi.
+
+<Image
+  src={myImage}
+  loading="eager"
+  alt="The new 84048 ZIP code covers northern Lehi in Utah County."
+/>
+
+You can visit our [ZIP Code Areas](/products/sgid/boundaries/zip-codes/) page for more information about the data and links to downloads and feature services. For further questions or inquiries, please reach out to <Contacts inline subject={frontmatter.title} contactKey='zip_codes' />.
