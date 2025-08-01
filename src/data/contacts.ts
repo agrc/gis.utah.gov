@@ -447,7 +447,7 @@ export const contacts: Contacts = {
     name: 'Kasey Hansen',
   },
   user_group_suug: {
-    email: 'van.phetsomphou@sgcity.org',
+    email: 'van.phetsomphou@sgcityutah.gov',
     name: 'Van Phetsomphous',
   },
   user_group_ubug: {
