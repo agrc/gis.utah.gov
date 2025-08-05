@@ -4,17 +4,19 @@ author: Miriam Seely
 description: >-
   From address points to statewide imagery, come meet some of the datasets that
   support everything from mail delivery to emergency response.
-date: '2025-08-01T15:59:14.305Z'
+date: '2025-08-07T15:59:14.305Z'
 category: SGID
 cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-{/* remove if not using images
-import { Image } from 'astro:assets'; */}
+import { Image } from 'astro:assets';
 
-{/* remove if not using an image
-import myImage from '@images/blog/2025-08-01-four-datasets-that-impact-your-life-every-day/image.png'; */}
+import addresspts from '@images/blog/2025-08-01-four-datasets-that-impact-your-life-every-day/addresspts_example_southslc.png';
+
+import addressquads from '@images/blog/2025-08-01-four-datasets-that-impact-your-life-every-day/addressquads_example.png';
+
+import roads from '@images/blog/2025-08-01-four-datasets-that-impact-your-life-every-day/roads_example_southslc.png';
 
 We are surrounded by data. Sometimes it's obvious, like the rising and falling of stock prices or the general trends that help us estimate today's weather. But beyond what we check on our phones or receive in our email inboxes, there's lots of data that impacts your day-to-day life that you might be less familiar with. Those datasets are kind of like those little brown birds you see clustered in parking lots, flying from tree to tree along the sidewalk, or making their homes in the eaves of your neighbor's house. 
 
@@ -26,7 +28,11 @@ Once you learn the names of those little birds, it opens up a whole new world of
 
 [Address points](/products/sgid/location/address-points/) are exactly what they sound like--it's a point dataset where each and every data record represents a unique address in the United States Postal Service system. Throw all those points on a map, and they look something like this:
 
-(will insert map early next week)
+<Image
+  src={addresspts}
+  loading="eager"
+  alt="Address points can represent structures in residential, commercial, industrial, and many other areas."
+/>
 
 There are currently over 1,456,175 address points in our state, representing all kinds of locations from houses to apartment complexes to the Utah State Capitol. These address points are used in all kinds of services. Popular navigation apps such as Google Maps use our address points dataset to know where your house is on a map. Package delivery services use these points to make sure your packages go where they're supposed to. Emergency services use this same dataset to speed up response times.
 
@@ -40,7 +46,11 @@ The address you entered into your phone for a pizza order or a package delivery 
 
 Utah has nearly 800 unique [address system quadrants](/products/sgid/location/address-system-quadrants/). All stitched together, they look something like this:
 
-(map)
+<Image
+  src={addressquads}
+  loading="eager"
+  alt="Address system quadrants vary widely throughout the state, where some quadrants represent large portions of counties and others contain individual municipalities."
+/>
 
 Each addressing system consists of an origin coordinate, a north-south axis, an east-west axis, and a boundary in which address numbers are assigned using a grid. The originate coordinate (0,0) is typically located at the intersection of Main and Center streets. This convention governs the assignment of addresses and is typically expressed as 100 address ranges per block or 800 address ranges per mile. And not all cities have their own addressing system; in fact, many municipalities can be contained within a single address system. For example, the Salt Lake address system includes all municipalities in Salt Lake County.
 
@@ -50,7 +60,11 @@ By combining the address system quadrants and the address points datasets, we're
 
 Just like how our favorite navigation apps don't just magically know where all the buildings in Utah are, they don't magically know where all the roads are either. So how does the app know to tell you to turn left in 500 feet? They use statewide datasets like [Utah Roads](/products/sgid/transportation/road-centerlines/) from the SGID.
 
-(map)
+<Image
+  src={roads}
+  loading="eager"
+  alt="Road segments can contain information such as road type and speed limits."
+/>
 
 Whether you're delivering a package, on your way to work, or looking at the latest traffic update, you're accessing UGRC's Roads dataset, which is updated every month and is used in a wide variety of projects. With over 400,000 digital road segments, it's the most comprehensive dataset available in our state. Keeping an inventory of every highway, country back road, and neighborhood street wouldn't be possible without the help of our amazing county offices and partners at UDOT.
 
@@ -75,6 +89,3 @@ These are just a few of the possible use cases for statewide imagery. You can le
 ## There's Always More Data
 
 While we've picked out just a few datasets to chat about, there's many more that impact daily life. There's the [Public Safety Answering Point](/products/sgid/society/public-safety-answering-point-boundaries/) (PSAP) boundaries, which are used to make sure your 911 call goes to the correct dispatch center. There's the [parcel](/products/sgid/cadastre/parcels/) and [land ownership data](/products/sgid/cadastre/land-ownership/), which are used for all kinds of analytics and operations planning. And beyond these, there's so many other 'little brown data birds' that elevate the quality of life for residents in Utah. These datasets, along with more than 300 other unique layers, can be found in the [Statewide Geographic Information Datasource](/products/sgid/), or SGID. You can browse these datasets using the [SGID Index](/products/sgid/sgid-index/) or by viewing the array of [data categories](/products/sgid/categories/). For questions or comments regarding SGID data, don't hesitate to reach out to [our team](/contact/).
-
-{/* remove if not using an image
-<Image src={myImage} loading="eager" alt="A sample image" /> */}
