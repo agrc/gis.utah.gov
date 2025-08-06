@@ -68,8 +68,8 @@
       ],
       "@downloads/*": [
         "src/downloads/*"
-      ],
-    },
+      ]
+    }
   },
   "include": [
     ".astro/types.d.ts",
