@@ -308,6 +308,10 @@ function buildDuplicateLookups(rows) {
 
   for (const field in duplicateLookups) {
     for (const row of rows) {
+      if (row.get(getFieldName('indexStatus'))?.toLowerCase() !== 'live') {
+        continue; // skip rows that are not live
+      }
+
       const value = row.get(field);
       if (!value) {
         continue;
