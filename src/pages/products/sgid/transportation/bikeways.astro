@@ -61,17 +61,19 @@ const secondary = hubParts(dataPages['Utah Planned Bikeways']);
 
   <Fragment slot="summary">
     <p>
-      The Utah Bikeways dataset provides a detailed representation of bikeway features in the state and serves as a
-      comprehensive resource for understanding the state's cycling infrastructure. The data includes various attributes
-      such as the name of the bikeway, the city and county it traverses, and specific details about the facility type
-      (e.g., dedicated bike lanes, shared-use paths). It also includes a Level of Traffic Stress (LTS) score and the
-      source of the data.
+      The Utah Bikeways dataset provides a detailed representation of on-street and pathway bikeway features in the
+      state and serves as a comprehensive resource for understanding the state's cycling infrastructure. The data
+      includes various attributes such as the name of the bikeway, the city and county it traverses, and specific
+      details about the facility type (e.g., dedicated bike lanes, shared-use paths). It also includes an estimated
+      Level of Traffic Stress (LTS) score and the source of the data.
     </p>
     <p>
-      This dataset is ideal for planning, analysis, and visualization of cycling routes and infrastructure at various
+      This dataset is intended for planning, analysis, and visualization of cycling routes and infrastructure at various
       scales within Utah. Users should be aware that while efforts are made to keep the data current, recent changes in
-      infrastructure may not be immediately reflected. The geometry for this layer is polyline, representing linear
-      features of bikeways.
+      infrastructure are not immediately reflected. Data updates are sourced through periodic coordination between
+      transportation agencies (UDOT and Utah's four MPOs) and local government GIS and active transportation contacts,
+      and through user submissions with the bikeways.utah.gov web map. The geometry for this layer is polyline,
+      representing linear features of bikeways.
     </p>
   </Fragment>
 
@@ -111,13 +113,14 @@ const secondary = hubParts(dataPages['Utah Planned Bikeways']);
 
   <Fragment slot="description">
     <p>
-      This data is created from a python script that combines bike facilities on
-      <a href="road-centerlines/">Roads</a> with <a href="/products/sgid/recreation/trails-pathways/"
+      The bikeways data is maintained within two separate statewide editing layers stewarded by UGRC --
+      <a href="road-centerlines/">Roads</a> and <a href="/products/sgid/recreation/trails-pathways/"
         >Trails and Pathways</a
-      > data. It merges and formats the data into a single schema, determines the best bike feature, and which side of the
-      road the best feature is on. The script also calculates a Level of <ExternalLink
+      >. This more user-friendly dataset is derived by UGRC using a python script that combines bike facilities in the
+      two editing layers. It merges and formats the data into a single schema, determines the best bike feature, and
+      which side of the road the best feature is on. The script also calculates a <ExternalLink
         href="https://docs.google.com/document/d/1eo9BscAbXFHKlw8EONFRi4lntBwvON8JzV6tN2D_j6I/edit?tab=t.0"
-        >Traffic Stress</ExternalLink
+        >Level of Traffic Stress</ExternalLink
       > metric that represents the amount of discomfort people feel when they ride their bicycles near traffic. Finally,
       the data is split into existing and planned features, for use in the <ExternalLink
         href="https://bikeways.utah.gov/">Utah Bikeways</ExternalLink
