@@ -57,7 +57,7 @@ function toProductTypeEnum(type: string): ProductType {
   return productType;
 }
 
-function etlRow(row): StewardshipRecord | null {
+export function etlRow(row): StewardshipRecord | null {
   if ((row.get('indexStatus') ?? '') !== 'live') {
     return null;
   }

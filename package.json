@@ -10,6 +10,7 @@
     "preview": "astro preview",
     "start": "astro dev",
     "ts-check": "astro check --minimumSeverity=warning",
+    "test": "vitest",
     "validate-site-map": "cd scripts && node ./validate-site-map.mjs"
   },
   "prettier": {
@@ -71,6 +72,8 @@
     "tailwind-merge": "^2.6.0",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
-    "unist-util-remove": "^4.0.0"
+    "unist-util-remove": "^4.0.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.4"
   }
 }
