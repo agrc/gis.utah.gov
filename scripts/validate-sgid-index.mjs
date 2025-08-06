@@ -274,15 +274,23 @@ async function downloadMetadataCheck(row) {
     ['itemId', 'itemId'],
     ['hubName', 'name'],
     ['serverServiceName', 'featureServiceId'],
-    ['openSgidTableName', 'openSgid'],
     ['serverLayerId', 'layerId'],
   ];
+
+  if (row.get(getFieldName('openSgid')) === 'TRUE') {
+    metadataChecks.push(['openSgidTableName', 'openSgid']);
+  }
 
   for (const [sgidIndexField, metadataField] of metadataChecks) {
     const sgidIndexValue = row.get(sgidIndexField)?.toString();
     const metadataValue = metadata[metadataField]?.toString();
 
     if (sgidIndexValue !== metadataValue) {
+      // depending how this field was set it may be an empty string or undefined
+      if (sgidIndexField === 'openSgidTableName' && sgidIndexValue === '' && metadataValue === undefined) {
+        continue;
+      }
+
       recordError(
         `downloadMetadata(${name}): "${metadataField}" does not match SGID Index column "${sgidIndexField}"`,
         row,
