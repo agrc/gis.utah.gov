@@ -229,7 +229,7 @@ async function itemId(row) {
   }
 
   const newData = {
-    hubName: hubData.data.attributes.name,
+    hubName: hubData.data.attributes.name.replace(/[()]/g, ''),
     hubOrganization: org,
     serverHost: serviceParts && serviceParts[0],
     serverServiceName: serviceParts && serviceParts[1].split(/\/(FeatureServer|MapServer)\//)[0],
