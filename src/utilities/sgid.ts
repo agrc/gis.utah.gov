@@ -83,7 +83,7 @@ function etlRow(row): StewardshipRecord | null {
         title: row.get('displayName'),
         itemId: row.get('itemId'),
         organization: row.get('hubOrganization'),
-        hubName: row.get('hubName'),
+        hubName: row.get('hubName')?.replace(/[()]/g, ''),
       },
       server: {
         layerId: Number(row.get('serverLayerId')),
