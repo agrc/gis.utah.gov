@@ -22,7 +22,7 @@ We are surrounded by data. Sometimes it's obvious, like the rising and falling o
 
 To the untrained eye, they might just look like someone copied and pasted a million of the same bird. But to someone interested in birds, those avian friends have names and distinct features--they're not just random little birds, they're sparrows, finches, warblers, nuthatches, thrashers, wrens, siskins, waxwings…you get the idea.
 
-Once you learn the names of those little birds, it opens up a whole new world of understanding. The same is true of these somewhat more hidden datasets--you might encounter them everyday, but do you know their names and where they come from? Well, grab your binoculars, because today we've going to learn about just five of these statewide datasets that you've probably seen before, but might not have realized what you were seeing.
+Once you learn the names of those little birds, it opens up a whole new world of understanding. The same is true of these somewhat more hidden datasets--you might encounter them everyday, but do you know their names and where they come from? Well, grab your binoculars, because today we've going to learn about just a few of these statewide datasets that you've probably seen before, but might not have realized you were seeing.
 
 ## Address Points
 
@@ -31,10 +31,10 @@ Once you learn the names of those little birds, it opens up a whole new world of
 <Image
   src={addresspts}
   loading="eager"
-  alt="Address points can represent structures in residential, commercial, industrial, and many other areas."
+  alt="Map of address points, which can represent structures in residential, commercial, industrial, and many other areas."
 />
 
-There are currently over 1,456,175 address points in our state, representing all kinds of locations from houses to apartment complexes to the Utah State Capitol. These address points are used in all kinds of services. Popular navigation apps such as Google Maps use our address points dataset to know where your house is on a map. Package delivery services use these points to make sure your packages go where they're supposed to. Emergency services use this same dataset to speed up response times.
+There are currently over 1.4 million address points in our state, representing all kinds of locations from houses to restaurants to the Utah State Capitol. These address points are used in many different ways. Popular navigation apps such as Google Maps use our address points dataset to know where your house is on a map. Package delivery services use these points to make sure your packages go where they're supposed to. Emergency services use this same dataset to speed up response times.
 
 Many other public and private entities also use address points for a process known as geocoding. In fact, UGRC provides a geocoding endpoint in the [UGRC API](/products/api/) that uses the latest addressing data to ensure the most accurate results. You can learn more and start geocoding your own addresses by signing up for the API on the [self service website](https://developer.mapserv.utah.gov/).
 
@@ -49,7 +49,7 @@ Utah has nearly 800 unique [address system quadrants](/products/sgid/location/ad
 <Image
   src={addressquads}
   loading="eager"
-  alt="Address system quadrants vary widely throughout the state, where some quadrants represent large portions of counties and others contain individual municipalities."
+  alt="Map of address system quadrants, which vary widely throughout the state, where some quadrants represent large portions of counties and others contain individual municipalities."
 />
 
 Each addressing system consists of an origin coordinate, a north-south axis, an east-west axis, and a boundary in which address numbers are assigned using a grid. The originate coordinate (0,0) is typically located at the intersection of Main and Center streets. This convention governs the assignment of addresses and is typically expressed as 100 address ranges per block or 800 address ranges per mile. And not all cities have their own addressing system; in fact, many municipalities can be contained within a single address system. For example, the Salt Lake address system includes all municipalities in Salt Lake County.
@@ -63,14 +63,14 @@ Just like how our favorite navigation apps don't just magically know where all t
 <Image
   src={roads}
   loading="eager"
-  alt="Road segments can contain information such as road type and speed limits."
+  alt="Map of road segments, which can contain information such as road type and speed limits."
 />
 
-Whether you're delivering a package, on your way to work, or looking at the latest traffic update, you're accessing UGRC's Roads dataset, which is updated every month and is used in a wide variety of projects. With over 400,000 digital road segments, it's the most comprehensive dataset available in our state. Keeping an inventory of every highway, country back road, and neighborhood street wouldn't be possible without the help of our amazing county offices and partners at UDOT.
+Whether you're delivering a package, on your way to work, or looking at the latest traffic update, you're accessing UGRC's Roads dataset, which is updated every month and is used in a wide variety of projects. With over 400,000 digital road segments, it's the most comprehensive roads dataset available in our state. Keeping an inventory of every highway, country back road, and neighborhood street wouldn't be possible without the help of our amazing county offices and partners at UDOT.
 
 In fact, all of the datasets we've talked about so far--address points, address system quadrants, and roads--are all maintained as a joint effort between UGRC, local governments, and fellow state agencies. This collaboration is at the heart of everything we do at UGRC.
 
-So far, all the datasets we've covered have also been vector datasets--which means they are discrete shapes in the form of points (address points), lines (roads) and polygons (address system quadrants). But what about raster data? How does that affect our day-to-day lives?
+All of the datasets we've covered in this post have also been vector datasets--which means they are discrete shapes in the form of points (address points), lines (roads) and polygons (address system quadrants). But what about raster data? How does that affect our day-to-day lives?
 
 ## Discover Basemap and Imagery Server
 
