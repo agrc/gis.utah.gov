@@ -2703,4 +2703,18 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'water.great_salt_lake_water_level_2016',
     layerId: 0,
   },
+  'Utah Bikeways': {
+    itemId: 'ef79d0e5b12a414996dfcd461921c952',
+    name: 'Utah Bikeways',
+    featureServiceId: 'Bikeways',
+    openSgid: undefined,
+    layerId: 0,
+  },
+  'Utah Planned Bikeways': {
+    itemId: 'f974911ed47a4d36a4999be0990fd127',
+    name: 'Utah Planned Bikeways',
+    featureServiceId: 'Utah_Planned_Bikeways',
+    openSgid: undefined,
+    layerId: 0,
+  },
 };

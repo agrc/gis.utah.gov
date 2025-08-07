@@ -12,7 +12,7 @@ const { title, value } = Astro.props;
 <p>{title}</p>
 <div class="inline-flex items-center">
   <code
-    class="min-w-48 max-w-lg overflow-hidden rounded border border-black/30 px-2 py-1 text-sm text-zinc-600 dark:border-white/20 dark:text-zinc-300"
+    class="scrollbar-hide no-scrollbar min-w-48 max-w-lg overflow-auto rounded border border-black/30 px-2 py-1 text-sm text-zinc-600 dark:border-white/20 dark:text-zinc-300"
     >{value || 'value not set'}</code
   >
   <ClipboardCopy value={value}
@@ -52,7 +52,7 @@ const { title, value } = Astro.props;
         const notice = (event.target as HTMLSpanElement)?.querySelector('.copy-to-clipboard-notice') as HTMLSpanElement;
         const action = (event.target as HTMLSpanElement)?.querySelector('.copy-to-clipboard-action') as HTMLSpanElement;
         const announce = (event.target as HTMLDivElement)?.querySelector(
-          '.copy-to-clipboard-announce',
+          '.copy-to-clipboard-announce'
         ) as HTMLDivElement;
 
         if (!announce || !notice || !action) {
@@ -74,3 +74,12 @@ const { title, value } = Astro.props;
     </script>
   </ClipboardCopy>
 </div>
+<style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
