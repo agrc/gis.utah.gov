@@ -2717,4 +2717,11 @@ export const dataPages: DownloadMetadata = {
     openSgid: undefined,
     layerId: 0,
   },
+  'Utah Avalanche Center Forecast Zones': {
+    itemId: '{update-me}',
+    name: 'Avalanche Center Forecast Zones',
+    featureServiceId: 'Avalanche_Center_Forecast_Zones',
+    openSgid: undefined,
+    layerId: 0,
+  },
 };

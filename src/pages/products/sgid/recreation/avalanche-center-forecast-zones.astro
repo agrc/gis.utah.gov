@@ -1,0 +1,90 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import ExternalLink from '@components/react/ExternalLink';
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  pageTitle: 'Utah Avalanche Center Forecast Zones',
+  pageDescription: `Polygon dataset of zones used by the Utah Avalanche Center to issue avalanche condition forecasts in Utah.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.RECREATION,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://utahavalanchecenter.org/',
+  updateHistory: [`August 2025`],
+  hub: {
+    ...dataPages[metadata.pageTitle],
+  },
+};
+---
+
+<Layout {...page} subTitle={page.updateHistory[0]}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset includes polygon boundaries for the Utah Avalanche Center (UAC) Forecast Zones found within Utah. The
+      UAC issues forecasts, watches, warnings, bulletins, and information about mountain and weather conditions for
+      these zones. Only forecast zones are included in the layer and it does not include current forecast or hazard
+      information. Features in this dataset include attributes such as the name, center issuing the forecast, forecast
+      link, and forecast key.
+    </p>
+    <p>
+      For current forecasts and information, users are encouraged to visit the <ExternalLink
+        href="https://utahavalanchecenter.org/">UAC website</ExternalLink
+      > or join forecast data from <ExternalLink href="https://utahavalanchecenter.org/docs/api/forecast"
+        >UAC's API</ExternalLink
+      > to the forecast zones polygons. More information about interpreting UAC forecasts can be found on their <ExternalLink
+        href="https://utahavalanchecenter.org/forecast/tutorial">Forecast Tutorial page</ExternalLink
+      >.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Know Before You Go" href="https://www.kbyg.org/"
+        >Intro to avalanche safety.</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="Cottonwood Canyons avalanche information"
+        href="https://cottonwoodcanyons.udot.utah.gov/avalanche-information/"
+        >Cottonwood Canyons avalanche info from UDOT.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Wasatch backcountry ski map" href="https://wbskiing.com/"
+        >The Wasatch Backcountry Skiing Map includes the names of more than 1,000 backcountry locations. It's available
+        as a paper map, on your desktop, and for your mobile device.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Be Ready Utah" href="https://beready.utah.gov/utah-hazards/avalanche/"
+        >Utah hazards and avalanche preparedness.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
