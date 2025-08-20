@@ -47,7 +47,7 @@
     "@types/prompts": "^2.4.9",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "astro": "^5.12.8",
+    "astro": "^5.13.2",
     "astro-meta-tags": "^0.4.0",
     "classnames": "^2.5.1",
     "fuse.js": "^7.1.0",
