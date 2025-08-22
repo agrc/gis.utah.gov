@@ -2674,13 +2674,13 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah UDOT Routes ALRS': {
     externalHubOrganization: 'uplan',
-    itemId: 'ecb09af7f887450e851c2634dac92edb',
+    itemId: '5eca80119fd349f3a435a751b86f1af8',
     name: 'UDOT Routes ALRS',
-    oddHubName: 'udot-routes-alrs-1',
-    featureServiceHost: 'https://roads.udot.utah.gov/server/rest/services/Public/',
+    oddHubName: 'udot-routes-alrs',
+    featureServiceHost: 'https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/',
     layerId: 0,
     openSgid: undefined,
-    mapServiceId: 'UDOT_Routes',
+    featureServiceId: 'UDOT_Routes_ALRS',
   },
   'Utah Open Source Places': {
     itemId: '45e25f4062264dc1baa3765e3dbb5d8e',
