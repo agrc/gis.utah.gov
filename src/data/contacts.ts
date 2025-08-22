@@ -414,8 +414,8 @@ export const contacts: Contacts = {
   ],
   udot: {
     agency: 'UDOT',
-    email: 'kbacon@utah.gov',
-    name: 'Kelli Bacon',
+    email: 'awarthen@utah.gov',
+    name: 'Ashley Warthen',
   },
   ugrc: {
     agency: 'UGRC',
