@@ -2250,20 +2250,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'society.fire_response_areas',
     layerId: 0,
   },
-  'Utah DEQMAP EI Chemical': {
-    itemId: '05cf64d5fbd049c7a88bec6fae200b64',
-    name: 'Utah DEQMAP EI Chemical',
-    featureServiceId: undefined,
-    openSgid: undefined,
-    layerId: 0,
-  },
-  'Utah DEQMAP EI Impacted Media': {
-    itemId: '1e62950af1cf4493ad71e5bf9427f00c',
-    name: 'Utah DEQMAP EI Impacted Media',
-    featureServiceId: undefined,
-    openSgid: undefined,
-    layerId: 0,
-  },
   'Utah DEQMAP LUST': {
     itemId: '8fa43db635c34ceea0216d196879bbaf',
     name: 'Utah DEQMAP LUST',
