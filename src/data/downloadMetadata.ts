@@ -2719,7 +2719,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah Avalanche Center Forecast Zones': {
     itemId: '583c0f4888d44f0a90791282b2a69829',
-    name: 'Avalanche Center Forecast Zones',
+    name: 'Utah Avalanche Center Forecast Zones',
     featureServiceId: 'recreation_avalanche_center_forecast_zones',
     openSgid: 'recreation.avalanche_center_forecast_zones',
     layerId: 0,
