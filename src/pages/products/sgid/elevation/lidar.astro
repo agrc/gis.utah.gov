@@ -43,6 +43,7 @@ import westernEastern2022Map from '@images/sgid/lidar_western_eastern_utah_2022_
 import washakie2017Map from '@images/sgid/lidar_wvw_coverage.png';
 import zionNP2015Map from '@images/sgid/lidar_zion_np_2015_coverage.png';
 import moab2025Map from '@images/sgid/lidar_moab_utah_2025_coverage.png';
+import slco2023Map from '@images/sgid/lidar_slco_utah_2023_coverage.png';
 
 import { stripeSections } from '@utils/page';
 
@@ -220,6 +221,12 @@ const page: IStandardPageMetadata = {
         'https://raster.utah.gov/?cat=.5%20Meter%20%7B2023%20USFS%20LiDAR%7D&title=U.S.%20Forest%20Service%202023%20LiDAR',
     },
     {
+      title: '2023 Salt Lake County Utah',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?cat=.5%20Meter%20%7B2023%20Salt%20Lake%20County%20Utah%20LiDAR%7D&title=Salt%20Lake%20County%20Utah%202023%20LiDAR',
+    },
+    {
       title: '2025 Moab Utah',
       actionText: 'Download from Raster',
       actionUrl:
@@ -241,6 +248,20 @@ const projectAssets = {
     {
       title: 'Download shapefiles of project area, tile indices, and breaklines',
       url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/moab-2025/Moab_Utah_2025_shps.zip',
+    },
+  ],
+  slco2023: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/slco-2023/SLCo_Utah_2023_Reports.zip',
+    },
+    {
+      title: 'Download project metadata',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/slco-2023/SLCo_Utah_2023_Metadata.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/slco-2023/SLCo_Utah_2023_shps.zip',
     },
   ],
   usfs2023: [
@@ -718,7 +739,7 @@ const projectAssets = {
     </p>
   </Section>
 
-  <Section {...page.section[30]}>
+  <Section {...page.section[31]}>
     <a href={moab2025Map.src} slot="image">
       <Image
         src={moab2025Map}
@@ -735,6 +756,25 @@ const projectAssets = {
       March 23rd, 2025.
     </p>
     <DirectDownloads title="Project assets" links={projectAssets.moab2025} />
+  </Section>
+
+  <Section {...page.section[30]}>
+    <a href={slco2023Map.src} slot="image">
+      <Image
+        src={slco2023Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
+    >
+    <p>
+      During 2023 the Utah Division of Emergency Management acquired ~493 square miles of 8 points per meter Quality Level 1 Lidar
+      of Moab City. The 0.5 resolution bare earth DEMs and first-return/highest-hit DSMs in .tif format have a
+      10.0cm vertical RMSE accuracy and are available for download. This elevation data was collected 
+      in the Fall of 2023.
+    </p>
+    <DirectDownloads title="Project assets" links={projectAssets.slco2023} />
   </Section>
 
   <Section {...page.section[29]}>
