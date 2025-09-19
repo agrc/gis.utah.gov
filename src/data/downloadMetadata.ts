@@ -2054,11 +2054,13 @@ export const dataPages: DownloadMetadata = {
     openSgid: undefined,
     layerId: 0,
   },
-  'Utah Broadband Service': {
-    itemId: '2b479a30791c445eb135e05acf77dbcc',
-    name: 'Utah Broadband Service',
-    featureServiceId: 'BroadbandService',
-    openSgid: 'utilities.broadband_service',
+  'Utah Broadband Service Areas': {
+    itemId: 'Hosted by UBC',
+    externalHubOrganization: 'utahbroadbandctr',
+    name: 'Utah Broadband Service Areas',
+    featureServiceHost: 'https://services.arcgis.com/j195B8Fn38z3xQw8/arcgis/rest/services/',
+    featureServiceId: 'all_record_hexes_dissolved',
+    openSgid: 'utilities.broadband_service_areas',
     layerId: 0,
   },
   'Utah Streams NHD': {
