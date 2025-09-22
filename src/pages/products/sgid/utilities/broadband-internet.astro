@@ -11,6 +11,7 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -39,9 +40,7 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>
-      Residential broadband service areas based on provider, technology, and max advertised speeds.
-    </p>
+    <p>Residential broadband service areas based on provider, technology, and max advertised speeds.</p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -50,16 +49,32 @@ const page: IPageMetadata = {
 
   <Fragment slot="description">
     <p>
-      These service area polygons are derived from the FCC's <a href="https://broadbandmap.fcc.gov/home">National Broadband Map</a>. Data are downloaded monthly from the BDC API, aggregated to the H3 level 8 polygons identified in the data, and then spatially dissolved to create individual polygons for each provider's technologies and max advertised speeds. Thus, each polygon represents the area a particular provider claims served by a given technology and up/down speeds.
+      These service area polygons are derived from the FCC's <ExternalLink href="https://broadbandmap.fcc.gov/home"
+        >National Broadband Map</ExternalLink
+      >. Data are downloaded monthly from the BDC API, aggregated to the H3 level 8 polygons identified in the data, and
+      then spatially dissolved to create individual polygons for each provider's technologies and max advertised speeds.
+      Thus, each polygon represents the area a particular provider claims served by a given technology and up/down
+      speeds.
     </p>
     <p>
-      Because the data are aggregated by H3 ID and max speeds advertised by the provider for the given tech, each hexagon in the service area has at least one location where the provider advertises those speeds and technology. It does not guarantee all locations in that hexagon have that advertised service.
+      Because the data are aggregated by H3 ID and max speeds advertised by the provider for the given tech, each
+      hexagon in the service area has at least one location where the provider advertises those speeds and technology.
+      It does not guarantee all locations in that hexagon have that advertised service.
     </p>
     <p>
-      The FCC data are updated on a <a href="https://www.fcc.gov/BroadbandData">twice-yearly schedule</a>. We update monthly to catch any mid-cycle updates that may be released.
+      The FCC data are updated on a <ExternalLink href="https://www.fcc.gov/BroadbandData"
+        >twice-yearly schedule</ExternalLink
+      >. We update monthly to catch any mid-cycle updates that may be released.
     </p>
     <p>
-      Individual availability records are based on the <a href="https://help.bdc.fcc.gov/hc/en-us/categories/10275178002075-The-Location-Fabric">"Location Fabric,"</a> which is a collection of Broadband Serviceable Locations (BSLs) that identify individual locations that are served by mass-market broadband service or could conceivably order mass-market broadband service. This fabric is created and owned by a third-party consultant and licensed to the FCC and participating entities. This license prevents sharing the locations of the BSL to non-licensees but does allow aggregated data to be shared; hence why we aggregate the data to H3 level 8 polygons.
+      Individual availability records are based on the "<ExternalLink
+        href="https://help.bdc.fcc.gov/hc/en-us/categories/10275178002075-The-Location-Fabric"
+        >Location Fabric</ExternalLink
+      >," which is a collection of Broadband Serviceable Locations (BSLs) that identify individual locations that are
+      served by mass-market broadband service or could conceivably order mass-market broadband service. This fabric is
+      created and owned by a third-party consultant and licensed to the FCC and participating entities. This license
+      prevents sharing the locations of the BSL to non-licensees but does allow aggregated data to be shared; hence why
+      we aggregate the data to H3 level 8 polygons.
     </p>
     <h3>Attribute schema explanation</h3>
     <ul class="pl-4">
@@ -67,18 +82,22 @@ const page: IPageMetadata = {
         <code class="font-semibold">brand_name</code>: Broadband Provider Company Name
       </li>
       <li>
-        <code class="font-semibold">max_advertised_download_speed</code>: Highest advertised download speed in Mbps claimed by a provider in a given H3 cell
+        <code class="font-semibold">max_advertised_download_speed</code>: Highest advertised download speed in Mbps
+        claimed by a provider in a given H3 cell
       </li>
       <li>
-        <code class="font-semibold">max_advertised_upload_speed</code>: Highest advertised upload speed in Mbps claimed by a provider in a given H3 cell
+        <code class="font-semibold">max_advertised_upload_speed</code>: Highest advertised upload speed in Mbps claimed
+        by a provider in a given H3 cell
       </li>
       <li>
         <code class="font-semibold">common_tech</code>: Common names for technology types
-      <li>
-        <code class="font-semibold">category</code>: General grouping of technology types into wired, wireless (for fixed-wireless technologies), and satellite
-      </li>
-      <li>
-        <code class="font-semibold">technology_name</code>: Technology type reported to the FCC
+        <li>
+          <code class="font-semibold">category</code>: General grouping of technology types into wired, wireless (for
+          fixed-wireless technologies), and satellite
+        </li>
+        <li>
+          <code class="font-semibold">technology_name</code>: Technology type reported to the FCC
+        </li>
       </li>
     </ul>
   </Fragment>
@@ -87,7 +106,17 @@ const page: IPageMetadata = {
 
   <Disclaimer slot="disclaimer">
     <p>
-      The data, including but not limited to geographic data, tabular data, and analytical data, are provided "as is" and "as available", with no guarantees relating to the availability, completeness, or accuracy of data, and without any express or implied warranties. These data are provided as a public service for informational purposes only. You are solely responsible for obtaining the proper evaluation of a location and associated data by a qualified professional. The Utah Broadband Center reserves the right to change, revise, suspend or discontinue published data and services without notice at any time. Neither the Utah Broadband Center nor the State of Utah are responsible for any misuse or misrepresentation of the data. The Utah Broadband Center and the State of Utah are not obligated to provide you with any maintenance or support. The user assumes the entire risk as to the quality and performance of the data. You agree to hold the State of Utah harmless for any claims, liability, costs, and damages relating to your use of the data. You agree that your sole remedy for any dissatisfaction or claims is to discontinue use of the data.
+      The data, including but not limited to geographic data, tabular data, and analytical data, are provided "as is"
+      and "as available", with no guarantees relating to the availability, completeness, or accuracy of data, and
+      without any express or implied warranties. These data are provided as a public service for informational purposes
+      only. You are solely responsible for obtaining the proper evaluation of a location and associated data by a
+      qualified professional. The Utah Broadband Center reserves the right to change, revise, suspend or discontinue
+      published data and services without notice at any time. Neither the Utah Broadband Center nor the State of Utah
+      are responsible for any misuse or misrepresentation of the data. The Utah Broadband Center and the State of Utah
+      are not obligated to provide you with any maintenance or support. The user assumes the entire risk as to the
+      quality and performance of the data. You agree to hold the State of Utah harmless for any claims, liability,
+      costs, and damages relating to your use of the data. You agree that your sole remedy for any dissatisfaction or
+      claims is to discontinue use of the data.
     </p>
   </Disclaimer>
 
@@ -96,9 +125,7 @@ const page: IPageMetadata = {
       <CardWithPopularLink title="UBC" href="https://connecting.utah.gov/">
         The Utah Broadband Center website.
       </CardWithPopularLink>
-      <CardWithPopularLink
-        title="FCC Broadband Map"
-        href="https://broadbandmap.fcc.gov">
+      <CardWithPopularLink title="FCC Broadband Map" href="https://broadbandmap.fcc.gov">
         The FCC's National Broadband Map application.
       </CardWithPopularLink>
     </GridForMoreResources>
