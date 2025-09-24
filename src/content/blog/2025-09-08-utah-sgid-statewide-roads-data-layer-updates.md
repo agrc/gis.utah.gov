@@ -23,7 +23,7 @@ New roads were added and road names and address ranges were updated for the foll
 - **Davis County:** Obtained roads data on 08/25/2025. Previous update was on 07/28/2025.
 - **Morgan County:** Obtained roads data on 08/21/2025. Previous update was on 05/15/2025.
 - **Salt Lake County:** Obtained roads data on 08/21/2025. Previous update was on 07/16/2025.
-- **Toeele County:** Obtained roads data on 08/25/2025. Previous update was on 05/31/2025.
+- **Tooele County:** Obtained roads data on 08/25/2025. Previous update was on 05/31/2025.
 - **Utah County:** Obtained roads data on 08/21/2025. Previous update was on 07/16/2025.
 - **Washington County:** Obtained roads data on 08/21/2025. Previous update was on 07/17/2025.
 - **Weber County:** Obtained roads data on 08/25/2025. Previous update was on 07/28/2025.
