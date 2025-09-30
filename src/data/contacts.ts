@@ -421,7 +421,7 @@ export const contacts: Contacts = {
     agency: 'UGRC',
     email: 'ugrc@utah.gov',
     name: 'the staff',
-    phone: '801-538-3665',
+    phone: '801-890-4222',
   },
   ugrc_director: {
     email: 'lault@utah.gov',
