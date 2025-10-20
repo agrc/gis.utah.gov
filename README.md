@@ -133,6 +133,8 @@ import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 
 All images should have lowercase file names with words separated by hyphens, AKA kebab case. e.g.: `my-gis-day.png`.
 
+Illustrations can be from [storyset](https://storyset.com/cuate) using the Cuate style.
+
 Images should be organized into their pillar folder. e.g.: `/src/images/pillar-documentation/*`.
 
 When you create a new blog post using the issue template, a folder for images will be automatically created in `/src/images/pillar-blog/{blog-slug}/`. This folder will include a .placeholder file.
@@ -201,7 +203,7 @@ Contacts are managed in a [typescript file](./src/data/contacts.ts). At the top 
 
   ```astro
   ---
-  import import Contacts from '@components/page/Contacts.astro'; 
+  import import Contacts from '@components/page/Contacts.astro';
   ```
 
 In line with the text where you want the contact to appear, include this line of code:
