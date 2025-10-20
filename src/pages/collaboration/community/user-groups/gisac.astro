@@ -9,11 +9,12 @@ import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
 
-import boxesPhoto from '@images/collaboration/boxes.svg';
-import collaborationPhoto from '@images/collaboration/collaboration.svg';
+import arrowPhoto from '@images/collaboration/arrow.svg';
+import committeePhoto from '@images/collaboration/committee.svg';
 import groupPhoto from '@images/collaboration/group.svg';
-import growthPhoto from '@images/collaboration/growth.svg';
+import signUpPhoto from '@images/collaboration/sign-up.svg';
 
+import ExternalLink from '@components/react/ExternalLink';
 import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
@@ -23,9 +24,10 @@ const page: IStandardPageMetadata = {
   pillar: Pillar.COLLABORATION,
   section: stripeSections([
     { title: `Why do we need GISAC` },
-    { title: 'What should GISAC accomplish' },
-    { title: 'Where is GISAC now' },
-    { title: 'Where does GISAC want to go' },
+    { title: 'What are the Subcommittees' },
+    { title: 'Where are we now' },
+    { title: 'How to participate' },
+    { title: 'When are the meetings' },
   ]),
 };
 ---
@@ -42,46 +44,62 @@ const page: IStandardPageMetadata = {
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>
-      The Geographic Information Systems Advisory Council (GISAC) fulfills the need of a coordinating body for statewide
-      geospatial efforts. For example, in the 1990s it led the charge on Digital Ortho-photo Quads and road attributes.
-      Later it was joint efforts such as the Public Land Survey System (PLSS) with the Bureau of Land Management (BLM),
-      the State of Utah, and other interested parties.
+      The Geographic Information Systems Advisory Council (GISAC) serves as the essential coordinating body for
+      statewide geospatial initiatives. GISAC has a proven history of driving major projects; for example, in the 1990s,
+      it successfully led the development of foundational data assets like Digital Ortho-photo Quads and comprehensive
+      road attributes. It also spearheaded crucial joint efforts, including the Public Land Survey System (PLSS) in
+      partnership with the Bureau of Land Management (BLM), the State of Utah, and other stakeholders. Today, GISAC
+      supports its mission through six active subcommittees dedicated to innovation, maintaining the PLSS and geodetic
+      controls, and ensuring alignment on data standards and services.
     </p>
   </Section>
   <Section {...page.section[1]}>
     <Image
       slot="image"
       loading="eager"
-      src={collaborationPhoto}
-      alt="Three people holding hands walking up a mountain with a flag"
+      src={committeePhoto}
+      alt="Three people discussing over a table"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <ul class="list-inside list-disc pl-4">
+      <li>County/City Data Standards</li>
+      <li>State/Federal Agency GIS Coordination</li>
+      <li>Public Service Alignment and Best Practices</li>
+      <li>PLSS</li>
+      <li>Utah Geodetic Advisory Committee</li>
+      <li>Innovation</li>
+    </ul>
+  </Section>
+  <Section {...page.section[2]}>
+    <Image
+      slot="image"
+      src={arrowPhoto}
+      alt="Two people holding an arrow pointing at the bullseye of a dartboard."
       class="w-full max-w-[400px] rounded-2xl"
     />
     <p>
-      With a combined body of interested parties, GISAC can seek funding for statewide projects or leverage its
-      influence in data standards and best practices for GIS in Utah. GISAC activity has ebbed and flowed over the
-      years. In some states' advisory councils, members are appointed by the governor and the group directs the efforts
-      of the state GIS shop. In Utah, the members are appointed by the Director of the Utah Geospatial Resource Center
-      and the group works on issues pertinent to the day as needed.
+      GISAC is part of a larger effort to provide guidance and best practices for data for state agencies and a bridge
+      to state, local, and federal partners. GISAC continues to look at more ways to coordinate and streamline the data
+      aggregation efforts with stewards.
     </p>
-  </Section>
-  <Section {...page.section[2]}>
-    <Image slot="image" src={boxesPhoto} alt="A person packing boxes" class="w-full max-w-[400px] rounded-2xl" />
     <p>
-      As we start to look at more ways to coordinate and streamline data aggregation efforts with stewards, the need for
-      GISAC and its coordination role are coming to the fore once again and it will be active in the near future.
+      GISAC convenes semi-annually to review the work of its subcommittees and generate recommendations for any
+      necessary legislation or budget requests. The individual subcommittees maintain their own varied meeting cadences.
     </p>
   </Section>
   <Section {...page.section[3]}>
-    <Image
-      slot="image"
-      src={growthPhoto}
-      alt="A person with a jet pack flying into the future"
-      class="w-full max-w-[400px] rounded-2xl"
-    />
+    <Image slot="image" src={signUpPhoto} alt="a person filling out a form" class="w-full max-w-[400px] rounded-2xl" />
     <p>
-      In the future, GISAC should be part of a larger effort to provide guidance and best practices for data for state
-      agencies and a bridge to state, local, and federal partners. GISAC should always be looking at more ways to
-      coordinate and streamline the data aggregation efforts with stewards.
+      To participate in GISAC or one of its subcommittees, <ExternalLink href="https://forms.gle/VgzeBRoVfeAgCeSh7"
+        >enter your information into this form</ExternalLink
+      > to begin receiving information and meeting invites. Please note that we might need to limit participation in some
+      subcommittees and that signing up is not a guarantee that you'll be on the subcommittee.
     </p>
+  </Section>
+  <Section {...page.section[4]}>
+    <iframe
+      src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FDenver&showPrint=0&showCalendars=0&src=Y19mNDFlYWU4NDNiN2M2M2NiNmY4MTk0ZmRmNTI5ZTVhMGVhMzRmM2ZhNjE4MmQxZjNmOTYwMDFiN2RhYmJhZDhkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23d50000"
+      loading="lazy"
+      class="h-svh min-h-96 w-full overflow-hidden rounded-lg border-0 border-none"></iframe>
   </Section>
 </Layout>
