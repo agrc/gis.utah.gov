@@ -46,6 +46,11 @@ export const contacts: Contacts = {
     name: 'Denise Peterson',
     phone: '385-392-4011',
   },
+  broadband: {
+    agency: 'UGRC',
+    email: 'jdadams@utah.gov',
+    name: 'Jake Adams',
+  },
   brownfields: {
     agency: 'DERR',
     email: 'mhorning@utah.gov',
