@@ -14,10 +14,21 @@ cover_image_alt: Broadband service area hexes at Point of the Mountain
 ---
 
 import Contacts from '@components/page/Contacts.astro';
+import { Image } from 'astro:assets';
+import stateOverview from '@images/blog/2025-11-04-new-broadband-service-data/state-overview.png';
+import existingLayer from '@images/blog/2025-11-04-new-broadband-service-data/existing-layer.png';
+import existingMap from '@images/blog/2025-11-04-new-broadband-service-data/existing-map.png';
+import fabricPoints from '@images/blog/2025-11-04-new-broadband-service-data/fabric-points.png';
+import pointsToHexes from '@images/blog/2025-11-04-new-broadband-service-data/points-to-hexes.png';
+import dissolvedHexes from '@images/blog/2025-11-04-new-broadband-service-data/dissolved-hexes.png';
 
 If you've ever used our broadband service layer, you'll know it's rather unwieldly. Today, in partnership with the Utah Broadband Center (UBC), **we're excited to announce a new version of residential broadband service areas that are easier to use and more accurately reflect service availability.** This layer answers the question "what service is available from whom in which areas?"
 
-![Highly-detailed broadband coverage areas in Salt Lake, Utah, Wasatch, Sanpete, and Carbon Counties](/src/images/pillar-blog/2025-11-04-new-broadband-service-data/state-overview.png)
+<Image
+  src={stateOverview}
+  loading="lazy"
+  alt="Highly-detailed broadband coverage areas in Salt Lake, Utah, Wasatch, Sanpete, and Carbon Counties"
+/>
 
 This new layer uses the FCC's [Broadband Data Collection](https://www.fcc.gov/BroadbandData) data and the [H3 spatial index](https://h3geo.org/) developed by Uber for three big improvements:
 
@@ -45,17 +56,21 @@ Our previous broadband service layer got its data from two sources: many provide
 
 **The complexity of the resulting geometries posed a large problem with storage, display, and analysis.** Each provider had individual features for each unique pair of upload and download speeds, and these often contained extremely complex geometries with many vertices. Some wireless coverages were represented as vectorized versions of raster viewshed analyses.
 
-![A mess of complicated overlapping geometries](/src/images/pillar-blog/2025-11-04-new-broadband-service-data/existing-layer.png)
+<Image src={existingLayer} loading="lazy" alt="A mess of complicated overlapping geometries" />
 
 **Crucially, the largest problem we had was the accuracy of the data.** There was no feedback mechanism to challenge service claims. The aforementioned raster viewshed analyses were run on simple assumptions about signal strength over distance and a very binary visible/not visible cutoff. Some providers only provided data about their backbone lines and we had to make the assumption that service would be available within an arbitrarily-chosen distance from that line. These are all visible in the old residential broadband map:
 
-![The old map showing large swathes of land claimed as served that don't make sense](/src/images/pillar-blog/2025-11-04-new-broadband-service-data/existing-map.png)
+<Image
+  src={existingMap}
+  loading="lazy"
+  alt="The old broadband map showing large swathes of land claimed as served that don't make sense"
+/>
 
 ## In With the New: The FCC's Broadband Data Collection
 
 **Over the last five years or so, the FCC has completely changed the way providers report their coverage through the FCC's Broadband Data Collection (BDC) process.** They have partnered with a third party company, CostQuest, to develop ["The Fabric"](https://www.fcc.gov/BroadbandData). This consists of points for every Broadband Serviceable Location (BSL): every location that has, or could conceivably order, mass-market broadband internet. The fabric continues to be updated on a twice-yearly schedule to reflect corrections and new construction.
 
-![Fabric points located on every structure](/src/images/pillar-blog/2025-11-04-new-broadband-service-data/fabric-points.png)
+<Image src={fabricPoints} loading="lazy" alt="Fabric points located on every structure" />
 
 **With this foundational geometry in place, the FCC now requires providers to report their service coverage by BSL.** Providers can either submit lists of BSLs or polygon coverage areas. The FCC then provides the public access to the coverage data via [broadbandmap.fcc.gov](https://broadbandmap.fcc.gov).
 
@@ -71,13 +86,17 @@ Our previous broadband service layer got its data from two sources: many provide
 
 **The new layer consists of the BDC data aggregated to H3 level 8 geometries using the H3 IDs provided by the FCC for each BSL.** Each level 8 hexagon is about four Salt Lake City blocks wide (about 2/3s of a mile between opposing vertices) and covers about 14 blocks. We aggregate BSLs based on their provider name, technology, max upload speed, and max download speed. We then dissolve the resulting geometries containing similar values for these four fields.
 
-![The fabric points for a single provider overlaid with the H3 level 8 hexagons that contain them](/src/images/pillar-blog/2025-11-04-new-broadband-service-data/points-to-hexes.png)
+<Image
+  src={pointsToHexes}
+  loading="lazy"
+  alt="The fabric points for a single provider overlaid with the H3 level 8 hexagons that contain them"
+/>
 
 **To speed things up, we have [automated](https://github.com/agrc/broadband-data/blob/main/src/broadband/main.py) the update process using the FCC's API for accessing the BDC data.** This eliminates the need for the Utah Broadband Center to reach out to providers individually, the need for providers to respond to both the FCC and the state, and UGRC's long and laborious work to combine all the different responses into a single cohesive dataset. It also keeps the layer up-to-date with the lates FCC data.
 
 **We've also drastically simplified the data geometries by using the standardized H3 index and dissolving similar hexes together.** By starting with the basic spatial unit of a hex with six vertices and then dissolving them together, many hexes' vertices are completely removed because they're in the middle of a much larger polygon. This massively simpler geometry shrinks storage space, rendering time, and analysis complexity.
 
-![The hexagons from the previous step dissolved into a single geometry](/src/images/pillar-blog/2025-11-04-new-broadband-service-data/dissolved-hexes.png)
+<Image src={dissolvedHexes} loading="lazy" alt="The hexagons from the previous step dissolved into a single geometry" />
 
 **By aggregating the individual BSL data up to H3 level 8 geometries, we are able to comply with the Fabric licensing terms while still providing useful polygon representations of service areas.** The remaining limitation is that we can't guarantee every location within a hexagon has the stated service available. It only means that at least one location within the hexagon does. Individuals can still use the [FCC's map](https://broadbandmap.fcc.gov) to check service claims for specific locations.
 
