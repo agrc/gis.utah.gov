@@ -2530,20 +2530,6 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'health.health_small_statistical_areas_2020',
     layerId: 0,
   },
-  'Utah Tax Areas 2021': {
-    itemId: 'e06fee6ff03f43ca8da9b06b17ad0ed3',
-    name: 'Utah Tax Areas 2021',
-    featureServiceId: undefined,
-    openSgid: undefined,
-    layerId: 0,
-  },
-  'Utah Tax Entities 2021': {
-    itemId: '228ac715bbb446e4a4ecfb6dea3c52b1',
-    name: 'Utah Tax Entities 2021',
-    featureServiceId: undefined,
-    openSgid: undefined,
-    layerId: 0,
-  },
   'Utah Monuments and Markers': {
     itemId: '63de4118823e4e3eba943ca43caefc72',
     name: 'Utah Monuments and Markers',
