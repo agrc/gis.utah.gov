@@ -1,22 +1,226 @@
 ---
-title: Unlock secure automated code signing with google cloud kms
+title: Unlock secure automated code signing with Google Cloud KMS
 author: Steve Gourley
 description: >-
-  How to use Google Cloud Key Management Service from GitHub Actions windows
-  runner to automate Electron Forge code signing securely
+  Ditch insecure PFX files. Learn to automate Electron Forge code signing on GitHub Actions
+  (Windows) using Google Cloud KMS for a modern, secure build pipeline.
 date: '2025-11-04T01:26:57.661Z'
 category: Developer
-cover_image: /src/images/pillar-blog/default-social-card.png
-cover_image_alt: ugrc social card
+cover_image: /src/images/pillar-blog/2025-11-04-unlock-secure-automated-code-signing-with-google-cloud-kms/social-card.png
+cover_image_alt: Unlock secure automated code signing with Google Cloud KMS
 ---
 
-{/* remove if not using images
-import { Image } from 'astro:assets'; */}
+In the world of software engineering, nothing stays the same for very long. What was considered a best practice and secure a few days ago can quickly become a code smell and a liability in today's threat landscape. This is especially true for desktop application developers, where building trust for software execution is critical. Like the SSL/TLS certificates that secure HTTPS connections and prove a website's identity, code signing certificates prove a desktop application's publisher and ensure its integrity. Code signing certificates typically last one to three years; developers must renew them to maintain trustworthiness. A lot can change during that timeframe, and security practices around code signing have changed significantly over the last three years.
 
-{/* remove if not using an image
-import myImage from '@images/blog/2025-11-04-unlock-secure-automated-code-signing-with-google-cloud-kms/image.png'; */}
+When it comes to signing Windows applications, many developers—myself included—still rely on PFX files. However, that practice is now a liability because of the risks associated with storing and managing private keys. Certificate authorities have begun to stop issuing these types of certificates, forcing developers to change their existing processes. In this blog post, we'll explore how to leverage Google Cloud Key Management Service (KMS) to securely automate code signing an Electron Forge project using GitHub Actions.
 
-My blog post content starts here.
+To summarize the entire process: You must first create a key in a Hardware Security Module (HSM), generate a Certificate Signing Request (CSR) from that key, submit the CSR and the key's attestation bundle to a trusted Certificate Authority (CA) to obtain a signed certificate, configure your GitHub Actions workflow to access Google Cloud KMS, and finally configure Forge to sign your assets. It may only be five steps, but the process is complex, especially when dealing with the intricacies of different CLI inputs, required software and dependencies, and certificate authority requirements. Give yourself plenty of time to work through the process, as I encountered several roadblocks along the way. Our ten-day reminder that "this needs to be done" turned into a two-week long ordeal of trial and error before we could start signing code again.
 
-{/* remove if not using an image
-<Image src={myImage} loading="eager" alt="A sample image" /> */}
+## The cloud setup
+
+To secure the private key and enable automation, we'll need to create a few things in the Google Cloud. Note: the example commands below were tested with Google Cloud SDK 539.0.0.
+
+1. A Google Cloud project with the Key Management Service API, cloudkms.googleapis.com, enabled.
+   - Enable: `gcloud services enable cloudkms.googleapis.com --project=[PROJECT_ID]`
+1. A Service Account with the "Cloud KMS CryptoKey Signer/Verifier", cloudkms.signerVerifier, role.
+   - Create: `gcloud iam service-accounts create SIGNER-SA --project=[PROJECT_ID]`
+1. A key ring to organize the cryptographic keys.
+   - Create: `gcloud kms keyrings create [KEYRING e.g., my-ring] --location=us-central1 --project=[PROJECT_ID]`
+1. A key within the key ring for code signing.
+   - The key must be asymmetric for signing.
+   - Use a strong algorithm (recommended: 4096-bit RSA with PKCS#1 v1.5 padding and SHA-512).
+   - Store the key with HSM protection so certificate authorities can verify the key's integrity.
+   - Create:
+     ```sh
+       gcloud kms keys create [KEY_NAME e.g., my-key] `
+         --location=us-central1 `
+         --keyring=my-ring `
+         --purpose=asymmetric-signing `
+         --default-algorithm=rsa-sign-pkcs1-4096-sha512 `
+         --protection-level=hsm `
+         --project=[PROJECT_ID]
+     ```
+1. Access to the key from the service account.
+   - Grant access:
+     ```sh
+      gcloud kms keys add-iam-policy-binding my-key `
+        --location=us-central1 `
+        --keyring=my-ring `
+        --member="serviceAccount:SIGNER-SA@[PROJECT_ID].iam.gserviceaccount.com" `
+        --role="roles/cloudkms.signerVerifier" `
+        --project=[PROJECT_ID]
+     ```
+1. An attestation bundle to prove the key is protected within an HSM.
+   - Download:
+     ```sh
+      gcloud kms keys versions describe [KEY_VERSION e.g., 1] `
+        --key my-key `
+        --keyring my-ring `
+        --location us-central1 `
+        --attestation-file attestation.bin `
+        --project=[PROJECT_ID]
+     ```
+
+You will need to be able to authenticate with GCP from GitHub Actions for the service account to be able to access the key and the code signing to complete successfully. We choose to use Workload Identity Federation to avoid storing long-lived service account keys in GitHub secrets. Follow the [official documentation](https://cloud.google.com/iam/docs/workload-identity-federation) to set this up. Our workflow step uses the following configuration, with the crucial cloudkms access token scope granting access to the KMS API:
+
+```yaml:.github/release.yml
+- name: 🗝️ Authenticate to Google Cloud
+  id: auth
+  uses: google-github-actions/auth@v3
+  with:
+    access_token_scopes: 'openid, https://www.googleapis.com/auth/cloudkms, https://www.googleapis.com/auth/cloud-platform'
+    token_format: 'access_token'
+    workload_identity_provider: ${{ secrets.IDENTITY_PROVIDER }}
+    service_account: ${{ secrets.SERVICE_ACCOUNT_EMAIL }}
+    create_credentials_file: true
+```
+
+With these core components in place—the HSM key, the access controls, and GitHub's authentication—we can now proceed to create our CSR and obtain the signed public key from our CA, Sectigo.
+
+## Obtaining a signed certificate
+
+Since we are using an HSM-protected key, we need to prove to the CA that the private key is securely stored and that users cannot export it, unlike PFX certificates. We achieve this by submitting a CSR and an attestation bundle to the CA. This process caused me a lot of problems and time. The form to request the asset from the CA didn't exist and required a support ticket to create. Furthermore, the requirements for the form were cryptic to figure out. Be sure to consult your CA's documentation for any special instructions or constraints.
+
+Generating the CSR from a KMS key can also be a journey. Many of the GCloud and OpenSSL commands listed in the documentation from Google and Sectigo generated errors or created empty output. I tried installing all the prerequisites and running them from different operating systems and processor architectures with varied levels of success, but ultimately failed. Fortunately, you can skip all of that and quickly generate a CSR using a Python tool, Google Cloud KMS Certificate Signing Request [(CSR) Generation Tool](https://github.com/icedevml/pykmstool). After following the readme to get started, I generated the CSR with the following command in a matter of minutes:
+
+```sh:create_csr.ps1
+python3 pykmstool.py sign-csr `
+ --key-version-name projects/[PROJECT]/locations/us-central1/keyRings/my-ring/cryptoKeys/my-key/cryptoKeyVersions/1 `
+ --x509-name "C=US,ST=[STATE],L=[CITY],O=[ORGANIZATION],OU=[ORGANIZATION_UNIT],CN=[COMMON_NAME]"
+```
+
+I saved the output as `request.csr`, which I submitted to Sectigo with the attestation bundle (which you must Base64-encode. I used `base64 -i attestation.zip | pbcopy` on MacOS). How many times have you Base64-encoded a file and copied its value into a form textarea?
+
+After a few hours, I received the signed certificate from Sectigo. They provide multiple certificate formats: I downloaded the Certificate (w/ chain), PEM-encoded format (`.cer` file extension). I renamed this to `windows.cer` and checked it into the repository for use in the GitHub Actions workflow. Now that we have our signed certificate and the private key securely stored in Google Cloud KMS, we are one step closer to automate the code signing process.
+
+## Configure the provider
+
+On Windows, we use the `signtool` utility to sign application binaries. Since our Sectigo signed certificate only contains the public key—with the private key stored in Google Cloud KMS—the `signtool` needs a way to access the private key. Enter the Google Cloud KMS Cryptographic Next Generation [(CNG) provider](https://github.com/GoogleCloudPlatform/kms-integrations). This provider allows Windows applications to use keys stored in Google Cloud KMS as if they were local keys. At the time of this writing, the latest release is v1.3. We must install the CNG provider where we plan to use the `signtool` on the windows-latest runner in GitHub Actions. The installation boils down to three steps using PowerShell 7.5.2:
+
+1. Download the release with the [GitHub CLI](https://cli.github.com/) which is available on the windows-latest runner
+   ```sh
+   gh release download cng-v1.3 -R "GoogleCloudPlatform/kms-integrations" -p "\*amd64.zip"
+   ```
+1. Unzip the downloaded file
+   ```sh
+   Expand-Archive -Path .\kmscng-1.3-windows-amd64.zip -DestinationPath .\kms-cng
+   ```
+1. Run the windows installer (with the absolute path to the MSI file)
+   ```sh
+   Start-Process -FilePath "msiexec.exe" -ArgumentList "/i "c:\temp\kms-cng\kmscng-1.3-windows-amd64\kmscng.msi" /qn" -Wait
+   ```
+
+With the CNG provider installed, we can now configure our Forge config.
+
+## Electron Forge
+
+Configuring the Forge build tool to recognize and utilize our new signing setup is the key to completing the integration. The Forge project uses the [@electron/windows-sign package](https://www.npmjs.com/package/@electron/windows-sign) to handle the code signing for Windows builds. Clear documentation on using an HSM-backed key with windows-sign and Forge eluded me. Their documentation currently shows the legacy PFX format. However, I was able to configure code signing directly with the `signtool` utility with the syntax below. By stepping through the [windows-sign code](https://github.com/electron/windows-sign/blob/192d8efdc17b10f673cf31f7aaaab3866806b37c/src/sign-with-signtool.ts#L6) while running a `npm run make` command, I was able to see how the options were being added to the `signtool` execution.
+
+```sh:powershell.ps1
+signtool sign `
+  /fd sha256 `
+  /t http://timestamp.sectigo.com `
+  /f C:\windows.cer `
+  /csp "Google Cloud KMS Provider" `
+  /kc projects/[PROJECT_ID]/locations/us-central1/keyRings/my-ring/cryptoKeys/my-key/cryptoKeyVersions/1 `
+  C:\test_file.exe
+```
+
+These are the `windowsSign` properties required in the `forge.config.js` file:
+
+```js:forge.config.js
+const ksmKeyPath = 'projects/[PROJECT]/locations/us-central1/keyRings/my-ring/cryptoKeys/my-key/cryptoKeyVersions/1';
+const certPath = path.resolve(__dirname, 'windows.cer');
+{
+  ...
+  packagerConfig: {
+    windowsSign: {
+      hashes: ['sha256'], // this adds the /fd flag
+      timestampServer: 'http://timestamp.sectigo.com', // this adds the /t flag
+      certificateFile: certPath, // this adds the /f flag
+      signWithParams: ['/csp', 'Google Cloud KMS Provider', '/kc', kmsKeyPath], // this is appended as is
+      digestAlgorithm: 'sha256', // this may be unused, but I added it for good measure
+    }
+  },
+  makers: [
+    new MakerSquirrel({
+     ...,
+     windowsSign: {
+       // add the same windows Sign config as above
+     }
+    }),
+  ]
+  ...
+}
+```
+
+Everything is now in place to sign your Forge app.
+
+## GitHub Actions workflow
+
+Putting it all together, here is a simplified version of the GitHub Actions workflow that builds, signs, and publishes the Forge application using Google Cloud KMS:
+
+```yaml:.github/release.yml
+name: Release Events
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  id-token: write
+  deployments: write
+  contents: write
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  deploy-windows:
+    name: Publish windows app
+    runs-on: windows-latest
+    environment:
+      name: prod
+
+    steps:
+      - name: ⬇️ Set up code
+        uses: actions/checkout@v5
+        with:
+          show-progress: false
+
+      - name: ⎔ Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: 📥 Install dependencies
+        run: npm ci
+
+      - name: 🏗️ Install Google Cloud KMS Provider
+        shell: pwsh
+        run: .\build\install-kms.ps1 #: contains the PowerShell commands to install the provider
+
+      - name: 🗝️ Authenticate to Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v3
+        with:
+          access_token_scopes: 'openid, https://www.googleapis.com/auth/cloudkms, https://www.googleapis.com/auth/cloud-platform'
+          token_format: 'access_token'
+          workload_identity_provider: ${{ secrets.IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.SERVICE_ACCOUNT_EMAIL }}
+          create_credentials_file: true
+
+      - name: 🚀 Build, Package, & Release
+        run: npm run publish
+        env:
+          NODE_ENV: production
+          GCP_KEYRING_PATH: ${{ secrets.GCP_KEYRING_PATH }}
+          GCP_KEY_NAME: ${{ secrets.GCP_KEY_NAME }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ steps.auth.outputs.credentials_file_path }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+## Conclusion
+
+Migrating from traditional PFX certificate files to a cloud-based HSM solution like Google Cloud KMS is more than just a procedural update—it's a necessary security evolution. We've successfully navigated the complexities of certificate generation (CSR and attestation bundle) and integrated the necessary tooling (CNG provider and Electron Forge configuration) to create a robust, secure, and fully automated code signing pipeline using GitHub Actions. By securing the private signing key inside a Hardware Security Module, you drastically reduce the risk of key theft and ensure compliance with modern certificate authority requirements. This process, though challenging initially, provides a resilient and future-proof foundation for delivering trustworthy software to your users. I hope the efforts and automated process outlined here save you considerable time and push you toward securely signing all your code.
