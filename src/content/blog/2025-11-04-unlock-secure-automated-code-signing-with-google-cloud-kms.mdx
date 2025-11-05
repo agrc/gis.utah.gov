@@ -28,7 +28,7 @@ To secure the private key and enable automation, we'll need to create a few thin
    - Create: `gcloud kms keyrings create [KEYRING e.g., my-ring] --location=us-central1 --project=[PROJECT_ID]`
 1. A key within the key ring for code signing.
    - The key must be asymmetric for signing.
-   - Use a strong algorithm (recommended: 4096-bit RSA with PKCS#1 v1.5 padding and SHA-512).
+   - Use a strong algorithm (recommended: 4096-bit RSA with PKCS#1 v1.5 padding and SHA-256).
    - Store the key with HSM protection so certificate authorities can verify the key's integrity.
    - Create:
      ```sh
@@ -36,7 +36,7 @@ To secure the private key and enable automation, we'll need to create a few thin
          --location=us-central1 `
          --keyring=my-ring `
          --purpose=asymmetric-signing `
-         --default-algorithm=rsa-sign-pkcs1-4096-sha512 `
+         --default-algorithm=rsa-sign-pkcs1-4096-shas256 `
          --protection-level=hsm `
          --project=[PROJECT_ID]
      ```
@@ -126,7 +126,16 @@ signtool sign `
   C:\test_file.exe
 ```
 
-These are the `windowsSign` properties required in the `forge.config.js` file:
+The flags break down to the following:
+
+- `/fd sha256`: Sets the file digest (hash) algorithm to SHA-256. This determines how the file's contents are hashed before signing.
+- `/t http://timestamp.sectigo.com`: Specifies the timestamp server URL. The timestamp proves when the code was signed, allowing the signature to remain valid even after the certificate expires. Note: This uses http:// because that's what Sectigo's timestamp server requires.
+- `/f C:\windows.cer`: Points to the certificate file containing the public key. This is the certificate received from Sectigo.
+- `/csp "Google Cloud KMS Provider"`: Specifies the Cryptographic Service Provider. This tells `signtool` to use the Google Cloud KMS CNG provider instead of looking for a local private key.
+- `/kc [KEY_PATH]`: The key container name. In this case, it's the full Google Cloud KMS path to our HSM-protected private key. The CNG provider uses this to access the key in the cloud.
+- `C:\test_file.exe`: The executable file to sign.
+
+Here's how these flags translate into the `windowsSign` properties required in the `forge.config.js` file:
 
 ```js:forge.config.js
 const ksmKeyPath = 'projects/[PROJECT]/locations/us-central1/keyRings/my-ring/cryptoKeys/my-key/cryptoKeyVersions/1';
