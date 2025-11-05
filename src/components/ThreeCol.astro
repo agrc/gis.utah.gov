@@ -1,0 +1,20 @@
+---
+const { cols = 3, gap = 'gap-6', class: extra = '' } = Astro.props;
+
+let colsClass: string;
+if (cols === 1) {
+  colsClass = 'md:grid-cols-1';
+} else if (cols === 2) {
+  colsClass = 'md:grid-cols-2';
+} else if (cols === 3) {
+  colsClass = 'md:grid-cols-3';
+} else if (cols === 4) {
+  colsClass = 'md:grid-cols-4';
+} else {
+  colsClass = 'md:grid-cols-3';
+}
+---
+
+<div class={`grid grid-cols-1 ${colsClass} ${gap} ${extra}`}>
+  <slot />
+</div>

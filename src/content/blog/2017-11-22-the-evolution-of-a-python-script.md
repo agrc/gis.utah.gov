@@ -25,7 +25,7 @@ When starting to script, many programmers will hard code values directly into a 
 
 It is our recommendation to be in the habit of executing python scripts from the command line. Executing a script from the command line provides a few key benefits to double-click executing a python.py file. Most applications that will execute the python file will close when completed. Users will not be able to inspect the output generated during execution or error messages. This can leave users wondering what happened and if the script completed successfully. Use the command line and remove all of the anti-pattern `raw_input('press enter to close')` bits!
 
-```py
+```py:main.py
 #: this will never work on someone elses machine
 #: if I ever want to run this on 2018 data or version 2, I have to edit the source
 do_something_to('c:\\sgourley\\projects\\test_data\\2017\\version1\\data.gdb')
@@ -39,7 +39,7 @@ A simple enhancement to make the scripts you write more flexible is to allow use
 
 Accessing the parameter values within your script is done via the python standard library [sys module](https://docs.python.org/2/library/sys.html).
 
-```py
+```py:main.py
 import sys
 
 print('File executed: {}'.format(sys.argv[0]))
@@ -75,7 +75,7 @@ The python community has created many useful modules that we all can `pip` or `c
 
 UGRC has been using [docopt](https://docopt.org/) and really enjoying it. It is a lightweight module that uses POSIX style comments to define how your console application can be used. You get a CLI and documentation!
 
-```py
+```py:main.py
 '''
 Milepost geocoding!
 
@@ -92,7 +92,7 @@ if __name__ == '__main__':
 
 The above documentation can be parsed by docopt to help a developer create functionality for the milepost command. docopt has three main patterns. Text inside `<>` are considered arguments, text after `--` are considered options, and text without either are considered commands. Surrounding items with `[]` sets the as optional and `()` signifies required. doctopt can [do much more](https://github.com/docopt/docopt#usage-pattern-format) so be sure to check out the [documentation](https://github.com/docopt/docopt/blob/master/README.rst). If a user were to type
 
-```
+```sh
 python geocode.py 123 15N
 ```
 
@@ -100,7 +100,7 @@ docopt would parse the input, realize it **does not** match any documented comma
 
 docopt has a lot of useful features. For instance, console application developers are able to create subcommands.
 
-```py
+```py:main.py
 '''
 Milepost geocoding!
 
@@ -115,13 +115,13 @@ Usage:
 
 Given the input
 
-```
+```sh
 geocode address 84109 326 east south temple
 ```
 
 docopt will generate a python dictionary from the inputs.
 
-```py
+```py:main.py
 # output
 {
   "--address-points-only": false,
