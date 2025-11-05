@@ -1,4 +1,5 @@
 import mdx from '@astrojs/mdx';
+import partytown from '@astrojs/partytown';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
@@ -6,9 +7,9 @@ import metaTags from 'astro-meta-tags';
 import { defineConfig } from 'astro/config';
 import { execSync } from 'child_process';
 import rehypeExternalLinks from 'rehype-external-links';
-import externalLinkConfig from './plugins/externalLinks';
+import remarkCodeTitles from 'remark-code-titles';
 
-import partytown from '@astrojs/partytown';
+import externalLinkConfig from './plugins/externalLinks';
 
 // https://astro.build/config
 export default defineConfig({
@@ -54,5 +55,6 @@ export default defineConfig({
   ],
   markdown: {
     rehypePlugins: [[rehypeExternalLinks, externalLinkConfig]],
+    remarkPlugins: [remarkCodeTitles],
   },
 });

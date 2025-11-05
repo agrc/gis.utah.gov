@@ -54,5 +54,11 @@
   .astro-code {
     @apply rounded-lg p-3;
   }
+  .remark-code-title {
+    @apply rounded-t-lg border border-b-0 bg-gray-200 px-4 py-2 text-sm font-semibold dark:bg-zinc-900;
+  }
+  .remark-code-title + .astro-code {
+    @apply !mt-0 !rounded-t-none;
+  }
 }
 @tailwind utilities;
