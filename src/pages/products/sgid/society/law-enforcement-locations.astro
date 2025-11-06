@@ -17,7 +17,7 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  pageTitle: 'Utah Law Enforcement',
+  pageTitle: 'Utah Law Enforcement Locations',
   pageDescription: `Locations of law enforcement facilities where sworn officers of a law enforcement agency are regularly based or stationed.`,
   stewards: ['UGRC'],
   type: ProductType.POINT,
@@ -26,7 +26,7 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`August 2025`, `June 2013`, `August 2011`],
+  updateHistory: [`August 2025`, `June 2013`, `August 2011`, `November 2025`],
   hub: {
     ...dataPages[metadata.pageTitle],
   },
@@ -38,9 +38,9 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Utah Law Enforcement contains locations where sworn officers of a law enforcement agency are regularly based or
-      stationed. Law enforcement facilities are at least partially publicly funded. This law enforcement dataset
-      includes federal, state, local and special jurisdiction facilities. Examples of law enforcement facilities
+      Utah Law Enforcement Locations contains facilities where sworn officers of a law enforcement agency are regularly
+      based or stationed. Law enforcement facilities are at least partially publicly funded. This law enforcement
+      dataset includes federal, state, local and special jurisdiction facilities. Examples of law enforcement facilities
       included are municipal police, county sheriffs, state police, school police, park police, railroad police, and
       federal police.
     </p>

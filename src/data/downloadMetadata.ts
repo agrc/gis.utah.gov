@@ -1907,11 +1907,11 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'society.law_enforcement_boundaries',
     layerId: 0,
   },
-  'Utah Law Enforcement': {
-    itemId: '5a99475d434941359462307ede77d980',
-    name: 'Utah Law Enforcement',
-    featureServiceId: 'LawEnforcement',
-    openSgid: 'society.law_enforcement',
+  'Utah Law Enforcement Locations': {
+    itemId: '510c70b471854ef5bd9a8d4f4b944dea',
+    name: 'Utah Law Enforcement Locations',
+    featureServiceId: 'society_law_enforcement_locations',
+    openSgid: 'society.law_enforcement_locations',
     layerId: 0,
   },
   'Utah Forest Service Stations': {
