@@ -1,0 +1,107 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  pageTitle: 'Utah Average Annual Precipitation',
+  pageDescription: `Polygon dataset of average annual precipitation (inches) in Utah`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.CLIMATE,
+};
+
+const page: IPageMetadata = {
+  ...metadata, // this brings all the data from the metadata object above into the page object
+  application: 'https://wri.utah.gov/wri/map/map.html',
+  updateHistory: [`November 2025`],
+
+  hub: {
+    ...dataPages[metadata.pageTitle],
+  },
+};
+---
+
+<Layout {...page} subTitle={page.updateHistory[0]}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This dataset includes polygon boundaries for contours of average annual precipitation, measured in inches. The
+      data represent the average or normal amount of precipitation, based on the most recent standard 30-year climate
+      period from 1991-2020.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      These data represent average annual precipitation amounts in Utah for the 1991-2020 period. The dataset was
+      created to provide a generalized polygon alternative to the original raster data that is typically used in the
+      scientific community. The polygon version makes it easier to work with for GIS users in Utah.
+    </p>
+    <p>
+      The purpose of this dataset is to provide generalized average annual precipitation data for the state of Utah, to
+      be used for general analysis and cartographic purposes.
+    </p>
+    <p>
+      Each polygon feature in this dataset represents a 1-inch range of average annual precipitation. The data has
+      attributes for the minimum (min_inches) and maximum (max_inches) average annual precipitation found within a
+      particular polygon, along with a generalized attribute (inches), which is equal to min_inches. For example, a
+      polygon with min_inches = 15 and max_inches = 16, has average annual precipitation values between 15 and 16
+      inches. For more precise data at a given point location, users are encouraged to obtain the original source raster
+      data from the PRISM Group's <ExternalLink href="https://prism.oregonstate.edu/normals/"
+        >30-Year Normals</ExternalLink
+      > page.
+    </p>
+    <p>
+      UGRC derived this dataset from a nationwide analysis completed by the
+      <ExternalLink href="https://prism.oregonstate.edu/overview/">PRISM Group</ExternalLink>
+      at Oregon State University. The original raster dataset (approximately 800m resolution) was downloaded from the PRISM
+      site, clipped to a buffer around Utah, and converted from millimeters to inches. Then it was contoured for every whole
+      inch as an interval of 1 inch, to create a polygon dataset. The polygon data was then projected into UTM NAD83 Zone
+      12N (WKID: 26912), and clipped to the state of Utah boundary.
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="PRISM 30-Year Normals" href="https://prism.oregonstate.edu/normals/"
+        >U.S. raster data of climate variables for the 1991-2020 period.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="NOAA Climate Data" href="https://www.ncei.noaa.gov/maps/normals/"
+        >U.S. Climate Data Normals map viewer</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink
+        title="Avalanche Center Forecast Zones"
+        href="/products/sgid/recreation/avalanche-center-forecast-zones/"
+        >Polygon data layer of Utah Avalanche Center Forecast Zones.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Elevation" href="/products/sgid/elevation/">Utah elevation datasets.</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>

@@ -2691,4 +2691,11 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'recreation.avalanche_center_forecast_zones',
     layerId: 0,
   },
+  'Utah Average Annual Precipitation': {
+    itemId: '6c00b157aff14fc4ac8e991d2b3b5749',
+    name: 'Utah Average Annual Precipitation',
+    featureServiceId: 'climate_average_annual_precipitation',
+    openSgid: 'climate.average_annual_precipitation',
+    layerId: 0,
+  },
 };
