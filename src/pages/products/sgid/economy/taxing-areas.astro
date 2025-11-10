@@ -38,14 +38,24 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>
-      This dataset represents Taxing Districts/Areas in the State of Utah as maintained by the Utah State Tax Commission
-      (USTC). Each taxing district polygon represents a unique combination of overlapping taxing entities. The property
-      tax within a taxing district should be the same for all residential properties. This dataset is derived from a
-      spatial analysis process utilizing the USTC Tax Entities dataset. This data is for 2023. Updates are only done at
-      the beginning of each calendar year for the previous year. The 2024 rates have not been done yet and won't be
-      ready until September.
-    </p>
+    <div class="grid lg:grid-cols-2 lg:gap-10">
+      <p>
+        This dataset represents Taxing Districts/Areas in the State of Utah as maintained by the Utah State Tax
+        Commission (USTC). Each taxing district polygon represents a unique combination of overlapping taxing entities.
+        The property tax within a taxing district should be the same for all residential properties. This dataset is
+        derived from a spatial analysis process utilizing the USTC Tax Entities dataset. This data is for 2023. Updates
+        are only done at the beginning of each calendar year for the previous year. The 2024 rates have not been done
+        yet and won't be ready until September.
+      </p>
+      <div class="justify-center self-center">
+        <Alert title="Tip">
+          Historical tax datasets are archived in the <ExternalLink
+            href="https://utah.maps.arcgis.com/home/group.html?sortField=relevance&sortOrder=desc&searchTerm=tax&id=8765687b7b0545668fff02d1b750f7a9#content"
+            >UGRC Shelf</ExternalLink
+          > in ArcGIS Online.
+        </Alert>
+      </div>
+    </div>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
