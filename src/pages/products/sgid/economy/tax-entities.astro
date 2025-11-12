@@ -7,8 +7,6 @@ import { ProductType, SgidCategory } from '@models/types';
 import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
-import Alert from '@components/page/Alert.astro';
-import ExternalLink from '@components/react/ExternalLink';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
@@ -42,24 +40,13 @@ const page: IPageMetadata = {
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <div class="grid lg:grid-cols-2 lg:gap-10">
-      <p>
-        Tax Entities 2024 contains Tax Entities in Utah. Tax Entities are incorporated bodies that have the power to
-        levy a local property tax such as school districts, counties, cities, special service districts, redevelopment
-        districts, library districts, cemetery districts, and mosquito abatement districts. The Tax Entities 2024
-        dataset does not represent exact legal boundaries, but rather a set of boundaries used for the administrative
-        purposes by the USTC Property Tax Division for centrally assesses properties (quarries, rail, linear utilities,
-        etc).
-      </p>
-      <div class="justify-center self-center">
-        <Alert title="Tip">
-          Historical tax datasets are archived in the <ExternalLink
-            href="https://utah.maps.arcgis.com/home/group.html?sortField=relevance&sortOrder=desc&searchTerm=tax&id=8765687b7b0545668fff02d1b750f7a9#content"
-            >UGRC Shelf</ExternalLink
-          > in ArcGIS Online.
-        </Alert>
-      </div>
-    </div>
+    <p>
+      Tax Entities 2024 contains Tax Entities in Utah. Tax Entities are incorporated bodies that have the power to levy
+      a local property tax such as school districts, counties, cities, special service districts, redevelopment
+      districts, library districts, cemetery districts, and mosquito abatement districts. The Tax Entities 2024 dataset
+      does not represent exact legal boundaries, but rather a set of boundaries used for the administrative purposes by
+      the USTC Property Tax Division for centrally assesses properties (quarries, rail, linear utilities, etc).
+    </p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -85,6 +72,11 @@ const page: IPageMetadata = {
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
+      <CardWithPopularLink
+        title="SGID Shelf"
+        href="https://utah.maps.arcgis.com/home/group.html?sortField=title&sortOrder=desc&searchTerm=Utah+Tax&id=8765687b7b0545668fff02d1b750f7a9#content"
+        >Historical SGID Tax data.</CardWithPopularLink
+      >
       <CardWithPopularLink title="USTC" href="https://tax.utah.gov/">Utah State Tax Commission</CardWithPopularLink>
       <CardWithPopularLink title="Property Taxes" href="https://propertytax.utah.gov/"
         >Utah Property Taxes Division</CardWithPopularLink
