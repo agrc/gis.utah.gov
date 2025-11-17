@@ -92,7 +92,7 @@ Our previous broadband service layer got its data from two sources: many provide
   alt="The fabric points for a single provider overlaid with the H3 level 8 hexagons that contain them"
 />
 
-**To speed things up, we have [automated](https://github.com/agrc/broadband-data/blob/main/src/broadband/main.py) the update process using the FCC's API for accessing the BDC data.** This eliminates the need for the Utah Broadband Center to reach out to providers individually, the need for providers to respond to both the FCC and the state, and UGRC's long and laborious work to combine all the different responses into a single cohesive dataset. It also keeps the layer up-to-date with the lates FCC data.
+**To speed things up, we have [automated](https://github.com/agrc/broadband-data/blob/main/src/broadband/main.py) the update process using the FCC's API for accessing the BDC data.** This eliminates the need for the Utah Broadband Center to reach out to providers individually, the need for providers to respond to both the FCC and the state, and UGRC's long and laborious work to combine all the different responses into a single cohesive dataset. It also keeps the layer up-to-date with the latest FCC data.
 
 **We've also drastically simplified the data geometries by using the standardized H3 index and dissolving similar hexes together.** By starting with the basic spatial unit of a hex with six vertices and then dissolving them together, many hexes' vertices are completely removed because they're in the middle of a much larger polygon. This massively simpler geometry shrinks storage space, rendering time, and analysis complexity.
 

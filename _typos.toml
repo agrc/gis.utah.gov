@@ -1,0 +1,14 @@
+[default]
+extend-ignore-re = ["freepik--.*"]
+[default.extend-words]
+AGRC = "AGRC"
+USNG = "USNG"
+DESIG = "DESIG"
+LOD = "LOD"
+AGS = "AGS"
+NED = "NED"
+[files]
+extend-exclude = [
+  "src/utilities/**",
+  "src/downloads/pillar-collaboration/presentations/**",
+]
