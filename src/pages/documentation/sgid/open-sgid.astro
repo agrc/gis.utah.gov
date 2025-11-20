@@ -11,10 +11,10 @@ import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
+import { Code } from 'astro:components';
 
 import dbeaverAddDbPhoto from '@images/documentation/sgid/dbeaver_open_sgid_add_db.png';
 import dbeaverConnectionPhoto from '@images/documentation/sgid/dbeaver_open_sgid_conn.png';
-import geoPandasPhoto from '@images/documentation/sgid/geopandas_open_sgid.png';
 import gmAddDbPhoto from '@images/documentation/sgid/gm_open_sgid_add_db.png';
 import gmConnectionPhoto from '@images/documentation/sgid/gm_open_sgid_conn.png';
 import proAddDbPhoto from '@images/documentation/sgid/pro_open_sgid_add_db.png';
@@ -183,11 +183,23 @@ const page: IStandardPageMetadata = {
     </NumberedList>
   </Section>
   <Section {...page.section[6]}>
-    <Image
+    <Code
       slot="image"
-      src={geoPandasPhoto}
-      alt="The code needed to connect to the Open SGID using GeoPandas"
-      class="w-full max-w-[400px]"
+      class="w-full max-w-[600px]"
+      lang="py"
+      code={`
+import geopandas as gpd
+from sqlalchemy import create_engine
+
+url = "postgresql://agrc:agrc@opensgid.agrc.utah.gov:5432/opensgid"
+opensgid_connection = create_engine(url)
+
+sql_query = "SELECT * FROM boundaries.county_boundaries"
+county_boundaries = gpd.read_postgis(
+    sql_query, 
+    opensgid_connection, 
+    geom_col="shape")
+      `}
     />
     <NumberedList>
       <li>
