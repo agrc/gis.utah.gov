@@ -11,6 +11,7 @@ import QuickLinks from '@components/page/QuickLinks.astro';
 import Section from '@components/page/Section.astro';
 
 import { Image } from 'astro:assets';
+import { Code } from 'astro:components';
 
 import dbeaverAddDbPhoto from '@images/documentation/sgid/dbeaver_open_sgid_add_db.png';
 import dbeaverConnectionPhoto from '@images/documentation/sgid/dbeaver_open_sgid_conn.png';
@@ -25,7 +26,7 @@ import { stripeSections } from '@utils/page';
 
 const page: IStandardPageMetadata = {
   pageTitle: 'Open SGID',
-  pageDescription: 'Connect to the Open SGID with ArcGIS Pro, DBeaver, QGIS, and Global Mapper.',
+  pageDescription: 'Connect to the Open SGID with ArcGIS Pro, DBeaver, QGIS, Global Mapper, and GeoPandas.',
   pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
     { title: 'What is the Open SGID' },
@@ -49,6 +50,11 @@ const page: IStandardPageMetadata = {
       title: 'Connect with Global Mapper',
       actionText: 'Download Global Mapper',
       actionUrl: 'https://www.bluemarblegeo.com/global-mapper-download/',
+    },
+    {
+      title: 'Connect with GeoPandas',
+      actionText: 'GeoPandas documentation',
+      actionUrl: 'https://geopandas.org/en/latest/docs/reference/api/geopandas.GeoDataFrame.from_postgis.html',
     },
   ]),
 };
@@ -173,6 +179,42 @@ const page: IStandardPageMetadata = {
         Enter the connection information found on the <ExternalLink
           href="https://github.com/agrc/open-sgid#connection-information">Open SGID GitHub repository</ExternalLink
         >.
+      </li>
+    </NumberedList>
+  </Section>
+  <Section {...page.section[6]}>
+    <Code
+      slot="image"
+      class="w-full max-w-[600px]"
+      lang="py"
+      code={`
+import geopandas as gpd
+from sqlalchemy import create_engine
+
+url = "postgresql://agrc:agrc@opensgid.agrc.utah.gov:5432/opensgid"
+opensgid_connection = create_engine(url)
+
+sql_query = "SELECT * FROM boundaries.county_boundaries"
+county_boundaries = gpd.read_postgis(
+    sql_query, 
+    opensgid_connection, 
+    geom_col="shape")
+      `}
+    />
+    <NumberedList>
+      <li>
+        Create a <kbd>sqlalchemy engine</kbd> using the connection string <kbd
+          >postgresql://username:password@opensgid.agrc.utah.gov:5432/opensgid</kbd
+        >.
+      </li>
+      <li>
+        Create a SQL query using the Open SGID sample query from a layer's <a href="/products/sgid/categories/"
+          >SGID data page</a
+        >.
+      </li>
+      <li>
+        Use <kbd>gpd.read_postgis()</kbd> with your engine and SQL query, passing in <kbd>geom_col="shape"</kbd> to set the
+        geometry column.
       </li>
     </NumberedList>
   </Section>
