@@ -12,6 +12,7 @@ import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import Contacts from '@components/page/Contacts.astro';
 import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -19,7 +20,7 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  pageTitle: 'Utah Tax Entities 2024',
+  pageTitle: 'Utah Tax Entities',
   pageDescription:
     'Tax Entities are incorporated bodies that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts.',
   stewards: ['UGRC', 'USTC'],
@@ -29,9 +30,9 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: ['June 2024', 'June 2023', 'March 2022', 'January 2021'],
+  updateHistory: ['October 2025', 'June 2024', 'June 2023', 'March 2022', 'January 2021'],
   hub: {
-    ...dataPages[metadata.pageTitle],
+    ...dataPages['Utah Tax Entities 2025'],
   },
 };
 ---
@@ -41,11 +42,17 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      Tax Entities 2024 contains Tax Entities in Utah. Tax Entities are incorporated bodies that have the power to levy
+      Tax Entities 2025 contains Tax Entities in Utah. Tax Entities are incorporated bodies that have the power to levy
       a local property tax such as school districts, counties, cities, special service districts, redevelopment
-      districts, library districts, cemetery districts, and mosquito abatement districts. The Tax Entities 2024 dataset
+      districts, library districts, cemetery districts, and mosquito abatement districts. The Tax Entities 2025 dataset
       does not represent exact legal boundaries, but rather a set of boundaries used for the administrative purposes by
       the USTC Property Tax Division for centrally assesses properties (quarries, rail, linear utilities, etc).
+    </p>
+    <p>
+      To view historical tax entities data, visit the <ExternalLink
+        href="https://utah.maps.arcgis.com/home/group.html?sortField=title&sortOrder=desc&searchTerm=Utah+Tax&id=8765687b7b0545668fff02d1b750f7a9#content"
+        >SGID Shelf</ExternalLink
+      >.
     </p>
   </Fragment>
 
