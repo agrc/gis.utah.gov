@@ -1,16 +1,16 @@
 ---
 title: 'Python Shorts: Point Me to the Nearest Points with GeoPandas'
 author: Jake Adams
-date: '2025-11-25T16:00:00.000Z'
+date: '2025-11-24T14:00:00.000Z'
 category: Developer
 tags:
   - python
-cover_image: /src/images/pillar-blog/2025-11-25-python-shorts-point-me-to-the-nearest/near_points_and_lines.png
+cover_image: /src/images/pillar-blog/2025-11-24-python-shorts-point-me-to-the-nearest/near_points_and_lines.png
 cover_image_alt: Lines showing which circle points are considered the nearest for the triangle points.
 ---
 
-import PointsOnly from '@images/blog/2025-11-25-python-shorts-point-me-to-the-nearest/near_points.png';
-import PointsAndLines from '@images/blog/2025-11-25-python-shorts-point-me-to-the-nearest/near_points_and_lines.png';
+import PointsOnly from '@images/blog/2025-11-24-python-shorts-point-me-to-the-nearest/near_points.png';
+import PointsAndLines from '@images/blog/2025-11-24-python-shorts-point-me-to-the-nearest/near_points_and_lines.png';
 
 import { Image } from 'astro:assets';
 
@@ -62,7 +62,7 @@ nearest = gpd.sjoin_nearest(
     rsuffix="_addresses")
 ```
 
-This gives us a dataframe with a row for each feature in the temperatures layer, including their geometries. It joins the columns from the nearest address point to these rows, including an `index__addresses` column that we can use to join the resulting dataframe back to the address dataframe. Alternatively, we could use a unique key in our address points layer to perform the join. The `distance_col` argument specifies a column to hold the distance between the temperature record and it's associated address point.
+This gives us a dataframe with a row for each feature in the temperatures layer, including their geometries. It joins the columns from the nearest address point to these rows, including an `index__addresses` column that we can use to join the resulting dataframe back to the address dataframe. Alternatively, we could use a unique key in our address points layer to perform the join. The `distance_col` argument specifies a column to hold the distance between the temperature record and its associated address point.
 
 ### Step two: Merge the resulting table back to the address points to get their geometries
 
