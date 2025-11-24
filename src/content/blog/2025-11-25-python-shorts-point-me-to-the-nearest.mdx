@@ -19,6 +19,7 @@ One analysis that comes up regularly in GIS is figuring out the relationship bet
 <Image
   src={PointsOnly}
   alt="Two layers of points, circles and triangles, with no clear indication of which points the near analysis chose as closest."
+  loading="eager"
 />
 
 ## Near(ly) There
@@ -37,7 +38,7 @@ GeoPandas gives us an easy way to both create the near table for joining the two
 
 <Image
   src={PointsAndLines}
-  loading="eager"
+  loading="lazy"
   alt="The lines show which circle points are considered the nearest for the triangle points."
 />
 
@@ -61,7 +62,7 @@ nearest = gpd.sjoin_nearest(
     rsuffix="_addresses")
 ```
 
-This gives us a dataframe with a row for each feature in the temperatures layer, including their geometries . It joins the columns from the nearest address point to these rows, including an `index__addresses` column that we can use to join the resulting dataframe back to the address dataframe. Alternatively, we could use a unique key in our address points layer to perform the join. The `distance_col` argument specifies a column to hold the distance between the temperature record and it's associated address point.
+This gives us a dataframe with a row for each feature in the temperatures layer, including their geometries. It joins the columns from the nearest address point to these rows, including an `index__addresses` column that we can use to join the resulting dataframe back to the address dataframe. Alternatively, we could use a unique key in our address points layer to perform the join. The `distance_col` argument specifies a column to hold the distance between the temperature record and it's associated address point.
 
 ### Step two: Merge the resulting table back to the address points to get their geometries
 
