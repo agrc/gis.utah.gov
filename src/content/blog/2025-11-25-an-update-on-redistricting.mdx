@@ -1,6 +1,6 @@
 ---
 title: An update on redistricting
-author: Steve Gourley
+author: UGRC
 description: >-
   How UGRC will handle data layer changes with Utah's new congressional
   districts.
@@ -10,13 +10,32 @@ cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-{/* remove if not using images
-import { Image } from 'astro:assets'; */}
+import { Image } from 'astro:assets';
 
-{/* remove if not using an image
-import myImage from '@images/blog/2025-11-25-an-update-on-redistricting/image.png'; */}
+import NewDistricts from '@images/blog/2025-11-25-an-update-on-redistricting/new-districts.png';
 
-My blog post content starts here.
+It’s been a busy few months in Utah, with a lot of uncertainty about congressional district boundaries. From a GIS data perspective, UGRC was aware that changes were likely, but we didn’t know exactly what the result would look like. Now that the court has made its decision, the United States Congressional districts for the 2026 elections need to be updated. Consequently, UGRC will be publishing a new data layer to reflect the court’s decision. Minor adjustments to the Plaintiff’s “Map 1” were made after the state requested clarification on the boundary in a few areas from the court. This resulted in "Map 1A," which is the dataset that will be published.
 
-{/* remove if not using an image
-<Image src={myImage} loading="eager" alt="A sample image" /> */}
+## Upcoming Data Layer Changes
+
+After the 2021 redistricting, we decided to name our political district boundary layers for the years they would be valid, based on the decennial Census and redistricting cycles. Therefore, we named our current [US Congress Districts](/products/sgid/political/us-congressional-districts/) “Utah US Congress Districts 2022 to 2032.”
+
+However, the mid-cycle redistricting has complicated our naming convention, so we must rename the layers. The original districts implemented for 2022 must still exist through 2026 because they reflect the districts represented by elected officials currently holding office, but we must also implement the new districts to facilitate new candidate filings and the 2026 elections.
+
+## Layer Swaps
+
+We will deprecate and eventually remove the original data layer, “Utah US Congress Districts 2022 to 2032,” from the State Geographic Information Datasource (SGID). A copy of this layer named “Utah US Congress Districts 2022 to 2026” will replace it to reflect the years the data was actually valid.
+
+We will also introduce a new data layer representing the newly created districts as “Utah US Congress Districts 2026 to 2032.” Officials will use this data for the 2026 elections and the name indicates the anticipated years the data will be valid.
+
+## What Happens Next?
+
+With the new districts determined, the counties must review their precincts and make any necessary updates. The new districts do not divide most counties, but they now run through a few of them (Salt Lake, Utah, and Weber). This means the district lines will likely split some existing voting precincts (what we call [Vista Ballot Areas](/products/sgid/political/voter-precincts/)). Counties must update these precincts to ensure they fall within a single political district and municipality so they can provide the same ballot to every voter within a precinct.
+
+This process of updating precincts will take place over the coming weeks. UGRC will work with the counties to review and implement their precinct updates. We will also be working closely with the Lt Governor’s Office to update the datasets used by the elections systems to ensure everything is ready for 2026.
+
+<Image
+  src={NewDistricts}
+  alt="A side-by-side comparison map of US Congressional Districts in Utah. The map on the left, labeled '2022 to 2026', shows the current four districts. The map on the right, labeled '2026 to 2032', shows the newly accepted four districts. The primary difference is how the districts slice the populated northern region: the new map shifts District 1 to a more central, populated area in Salt Lake County; District 2 is now the northern section of the state; District 3 is the eastern and southern sections; and District 4 covers the central-west portion."
+  loading="eager"
+/>
