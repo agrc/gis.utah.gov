@@ -38,6 +38,25 @@ const page: IPageMetadata = {
     ...dataPages[metadata.pageTitle],
   },
 };
+
+const hubParts = (hub) => {
+  let id = hub.name.toLowerCase().replaceAll(' ', '-');
+  let name = hub.name;
+  const featureServiceHost = 'https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/';
+
+  const featureService = hub.featureServiceId || hub.name.toLowerCase().replaceAll(' ', '');
+  let serviceUrl: string;
+  if (hub.featureServiceId) {
+    serviceUrl = `${featureServiceHost}${featureService}/FeatureServer/${hub.layerId}`;
+  } else {
+    serviceUrl = `${featureServiceHost}${hub.mapServiceId}/MapServer/${hub.layerId}`;
+  }
+
+  return { id, name, serviceUrl };
+};
+
+const primary = hubParts(page.hub);
+const secondary = hubParts(dataPages['Utah US Congress Districts 2022 to 2032']);
 ---
 
 <Layout {...page} pageTitle={removeDateRange(page.pageTitle)} subTitle={page.updateHistory[0]}>
@@ -48,7 +67,37 @@ const page: IPageMetadata = {
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
-    <HubDownloads {...page.hub} />
+    <div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">
+      <div class="flex flex-col">
+        <h2 class="pb-1">Explore and Download</h2>
+        <span>
+          <ExternalLink href={`https://opendata.gis.utah.gov/datasets/${primary.id}/about`}>{primary.name}</ExternalLink
+          > in the SGID on ArcGIS
+        </span>
+        <ExternalLink href={primary.serviceUrl}>{primary.name} feature service</ExternalLink>
+        <span class="pt-2">
+          <ExternalLink href={`https://opendata.gis.utah.gov/datasets/${secondary.id}/about`}
+            >{secondary.name}</ExternalLink
+          > in the SGID on ArcGIS
+        </span>
+        <ExternalLink href={secondary.serviceUrl}>{secondary.name} feature service</ExternalLink>
+        <slot name="more-links" />
+      </div>
+      <div class="flex flex-col gap-1">
+        <h2 class="pb-1">Quick clips</h2>
+        <Clipboard title={`${primary.name} Feature service URL`} value={primary.serviceUrl} />
+        <span class="pt-2"></span>
+        <Clipboard title={`${secondary.name} Feature service URL`} value={secondary.serviceUrl} />
+      </div>
+      <div class="flex flex-col">
+        <h2 class="pb-1">Getting started</h2>
+        <div>Learn more about the <a href="/documentation/sgid/#sgid-on-arcgis">SGID on ArcGIS</a>.</div>
+      </div>
+      <Alert title="Tip">
+        You can copy and paste the feature service URL above into ArcGIS Pro or a web map to visualize this data or
+        access the query endpoint to query the data with your favorite programming language.
+      </Alert>
+    </div>
   </Section>
 
   <Fragment slot="description">
