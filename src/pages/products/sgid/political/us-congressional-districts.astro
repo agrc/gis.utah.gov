@@ -20,7 +20,6 @@ import { dataPages } from '@data/downloadMetadata';
 import { removeDateRange } from '@utils/data';
 
 export const metadata: IMetadata = {
-  pageTitle: 'Utah US Congress Districts 2022 to 2032',
   pageDescription: `Utah Congressional Districts for 2022 to 2032`,
   stewards: ['UGRC', `Lieutenant Governor's Office`],
   type: ProductType.POLYGON,
@@ -30,6 +29,7 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   updateHistory: [
+    `2025: District update after 2025 Court Decision`,
     `2022: Redistricting after 2020 Census`,
     `2012: Redistricting after 2010 Census`,
     `2002: Redistricting after 2000 Census`,
