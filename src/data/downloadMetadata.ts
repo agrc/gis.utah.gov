@@ -1886,6 +1886,13 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'political.us_congress_districts_2022_to_2032',
     layerId: 0,
   },
+    'Utah US Congress Districts 2026 to 2032': {
+    itemId: 'd3388c1f7d894ab789247f6442855d66',
+    name: 'Utah US Congress Districts 2026 to 2032',
+    featureServiceId: 'political_us_congress_districts_2026_to_2032',
+    openSgid: 'political.us_congress_districts_2026_to_2032',
+    layerId: 0,
+  },
   'Utah Liquor Stores': {
     itemId: '61b7f10c194b4ec69d02e169db1da09a',
     name: 'Utah Liquor Stores',

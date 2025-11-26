@@ -4,22 +4,24 @@ import Layout from '@layouts/DataPage.astro';
 import type { IMetadata, IPageMetadata } from '@models/types';
 import { ProductType, SgidCategory } from '@models/types';
 
-import HubDownloads from '@components/data/HubDownloads.astro';
 import Metadata from '@components/data/Metadata.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
 
+import Alert from '@components/page/Alert.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Clipboard from '@components/page/Clipboard.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
 
+import ExternalLink from '@components/react/ExternalLink';
 import { dataPages } from '@data/downloadMetadata';
 import { removeDateRange } from '@utils/data';
 
 export const metadata: IMetadata = {
-  pageTitle: 'Utah US Congress Districts 2022 to 2032',
-  pageDescription: `Utah Congressional Districts for 2022 to 2032`,
+  pageTitle: 'Utah US Congress Districts 2026 to 2032',
+  pageDescription: `Utah Congressional Districts for 2026 to 2032`,
   stewards: ['UGRC', `Lieutenant Governor's Office`],
   type: ProductType.POLYGON,
   category: SgidCategory.POLITICAL,
@@ -28,6 +30,7 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   updateHistory: [
+    `2025: District update after 2025 Court Decision`,
     `2022: Redistricting after 2020 Census`,
     `2012: Redistricting after 2010 Census`,
     `2002: Redistricting after 2000 Census`,
@@ -36,25 +39,101 @@ const page: IPageMetadata = {
     ...dataPages[metadata.pageTitle],
   },
 };
+
+const hubParts = (hub) => {
+  let id = hub.name.toLowerCase().replaceAll(' ', '-');
+  let name = hub.name;
+  const featureServiceHost = 'https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/';
+
+  const featureService = hub.featureServiceId || hub.name.toLowerCase().replaceAll(' ', '');
+  let serviceUrl: string;
+  if (hub.featureServiceId) {
+    serviceUrl = `${featureServiceHost}${featureService}/FeatureServer/${hub.layerId}`;
+  } else {
+    serviceUrl = `${featureServiceHost}${hub.mapServiceId}/MapServer/${hub.layerId}`;
+  }
+
+  return { id, name, serviceUrl };
+};
+
+const primary = hubParts(page.hub);
+const secondary = hubParts(dataPages['Utah US Congress Districts 2022 to 2032']);
 ---
 
 <Layout {...page} pageTitle={removeDateRange(page.pageTitle)} subTitle={page.updateHistory[0]}>
   <Metadata slot="metadata" {...page} />
 
   <Fragment slot="summary">
-    <p>US House of Representatives Districts for Utah defined after every decennial census.</p>
+    <p>
+      United States House of Representatives Districts for Utah. This dataset shows the U.S. Congressional Districts
+      that will be used in elections and that elected officials will represent.
+    </p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
-    <HubDownloads {...page.hub} />
+    <div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">
+      <div class="flex flex-col">
+        <h2 class="pb-1">Explore and Download</h2>
+        <span>
+          <ExternalLink href={`https://opendata.gis.utah.gov/datasets/${primary.id}/about`}>{primary.name}</ExternalLink
+          > in the SGID on ArcGIS
+        </span>
+        <ExternalLink href={primary.serviceUrl}>{primary.name} feature service</ExternalLink>
+        <span class="pt-2">
+          <ExternalLink href={`https://opendata.gis.utah.gov/datasets/${secondary.id}/about`}
+            >{secondary.name}</ExternalLink
+          > in the SGID on ArcGIS
+        </span>
+        <ExternalLink href={secondary.serviceUrl}>{secondary.name} feature service</ExternalLink>
+        <slot name="more-links" />
+      </div>
+      <div class="flex flex-col gap-1">
+        <h2 class="pb-1">Quick clips</h2>
+        <Clipboard title={`${primary.name} Feature service URL`} value={primary.serviceUrl} />
+        <span class="pt-2"></span>
+        <Clipboard title={`${secondary.name} Feature service URL`} value={secondary.serviceUrl} />
+      </div>
+      <div class="flex flex-col">
+        <h2 class="pb-1">Getting started</h2>
+        <div>Learn more about the <a href="/documentation/sgid/#sgid-on-arcgis">SGID on ArcGIS</a>.</div>
+      </div>
+      <Alert title="Tip">
+        You can copy and paste the feature service URL above into ArcGIS Pro or a web map to visualize this data or
+        access the query endpoint to query the data with your favorite programming language.
+      </Alert>
+    </div>
   </Section>
 
   <Fragment slot="description">
-    <p>U.S. Congress Districts 2022 to 2032 shows the U.S. Congressional Districts that elected officials represent.</p>
-    <p>The <code>DISTRICT</code> field contains the U.S. Congress district number.</p>
     <p>
-      Statewide political district boundaries are drawn by the Utah Legislature after each decennial census and adopted
-      into state law.
+      Statewide district boundaries are typically drawn by the Utah State Legislature after each decennial census and
+      adopted into State law. However, due to a recent decision by the Utah Third Judicial District Court, the original
+      congressional district boundaries were invalidated and the court adopted a new set of boundaries submitted by the
+      plaintiff for the 2026 elections.
+    </p>
+    <p>
+      The data will be used for election purposes beginning January 1, 2026. Elected officials begin representing these
+      districts in January 2027. These boundaries supersede the US Congress districts that were used in 2022-2025 and
+      are suitable for general analytic purposes.
+    </p>
+    <p>
+      Each polygon in this dataset represents the approximate geographic boundary that a given elected official
+      represents. The DISTRICT field contains the US Congress district number. This dataset does not contain names or
+      information for current elected officials.
+    </p>
+    <p>
+      The congressional districts were provided by the Utah Third Judicial District Court after a decision that
+      invalidated the previous congressional districts and adopted the Plaintiff's "Map 1." Minor adjustments were then
+      made after the state requested clarification in a few areas, resulting in "Map 1A." UGRC then projected the
+      court-provided "Map 1A" from WGS84 (WKID: 4326) into the standard statewide spatial reference of NAD83 UTM Zone
+      12N (WKID: 26912).
+    </p>
+    <p>The boundaries in this dataset will eventually be superseded by new data drawn from the 2030 Census.</p>
+    <p>
+      To view historical political district boundary data, visit the <ExternalLink
+        href="https://utah.maps.arcgis.com/home/group.html?sortField=relevance&sortOrder=desc&searchTerm=Utah+Political+District&id=8765687b7b0545668fff02d1b750f7a9#content"
+        >SGID Shelf</ExternalLink
+      >.
     </p>
   </Fragment>
 
