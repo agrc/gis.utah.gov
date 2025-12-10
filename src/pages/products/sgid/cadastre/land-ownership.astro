@@ -46,9 +46,10 @@ const page: IPageMetadata = {
   <Fragment slot="summary">
     <p>
       Land ownership depicts land ownership status and areas of responsibility for the State of Utah surface lands at a
-      scale of 1:24,000. This is a statewide dataset of land ownership status, and therefore is a compilation of all
-      surface land ownership administration, and designation categories.
+      scale of 1:24,000. This is a "best-effort" statewide dataset of land ownership status compiled from multiple state
+      and federal sources.
     </p>
+    <p><b>Land ownership can be different from land management or jurisdictional authority.</b></p>
   </Fragment>
 
   <Section title="Use the data" slot="downloads" titlePosition="center">
@@ -65,9 +66,9 @@ const page: IPageMetadata = {
   <Fragment slot="description">
     <p>
       Maintenance of this data layer is performed by a cooperative federal and state effort between the Bureau of Land
-      Management (BLM) and the State of Utah School and Institutional Trust Lands Administration (SITLA). Both the Utah
-      School and Institutional Trust Lands Administration (SITLA) and the Bureau of Land Management (BLM) update this
-      dataset regularly. Revisions of the dataset are made available weekly.
+      Management (BLM) and the State of Utah School and Institutional Trust Lands Administration (SITLA). Both Trust
+      Lands Administration and the BLM update this dataset regularly. Revisions of the dataset are made available
+      weekly.
     </p>
     <p>
       Standard colors are recommended when displaying this feature class. A layer file containing the standard color
@@ -310,7 +311,14 @@ const page: IPageMetadata = {
       />
     </div>
     <div class="space-y-3 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-700">
-      <h4>Native American Tribal Land</h4>
+      <h4>Native American Tribally-Owned Land</h4>
+      <p>
+        The land identified as under Tribal ownership is not guaranteed to include all Tribal land or reflect
+        reservation boundaries. Further, Tribal jurisdictional authority can extend beyond land ownership boundaries.
+      </p>
+      <p>
+        <b>This query does not create official tribal boundaries.</b>
+      </p>
       <Clipboard
         title=`To work with only Tribal lands* specify a where statement of owner='Tribal'`
         value=`owner='Tribal'`
