@@ -69,6 +69,7 @@ export function etlRow(row): StewardshipRecord | null {
       tableName: row.get('tableName'),
       category: row.get('category'),
       indexStatus: row.get('indexStatus') as StewardshipRecord['indexStatus'],
+      refreshCycle: row.get('refreshCycle') as StewardshipRecord['refreshCycle'],
       source:
         row
           .get('dataSource')
