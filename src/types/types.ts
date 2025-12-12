@@ -154,6 +154,7 @@ export type StewardshipRecord = {
   inActionUrl?: string;
   productPage: string;
   indexStatus: 'draft' | 'live' | 'invalid' | 'removed' | null;
+  refreshCycle: 'As needed' | 'Daily' | 'Weekly' | 'Monthly' | 'Bimonthly' | 'Quarterly' | 'Semi-anually' | 'Biannual' | 'Annually' | 'Decennially' | 'Unknown' | 'Shelved' | 'Static' | 'Other';
   server?: {
     host?: string;
     serviceName: string;
