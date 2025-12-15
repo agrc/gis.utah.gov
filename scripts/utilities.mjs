@@ -97,6 +97,17 @@ export async function validateOpenSgidTableName(table, schema) {
   };
 }
 
+export async function closeDbClient() {
+  if (dbClient) {
+    try {
+      await dbClient.destroy();
+    } catch (e) {
+      // ignore destroy errors in cleanup
+    }
+    dbClient = null;
+  }
+}
+
 export async function validateOpenDataUrl(url) {
   const domainToOrg = {
     'data.wfrc.org': 'wfrc',

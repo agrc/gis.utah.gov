@@ -23,12 +23,18 @@ describe('new-blog', () => {
     const blog = {
       title: 'GPS Network Highlights',
       description: '120-160 characters.',
-      category: ['TURN'],
+      category: 'TURN',
       author: 'Sean Fernandez',
     };
 
     const filePath = '../src/content/blog/2024-07-15-gps-network-highlights.mdx';
     const slug = '2024-07-15-gps-network-highlights';
+
+    mock({
+      '../src/content/blog': {},
+      '../src/images/pillar-blog': {},
+    });
+
     createNewBlogPost(slug, blog, '2024-07-15T09:24:53.000Z');
 
     const file = fs.readFileSync(filePath, 'utf-8');
@@ -38,8 +44,7 @@ describe('new-blog', () => {
     assert.ok(file.includes('description: 120-160 characters.'));
     assert.ok(file.includes(`date: '2024-07-15T09:24:53.000Z'`));
     assert.ok(file.includes('author: Sean Fernandez'));
-    assert.ok(file.includes('category:'));
-    assert.ok(file.includes('  - TURN'));
+    assert.ok(file.includes('category: TURN'));
 
     mock.restore();
   });
