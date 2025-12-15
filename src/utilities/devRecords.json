@@ -4263,7 +4263,7 @@
       "host": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis"
     },
     "openSgid": "economy.tax_entities_2022",
-    "refreshCycle": "Monthly"
+    "refreshCycle": "Shelved"
   },
   {
     "id": "2283c48e-5a41-4aab-a298-966efef4ece3",
