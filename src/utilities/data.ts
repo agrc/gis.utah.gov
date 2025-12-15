@@ -50,3 +50,12 @@ export const getArcGisHubUrl = (hub: { title?: string; hubName?: any; organizati
 
   return `https://opendata.gis.utah.gov/datasets/${id}/about`;
 };
+
+export const getAgolUrl = (hub: { itemId?: string, organization?: string }) => {
+  let host = "www.arcgis.com";
+  if (hub.organization?.toLowerCase() === 'utah') {
+    host = "utah.maps.arcgis.com";
+  }
+
+  return `https://${host}/home/item.html?id=${hub.itemId}`;
+};
