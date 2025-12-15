@@ -1073,7 +1073,7 @@ export const dataPages: DownloadMetadata = {
     layerId: 0,
   },
   'Utah Environmental Incidents': {
-    itemId: '892f7efacb8b4643b8e111a33d34a7f0',
+    itemId: '635d1639bf6d4d398700405c8e40acfe',
     name: 'Utah Environmental Incidents',
     featureServiceId: undefined,
     openSgid: undefined,
