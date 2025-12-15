@@ -1,3 +1,5 @@
+import Tooltip from '@components/react/Tooltip';
+
 export default function ShelvedPill() {
   return (
     <span
@@ -7,7 +9,9 @@ export default function ShelvedPill() {
         href="/documentation/policy/sgid/#dataset-deprecation-and-removal"
         className="custom-style rounded hover:underline focus:outline-none focus:ring-1 focus:ring-accent"
       >
-        Shelved
+        <Tooltip content="This dataset is an older dataset that we have removed from the SGID and 'shelved' in ArcGIS Online. There may (or may not) be a newer vintage of this dataset in the SGID.">
+          Shelved
+        </Tooltip>
       </a>
     </span>
   );
