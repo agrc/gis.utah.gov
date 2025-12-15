@@ -1,6 +1,6 @@
 import startCase from 'lodash.capitalize';
 
-import { convertProductType, getArcGisHubUrl, getFeatureServiceUrl } from '@utils/data';
+import { convertProductType, getAgolUrl, getArcGisHubUrl, getFeatureServiceUrl } from '@utils/data';
 
 import ExternalLink from '@components/react/ExternalLink';
 import InfoPill from '@components/react/InfoPill';
@@ -27,6 +27,7 @@ export default function SgidIndexSearchCard({ astroSite, record }: Props) {
   if (record.inActionUrl) {
     apps.push({ url: record.inActionUrl, title: 'Data in action' });
   }
+
   if (record.hub?.itemId && record.refreshCycle !== 'Shelved') {
     if (!urlString) {
       urlString = getArcGisHubUrl(record.hub);
@@ -34,6 +35,11 @@ export default function SgidIndexSearchCard({ astroSite, record }: Props) {
 
     apps.push({ url: getArcGisHubUrl(record.hub), title: 'ArcGIS Hub item' });
   }
+
+  if (record.refreshCycle?.toLowerCase() === 'shelved' && record.hub?.itemId) {
+    apps.push({ url: getAgolUrl(record.hub), title: 'ArcGIS Online item' });
+  }
+
   if (record.server?.host) {
     if (!urlString) {
       urlString = getFeatureServiceUrl(record.server);
