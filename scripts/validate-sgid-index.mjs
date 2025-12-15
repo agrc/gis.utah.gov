@@ -250,7 +250,8 @@ async function itemId(row) {
 
 async function duplicates(row) {
   for (const field in duplicateLookups) {
-    const value = row.get(field);
+    const mapper = duplicateLookupsConfig[field];
+    const value = mapper ? mapper(row) : row.get(getFieldName(field));
     if (!value) {
       continue;
     }
@@ -305,33 +306,12 @@ async function productPageOrItemId(row) {
   }
 }
 
-const duplicateLookups = {
-  openSgidTableName: {},
-  itemId: {},
-  id: {},
-  displayName: {},
-};
+import { duplicateLookupsConfig as helpersDuplicateLookupsConfig, buildDuplicateLookups as buildDuplicateLookupsHelper } from './sgid-helpers.mjs';
+
+let duplicateLookups = {};
 function buildDuplicateLookups(rows) {
   console.log('building duplicate lookups');
-
-  for (const field in duplicateLookups) {
-    for (const row of rows) {
-      if (row.get(getFieldName('indexStatus'))?.toLowerCase() !== 'live') {
-        continue; // skip rows that are not live
-      }
-
-      const value = row.get(field);
-      if (!value) {
-        continue;
-      }
-
-      if (duplicateLookups[field][value]) {
-        duplicateLookups[field][value].push(row);
-      } else {
-        duplicateLookups[field][value] = [row];
-      }
-    }
-  }
+  duplicateLookups = buildDuplicateLookupsHelper(rows, helpersDuplicateLookupsConfig, getFieldName);
 }
 
 const checks = [
