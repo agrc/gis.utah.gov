@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
-import { describe, it } from 'node:test';
-import { slugify, validateOpenDataUrl, validateOpenSgidTableName, validateUrl } from './utilities.mjs';
+import { after, describe, it } from 'node:test';
+import { closeDbClient, slugify, validateOpenDataUrl, validateOpenSgidTableName, validateUrl } from './utilities.mjs';
 
 describe('validateUrl', () => {
   it('handles a valid url', async () => {
@@ -31,6 +31,11 @@ describe('validateUrl', () => {
     assert(!result.valid);
     assert.match(result.message, /failed request/);
   });
+});
+
+after(async () => {
+  // ensure DB client is destroyed so the test process can exit cleanly
+  await closeDbClient();
 });
 
 describe('validateOpenSgidTableName', () => {
@@ -71,8 +76,8 @@ describe('validateOpenDataUrl', () => {
 describe('slugify', () => {
   const tests = [
     ['Utah H3 Hexes Level 5', 'utah-h3-hexes-level-5'],
-    ['Name with an apostrophe hell\'o', 'name-with-an-apostrophe-hello'],
-  ]
+    ["Name with an apostrophe hell'o", 'name-with-an-apostrophe-hello'],
+  ];
 
   for (const [input, expected] of tests) {
     it(`slugifies ${input} to ${expected}`, () => {
