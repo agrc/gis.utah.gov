@@ -1,4 +1,4 @@
-import { ProductType } from '@models/types';
+import { ProductType, type StewardshipRecord } from '@models/types';
 
 export const convertProductType = (type: ProductType) => {
   switch (type) {
@@ -40,9 +40,13 @@ export const getFeatureServiceUrl = ({
   host = 'https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/',
   serviceName,
 }) => `${host}/rest/services/${serviceName}/FeatureServer/${layerId}`;
+``;
+export const getArcGisHubUrl = (hub: StewardshipRecord['hub']) => {
+  if (!hub) {
+    return '';
+  }
 
-export const getArcGisHubUrl = (hub: { title?: string; hubName?: any; organization?: any; itemId?: string }) => {
-  let id = hub.hubName?.toLowerCase().replaceAll(' ', '-');
+  let id = hub.correctedSlug ?? (hub.hubName ? hub.hubName.toLowerCase().replaceAll(' ', '-') : '');
 
   if (hub.organization?.toLowerCase() !== 'utah') {
     id = `${hub.organization}::${id}`;
@@ -51,10 +55,10 @@ export const getArcGisHubUrl = (hub: { title?: string; hubName?: any; organizati
   return `https://opendata.gis.utah.gov/datasets/${id}/about`;
 };
 
-export const getAgolUrl = (hub: { itemId?: string, organization?: string }) => {
-  let host = "www.arcgis.com";
+export const getAgolUrl = (hub: { itemId?: string; organization?: string }) => {
+  let host = 'www.arcgis.com';
   if (hub.organization?.toLowerCase() === 'utah') {
-    host = "utah.maps.arcgis.com";
+    host = 'utah.maps.arcgis.com';
   }
 
   return `https://${host}/home/item.html?id=${hub.itemId}`;

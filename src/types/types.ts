@@ -154,7 +154,21 @@ export type StewardshipRecord = {
   inActionUrl?: string;
   productPage: string;
   indexStatus: 'draft' | 'live' | 'invalid' | 'removed' | null;
-  refreshCycle: 'As needed' | 'Daily' | 'Weekly' | 'Monthly' | 'Bimonthly' | 'Quarterly' | 'Semi-anually' | 'Biannual' | 'Annually' | 'Decennially' | 'Unknown' | 'Shelved' | 'Static' | 'Other';
+  refreshCycle:
+    | 'As needed'
+    | 'Daily'
+    | 'Weekly'
+    | 'Monthly'
+    | 'Bimonthly'
+    | 'Quarterly'
+    | 'Semi-annually'
+    | 'Biannual'
+    | 'Annually'
+    | 'Decennially'
+    | 'Unknown'
+    | 'Shelved'
+    | 'Static'
+    | 'Other';
   server?: {
     host?: string;
     serviceName: string;
@@ -165,6 +179,7 @@ export type StewardshipRecord = {
     hubName?: string;
     organization?: string;
     itemId: string;
+    correctedSlug?: string;
   };
   openSgid?: string;
 };
