@@ -1,0 +1,99 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  pageTitle: 'Utah High Risk Wildland Urban Interface',
+  pageDescription: `A statewide polygon dataset of high risk areas along Utah's wildland urban interface.`,
+  stewards: ['FFSL'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.BOUNDARIES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: [`December 2025`],
+
+  hub: {
+    ...dataPages[metadata.pageTitle],
+  },
+};
+---
+
+<Layout {...page} subTitle={page.updateHistory[0]}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The High Risk Wildland Urban Interface (WUI) layer was created by identifying areas with a Structures Exposures
+      Score (SES) of 7 or greater and minimum of two structures located within a 250 meter (820 foot) radius
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The High Risk Wildland Urban Interface (WUI) dataset defines geographical areas across the state where human
+      development, structures, and infrastructure meet or intermingle with undeveloped wildland vegetation and where
+      fuels and ember loads in combination with structure density and historic fire occurrence indicate high risk. This
+      mapping is created specifically to identify and prioritize structures most susceptible to the devastating impacts
+      of wildfire, where property owners can be informed of how to reduce their wildfire risk.
+    </p>
+    <p>
+      The primary purpose of the High Risk WUI boundary is to guide critical risk assessment and to facilitate
+      compliance with Utah law. This boundary identifies structures that will be assessed a fee under Utah’s High Risk
+      WUI Property Program and is required for use by casualty and property insurers when labelling a property as “high
+      risk wildland urban interface”. It directly supports public education, guides mitigation efforts, and facilitates
+      implementation of defensible space and home hardening using National Fire Protection Agency (NFPA) and Insurance
+      Institute for Business and Home Safety (IBHS) guidelines.
+    </p>
+    <p>
+      The dataset is derived from a combination of analytical inputs, including satellite imagery, slope and aspect data
+      (topography), detailed FFSL vegetation type and fuelscape maps, weather, fire occurrence, ember loading, housing
+      density metrics and buffers around existing structures. The resulting boundaries provide a standardized,
+      data-driven layer for all land ownerships to effectively plan for and adapt to Utah's unique wildfire risk
+      landscape."
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Utah FFSL" href="https://ffsl.utah.gov/fire/"
+        >Utah Forestry, Fire, and State Lands.
+      </CardWithPopularLink>
+      <CardWithPopularLink
+        title="High Risk WUI Info"
+        href="https://ffsl.utah.gov/wp-content/uploads/WUI-Zone-vs-WUI-Boundary-Final.pdf"
+        >WUI Zone vs. High Risk WUI Boundary.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="UWRAP" href="https://wildfirerisk.utah.gov/"
+        >Utah Wildfire Risk Explorer</CardWithSmallLink
+      >
+      <CardWithSmallLink title="NFPA" href="https://www.nfpa.org/en">National Fire Protection Agency</CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
