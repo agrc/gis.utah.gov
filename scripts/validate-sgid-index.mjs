@@ -83,8 +83,8 @@ async function validateOpenSgid(row) {
 async function validateProductPage(row) {
   const cellValue = row.get(getFieldName('productPage'));
 
-  if (!cellValue) {
-    // productPage is optional
+  // productPage is optional
+  if (!cellValue || !isLive(row, true)) {
     return;
   }
 
@@ -104,8 +104,8 @@ async function validateProductPage(row) {
 async function validateInActionUrl(row) {
   const url = row.get(getFieldName('inActionUrl'));
 
-  if (!url) {
-    // inActionUrl is optional
+  // inActionUrl is optional
+  if (!url || !isLive(row, true)) {
     return;
   }
 
@@ -132,7 +132,7 @@ async function validateItemIdAndCreateHubMetadata(row) {
   if (!cellValue) {
     // TODO: check for deprecated and openSgid/arcGisOnline field values
 
-    if (isOurs(row) && isLive(row) && shouldBeInAgol(row)) {
+    if (isOurs(row) && isLive(row, true) && shouldBeInAgol(row)) {
       recordError(errors, 'Data is live and itemId is empty', row);
 
       return;

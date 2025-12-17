@@ -317,10 +317,14 @@ export function isOurs(row) {
   return hostedBy.toLowerCase() === 'ugrc';
 }
 
-export function isLive(row) {
-  const indexStatus = row.get(getFieldName('indexStatus')) ?? '';
+export function isLive(row, includeDraft = false) {
+  const indexStatus = (row.get(getFieldName('indexStatus')) ?? '').toLowerCase();
 
-  return indexStatus.toLowerCase() === 'live';
+  if (includeDraft) {
+    return indexStatus === 'live' || indexStatus === 'draft';
+  }
+
+  return indexStatus === 'live';
 }
 
 export function shouldBeInAgol(row) {
