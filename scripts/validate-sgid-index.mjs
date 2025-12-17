@@ -11,6 +11,7 @@ import {
   isOurs,
   recordError,
   setFieldNames,
+  shouldBeInAgol,
   slugify,
   toBoolean,
   trimFields,
@@ -45,6 +46,7 @@ setFieldNames({
   serverHost: 'serverHost',
   serverServiceName: 'serverServiceName',
   hubName: 'hubName',
+  arcGisOnline: 'arcGisOnline',
 });
 
 async function createIdGuid(row) {
@@ -130,7 +132,7 @@ async function validateItemIdAndCreateHubMetadata(row) {
   if (!cellValue) {
     // TODO: check for deprecated and openSgid/arcGisOnline field values
 
-    if (isOurs(row) && isLive(row)) {
+    if (isOurs(row) && isLive(row) && shouldBeInAgol(row)) {
       recordError(errors, 'Data is live and itemId is empty', row);
 
       return;

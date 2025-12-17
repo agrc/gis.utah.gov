@@ -322,3 +322,9 @@ export function isLive(row) {
 
   return indexStatus.toLowerCase() === 'live';
 }
+
+export function shouldBeInAgol(row) {
+  const arcgisOnline = row.get(getFieldName('arcGisOnline')) ?? '';
+
+  return arcgisOnline.toLowerCase() === 'true';
+}
