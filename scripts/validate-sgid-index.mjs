@@ -220,7 +220,14 @@ async function validateItemIdAndCreateHubMetadata(row) {
     const current = row.get(getFieldName(field));
     const updated = newData[field];
 
-    if (current !== updated) {
+    // If updated is undefined we don't want to treat that as an intentional update
+    if (updated === undefined) {
+      continue;
+    }
+
+    const normalize = (v) => (v === undefined || v === null ? '' : v.toString());
+
+    if (normalize(current) !== normalize(updated)) {
       console.log(`${field} update for in ${row.get('displayName')}. changing "${current}" to "${updated}"`);
 
       row.set(field, updated);
