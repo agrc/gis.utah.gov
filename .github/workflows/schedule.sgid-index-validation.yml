@@ -64,6 +64,7 @@ jobs:
           sparse-checkout: |
             scripts
             src/data
+            .github/SGID_INDEX_ISSUE_TEMPLATE.md
 
       - name: ⎔ Setup Node.js
         uses: actions/setup-node@v6
