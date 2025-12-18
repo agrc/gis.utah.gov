@@ -54,7 +54,8 @@ async function main() {
   }
 
   function etlRowLocal(row) {
-    if ((row.get('indexStatus') ?? '') !== 'live') {
+    const status = (row.get('indexStatus') ?? '').toLowerCase();
+    if (['live', 'draft'].indexOf(status) === -1) {
       return null;
     }
 
@@ -76,6 +77,7 @@ async function main() {
         description: row.get('description'),
         inActionUrl: row.get('inActionUrl'),
         productPage: row.get('productPage'),
+        mapServer: row.get('mapServer'),
         hub: {
           title: row.get('displayName'),
           itemId: row.get('itemId'),
