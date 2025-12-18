@@ -48,6 +48,7 @@ setFieldNames({
   serverServiceName: 'serverServiceName',
   hubName: 'hubName',
   arcGisOnline: 'arcGisOnline',
+  mapService: 'mapService',
 });
 
 async function createIdGuid(row) {
@@ -99,6 +100,21 @@ async function validateProductPage(row) {
 
   if (!result.valid) {
     recordError(errors, `productPage: ${result.message}`, row);
+  }
+}
+
+async function validateMapService(row) {
+  const url = row.get(getFieldName('mapService'));
+
+  // mapService is optional
+  if (!url || !isLive(row, true)) {
+    return;
+  }
+
+  let result = await validateUrl(url + '?f=json');
+
+  if (!result.valid) {
+    recordError(errors, `Map Service: ${result.message}`, row);
   }
 }
 
@@ -295,6 +311,7 @@ const checks = [
   validateProductPageOrItemId,
   validateProductPage,
   validateInActionUrl,
+  validateMapService,
   validateDownloadMetadata,
   validateOpenSgid,
 ];
