@@ -1,0 +1,270 @@
+---
+import Layout from '@layouts/FullWidth.astro';
+
+import { Pillar, type IStandardPageMetadata } from '@models/types';
+
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import BulletedList from '@components/page/BulletedList.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import QuickLinks from '@components/page/QuickLinks.astro';
+import Section from '@components/page/Section.astro';
+
+import { Image } from 'astro:assets';
+
+import rulesPhoto from '@images/documentation/rules.svg';
+
+import { stripeSections } from '@utils/page';
+
+const page: IStandardPageMetadata = {
+  pageTitle: 'SGID policy',
+  pageDescription: 'UGRC style guide',
+  pillar: Pillar.DOCUMENTATION,
+  section: stripeSections([
+    { title: 'Purpose' },
+    { title: 'Tone' },
+    { title: 'Style' },
+    { title: 'Grammar' },
+    { title: 'GIS and UGRC-specific vocabulary' },
+  ]),
+};
+---
+
+<Layout {...page}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
+  <QuickLinks links={page.section} slot="quick-links" />
+  <Section {...page.section[0]}>
+    <Image
+      src={rulesPhoto}
+      slot="image"
+      loading="eager"
+      alt="Three people sitting at a table creating policy"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>This style guide seeks to:</p>
+    <BulletedList>
+      <li>Standardize the language used across all platforms that UGRC interacts with.</li>
+      <li>Provide a uniform customer experience for our associates.</li>
+      <li>Prevent misunderstandings due to lack of consistency and clarity.</li>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[1]}>
+    <p>Our written content should be:</p>
+    <BulletedList>
+      <li>
+        <strong>Professional:</strong> We write in a straightforward manner that communicates the most amount of information
+        in the fewest words possible. We use a light, steady tone that prioritizes active voice over passive voice.
+      </li>
+      <li>
+        <strong>Informative:</strong> We highlight details that increase our users' understanding of the subject matter.
+        We avoid overly complex descriptions and language that is difficult to understand.
+      </li>
+      <li>
+        <strong>Approachable:</strong> Our writing speaks directly to the reader. We use “you” and “we” to convey a sense
+        of community. We use common language that includes contractions, metaphors, idioms, and humor where appropriate.
+      </li>
+    </BulletedList>
+    <p>We avoid the following in all written content:</p>
+    <BulletedList>
+      <li>Sarcastic, dark, or inappropriate humor or comments</li>
+      <li>Discouraging, insensitive, or otherwise derogatory language</li>
+      <li>
+        Language that expresses a lack of confidence or certainty. Rather than saying “we try to” or “we will do our
+        best to”, we say “we will” or “we make an active effort towards”.
+      </li>
+      <BulletedList>
+        <li>
+          In cases where we need to indicate something may or may not happen, we use strong language such as “we strive”
+          and give update timelines of when certain information will be available. We also explain why the situation is
+          uncertain and offer clear justifications for our lack of certainty on the situation.
+        </li>
+      </BulletedList>
+      <li>
+        Language that must be updated frequently. For example, rather than saying “this dataset will be updated in
+        November”, which is ambiguous and may be confusing to the reader depending on when they encounter that text, we
+        simply say “we update this dataset as new information becomes available”.
+      </li>
+      <BulletedList>
+        <li>If we must specify a date or time, we always give the full date, including the year.</li>
+      </BulletedList>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[2]}>
+    <p>
+      As a general rule, we follow the guidelines in the Utah Department of Government Operations' <ExternalLink
+        href="https://employee.govops.utah.gov/wp-content/uploads/GovOps-writing-style-guide.pdf"
+        >Writing Style Guide</ExternalLink
+      >. This includes the use of the Associated Press (AP) Style Guide and plain language guidelines. However, due to
+      the unique nature of our work at UGRC, we propose additional guidelines to this initial documentation.
+    </p>
+  </Section>
+  <Section {...page.section[3]}>
+    <h3>Capitalization</h3>
+    <p>The following terms are always capitalized:</p>
+    <BulletedList>
+      <li>State (when referring to the political entity)</li>
+      <li>Census (as a stand-alone term)</li>
+      <li>Names of web and mobile applications (Utah Roadkill Reporter, Raster Data Discovery)</li>
+      <li>GIS tools found in ArcGIS Pro or QGIS (Dissolve, Join, Intersect, etc)</li>
+      <BulletedList>
+        <li>
+          When simply making a statement about a GIS operation without referring to the specific tool, capitalization is
+          not necessary. (Example: We joined two layers to create this one, versus: We used Max Ent to create the layer)
+        </li>
+      </BulletedList>
+      <li>Names of departments, divisions, and offices</li>
+      <li>Days of the week, months of the year, and specific holidays.</li>
+      <BulletedList>
+        <li>General seasons such as “winter” or “first quarter” are not capitalized</li>
+      </BulletedList>
+      <li>
+        When referring to specific programming languages, we refer to the individual style guides of those languages.
+        For example, the pandas style guide recommends “pandas” always be lowercase, whereas Python capitalizes the P
+        and JavaScript capitalizes the J and S.
+      </li>
+    </BulletedList>
+    <h3>Numbers and units</h3>
+    <BulletedList>
+      <li>Spell out numbers one through ten. For larger numbers, use numerals.</li>
+      <li>For numbers larger than one million, we say 1.5 million rather than 1,500,000.</li>
+      <li>
+        Spell out units of measurement. For example, we say “25 meters” rather than “25m” and “1.5 million miles” rather
+        than 1.5 million mi.” In cases where these units of measurement will be used many times in a single piece of
+        writing, we use standard lowercase abbreviations such as cm, m, and km.
+      </li>
+      <BulletedList>
+        <li>
+          Units of measurement that are commonly represented as acronyms, such as mph for miles per hour or psi for
+          pressure per square inch, are abbreviated as lowercase acronyms.
+        </li>
+        <li>
+          We also abbreviate megabytes and gigabytes as MB and GB respectively. Larger units, such as terabytes or
+          petabytes, are spelled out.
+        </li>
+      </BulletedList>
+    </BulletedList>
+    <h3>Singular vs plural</h3>
+    <BulletedList>
+      <li>Data are plural, but dataset and data layer are both singular</li>
+      <BulletedList>
+        <li>
+          Data are usually plural when referring to a set of data points. For example: “The data used to develop this
+          layer were sourced from the United States Geological Survey.”
+        </li>
+        <li>
+          Data is usually singular when referring to the concept of data. For example: “Palletjack helps you extract,
+          transform, and load data for use in web maps.”
+        </li>
+      </BulletedList>
+      <li>Code can be singular or plural, depending on the context</li>
+    </BulletedList>
+    <h3>Links</h3>
+    <BulletedList>
+      <li>
+        We incorporate links as a natural part of the text. This means embedding links where possible within the
+        sentence without calling direct attention to the link. For example:
+      </li>
+      <BulletedList>
+        <li>
+          UGRC developed <a href="./style-guide">this process</a> after several iterations. You can learn more about this
+          process on
+          <a href="/blog">our blog</a>.
+        </li>
+      </BulletedList>
+      <li>We avoid “here” or “this” links, as well as links that are not embedded, such as the following:</li>
+      <BulletedList>
+        <li>
+          UGRC developed the following process after several iterations: <a href="./style-guide">gis.utah.gov</a>. You
+          can learn more <a href="./style-guide">here</a>.
+        </li>
+      </BulletedList>
+      <li>Additionally, we only provide links for resources that are verified, relevant, and reliable.</li>
+      <li>
+        In an effort to reduce technical debt, we also avoid providing links that would need to be updated frequently.
+      </li>
+      <li>Links should use the https version of URLs wherever possible.</li>
+    </BulletedList>
+    <h3>Abbreviations</h3>
+    <BulletedList>
+      <li>
+        Spell out the acronym the first time it appears on a page, and then use the acronym after that. If you will use
+        the acronym less than three times in the content, then do not use the acronym at all, simply spell it out each
+        time. In general, only use as many acronyms as are absolutely necessary for the content.
+      </li>
+      <li>
+        All acronyms are used in text without periods to separate letters. For example, “United States Census Bureau”,
+        when abbreviated, is written as “US Census Bureau”. Other examples include “USFS” or “SGID”.
+      </li>
+      <li>
+        Dates are abbreviated as Month 1, 2020. For example it would be “January 1, 2020” not “January 1st, 2020”.
+      </li>
+      <li>
+        We avoid terms duration words with multiple meanings such as “biannual” and prefer terms such as “every six
+        months” or “every three years”.
+      </li>
+    </BulletedList>
+  </Section>
+  <Section {...page.section[4]}>
+    <p>
+      Although we write for a primarily GIS-focused audience, it is important to preserve clarity in our writing and
+      avoid confusion. Therefore, we avoid unnecessary jargon. Always use a simple word in place of a complicated one.
+      When explaining complex topics that many readers may be unfamiliar with, we provide additional resources to
+      increase understanding and include quick definitions where helpful.
+    </p>
+    <h3>Official names of UGRC products</h3>
+    <BulletedList>
+      <li>SGID (when spelled out, it is State Geographic Information Datasource, with each letter capitalized)</li>
+      <li>Open SGID (with a space in the between Open and SGID)</li>
+      <li>SGID on ArcGIS</li>
+      <li>SGID Index</li>
+      <li>TURN GPS or the Utah Reference Network</li>
+      <li>UGRC API</li>
+      <li>UGRC ArcGIS Online</li>
+      <li>Raster Data Discovery</li>
+    </BulletedList>
+    <h3>Other terminology</h3>
+    <p>
+      As a general rule, we follow the guidelines in the esri <ExternalLink
+        href="https://support.esri.com/en-us/gis-dictionary">GIS dictionary</ExternalLink
+      >.
+    </p>
+    <BulletedList>
+      <li>basemap</li>
+      <li>web map (not capitalized, two separate words)</li>
+      <li>
+        Other terms that begin with base are separated by a space, such as “base station” “base layer” or “base plate”.
+      </li>
+      <li>Refer to GIS line data as “polyline data”</li>
+      <li>ZIP Code, not Zip Code or zip code</li>
+      <li>dataset and database are both singular words, but data layer is two separate words</li>
+      <li>3D and 3DEP, rather than 3-D or 3Dep</li>
+      <li>CadNSDI, not CADNSDI</li>
+      <li>NG911 or Next Generation 911, not NG9-1-1</li>
+      <li>To express scale in GIS, we say 1:24,000 instead of 1:24k or 24k</li>
+      <li>24-bit, 16-bit, or 8-bit, always with the numeral, then a hyphen, then the word “bit”</li>
+      <li>alphanumeric is all one word</li>
+      <li>
+        ANOVA is always in all-caps, whereas other statistical tests may have only the first letter capitalized, such as
+        “T test” and “Chi-squared”.
+      </li>
+      <li>ArcGIS Pro</li>
+      <li>QGIS</li>
+      <li>Lidar (capitalize the L only, rather than LIDAR or LiDAR)</li>
+      <li>Esri (capitalize the E only, rather than the entire word)</li>
+      <li>
+        DEM or DSM for Digital Elevation Model or Digital Surface Model respectively. When pluralized, it is DEMs, not
+        DEMS or DEM's
+      </li>
+      <li>StoryMap is the product, stories are the result</li>
+      <li>
+        Monument Record Sheets (as opposed to tie sheets, monument sheets, or other terms for the documentation for
+        individual PLSS point physical markers)
+      </li>
+      <li>Within an attribute table for feature layers or services:</li>
+      <BulletedList>
+        <li>Columns of the table (vertical) = fields</li>
+        <li>Rows of the table (horizontal) = records</li>
+        <li>Attribute = non-spatial information about a geographic feature</li>
+      </BulletedList>
+    </BulletedList>
+  </Section>
+</Layout>
