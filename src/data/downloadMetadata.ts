@@ -2710,7 +2710,7 @@ export const dataPages: DownloadMetadata = {
     itemId: 'hosted by FFSL',
     name: 'Utah High Risk Wildland Urban Interface',
     openSgid: 'boundaries.high_risk_wildland_urban_interface',
-    layerId: 0,
+    layerId: 1,
     featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/',
     featureServiceId: 'Utah_High_Risk_WUI_Properties',
   },
