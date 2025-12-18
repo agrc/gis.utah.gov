@@ -169,6 +169,7 @@ export type StewardshipRecord = {
     | 'Shelved'
     | 'Static'
     | 'Other';
+  mapServer?: string;
   server?: {
     host?: string;
     serviceName: string;
