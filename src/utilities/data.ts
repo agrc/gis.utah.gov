@@ -46,7 +46,8 @@ export const getArcGisHubUrl = (hub: StewardshipRecord['hub']) => {
     return '';
   }
 
-  let id = hub.correctedSlug ?? (hub.hubName ? hub.hubName.toLowerCase().replaceAll(' ', '-') : '');
+  const corrected = (hub.correctedSlug ?? '').toString().trim();
+  let id = corrected !== '' ? corrected : hub.hubName ? hub.hubName.toLowerCase().replaceAll(' ', '-') : '';
 
   if (hub.organization?.toLowerCase() !== 'utah') {
     id = `${hub.organization}::${id}`;
