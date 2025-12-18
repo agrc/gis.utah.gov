@@ -9,6 +9,7 @@ import {
   getSheet,
   isLive,
   isOurs,
+  normalizeValue,
   recordError,
   setFieldNames,
   shouldBeInAgol,
@@ -225,9 +226,7 @@ async function validateItemIdAndCreateHubMetadata(row) {
       continue;
     }
 
-    const normalize = (v) => (v === undefined || v === null ? '' : v.toString());
-
-    if (normalize(current) !== normalize(updated)) {
+    if (normalizeValue(current) !== normalizeValue(updated)) {
       console.log(`${field} update for in ${row.get('displayName')}. changing "${current}" to "${updated}"`);
 
       row.set(field, updated);
@@ -269,15 +268,10 @@ async function validateDownloadMetadata(row) {
   }
 
   for (const [sgidIndexField, metadataField] of metadataChecks) {
-    const sgidIndexValue = row.get(sgidIndexField)?.toString();
-    const metadataValue = metadata[metadataField]?.toString();
+    const sgidIndexValue = normalizeValue(row.get(sgidIndexField));
+    const metadataValue = normalizeValue(metadata[metadataField]);
 
-    if (sgidIndexValue !== metadataValue) {
-      // depending how this field was set it may be an empty string or undefined
-      if (sgidIndexField === 'openSgidTableName' && sgidIndexValue === '' && metadataValue === undefined) {
-        continue;
-      }
-
+    if (sgidIndexValue !== metadataValue && !metadataValue.toLowerCase().startsWith('hosted by')) {
       recordError(
         errors,
         `downloadMetadata(${name}): "Website download and SGID Index mismatch for ${metadataField}" and "${sgidIndexField}". ${metadataValue} != ${sgidIndexValue}`,

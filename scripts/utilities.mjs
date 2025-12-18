@@ -211,6 +211,10 @@ export function trimFields(row) {
   return changed;
 }
 
+export function normalizeValue(v) {
+  return v === undefined || v === null ? '' : v.toString();
+}
+
 export const duplicateFieldConfig = {
   openSgidTableName: (row, getFieldName) => row.get(getFieldName('openSgidTableName')),
   itemId: (row, getFieldName) => {
