@@ -2713,5 +2713,6 @@ export const dataPages: DownloadMetadata = {
     layerId: 1,
     featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/',
     featureServiceId: 'Utah_High_Risk_WUI_Properties',
+    oddHubName: 'utah-high-risk-wui-properties-1'
   },
 };
