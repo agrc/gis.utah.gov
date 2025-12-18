@@ -23,23 +23,40 @@ export default function SgidIndexSearchCard({ astroSite, record }: Props) {
 
   const apps = [] as appLink[];
   let urlString = record.productPage;
+  const isShelved = record.refreshCycle?.toLowerCase() === 'shelved';
 
+  // `apps` collects external links to show under the card (in display order).
+  // Each entry is `{ url, title }` and may include: in-action page, ArcGIS Hub,
+  // ArcGIS Online (AGOL), and the service Feature/Map endpoint.
+  // `urlString` is the primary link used for the card title; it prefers
+  // `productPage`, then falls back to Hub or Feature service when available.
+
+  // always add the in action url no matter what
   if (record.inActionUrl) {
     apps.push({ url: record.inActionUrl, title: 'Data in action' });
   }
-
-  if (record.hub?.itemId && record.refreshCycle !== 'Shelved') {
+  // If a hub item exists, show Hub or AGOL depending on shelved state.
+  if (record.hub?.itemId) {
+    if (isShelved) {
+      // Shelved: prefer AGOL for historical/reference access.
+      apps.push({ url: getAgolUrl(record.hub), title: 'ArcGIS Online item' });
+    } else {
+      // Active: prefer Hub as the primary link when productPage is missing.
+      const hubUrl = getArcGisHubUrl(record.hub);
+      if (!urlString) urlString = hubUrl;
+      apps.push({ url: hubUrl, title: 'ArcGIS Hub item' });
+    }
+  } else if (record.mapServer && !isShelved) {
+    // If no hub item exists but a map server is defined, add its URL as an app link.
     if (!urlString) {
-      urlString = getArcGisHubUrl(record.hub);
+      urlString = record.mapServer;
     }
 
-    apps.push({ url: getArcGisHubUrl(record.hub), title: 'ArcGIS Hub item' });
+    apps.push({ url: record.mapServer, title: 'Map service' });
   }
-
-  if (record.refreshCycle?.toLowerCase() === 'shelved' && record.hub?.itemId) {
-    apps.push({ url: getAgolUrl(record.hub), title: 'ArcGIS Online item' });
-  }
-
+  // If a server host is present, use its FeatureService as a link fallback
+  // and add a service link to the `apps` list. `getFeatureServiceUrl`
+  // should return a fully-qualified URL for the service/layer.
   if (record.server?.host) {
     if (!urlString) {
       urlString = getFeatureServiceUrl(record.server);
@@ -69,7 +86,7 @@ export default function SgidIndexSearchCard({ astroSite, record }: Props) {
 
   return (
     <div className="relative flex grow flex-col">
-      {record.refreshCycle !== 'Shelved' ? (
+      {!isShelved ? (
         <a href={urlString} className="custom-style group" rel="nofollow noopener">
           <div className="flex items-center gap-2">
             <img src={logo} alt={alternateText} className="size-6" />
