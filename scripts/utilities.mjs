@@ -1,6 +1,10 @@
+import axiosRetry from 'axios-retry';
 import * as changeCase from 'change-case';
+import { GoogleAuth, auth } from 'google-auth-library';
+import { GoogleSpreadsheet } from 'google-spreadsheet';
 import knex from 'knex';
 import ky from 'ky';
+import random from 'lodash/random.js';
 
 export async function validateUrl(url) {
   let parsedUrl;
@@ -161,4 +165,174 @@ export async function validateOpenDataUrl(url) {
 
 export function slugify(name) {
   return changeCase.kebabCase(name.toLowerCase().replace(/'/g, ''));
+}
+
+export function getFieldName(name) {
+  const fieldName = fieldNames[name];
+
+  if (!fieldName) {
+    throw new Error(`field name "${name}" not found`);
+  }
+
+  return fieldName;
+}
+
+export function recordError(errors, message, row) {
+  errors.push({
+    displayName: row.get(getFieldName('displayName')),
+    id: row.get(getFieldName('id')),
+    Error: message,
+  });
+}
+
+export function toBoolean(value) {
+  return value === 'TRUE';
+}
+
+let fieldNames = {};
+export function setFieldNames(names) {
+  fieldNames = names;
+}
+
+export function trimFields(row) {
+  let changed = false;
+
+  for (const field in fieldNames) {
+    const cellValue = row.get(getFieldName(field));
+    if (cellValue && cellValue.trim() !== cellValue) {
+      console.log(
+        `cell trim update ${field}: "${cellValue}" != "${cellValue.trim()}" in ${row.get(getFieldName('displayName'))}`,
+      );
+      row.set(getFieldName(field), cellValue.trim());
+      changed = true;
+    }
+  }
+
+  return changed;
+}
+
+export function normalizeValue(v) {
+  return v === undefined || v === null ? '' : v.toString();
+}
+
+export const duplicateFieldConfig = {
+  openSgidTableName: (row, getFieldName) => row.get(getFieldName('openSgidTableName')),
+  itemId: (row, getFieldName) => {
+    const item = row.get(getFieldName('itemId'));
+
+    if (!item) {
+      return '';
+    }
+
+    const layer = row.get(getFieldName('serverLayerId'));
+
+    return layer !== undefined && layer !== '' ? `${item}_${layer}` : item;
+  },
+  id: (row, getFieldName) => row.get(getFieldName('id')),
+  displayName: (row, getFieldName) => row.get(getFieldName('displayName')),
+};
+
+export function buildDuplicateIndex(rows, config = duplicateFieldConfig) {
+  // Build a flat key map `field::value -> [rows]`, then create a reverse index
+  // mapping each row -> [{field, value, count}]. This avoids a Map-of-Maps
+  // when callers only need the reverse index.
+  const keyMap = new Map();
+
+  for (const field of Object.keys(config)) {
+    const mapper = config[field];
+
+    for (const row of rows) {
+      if ((row.get(getFieldName('indexStatus')) ?? '').toLowerCase() !== 'live') {
+        continue; // skip rows that are not live
+      }
+
+      const value = mapper ? mapper(row, getFieldName) : row.get(getFieldName(field));
+      if (!value) {
+        continue;
+      }
+
+      const key = `${field}::${value}`;
+      const arr = keyMap.get(key) || [];
+
+      arr.push(row);
+      keyMap.set(key, arr);
+    }
+  }
+
+  const reverseIndex = new Map();
+  for (const [key, rowsArr] of keyMap.entries()) {
+    if (rowsArr.length <= 1) {
+      continue;
+    }
+
+    const splitAt = key.indexOf('::');
+    const field = key.slice(0, splitAt);
+    const value = key.slice(splitAt + 2);
+
+    for (const r of rowsArr) {
+      const list = reverseIndex.get(r) || [];
+      list.push({ field, value, count: rowsArr.length });
+      reverseIndex.set(r, list);
+    }
+  }
+
+  return reverseIndex;
+}
+
+export function configureRetries(client) {
+  axiosRetry(client, {
+    retries: 7,
+    retryDelay: (retryCount) => {
+      const randomNumberMS = random(1000, 8000);
+      return Math.min(4 ** retryCount + randomNumberMS, 20000);
+    },
+    retryCondition: (error) => error.response.status === 429,
+  });
+}
+
+export async function getSheet(spreadsheetId = '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ') {
+  const scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'];
+  let client;
+
+  if (process.env.GITHUB_ACTIONS) {
+    console.log('using ci credentials');
+    client = auth.fromJSON(JSON.parse(process.env.GOOGLE_PRIVATE_KEY));
+    client.scopes = scopes;
+  } else {
+    client = new GoogleAuth({
+      scopes,
+    });
+  }
+
+  console.log('loading spreadsheet');
+  const spreadsheet = new GoogleSpreadsheet(spreadsheetId, client);
+
+  configureRetries(spreadsheet.sheetsApi);
+  configureRetries(spreadsheet.driveApi);
+
+  await spreadsheet.loadInfo();
+
+  return spreadsheet.sheetsByTitle['SGID Index'];
+}
+
+export function isOurs(row) {
+  const hostedBy = row.get(getFieldName('hostedBy')) ?? '';
+
+  return hostedBy.toLowerCase() === 'ugrc';
+}
+
+export function isLive(row, includeDraft = false) {
+  const indexStatus = (row.get(getFieldName('indexStatus')) ?? '').toLowerCase();
+
+  if (includeDraft) {
+    return indexStatus === 'live' || indexStatus === 'draft';
+  }
+
+  return indexStatus === 'live';
+}
+
+export function shouldBeInAgol(row) {
+  const arcgisOnline = row.get(getFieldName('arcGisOnline')) ?? '';
+
+  return arcgisOnline.toLowerCase() === 'true';
 }

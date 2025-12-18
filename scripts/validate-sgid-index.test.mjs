@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { buildDuplicateLookups, duplicateLookupsConfig } from './sgid-helpers.mjs';
+import { buildDuplicateIndex, duplicateFieldConfig, setFieldNames } from './utilities.mjs';
 
 function makeRow(fields) {
   return {
@@ -9,18 +9,25 @@ function makeRow(fields) {
 }
 
 describe('SGID duplicate lookup mappers (integration)', () => {
-  it('creates composite keys when serverLayerId exists', () => {
+  // configure field names used by utilities.getFieldName
+  setFieldNames({
+    indexStatus: 'indexStatus',
+    itemId: 'itemId',
+    serverLayerId: 'serverLayerId',
+    id: 'id',
+    displayName: 'displayName',
+    openSgidTableName: 'openSgidTableName',
+  });
+  it('does not flag unique composite keys as duplicates', () => {
     const rows = [
       makeRow({ itemId: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', serverLayerId: '0', indexStatus: 'live' }),
       makeRow({ itemId: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', serverLayerId: '1', indexStatus: 'live' }),
     ];
 
-    const lookups = buildDuplicateLookups(rows, duplicateLookupsConfig);
+    const reverse = buildDuplicateIndex(rows, duplicateFieldConfig);
 
-    assert.ok(lookups.itemId['aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_0']);
-    assert.ok(lookups.itemId['aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_1']);
-    assert.equal(lookups.itemId['aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_0'].length, 1);
-    assert.equal(lookups.itemId['aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_1'].length, 1);
+    // composite keys differ, so there are no duplicates
+    assert.equal(reverse.size, 0);
   });
 
   it('uses plain itemId when serverLayerId is empty', () => {
@@ -29,10 +36,16 @@ describe('SGID duplicate lookup mappers (integration)', () => {
       makeRow({ itemId: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', serverLayerId: '', indexStatus: 'live' }),
     ];
 
-    const lookups = buildDuplicateLookups(rows, duplicateLookupsConfig);
+    const reverse = buildDuplicateIndex(rows, duplicateFieldConfig);
 
-    assert.ok(lookups.itemId['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']);
-    assert.equal(lookups.itemId['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'].length, 2);
+    // both rows are duplicates of the same key; reverse index contains both rows
+    assert.equal(reverse.size, 2);
+    for (const arr of reverse.values()) {
+      assert.equal(arr.length, 1);
+      assert.equal(arr[0].field, 'itemId');
+      assert.equal(arr[0].count, 2);
+      assert.equal(arr[0].value, 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb');
+    }
   });
 
   it('skips non-live rows', () => {
@@ -42,8 +55,9 @@ describe('SGID duplicate lookup mappers (integration)', () => {
       makeRow({ itemId: 'c', serverLayerId: '0', indexStatus: 'live' }),
     ];
 
-    const lookups = buildDuplicateLookups(rows, duplicateLookupsConfig);
-    assert.equal(Object.keys(lookups.itemId).length, 1);
-    assert.equal(lookups.itemId['c_0'].length, 1);
+    const reverse = buildDuplicateIndex(rows, duplicateFieldConfig);
+
+    // only one row is live, so no duplicates should be recorded
+    assert.equal(reverse.size, 0);
   });
 });

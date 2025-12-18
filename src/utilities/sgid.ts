@@ -86,6 +86,7 @@ export function etlRow(row): StewardshipRecord | null {
         itemId: row.get('itemId'),
         organization: row.get('hubOrganization'),
         hubName: row.get('hubName')?.replace(/[()]/g, ''),
+        correctedSlug: row.get('correctedSlug'),
       },
       server: {
         layerId: Number(row.get('serverLayerId')),

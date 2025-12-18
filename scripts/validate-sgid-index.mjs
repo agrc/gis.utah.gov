@@ -1,51 +1,35 @@
-import axiosRetry from 'axios-retry';
-import { GoogleAuth, auth } from 'google-auth-library';
-import { GoogleSpreadsheet } from 'google-spreadsheet';
 import jsonToMarkdown from 'json-to-markdown-table';
 import ky from 'ky';
-import random from 'lodash/random.js';
 import ProgressBar from 'progress';
 import * as tsImport from 'ts-import';
 import { v4 as uuid } from 'uuid';
-import { slugify, validateOpenDataUrl, validateOpenSgidTableName, validateUrl } from './utilities.mjs';
-
-function retry(client) {
-  axiosRetry(client, {
-    retries: 7,
-    retryDelay: (retryCount) => {
-      const randomNumberMS = random(1000, 8000);
-      return Math.min(4 ** retryCount + randomNumberMS, 20000);
-    },
-    retryCondition: (error) => error.response.status === 429,
-  });
-}
+import {
+  buildDuplicateIndex,
+  getFieldName,
+  getSheet,
+  isLive,
+  isOurs,
+  normalizeValue,
+  recordError,
+  setFieldNames,
+  shouldBeInAgol,
+  slugify,
+  toBoolean,
+  trimFields,
+  validateOpenDataUrl,
+  validateOpenSgidTableName,
+  validateUrl,
+} from './utilities.mjs';
 
 const downloadMetadata = await tsImport.load('../src/data/downloadMetadata.ts');
 
-const spreadsheetId = '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ';
 const ourWebSite = 'https://gis.utah.gov';
+let duplicateReverseIndex = new Map();
+const errors = [];
 
-const scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'];
-let client;
-if (process.env.GITHUB_ACTIONS) {
-  console.log('using ci credentials');
-  client = auth.fromJSON(JSON.parse(process.env.GOOGLE_PRIVATE_KEY));
-  client.scopes = scopes;
-} else {
-  client = new GoogleAuth({
-    scopes,
-  });
-}
+const worksheet = await getSheet();
 
-console.log('loading spreadsheet');
-const spreadsheet = new GoogleSpreadsheet(spreadsheetId, client);
-retry(spreadsheet.sheetsApi);
-retry(spreadsheet.driveApi);
-
-await spreadsheet.loadInfo();
-const worksheet = spreadsheet.sheetsByTitle['SGID Index'];
-
-const fieldNames = {
+setFieldNames({
   displayName: 'displayName',
   hubName: 'hubName',
   id: 'id',
@@ -54,41 +38,38 @@ const fieldNames = {
   openSgid: 'openSgid',
   openSgidTableName: 'openSgidTableName',
   productPage: 'productPage',
+  refreshCycle: 'refreshCycle',
   serverLayerId: 'serverLayerId',
   indexStatus: 'indexStatus',
-};
+  hostedBy: 'hostedBy',
+  correctedSlug: 'correctedSlug',
+  hubOrganization: 'hubOrganization',
+  serverHost: 'serverHost',
+  serverServiceName: 'serverServiceName',
+  hubName: 'hubName',
+  arcGisOnline: 'arcGisOnline',
+});
 
-function getFieldName(name) {
-  const fieldName = fieldNames[name];
+async function createIdGuid(row) {
+  const cellValue = row.get(getFieldName('id'));
 
-  if (!fieldName) {
-    throw new Error(`field name "${name}" not found`);
+  if (!cellValue) {
+    console.log(`created item id for ${row.get(getFieldName('displayName'))}`);
+    row.set(getFieldName('id'), uuid());
+
+    return true;
   }
-
-  return fieldName;
 }
 
-const errors = [];
-function recordError(message, row) {
-  errors.push({
-    displayName: row.get(getFieldName('displayName')),
-    id: row.get(getFieldName('id')),
-    Error: message,
-  });
-}
-
-function toBoolean(value) {
-  return value === 'TRUE';
-}
-
-async function openSGIDTableName(row) {
+async function validateOpenSgid(row) {
   if (!toBoolean(row.get(getFieldName('openSgid')))) {
     return;
   }
 
   const cellValue = row.get(getFieldName('openSgidTableName'));
   if (!cellValue) {
-    recordError('openSgidTableName is empty', row);
+    recordError(errors, 'openSgidTableName is empty', row);
+
     return;
   }
 
@@ -96,30 +77,15 @@ async function openSGIDTableName(row) {
   const result = await validateOpenSgidTableName(tableName, schema);
 
   if (!result.valid) {
-    recordError(result.message, row);
+    recordError(errors, result.message, row);
   }
 }
 
-function trimFields(row) {
-  let changed = false;
-
-  for (const field in fieldNames) {
-    const cellValue = row.get(getFieldName(field));
-    if (cellValue && cellValue.trim() !== cellValue) {
-      console.log(`cell trim update ${field}: "${cellValue}" != "${cellValue.trim()}" in ${row.get('displayName')}`);
-      row.set(getFieldName(field), cellValue.trim());
-      changed = true;
-    }
-  }
-
-  return changed;
-}
-
-async function productPage(row) {
+async function validateProductPage(row) {
   const cellValue = row.get(getFieldName('productPage'));
 
-  if (!cellValue) {
-    // productPage is not a required field
+  // productPage is optional
+  if (!cellValue || !isLive(row, true)) {
     return;
   }
 
@@ -132,15 +98,15 @@ async function productPage(row) {
   }
 
   if (!result.valid) {
-    recordError(`productPage: ${result.message}`, row);
+    recordError(errors, `productPage: ${result.message}`, row);
   }
 }
 
-async function inActionUrl(row) {
+async function validateInActionUrl(row) {
   const url = row.get(getFieldName('inActionUrl'));
 
-  if (!url) {
-    // inActionUrl is not a required field
+  // inActionUrl is optional
+  if (!url || !isLive(row, true)) {
     return;
   }
 
@@ -151,42 +117,41 @@ async function inActionUrl(row) {
   }
 
   if (!result.valid) {
-    recordError(`inActionUrl: ${result.message}`, row);
+    recordError(errors, `inActionUrl: ${result.message}`, row);
   }
 }
 
-async function idGuid(row) {
-  const cellValue = row.get(getFieldName('id'));
-
-  if (!cellValue) {
-    console.log(`item id update in ${row.get('displayName')}`);
-    row.set('id', uuid());
-
-    return true;
-  }
-}
-
-async function itemId(row) {
+async function validateItemIdAndCreateHubMetadata(row) {
   const cellValue = row.get(getFieldName('itemId'));
   let layerId = row.get(getFieldName('serverLayerId'));
+
   if (!layerId) {
     layerId = 0;
   }
 
+  // itemId is sometimes optional
   if (!cellValue) {
-    // TODO: internal datasets _should_ have an itemId
-    // also, check for deprecated and openSgid/arcGisOnline field values
-    // itemId is not a required field
+    // TODO: check for deprecated and openSgid/arcGisOnline field values
+
+    if (isOurs(row) && isLive(row, true) && shouldBeInAgol(row)) {
+      recordError(errors, 'Data is live and itemId is empty', row);
+
+      return;
+    }
+
     return;
   }
 
   if (cellValue.length !== 32 || cellValue.indexOf(' ') !== -1) {
-    recordError('itemId is not a valid AGOL item id', row);
+    recordError(errors, 'itemId is not a valid AGOL item id', row);
+
     return;
   }
 
   let hubData;
   let serviceParts;
+  let changed = false;
+
   try {
     hubData = await ky(`https://opendata.arcgis.com/api/v3/datasets/${cellValue}_${layerId}`).json();
     serviceParts = hubData.data.attributes.url.split('/rest/services/');
@@ -195,7 +160,8 @@ async function itemId(row) {
       // maybe this is something other than a feature service such as a WMTS base map service
       hubData = await ky(`https://opendata.arcgis.com/api/v3/datasets/${cellValue}`).json();
     } catch (error) {
-      recordError(`itemId hub request error: ${error.message}`, row);
+      recordError(errors, `itemId hub request error: ${error.message}`, row);
+
       return;
     }
   }
@@ -209,20 +175,34 @@ async function itemId(row) {
     'Utah SHPO': 'UtahSHPO',
   };
 
-  const slug = hubData.data.attributes.slug;
+  const fullSlug = hubData.data.attributes.slug || '';
+  const slugParts = fullSlug.split('::');
+  const org = slugParts.length > 1 ? slugParts[0] : undefined;
+  let slug = slugParts.length > 1 ? slugParts[1] : slugParts[0] || '';
 
   const correctSlug = slugify(hubData.data.attributes.name);
-  if (slug.split('::')[1] !== correctSlug) {
-    recordError(
-      `slug: "${slug}" does not match hub name: "${hubData.data.attributes.name}". You may need to temporarily rename the item in Hub and then change it back to fix it.`,
-      row,
-    );
+  if (slug !== correctSlug) {
+    if (isOurs(row)) {
+      recordError(
+        errors,
+        `Hub slug "${slug}" does not match "${correctSlug}". ` +
+          `We own this item, temporarily rename it in ArcGIS Hub. Then change it back to drop the suffix.`,
+        row,
+      );
+
+      // set to empty string so the field is not updated
+      slug = '';
+    }
+  } else {
+    // set to empty string so the field is not updated
+    slug = '';
   }
 
-  const org = slug ? slug.split('::')[0] : orgLookup[hubData.data.attributes.organization];
+  const orgName = org || orgLookup[hubData.data.attributes.organization];
 
-  if (!org) {
+  if (!orgName) {
     recordError(
+      errors,
       `No hubOrganization could be found! slug: "${slug}" organization: "${hubData.data.attributes.organization}"`,
       row,
     );
@@ -230,17 +210,26 @@ async function itemId(row) {
 
   const newData = {
     hubName: hubData.data.attributes.name.replace(/[()]/g, ''),
-    hubOrganization: org,
+    hubOrganization: orgName,
     serverHost: serviceParts && serviceParts[0],
     serverServiceName: serviceParts && serviceParts[1].split(/\/(FeatureServer|MapServer)\//)[0],
     serverLayerId: serviceParts && layerId,
+    correctedSlug: slug,
   };
 
-  let changed = false;
   for (const field in newData) {
-    if (row.get(field) !== (newData[field] ?? '')) {
-      console.log(`item id updates ${field}: "${row.get(field)}" != "${newData[field]}" in ${row.get('displayName')}`);
-      row.set(field, newData[field]);
+    const current = row.get(getFieldName(field));
+    const updated = newData[field];
+
+    // If updated is undefined we don't want to treat that as an intentional update
+    if (updated === undefined) {
+      continue;
+    }
+
+    if (normalizeValue(current) !== normalizeValue(updated)) {
+      console.log(`${field} update for in ${row.get('displayName')}. changing "${current}" to "${updated}"`);
+
+      row.set(field, updated);
       changed = true;
     }
   }
@@ -248,21 +237,17 @@ async function itemId(row) {
   return changed;
 }
 
-async function duplicates(row) {
-  for (const field in duplicateLookups) {
-    const mapper = duplicateLookupsConfig[field];
-    const value = mapper ? mapper(row) : row.get(getFieldName(field));
-    if (!value) {
-      continue;
-    }
-
-    if (duplicateLookups[field][value]?.length > 1) {
-      recordError(`duplicate ${field}: "${value}" found`, row);
-    }
+async function validateUniqueness(row) {
+  const entries = duplicateReverseIndex.get(row);
+  if (!entries) {
+    return;
   }
+
+  const msgs = entries.map(({ field, value }) => `${field}: "${value}"`);
+  recordError(errors, `duplicates: ${msgs.join(', ')}`, row);
 }
 
-async function downloadMetadataCheck(row) {
+async function validateDownloadMetadata(row) {
   const name = row.get(getFieldName('hubName'));
   const metadata = downloadMetadata.dataPages[name];
 
@@ -278,109 +263,107 @@ async function downloadMetadataCheck(row) {
     ['serverLayerId', 'layerId'],
   ];
 
-  if (row.get(getFieldName('openSgid')) === 'TRUE') {
+  if (row.get(getFieldName('openSgid')).toLowerCase() === 'true') {
     metadataChecks.push(['openSgidTableName', 'openSgid']);
   }
 
   for (const [sgidIndexField, metadataField] of metadataChecks) {
-    const sgidIndexValue = row.get(sgidIndexField)?.toString();
-    const metadataValue = metadata[metadataField]?.toString();
+    const sgidIndexValue = normalizeValue(row.get(sgidIndexField));
+    const metadataValue = normalizeValue(metadata[metadataField]);
 
-    if (sgidIndexValue !== metadataValue) {
-      // depending how this field was set it may be an empty string or undefined
-      if (sgidIndexField === 'openSgidTableName' && sgidIndexValue === '' && metadataValue === undefined) {
-        continue;
-      }
-
+    if (sgidIndexValue !== metadataValue && !metadataValue.toLowerCase().startsWith('hosted by')) {
       recordError(
-        `downloadMetadata(${name}): "${metadataField}" does not match SGID Index column "${sgidIndexField}"`,
+        errors,
+        `downloadMetadata(${name}): "Website download and SGID Index mismatch for ${metadataField}" and "${sgidIndexField}". ${metadataValue} != ${sgidIndexValue}`,
         row,
       );
     }
   }
 }
 
-async function productPageOrItemId(row) {
+async function validateProductPageOrItemId(row) {
   if (!row.get(getFieldName('productPage')) && !row.get(getFieldName('itemId'))) {
-    recordError(`No "${getFieldName('productPage')}" or "${getFieldName('itemId')}"`, row);
+    recordError(errors, `No "${getFieldName('productPage')}" or "${getFieldName('itemId')}"`, row);
   }
-}
-
-import { duplicateLookupsConfig as helpersDuplicateLookupsConfig, buildDuplicateLookups as buildDuplicateLookupsHelper } from './sgid-helpers.mjs';
-
-let duplicateLookups = {};
-function buildDuplicateLookups(rows) {
-  console.log('building duplicate lookups');
-  duplicateLookups = buildDuplicateLookupsHelper(rows, helpersDuplicateLookupsConfig, getFieldName);
 }
 
 const checks = [
   // these functions must return a promise
-  openSGIDTableName,
-  productPage,
-  idGuid,
-  itemId,
-  duplicates,
-  downloadMetadataCheck,
-  productPageOrItemId,
-  inActionUrl,
+  createIdGuid,
+  validateItemIdAndCreateHubMetadata,
+  validateUniqueness,
+  validateProductPageOrItemId,
+  validateProductPage,
+  validateInActionUrl,
+  validateDownloadMetadata,
+  validateOpenSgid,
 ];
 
-const rows = await worksheet.getRows();
-buildDuplicateLookups(rows);
+async function main() {
+  const rows = await worksheet.getRows();
+  duplicateReverseIndex = buildDuplicateIndex(rows);
 
-// useful for debugging specific rows
-let testId;
-try {
-  testId = process.argv[2];
-} catch (error) {
-  pass;
-}
-
-let updatedRowsCount = 0;
-console.log(`checking ${rows.length} rows`);
-const progressBar = new ProgressBar(':bar :percent ETA: :etas ', { total: rows.length });
-const skipStatuses = ['removed', 'draft'];
-for (const row of rows) {
-  progressBar.tick();
-
-  if (testId && row.get(getFieldName('id')) !== testId) {
-    continue;
-  }
-
-  if (skipStatuses.includes(row.get(getFieldName('indexStatus'))?.toLowerCase())) {
-    continue;
-  }
-
-  let changed;
+  // useful for debugging specific rows
+  let testId;
   try {
-    changed = trimFields(row); // we want trim to run first
-
-    const checksChanged = (await Promise.all(checks.map((check) => check(row)))).some((result) => result);
-
-    changed = changed || checksChanged;
+    testId = process.argv[2];
   } catch (error) {
-    recordError(`message: ${error.message} stack: ${error.stack.replaceAll('\n', '<br/>')}`, row);
+    // ignore
   }
 
-  if (changed) {
+  let updatedRowsCount = 0;
+  console.log(`checking ${rows.length} rows`);
+  const progressBar = new ProgressBar(':bar :percent ETA: :etas ', { total: rows.length });
+  const skipStatuses = ['removed', 'draft'];
+  for (const row of rows) {
+    progressBar.tick();
+
+    if (testId && row.get(getFieldName('id')) !== testId) {
+      continue;
+    }
+
+    if (skipStatuses.includes(row.get(getFieldName('indexStatus'))?.toLowerCase())) {
+      continue;
+    }
+
+    let changed;
     try {
-      await row.save();
-      updatedRowsCount++;
+      changed = trimFields(row); // we want trim to run first
+
+      const checksChanged = (await Promise.all(checks.map((check) => check(row)))).some((result) => result);
+
+      changed = changed || checksChanged;
     } catch (error) {
-      recordError(`save error: ${error.message}`, row);
+      recordError(errors, `message: ${error.message} stack: ${error.stack.replaceAll('\n', '<br/>')}`, row);
+    }
+
+    if (changed) {
+      try {
+        await row.save();
+        updatedRowsCount++;
+      } catch (error) {
+        recordError(errors, `save error: ${error.message}`, row);
+      }
     }
   }
-}
 
-if (errors.length > 0) {
-  errors.sort((a, b) => a.displayName.localeCompare(b.displayName));
-  console.error(jsonToMarkdown(errors, ['displayName', 'id', 'Error']));
-  console.log(`\ntotal errors: ${errors.length}`);
+  if (errors.length > 0) {
+    errors.sort((a, b) => a.displayName.localeCompare(b.displayName));
+    console.error(jsonToMarkdown(errors, ['displayName', 'id', 'Error']));
+    console.log(`\ntotal errors: ${errors.length}`);
+    console.log(`updated ${updatedRowsCount} rows`);
+    process.exit(1);
+  }
+
+  console.log('All rows validated successfully');
   console.log(`updated ${updatedRowsCount} rows`);
-  process.exit(1);
 }
 
-console.log('All rows validated successfully');
-console.log(`updated ${updatedRowsCount} rows`);
-process.exit(0);
+if (import.meta.url === `file://${process.argv[1]}` || process.argv[1].endsWith('validate-sgid-index.mjs')) {
+  main()
+    .then(() => process.exit(0))
+    .catch((err) => {
+      console.error(err);
+      process.exit(1);
+    });
+}
