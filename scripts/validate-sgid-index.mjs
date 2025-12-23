@@ -48,7 +48,7 @@ setFieldNames({
   serverServiceName: 'serverServiceName',
   hubName: 'hubName',
   arcGisOnline: 'arcGisOnline',
-  mapService: 'mapService',
+  mapServer: 'mapServer',
 });
 
 async function createIdGuid(row) {
@@ -104,7 +104,7 @@ async function validateProductPage(row) {
 }
 
 async function validateMapService(row) {
-  const url = row.get(getFieldName('mapService'));
+  const url = row.get(getFieldName('mapServer'));
 
   // mapService is optional
   if (!url || !isLive(row, true)) {
