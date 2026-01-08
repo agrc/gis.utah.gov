@@ -14,8 +14,6 @@ cover_image_alt: Cooling Tower Project Overview
 
 If you were at the 2023 Utah Geographic Information Council (UGIC) Conference in May, you **might** remember that I presented on [Generating Useful Data with Computer Vision Tools](https://agrc.github.io/Presentations/UGIC/2023/ComputerVision.pdf). But my second use case, detecting cooling towers in aerial imagery for the Utah Department of Health and Human Services (DHHS), was still a work in progress with results yet to be determined. I promised to provide an update via blog post, and now I’m (finally) fulfilling that promise.
 
-> _SIDE NOTE: Shortly after UGIC, I accepted a new position as the GIS Manager in the Salt Lake County Surveyor’s Office. Although I’m no longer at UGRC, we were able to complete the data processing and validation before my transition to Salt Lake County._
-
 ## Background
 
 Knowing the location of cooling towers in the state is important to DHHS, because it can significantly streamline investigations into Legionella outbreaks. Legionella is a bacteria that can cause a serious type of pneumonia called Legionnaires' disease. The bacteria can grow/spread in large building water systems, including water tanks, HVAC components, large/complex plumbing systems, and cooling towers. Cooling towers are particularly concerning because they can release aerosolized water into the atmosphere. If Legionella is present, the aerosolized water can spread the bacteria over miles[^1].
