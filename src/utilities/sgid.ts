@@ -81,6 +81,7 @@ export function etlRow(row): StewardshipRecord | null {
       description: row.get('description'),
       inActionUrl: row.get('inActionUrl'),
       productPage: row.get('productPage'),
+      mapServer: row.get('mapServer'),
       hub: {
         title: row.get('displayName'),
         itemId: row.get('itemId'),
