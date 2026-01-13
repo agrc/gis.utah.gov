@@ -11,7 +11,7 @@ export default {
         primary: '#4d2a54',
         'primary-950': '#36163c',
         secondary: '#33505d',
-        'secondary-200': '#4d7b8d',
+        'secondary-200': '#385966',
         accent: '#eaca00',
       },
       gridTemplateColumns: {
