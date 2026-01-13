@@ -54,6 +54,9 @@ export default defineConfig({
     }),
   ],
   markdown: {
+    shikiConfig: {
+      theme: 'github-dark-high-contrast',
+    },
     rehypePlugins: [[rehypeExternalLinks, externalLinkConfig]],
     remarkPlugins: [remarkCodeTitles],
   },
