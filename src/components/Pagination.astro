@@ -29,20 +29,24 @@ const hasStartEllipsis = start > 1;
 const hasEndEllipsis = end < page.lastPage;
 const linkClasses =
   'custom-style relative block select-none rounded-full px-3 py-2 text-sm font-medium leading-none text-zinc-600 no-underline outline-none hover:bg-zinc-200 hover:text-zinc-900 focus:shadow-[0_0_0_2px] focus:shadow-primary dark:focus:shadow-zinc-200 dark:text-zinc-50 dark:hover:bg-white/20 dark:hover:text-zinc-100';
-const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
+const arrowButtonClasses =
+  'custom-style relative select-none rounded-full px-3 py-2 text-xl leading-4 font-medium bg-transparent border-0 cursor-pointer text-zinc-900 dark:text-zinc-50 hover:bg-zinc-200 dark:hover:bg-white/20 outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary dark:focus:shadow-zinc-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent';
 ---
 
 <nav aria-label="page through items" class={className}>
   <ul class="flex w-full items-center justify-center space-x-1 text-zinc-900 dark:text-zinc-50">
     <li>
       <!-- the `custom-style` prop needs to be set as a prop rather than in the style tag because of this issue: https://github.com/tailwindlabs/tailwindcss/issues/7055 -->
-      <a
-        href={page.url.prev ?? '/'}
-        class:list={[arrowLinkClasses, !page.url.prev && 'pointer-events-none opacity-50']}
-        aria-label="go to previous page"
+      <button
+        type="button"
+        disabled={!page.url.prev}
+        onclick={page.url.prev ? `window.location.href='${page.url.prev}'` : undefined}
+        class={arrowButtonClasses}
+        aria-label="Previous page"
       >
-        ←
-      </a>
+        <span aria-hidden="true">←</span>
+        <span class="sr-only">Previous page</span>
+      </button>
     </li>
     {
       hasStartEllipsis ? (
@@ -59,6 +63,7 @@ const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
             stroke-width="1.5"
             stroke="currentColor"
             class="h-6 w-6"
+            aria-hidden="true"
           >
             <path
               stroke-linecap="round"
@@ -76,10 +81,10 @@ const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
             href={`/${baseHref}/${num === 1 ? '' : num}`}
             class={twMerge(
               linkClasses,
-              num === page.currentPage && 'bg-zinc-200 hover:bg-primary hover:text-zinc-50 dark:text-zinc-600',
+              num === page.currentPage && 'bg-zinc-200 hover:bg-primary hover:text-zinc-50 dark:text-zinc-600'
             )}
             aria-current={num === page.currentPage ? 'page' : undefined}
-            aria-label={num !== page.currentPage ? `go to page ${page.currentPage}` : undefined}
+            aria-label={num === page.currentPage ? `page ${num}` : `Go to page ${num}`}
           >
             {num}
           </a>
@@ -96,6 +101,7 @@ const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
             stroke-width="1.5"
             stroke="currentColor"
             class="h-6 w-6"
+            aria-hidden="true"
           >
             <path
               stroke-linecap="round"
@@ -112,13 +118,16 @@ const arrowLinkClasses = twMerge(linkClasses, 'text-xl leading-4 px-2');
       ) : null
     }
     <li>
-      <a
-        href={page.url.next}
-        class:list={[arrowLinkClasses, !page.url.next && 'pointer-events-none opacity-50']}
-        aria-label="go to next page"
+      <button
+        type="button"
+        disabled={!page.url.next}
+        onclick={page.url.next ? `window.location.href='${page.url.next}'` : undefined}
+        class={arrowButtonClasses}
+        aria-label="Next page"
       >
-        →
-      </a>
+        <span aria-hidden="true">→</span>
+        <span class="sr-only">Next page</span>
+      </button>
     </li>
   </ul>
 </nav>
