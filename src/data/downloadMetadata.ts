@@ -1886,7 +1886,7 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'political.us_congress_districts_2022_to_2032',
     layerId: 0,
   },
-    'Utah US Congress Districts 2026 to 2032': {
+  'Utah US Congress Districts 2026 to 2032': {
     itemId: 'd3388c1f7d894ab789247f6442855d66',
     name: 'Utah US Congress Districts 2026 to 2032',
     featureServiceId: 'political_us_congress_districts_2026_to_2032',
@@ -2713,6 +2713,6 @@ export const dataPages: DownloadMetadata = {
     layerId: 1,
     featureServiceHost: 'https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/',
     featureServiceId: 'Utah_High_Risk_WUI_Properties',
-    oddHubName: 'utah-high-risk-wui-properties-1'
+    oddHubName: 'utah-high-risk-wui-properties-1',
   },
 };

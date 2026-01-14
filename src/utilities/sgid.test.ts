@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { etlRow } from "./sgid";
+import { etlRow } from './sgid';
 
 // Mock for row.get
 function makeRow(data: Record<string, any>) {
@@ -11,11 +11,7 @@ function makeRow(data: Record<string, any>) {
 
 describe('etlRow', () => {
   it.each([
-    [
-      'returns null if indexStatus is not live',
-      { indexStatus: 'draft', id: 1 },
-      null,
-    ],
+    ['returns null if indexStatus is not live', { indexStatus: 'draft', id: 1 }, null],
     [
       'returns a StewardshipRecord for live row',
       {

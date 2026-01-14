@@ -64,17 +64,14 @@ You will need to know a few common Git commands to manage your versions and keep
 Git commands are executed using the command line. On Windows, I recommend Git Bash for executing commands and if you've installed Git for Windows it should have been included. You can also use Powershell or the Command Prompt (or Terminal on Mac).
 
 - Change Directory
-
   - While changing a directory is not a Git operation, I mention it here because it is essential when working with Git. You will need to enter your working, local directory via the _cd_ command.
     - `$ cd <your_local_git_directory>`
 
 - Initialize a Local Repository
-
   - The [_init_ command](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) gives Git permission to manage your local working directory with version control and to track all changes that occur. Essentially, this is what gets Git up and running. Note: If you've cloned a remote repository (via a GitHub repo URL) using Git, then you won't need to initialize your local repository&mdash;it is automatically handled within the _clone_ command.
     - `$ git init`
 
 - Clone an Existing GitHub Repository
-
   - [Cloning](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes) allows you to get a copy of an existing repository.
   - Using the Command Line:
     - If you clone a repository by way of the command line, then the remote repository is added for you explicitly.
@@ -85,13 +82,11 @@ Git commands are executed using the command line. On Windows, I recommend Git Ba
       - `$ git remote add origin https://github.com/<your_name/repo_name>`
 
 - Check Remote
-
   - The remote repository comes into play when you use commands such as push and pull.
   - Use the _remote_ command to check whether your remote repository is set up correctly. Adding "-v" flag will show you the URLs and the shorthand for the remote.
     - `$ git remote -v`
 
 - Create a Branch
-
   - Each repository, by default, contains a master branch. I think of this as the "parent" branch. When developing tools, I find it useful to create [branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell). The idea is that you keep your master clean and then merge the "child" branch back to master when you are certain you want to incorporate that functionality. I do all modifications on a working branch and then merge the changes back to master after the code/tool is stable, and I've pulled all the changes to my other development machines (see Push and Pull sections below).
   - Create a new branch
     - `$ git branch <branch_name>`
@@ -106,13 +101,11 @@ Git commands are executed using the command line. On Windows, I recommend Git Ba
     - `$ git merge <branch_name>`
 
 - Recording and Tracking Local Changes
-
   - You will want to [commit](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository) the changes that you want to keep. When you push changes to remote, only the local changes that were committed will be pushed. You must add the file to the staging area before it can be committed. You also use _add_ to begin tracking new files.
     - `$ git add -A`
     - `$ git commit -m 'your commit message here'`
 
 - Checking the Status of your Repository
-
   - It's a good idea to check the status of your staged and unstaged commits before you push to the remote. I find _status_, _log_, and _diff_ helpful before I do a push.
   - The status command is more high-level and will show you what files were changed.
     - `$ git status`
@@ -122,7 +115,6 @@ Git commands are executed using the command line. On Windows, I recommend Git Ba
     - `$ git log -5`
 
 - Push to the Remote
-
   - The push command simply takes all the local changes you've committed, and pushe them to the remote (i.e., your GitHub repository). In my workflow, I push to GitHub after I've successfully deployed my lowest version. For me that means the code is stable and it is now ready to be pulled onto the development machines with the higher versions.
     - `$ git push <remote> <branch>`
 

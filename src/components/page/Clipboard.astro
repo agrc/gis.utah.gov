@@ -52,7 +52,7 @@ const { title, value } = Astro.props;
         const notice = (event.target as HTMLSpanElement)?.querySelector('.copy-to-clipboard-notice') as HTMLSpanElement;
         const action = (event.target as HTMLSpanElement)?.querySelector('.copy-to-clipboard-action') as HTMLSpanElement;
         const announce = (event.target as HTMLDivElement)?.querySelector(
-          '.copy-to-clipboard-announce'
+          '.copy-to-clipboard-announce',
         ) as HTMLDivElement;
 
         if (!announce || !notice || !action) {

@@ -6,9 +6,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2006) Wasatch Front, Iron County, Heber Valley",
     "inActionUrl": "https://raster.utah.gov/",
@@ -35,9 +33,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2011) Great Salt Lake, Cedar valley, Hurricane Fault",
     "inActionUrl": "https://raster.utah.gov/",
@@ -64,9 +60,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2013 & 2014) Wasatch Front and Wasatch Fault",
     "inActionUrl": "https://raster.utah.gov/",
@@ -93,9 +87,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2015) Colorado, Green and Yampa Rivers",
     "inActionUrl": "https://raster.utah.gov/",
@@ -122,9 +114,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2015) Zion National Park",
     "inActionUrl": "https://raster.utah.gov/",
@@ -151,9 +141,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2016) Bear Lake, Bear River, Cache Valley and Upper Weber Valley",
     "inActionUrl": "https://raster.utah.gov/",
@@ -180,9 +168,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2016) FORGE",
     "inActionUrl": "https://raster.utah.gov/",
@@ -209,9 +195,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2016) Great Salt Lake and Utah Lake",
     "inActionUrl": "https://raster.utah.gov/",
@@ -238,9 +222,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2016) Kanab Utah",
     "inActionUrl": "https://raster.utah.gov/",
@@ -267,9 +249,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2016) Monroe Mountain",
     "inActionUrl": "https://raster.utah.gov/",
@@ -296,9 +276,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2017) Millsite Reservoir",
     "inActionUrl": "https://raster.utah.gov/",
@@ -325,9 +303,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2017) Washakie and Whites Valley",
     "inActionUrl": "https://raster.utah.gov/",
@@ -354,9 +330,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2017) Washington County",
     "inActionUrl": "https://raster.utah.gov/",
@@ -383,9 +357,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2018) Box Elder County",
     "inActionUrl": "https://raster.utah.gov/",
@@ -412,9 +384,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2018) Central Utah",
     "inActionUrl": "https://raster.utah.gov/",
@@ -441,9 +411,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2018) Northern Utah",
     "inActionUrl": "https://raster.utah.gov/",
@@ -470,9 +438,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2018) Sanpete Valley",
     "inActionUrl": "https://raster.utah.gov/",
@@ -499,9 +465,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2018) Southern utah",
     "inActionUrl": "https://raster.utah.gov/",
@@ -528,9 +492,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2018) Uintah Basin and Heber Valley",
     "inActionUrl": "https://raster.utah.gov/",
@@ -557,9 +519,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2019) Kane County",
     "inActionUrl": "https://raster.utah.gov/",
@@ -586,9 +546,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2019) Strawberry River",
     "inActionUrl": "https://raster.utah.gov/",
@@ -615,9 +573,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2020) Central & Southern Utah",
     "inActionUrl": "https://raster.utah.gov/",
@@ -644,9 +600,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2021) FEMA HQ",
     "inActionUrl": "https://raster.utah.gov/",
@@ -673,9 +627,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2020) Logan River Watershed",
     "inActionUrl": "https://raster.utah.gov/",
@@ -702,9 +654,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2020) Northern & Central Utah",
     "inActionUrl": "https://raster.utah.gov/",
@@ -731,9 +681,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2020) Southern Utah",
     "inActionUrl": "https://raster.utah.gov/",
@@ -760,9 +708,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": null,
     "description": "Digital Elevation Models (DEMs) derived from Lidar (2022) Fish Springs (topo-bathy)",
     "inActionUrl": "https://raster.utah.gov/",
@@ -789,9 +735,7 @@
     "category": "location",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 1,
     "description": "An address point represents a geographic location that has been assigned a US Postal Service (USPS) address by the local address authority (i.e., county or municipality) but does not necessarily receive mail.",
     "inActionUrl": "",
@@ -818,9 +762,7 @@
     "category": "base_maps",
     "indexStatus": "live",
     "refreshCycle": "Bimonthly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 8,
     "description": "A cached overlay of address points great for showing populated places.",
     "inActionUrl": "https://atlas.utah.gov",
@@ -847,9 +789,7 @@
     "category": "location",
     "indexStatus": "live",
     "refreshCycle": "Quarterly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "An addressing system consists of an origin point (0,0), a north-south axis, and an east-west axis, and a boundary within which addresses are assigned using this particular grid. ",
     "inActionUrl": "",
@@ -876,9 +816,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "DWRi"
-    ],
+    "source": ["DWRi"],
     "dataType": 3,
     "description": "Adjudication Areas is a polygon feature class that represents General Water Rights Adjudications. The water rights adjudication process helps to bring order and certainty to the water rights record throughout the state by defining existing rights, quantifying unknown rights, and removing unused and abandoned rights from the record through judicial decree.",
     "inActionUrl": "",
@@ -905,9 +843,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Aerial photography coverage",
     "inActionUrl": "",
@@ -934,9 +870,7 @@
     "category": "farming",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UDAF"
-    ],
+    "source": ["UDAF"],
     "dataType": 3,
     "description": "This layer compiles Utah property parcels that have been included in an Agriculture Protection Area (APA) resolution. APAs are approved by the county in which they are located, and catalogued by Utah Department of Agriculture and Food.",
     "inActionUrl": "",
@@ -990,13 +924,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC",
-      "MAG",
-      "Cache MPO",
-      "Dixie MPO",
-      "UDOT"
-    ],
+    "source": ["WFRC", "MAG", "Cache MPO", "Dixie MPO", "UDOT"],
     "dataType": 3,
     "description": "This statewide traffic volume GIS dataset contains observed (historic, from UDOT) and forecasted traffic volumes (from MPOs and UDOT) on highways and major roads.",
     "inActionUrl": "https://unifiedplan.org/traffic-volume-map/",
@@ -1023,9 +951,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 2,
     "description": "Approximate boundary of basin fill in ground-water recharge and discharge areas.",
     "inActionUrl": "",
@@ -1052,9 +978,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 3,
     "description": "Ground-water recharge and discharge areas.",
     "inActionUrl": "",
@@ -1081,9 +1005,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Organized county government association boundaries.",
     "inActionUrl": "",
@@ -1110,9 +1032,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "AutoCorrelated digital elevation model coverage",
     "inActionUrl": "",
@@ -1139,10 +1059,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC",
-      "MAG"
-    ],
+    "source": ["WFRC", "MAG"],
     "dataType": 3,
     "description": "Projected average auto and transit commute times (one way) for residents of Wasatch Front traffic analysis zones (TAZs) for 2019, 2030, 2040, & 2040",
     "inActionUrl": "",
@@ -1169,9 +1086,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "BLM"
-    ],
+    "source": ["BLM"],
     "dataType": 3,
     "description": "BLM district boundaries.",
     "inActionUrl": "",
@@ -1225,9 +1140,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "BLM"
-    ],
+    "source": ["BLM"],
     "dataType": 3,
     "description": "BLM national monuments and national conservation areas. Includes recently designated Bears Ears National Monument",
     "inActionUrl": "",
@@ -1254,9 +1167,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "BLM"
-    ],
+    "source": ["BLM"],
     "dataType": 3,
     "description": "BLM national monuments and national conservation areas. Depicts Grand Staircase Escalante and Bears Ears National Monuments prior to being reduced by the Trump administration.",
     "inActionUrl": "",
@@ -1283,9 +1194,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "BLM"
-    ],
+    "source": ["BLM"],
     "dataType": 3,
     "description": "BLM resource management plan targeted lands.",
     "inActionUrl": "",
@@ -1312,9 +1221,7 @@
     "category": "recreation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DNR"
-    ],
+    "source": ["DNR"],
     "dataType": 1,
     "description": "Boat ramp locations",
     "inActionUrl": "",
@@ -1341,9 +1248,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Utah Department of Environmental Quality (UDEQ), brownfields not targeted for cleanup.",
     "inActionUrl": "",
@@ -1370,9 +1275,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Utah Department of Environmental Quality (UDEQ), brownfields targeted for cleanup.",
     "inActionUrl": "",
@@ -1399,9 +1302,7 @@
     "category": "location",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "Microsoft"
-    ],
+    "source": ["Microsoft"],
     "dataType": 3,
     "description": "Building footprints",
     "inActionUrl": "",
@@ -1428,9 +1329,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DWRi"
-    ],
+    "source": ["DWRi"],
     "dataType": 2,
     "description": "In 2014 the Utah Legislature passed House Bill 370 directing the Division of Water Rights to create and maintain an inventory of all canals. Staff from the Division are currently digitizing and updating the canals feature class",
     "inActionUrl": "",
@@ -1457,9 +1356,7 @@
     "category": "location",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "SITLA"
-    ],
+    "source": ["SITLA"],
     "dataType": 1,
     "description": "",
     "inActionUrl": "",
@@ -1486,9 +1383,7 @@
     "category": "location",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "SITLA"
-    ],
+    "source": ["SITLA"],
     "dataType": 1,
     "description": "",
     "inActionUrl": "",
@@ -1569,9 +1464,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2000 Census Block Groups are units used by the United States Census Bureau which are between the Census Tract and the Census Block. It is the smallest geographical unit for which the bureau publishes sample data.",
     "inActionUrl": "",
@@ -1598,9 +1491,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2010 Census Block Groups are units used by the United States Census Bureau which are between the Census Tract and the Census Block. It is the smallest geographical unit for which the bureau publishes sample data.",
     "inActionUrl": "",
@@ -1627,9 +1518,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2020 Census Block Groups are units used by the United States Census Bureau which are between the Census Tract and the Census Block. It is the smallest geographical unit for which the bureau publishes sample data.",
     "inActionUrl": "",
@@ -1656,9 +1545,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2000 Census Blocks are the smallest geographic unit used by the United States Census Bureau for tabulation of 100-percent data (data collected from all houses, rather than a sample of houses).",
     "inActionUrl": "",
@@ -1685,9 +1572,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2009 Census Blocks are the smallest geographic unit used by the United States Census Bureau for tabulation of 100-percent data (data collected from all houses, rather than a sample of houses).",
     "inActionUrl": "",
@@ -1714,9 +1599,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2010 Census Blocks are the smallest geographic unit used by the United States Census Bureau for tabulation of 100-percent data (data collected from all houses, rather than a sample of houses).",
     "inActionUrl": "",
@@ -1743,9 +1626,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2020 Census Blocks are the smallest geographic unit used by the United States Census Bureau for tabulation of 100-percent data (data collected from all houses, rather than a sample of houses).",
     "inActionUrl": "",
@@ -1772,9 +1653,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2010 Census county boundaries.",
     "inActionUrl": "",
@@ -1801,9 +1680,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2020 Census county boundaries.",
     "inActionUrl": "",
@@ -1830,9 +1707,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 1,
     "description": "2010 Census city and town demographics.",
     "inActionUrl": "",
@@ -1859,9 +1734,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2010 Census city and town demographics.",
     "inActionUrl": "",
@@ -1888,9 +1761,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2020 Census city, town and places (CDP) demographics.",
     "inActionUrl": "",
@@ -1917,9 +1788,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2020 Census State of Utah boundary, as defined by the US Census Bureau.",
     "inActionUrl": "",
@@ -1946,9 +1815,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2010 Census Tracts are small, relatively permanent statistical subdivisions of a county or equivalent entity that are updated by local participants prior to each decennial census as part of the Census Bureau's Participant Statistical Areas Program.",
     "inActionUrl": "",
@@ -1975,9 +1842,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "2020 Census Tracts are small, relatively permanent statistical subdivisions of a county or equivalent entity that are updated by local participants prior to each decennial census as part of the Census Bureau's Participant Statistical Areas Program.",
     "inActionUrl": "",
@@ -2004,10 +1869,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC",
-      "HIFLD"
-    ],
+    "source": ["WFRC", "HIFLD"],
     "dataType": 1,
     "description": "Child care and preschool facilities from the US DHS HIFLD open data site.",
     "inActionUrl": "",
@@ -2034,9 +1896,7 @@
     "category": "location",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 1,
     "description": "Points representing municipalities, county seats, populated areas, and major junctions for general reference and cartographic purposes.",
     "inActionUrl": "",
@@ -2063,9 +1923,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "City court jurisdiction boundaries",
     "inActionUrl": "https://experience.arcgis.com/experience/c1b5822d55694628a5577bc218c7bee2/",
@@ -2092,9 +1950,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 3,
     "description": "Areas of coal deposits.",
     "inActionUrl": "",
@@ -2121,9 +1977,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 3,
     "description": "Areas of coal deposits.",
     "inActionUrl": "",
@@ -2150,9 +2004,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 3,
     "description": "N/A",
     "inActionUrl": "",
@@ -2179,9 +2031,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 1,
     "description": "Coal mine locations.",
     "inActionUrl": "",
@@ -2208,9 +2058,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC"
-    ],
+    "source": ["WFRC"],
     "dataType": 1,
     "description": "Recreation centers, libraries, and other community recreation facilities along the Wasatch Front",
     "inActionUrl": "",
@@ -2237,10 +2085,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC",
-      "UDAF"
-    ],
+    "source": ["WFRC", "UDAF"],
     "dataType": 1,
     "description": "Community services along the Wasatch Front including city halls, county offices, courthouses, food banks, human services, the state capitol, vehicle services, and workforce services. Locations were primarily derived from digitizing or geocoding office locations listed on various state and nonprofit websites (DMV, Utah Food Bank, DWS)",
     "inActionUrl": "",
@@ -2267,9 +2112,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Contour line coverage",
     "inActionUrl": "",
@@ -2296,9 +2139,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 2,
     "description": "Statewide 500 foot interval contours.",
     "inActionUrl": "",
@@ -2325,9 +2166,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Generalized contour polygons to show relative elevation and terrain at medium and small scales.",
     "inActionUrl": "",
@@ -2381,9 +2220,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Utah county boundaries.",
     "inActionUrl": "",
@@ -2410,9 +2247,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 2,
     "description": "County boundaries as line features for labeling purposes.",
     "inActionUrl": "",
@@ -2439,9 +2274,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Changes to county boundaries over the years.",
     "inActionUrl": "",
@@ -2468,9 +2301,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "County court jurisdictions boundaries",
     "inActionUrl": "https://experience.arcgis.com/experience/c1b5822d55694628a5577bc218c7bee2/",
@@ -2497,9 +2328,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OLRGC"
-    ],
+    "source": ["OLRGC"],
     "dataType": 5,
     "description": "This web service allows developers to access the current list of State Senators and State Representatives as well as information regarding individual Legislators (name, district, party, address, email, position, photo, website, etc).",
     "inActionUrl": "",
@@ -2526,9 +2355,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DWRi"
-    ],
+    "source": ["DWRi"],
     "dataType": 3,
     "description": "Using data (where available) from the Dam Emergency Action plan. Polygon shows plan view of the worst case inundation flood zones predicted from hypothetical catastrophic breaching of upstream high hazard.",
     "inActionUrl": "",
@@ -2555,9 +2382,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DWRi"
-    ],
+    "source": ["DWRi"],
     "dataType": 2,
     "description": "Using data (where available) from the Dam Emergency Action plan. Polylines showing plan view of the worst case inundation flood zones predicted from hypothetical catastrophic breaching of upstream high hazard dams.",
     "inActionUrl": "",
@@ -2584,9 +2409,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Annual emissions (in tons) for ammonia, pm10, carbon monoxide, sulfur dioxide, volatile organic compounds, and oxides of nitrogen for Utah. Provided by the Utah Division of Air Quality.",
     "inActionUrl": "",
@@ -2613,9 +2436,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Air monitoring network that consists of ambient air monitoring stations within the State of Utah that collect air quality data 24/7.",
     "inActionUrl": "",
@@ -2642,9 +2463,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Locations of sites that have obtained Approval Orders from the Utah Division of Air Quality.",
     "inActionUrl": "",
@@ -2671,9 +2490,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Utah Division of Air Quality sites permitted under Title V of the 1990 Clean Air Act.",
     "inActionUrl": "",
@@ -2700,9 +2517,7 @@
     "category": "history",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UTSHPO"
-    ],
+    "source": ["UTSHPO"],
     "dataType": 1,
     "description": "Point locations for Daughters of Utah Pioneers satellite museums. Digitized March 2016. Locations were determined by a combination of geocoding street addresses and referencing NAIP 2014 aerial imagery and Google Street View. Horizontal_Positional_Accuracy: GPS = geocode or aerial imagery placement; Asserted = could not locate exact building location, placed at approximate street address",
     "inActionUrl": "",
@@ -2729,9 +2544,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DDW"
-    ],
+    "source": ["DDW"],
     "dataType": 3,
     "description": "Irrigated crop consumptive use zones for calculating drinking water source sizing.",
     "inActionUrl": "https://enviro.deq.utah.gov/",
@@ -2758,9 +2571,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 3,
     "description": "Debris-flow hazard for the Wasatch Front",
     "inActionUrl": "",
@@ -2787,9 +2598,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 3,
     "description": "Debris-flow hazard study boundaries for the Wasatch Front",
     "inActionUrl": "",
@@ -2816,9 +2625,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 3,
     "description": "Oil and gas fields defined by the Utah Department of Natural Resources, Oil Gas and Mining Division.",
     "inActionUrl": "",
@@ -2845,9 +2652,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "Statewide distribution of dominant vegetation species in Utah.",
     "inActionUrl": "",
@@ -2874,9 +2679,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "USGS topographic map coverage",
     "inActionUrl": "",
@@ -2903,9 +2706,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DDW"
-    ],
+    "source": ["DDW"],
     "dataType": 3,
     "description": "Drinking Water Source Protection (DWSP) zones for groundwater sources operated by Public Water Systems in Utah. These data represent Drinking Water Source Protection (DWSP) zones for groundwater sources operated by Public Water Systems (PWS) in Utah.",
     "inActionUrl": "https://enviro.deq.utah.gov/",
@@ -2932,9 +2733,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DDW"
-    ],
+    "source": ["DDW"],
     "dataType": 3,
     "description": "Source water assessment zones for \"existing ground-water sources\" of drinking water which are used by Public (transient) non-community Water Systems in Utah.The source water assessment zones (TransientNCZones) have been developed by the Utah Division of Drinking Water for \"existing groundwater\" sources (as defined by the UAC R309-600 Rule) for transient non-community systems.",
     "inActionUrl": "https://enviro.deq.utah.gov/",
@@ -2961,9 +2760,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DDW"
-    ],
+    "source": ["DDW"],
     "dataType": 3,
     "description": "Drinking water source protection zones for surface water sources used by Public Water Systems in Utah. These data represent the Drinking Water Source Protection (DWSP) zones for surface water sources operated by Public Water Systems (PWS) in Utah.",
     "inActionUrl": "https://enviro.deq.utah.gov/",
@@ -2990,9 +2787,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DWRi"
-    ],
+    "source": ["DWRi"],
     "dataType": 3,
     "description": "Duty represents a quantity of water, determined by the State Engineer, required to satisfy the irrigation water requirements in a given area; based on the irrigation requirements of alfalfa",
     "inActionUrl": "",
@@ -3019,9 +2814,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Sites that generate hazardous waste; that treat, store, or dispose of hazardous waste; that treat, store, or dispose of non-hazardous solid waste; and sites that transport, market, or recycle used oil.",
     "inActionUrl": "https://enviro.deq.utah.gov/",
@@ -3048,9 +2841,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Locations of Utah's priority lakes and reservoirs selected for more frequent collection of water quality information.  Results of lake/reservoir assessments are found in the \"Assessed Waters\" data layer.",
     "inActionUrl": "",
@@ -3077,9 +2868,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 3,
     "description": "Water quality assesssment information for Utah's surface waters (rivers, streams, and reservoirs/lakes) as reported in the latest 305(b) Report to Congress.",
     "inActionUrl": "",
@@ -3106,9 +2895,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Locations of Division ofWater Quality groundwater permits and associated permit information including permittee names, address, and permit type.",
     "inActionUrl": "",
@@ -3135,9 +2922,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Locations of fish tissue sample sites, consumption advisories, and sampling information including fish species, sample size, sample year, and a summary of mercury concentrations in fish tissue.  ",
     "inActionUrl": "",
@@ -3164,9 +2949,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Locations and descriptions of Utah's water quality monitoring sites for rivers/streams, lakes/reservoirs, wells, and facilities.",
     "inActionUrl": "",
@@ -3193,9 +2976,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Locations of Utah's National Pollution Elimination Discharge System (NPDES) storm water discharge permit holders and the waters of the state, if any, they discharge to. Data provided by the Utah Division of Water Quality.",
     "inActionUrl": "",
@@ -3222,9 +3003,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 1,
     "description": "Utah earthquake epicenters recorded from 1850 to 2016",
     "inActionUrl": "https://hazards.geology.utah.gov/",
@@ -3251,9 +3030,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 1,
     "description": "Mining induced earthquake epicenters recorded from 1928 to 2016",
     "inActionUrl": "https://hazards.geology.utah.gov/",
@@ -3361,13 +3138,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "WFRC",
-      "MAG",
-      "Cache MPO",
-      "Dixie MPO",
-      "UDOT"
-    ],
+    "source": ["WFRC", "MAG", "Cache MPO", "Dixie MPO", "UDOT"],
     "dataType": 3,
     "description": "Utah's Metropolitan Planning Organizations (MPOs) produce population and employment projections to aid their long-range transportation and land use planning efforts.",
     "inActionUrl": "",
@@ -3394,9 +3165,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "EMS response areas for NG911",
     "inActionUrl": "",
@@ -3423,9 +3192,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 3,
     "description": "Proposed areas that may be designated as West-wide energy corridors on federal lands.",
     "inActionUrl": "",
@@ -3452,9 +3219,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 2,
     "description": "This layer represents lines which have been proposed as West-wide energy corridors centerlines for the draft \"Programmatic Environmental Impact Statement, Designation of Energy Corridors on Federal Land in the 11 Western States\", September 2007.",
     "inActionUrl": "",
@@ -3481,9 +3246,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 2,
     "description": "Energy resources depicted as lines on the Energy Resources Map of Utah from which the data were digitized.",
     "inActionUrl": "",
@@ -3510,9 +3273,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 1,
     "description": "Energy resources depicted as points on the Energy Resources Map of Utah from which the data were digitized.",
     "inActionUrl": "",
@@ -3539,9 +3300,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 3,
     "description": "Energy resources depicted as polygons on the Energy Resources Map of Utah from which the data were digitized.",
     "inActionUrl": "",
@@ -3568,9 +3327,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Locations of potential Enforceable Written Assurance sites. EWAs will generally ensure to property owners or prospective property owners that there is no unacceptable risk to human health or the environment.",
     "inActionUrl": "",
@@ -3597,9 +3354,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "GOED"
-    ],
+    "source": ["GOED"],
     "dataType": 3,
     "description": "Areas created by the Utah Governors Office of Economic Development to encourage economic growth and development in specified areas by providing tax breaks to development projects within these boundaries.",
     "inActionUrl": "",
@@ -3626,9 +3381,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "This dataset contains the incident information submitted to the Division of Environmental Response and Remediation and to after-hours duty officers, and is provided as a service to the public.  Locations are based on coordinates derived from maps and GPS data.",
     "inActionUrl": "https://enviro.deq.utah.gov",
@@ -3655,9 +3408,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 1,
     "description": "Locations of earthquake epicenters in Utah",
     "inActionUrl": "https://hazards.geology.utah.gov/",
@@ -3684,9 +3435,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC"
-    ],
+    "source": ["WFRC"],
     "dataType": 3,
     "description": "WFRC has adopted an Equity Focus Area (EFA) framework as an input to its transportation planning efforts. EFAs are census block groups where either of the following criteria (last updated in 2023) are met: > 20% low income or > 40% Persons of Color",
     "inActionUrl": "",
@@ -3713,9 +3462,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Facility discharge monitoring sites derived from the Utah Division of Water Quality monitoring database called STORET.",
     "inActionUrl": "",
@@ -3742,9 +3489,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "BLM"
-    ],
+    "source": ["BLM"],
     "dataType": 3,
     "description": "This dataset depicts oil and gas field units in Utah from the U.S. Bureau of Land Management (BLM). The dataset contains the unit name, operator, status, district and more. Most \"Units\" in the state of Utah are established and regulated by the BLM.",
     "inActionUrl": "",
@@ -3771,9 +3516,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Fire response areas for NG911",
     "inActionUrl": "",
@@ -3800,9 +3543,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 1,
     "description": "Fire station locations",
     "inActionUrl": "",
@@ -3829,9 +3570,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "FEMA"
-    ],
+    "source": ["FEMA"],
     "dataType": 3,
     "description": "The Digital Flood Insurance Rate Map (DFIRM) Database depicts flood risk information and supporting data used to develop the risk data.",
     "inActionUrl": "",
@@ -3858,9 +3597,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "National forest boundaries submitted for the President's Roadless Area Initiative.",
     "inActionUrl": "",
@@ -3887,9 +3624,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 1,
     "description": "Forest service station locations",
     "inActionUrl": "",
@@ -3916,9 +3651,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Formerly Used Defense site locations. The Department of Defense (DoD) is responsible for environmental restoration of FUDS, these locations represent sites not contaminated areas.",
     "inActionUrl": "",
@@ -3945,9 +3678,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC"
-    ],
+    "source": ["WFRC"],
     "dataType": 3,
     "description": "A generalized interpretation (2020) of city and county general plans in the WFRC urban area. General plans present a community's aspirations for allowable future land use types and intensities.",
     "inActionUrl": "",
@@ -3974,9 +3705,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 1,
     "description": "Various geologic dating methods, sites, and project areas in Utah.",
     "inActionUrl": "",
@@ -4003,9 +3732,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 2,
     "description": "Geologic contacts",
     "inActionUrl": "",
@@ -4032,9 +3759,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 2,
     "description": "Geologic dikes",
     "inActionUrl": "",
@@ -4061,9 +3786,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 2,
     "description": "Geologic formations",
     "inActionUrl": "",
@@ -4090,9 +3813,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 2,
     "description": "Geologic markers",
     "inActionUrl": "",
@@ -4119,9 +3840,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 2,
     "description": "Geologic veins",
     "inActionUrl": "",
@@ -4148,9 +3867,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 3,
     "description": "Locations of current geothermal leases and/or lease applications on Federal land.",
     "inActionUrl": "",
@@ -4177,9 +3894,7 @@
     "category": "history",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UTSHPO"
-    ],
+    "source": ["UTSHPO"],
     "dataType": 1,
     "description": "Ghost towns are uninhabitated or nearly abandoned places. The industry or driving force of the location that once brought residents has subsided or vanished, leaving abandoned buildings subject to the forces of nature and time. In other instances a town can cease because of natural disasters such as flood or drought.",
     "inActionUrl": "",
@@ -4206,9 +3921,7 @@
     "category": "recreation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Golf course locations",
     "inActionUrl": "",
@@ -4235,9 +3948,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Boundaries and dates of the imagery blocks in the Google imagery service.",
     "inActionUrl": "",
@@ -4264,9 +3975,7 @@
     "category": "farming",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "FSA"
-    ],
+    "source": ["FSA"],
     "dataType": 3,
     "description": "Grazing allotment boundaries, produced by the Farm Service Agency One time project.",
     "inActionUrl": "",
@@ -4293,9 +4002,7 @@
     "category": "farming",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DAF"
-    ],
+    "source": ["DAF"],
     "dataType": 3,
     "description": "Grazing Improvement Program boundaries",
     "inActionUrl": "",
@@ -4322,9 +4029,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Flood Plain Management Services Study(FPMS) areas, 100-Year Flood for the Great Salt Lake.",
     "inActionUrl": "",
@@ -4351,9 +4056,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "BLM"
-    ],
+    "source": ["BLM"],
     "dataType": 3,
     "description": "Great Salt Lake meander line.",
     "inActionUrl": "",
@@ -4380,9 +4083,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Geographic extent of the Great Salt Lake shoreline varying water levels.",
     "inActionUrl": "",
@@ -4409,9 +4110,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "URGC"
-    ],
+    "source": ["URGC"],
     "dataType": 2,
     "description": "Flood Plain Management Services Study(FPMS) areas, 100-Year Flood for the Great Salt Lake.",
     "inActionUrl": "",
@@ -4438,10 +4137,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC",
-      "UDAF"
-    ],
+    "source": ["WFRC", "UDAF"],
     "dataType": 1,
     "description": "Grocery Stores and other food stores from the Utah Department of Agriculture and Food (UDAF) database (2018). Use the 'TYPE' field to filter by type of store.",
     "inActionUrl": "",
@@ -4522,9 +4218,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "Dept of Veterans Affairs"
-    ],
+    "source": ["Dept of Veterans Affairs"],
     "dataType": 3,
     "description": "This dataset is to help current and future partners of the Great Salt Lake Sentinel Landscape spatially understand the area where conservation efforts may align with the goals of the Sentinel Landscape Partnership to best leverage funding opportunities.",
     "inActionUrl": "",
@@ -4551,9 +4245,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "The Great Salt Lake water level and shoreline from the 2016 LiDAR collection project.",
     "inActionUrl": "",
@@ -4580,9 +4272,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "H3 hexes covering the state at resolution 5",
     "inActionUrl": "",
@@ -4609,9 +4299,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "H3 hexes covering the state at resolution 6",
     "inActionUrl": "",
@@ -4638,9 +4326,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "H3 hexes covering the state at resolution 7",
     "inActionUrl": "",
@@ -4667,9 +4353,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "H3 hexes covering the state at resolution 8",
     "inActionUrl": "",
@@ -4696,9 +4380,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "H3 hexes covering the state at resolution 9",
     "inActionUrl": "",
@@ -4725,9 +4407,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of bison current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -4754,9 +4434,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of black bear current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -4783,9 +4461,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of California bighorn sheep current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -4812,9 +4488,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of California quail current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -4841,9 +4515,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of chukar current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -4870,9 +4542,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of sharp-tailed grouse current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -4899,9 +4569,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of desert bighorn sheep current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -4928,9 +4596,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of dusky grouse current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -4957,9 +4623,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of Gambels quail current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -4986,9 +4650,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "Utah Sage-grouse habitat delineated in 2012 by Utah Division of Wildlife Resources wildlife biologists.",
     "inActionUrl": "",
@@ -5015,9 +4677,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "Locations of active greater sage-grouse breeding areas (leks) in Utah.",
     "inActionUrl": "",
@@ -5044,9 +4704,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of Hungarian partridge current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -5073,9 +4731,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of moose current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -5102,9 +4758,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of mountain goat current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -5131,9 +4785,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of mule deer current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -5160,9 +4812,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of pronghorn current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -5189,9 +4839,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of ring-necked pheasant current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -5218,9 +4866,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of Rocky Mountain bighorn sheep current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -5247,9 +4893,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of Rocky Mountain elk current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -5276,9 +4920,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of ruffed grouse current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -5305,9 +4947,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of snowshoe hare current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -5334,9 +4974,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of turkey current distribution, season of habitat use, and habitat value. Utah makes no distinction on sub-species.",
     "inActionUrl": "",
@@ -5363,9 +5001,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of white-tailed ptarmigan current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -5392,9 +5028,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of white-tailed jackrabbit current distribution.",
     "inActionUrl": "",
@@ -5421,9 +5055,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "A representation of white-winged dove current distribution, season of habitat use, and habitat value.",
     "inActionUrl": "",
@@ -5504,10 +5136,7 @@
     "category": "health",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC",
-      "DHHS"
-    ],
+    "source": ["UGRC", "DHHS"],
     "dataType": 3,
     "description": "Health small statistical areas 2018",
     "inActionUrl": "",
@@ -5534,10 +5163,7 @@
     "category": "health",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC",
-      "DHHS"
-    ],
+    "source": ["UGRC", "DHHS"],
     "dataType": 3,
     "description": "Health small statistical areas 2020",
     "inActionUrl": "",
@@ -5564,9 +5190,7 @@
     "category": "location",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Quarter square mile hexagons useful for generalizing data.",
     "inActionUrl": "",
@@ -5593,9 +5217,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Flight dates for the Hexagon Imagery.",
     "inActionUrl": "",
@@ -5622,9 +5244,7 @@
     "category": "elevation",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 1,
     "description": "Top 100 highest peaks and additional highest county peaks.",
     "inActionUrl": "",
@@ -5651,9 +5271,7 @@
     "category": "base_maps",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 8,
     "description": "Grey elevation based shading.",
     "inActionUrl": "https://atlas.utah.gov",
@@ -5761,9 +5379,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "Utah Legislature"
-    ],
+    "source": ["Utah Legislature"],
     "dataType": 3,
     "description": "Utah House District Boundaries 2002 to 2012",
     "inActionUrl": "",
@@ -5790,9 +5406,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "Utah Legislature"
-    ],
+    "source": ["Utah Legislature"],
     "dataType": 3,
     "description": "Utah House District Boundaries 2012 to 2022",
     "inActionUrl": "",
@@ -5819,9 +5433,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC"
-    ],
+    "source": ["WFRC"],
     "dataType": 3,
     "description": "A quick summary of residential and employment intensity within ~1/4 mile for city-block-sized polygons in the Wasatch Front urban areas. This roughly represents commuter trip producing and attracting areas. More info on ATO",
     "inActionUrl": "",
@@ -5848,9 +5460,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC"
-    ],
+    "source": ["WFRC"],
     "dataType": 3,
     "description": "Characteristics of housing units on a per-parcel or per-development (for PUDs, townhomes, condos, etc) basis derived from LIR parcels and county assessor data.",
     "inActionUrl": "",
@@ -5931,9 +5541,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DWRi"
-    ],
+    "source": ["DWRi"],
     "dataType": 1,
     "description": "Point feature class representing dam locations in the State of Utah from the Dam Safety Regulatory Database at the Utah Division of Water Rights. Many of the original positions were scaled as latitude/longitude values from 1:24000 USGS Quadrangle series maps. They were later converted to UTM locations. Locations for recent additions to the database are either scaled from USGS Quadrangle maps, collected from GPS observations or converted from Public Land Survey descriptions to UTM coordinates. Non-standard attributes are located at this URL: https://waterrights.utah.gov/gisinfo/wrdams.htm",
     "inActionUrl": "",
@@ -5960,9 +5568,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 3,
     "description": "Institutional Control Buffer Zones in Utah.",
     "inActionUrl": "",
@@ -5989,9 +5595,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DWRe"
-    ],
+    "source": ["DWRe"],
     "dataType": 3,
     "description": "This feature service is a multi-polygon representation of irrigation company service areas in the state of Utah and the Bear River basin.",
     "inActionUrl": "",
@@ -6072,9 +5676,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Weekly",
-    "source": [
-      "SITLA"
-    ],
+    "source": ["SITLA"],
     "dataType": 3,
     "description": "Land ownership boundaries, designation status, and areas of responsibility for the State of Utah surface lands. Maintenance of this data layer is performed by a cooperative federal and state effort between the Bureau of Land Management (BLM) and the State of Utah School and Institutional Trust Lands Administration (SITLA).",
     "inActionUrl": "",
@@ -6101,9 +5703,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 2,
     "description": "Landslide Compilation Debris Flow Path feature class represents debris-flow paths throughout Utah.",
     "inActionUrl": "https://hazards.geology.utah.gov/",
@@ -6130,9 +5730,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 3,
     "description": "Compiled landslide deposits of Utah.",
     "inActionUrl": "https://hazards.geology.utah.gov/",
@@ -6159,9 +5757,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 2,
     "description": "Compiled landslide scarps of Utah.",
     "inActionUrl": "https://hazards.geology.utah.gov/",
@@ -6188,9 +5784,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 3,
     "description": "Area boundaries of inventoried and mapped landslides.",
     "inActionUrl": "https://hazards.geology.utah.gov/",
@@ -6217,9 +5811,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 3,
     "description": "Inventoried and mapped landslides.",
     "inActionUrl": "https://hazards.geology.utah.gov/",
@@ -6246,9 +5838,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "State law enforcement jurisdiction boundaries.",
     "inActionUrl": "https://experience.arcgis.com/experience/c1b5822d55694628a5577bc218c7bee2/",
@@ -6275,9 +5865,7 @@
     "category": "health",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "DHHS"
-    ],
+    "source": ["DHHS"],
     "dataType": 1,
     "description": "Health care facilities licensed by the Division of Licensing and Background Checks (DLBC) Oﬃce of Licensing (OL) under the authority of the Utah Department of Health and Human Services (DHHS).",
     "inActionUrl": "",
@@ -6304,9 +5892,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Lidar digital elevation model coverage",
     "inActionUrl": "",
@@ -6360,9 +5946,7 @@
     "category": "base_maps",
     "indexStatus": "live",
     "refreshCycle": "Bimonthly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 8,
     "description": "A muted base map great for overlaying data.",
     "inActionUrl": "https://atlas.utah.gov",
@@ -6416,9 +6000,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "Geographic entities delineated by the Office of Management and Budget (OMB) for use by Federal statistical agencies in collecting, tabulating, and publishing Federal statistics.",
     "inActionUrl": "",
@@ -6445,9 +6027,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Locations of Military Munitions Response Program sites. MMRP manages the environmental, health and safety issues presented by unexploded ordnances (UXO), discarded military munitions (DMM) and munitions constituents (MC).",
     "inActionUrl": "",
@@ -6474,9 +6054,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 1,
     "description": "Mineral resources",
     "inActionUrl": "",
@@ -6503,9 +6081,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC"
-    ],
+    "source": ["WFRC"],
     "dataType": 3,
     "description": "Mobile Home parks in the Wasatch Front and Wasatch back areas (Davis, Morgan, Salt Lake, Summit, Tooele, Utah, Wasatch, Weber counties",
     "inActionUrl": "",
@@ -6532,10 +6108,7 @@
     "category": "history",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC",
-      "UDSH"
-    ],
+    "source": ["UGRC", "UDSH"],
     "dataType": 1,
     "description": "Historic monuments and marker locations in Utah",
     "inActionUrl": "https://utahshpo.maps.arcgis.com/apps/webappviewer/index.html?id=33c405cff5294c8a979ace4d26ee55a2",
@@ -6562,9 +6135,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 2,
     "description": "ESRI street network dataset optimized for multimodal transportation (bike, auto, transit, and pedestrian), used for network analysis such as drive times, routes, service areas, and travel sheds.",
     "inActionUrl": "",
@@ -6591,9 +6162,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Quarterly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Utah municipal boundaries defined by County Recorders offices and certified by the Lt. Governor's Office.",
     "inActionUrl": "",
@@ -6620,9 +6189,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Quarterly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Municipal boundaries for cartographic purposes.",
     "inActionUrl": "",
@@ -6649,9 +6216,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Changes and modifications made to municipal boundaries over time.",
     "inActionUrl": "",
@@ -6678,9 +6243,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Tile index",
     "inActionUrl": "",
@@ -6707,9 +6270,7 @@
     "category": "history",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UTSHPO"
-    ],
+    "source": ["UTSHPO"],
     "dataType": 1,
     "description": "Properties in Utah that are recognized by the U.S. Gov't as National Historic Landmarks for their outstanding historical significance. A National Historic Landmark can be a building, district, object, site or structure.",
     "inActionUrl": "",
@@ -6736,9 +6297,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Locations of Utah National Priorities List Sites. The NPL is the list of national priorities among the known releases or threatened releases of hazardous substances, pollutants, or contaminants throughout the United States.",
     "inActionUrl": "",
@@ -6792,9 +6351,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Navajo chapter boundaries.",
     "inActionUrl": "",
@@ -6848,9 +6405,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Weekly",
-    "source": [
-      "DEM"
-    ],
+    "source": ["DEM"],
     "dataType": 3,
     "description": "Areas of defined flood hazard risk from the National Flood Hazard Layers created by FEMA",
     "inActionUrl": "",
@@ -6877,9 +6432,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 4,
     "description": "The official Next-Generation 911 (NG911) dataset for the state of Utah, used for 911 call routing",
     "inActionUrl": "",
@@ -6933,9 +6486,7 @@
     "category": "climate",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "NWS"
-    ],
+    "source": ["NWS"],
     "dataType": 3,
     "description": "Public forecast zones that are used by NWS for issuing forecasts.",
     "inActionUrl": "",
@@ -6962,9 +6513,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 1,
     "description": "Oil and gas well locations.",
     "inActionUrl": "",
@@ -6991,9 +6540,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 1,
     "description": "Oil and gas bottom hole points for horizontally drilled wells only. This dataset is updated nightly through a database connection with DNR-OGM.",
     "inActionUrl": "",
@@ -7020,9 +6567,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 2,
     "description": "Oil and gas horizontal drill paths (lines) for horizontally drilled wells only. This dataset is updated nightly through a database connection with DNR-OGM.",
     "inActionUrl": "",
@@ -7049,10 +6594,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "OpenStreetMap",
-      "UGRC"
-    ],
+    "source": ["OpenStreetMap", "UGRC"],
     "dataType": 1,
     "description": "Point representation of places of interest in Utah that have been derived from OpenStreetMap (OSM)",
     "inActionUrl": "",
@@ -7079,9 +6621,7 @@
     "category": "base_maps",
     "indexStatus": "live",
     "refreshCycle": "Bimonthly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 8,
     "description": "Roads and placenames in transparent form. Great for overlaying over data for reference.",
     "inActionUrl": "https://atlas.utah.gov",
@@ -7108,9 +6648,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Beaver County"
-    ],
+    "source": ["Beaver County"],
     "dataType": 3,
     "description": "Beaver County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required in HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7137,9 +6675,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Beaver County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7166,9 +6702,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Box Elder County"
-    ],
+    "source": ["Box Elder County"],
     "dataType": 3,
     "description": "Box Elder County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7195,9 +6729,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Box Elder County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7224,9 +6756,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Cache County"
-    ],
+    "source": ["Cache County"],
     "dataType": 3,
     "description": "Cache County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7253,9 +6783,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Cache County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7282,9 +6810,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Carbon County"
-    ],
+    "source": ["Carbon County"],
     "dataType": 3,
     "description": "Carbon County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7311,9 +6837,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Carbon County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7340,9 +6864,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Daggett County"
-    ],
+    "source": ["Daggett County"],
     "dataType": 3,
     "description": "Daggett County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7369,9 +6891,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Daggett County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7398,9 +6918,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "Davis County"
-    ],
+    "source": ["Davis County"],
     "dataType": 3,
     "description": "Davis County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7427,9 +6945,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Davis County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7456,9 +6972,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Duchesne County"
-    ],
+    "source": ["Duchesne County"],
     "dataType": 3,
     "description": "Duchesne County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7485,9 +6999,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Duchesne County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7514,9 +7026,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Emery County"
-    ],
+    "source": ["Emery County"],
     "dataType": 3,
     "description": "Emery County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7543,9 +7053,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Emery County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7572,9 +7080,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Garfield County"
-    ],
+    "source": ["Garfield County"],
     "dataType": 3,
     "description": "Garfield County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7601,9 +7107,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Garfield County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7630,9 +7134,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Grand County"
-    ],
+    "source": ["Grand County"],
     "dataType": 3,
     "description": "Grand County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7659,9 +7161,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Grand County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7688,9 +7188,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Iron County"
-    ],
+    "source": ["Iron County"],
     "dataType": 3,
     "description": "Iron County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7717,9 +7215,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Iron County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7746,9 +7242,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Juab County"
-    ],
+    "source": ["Juab County"],
     "dataType": 3,
     "description": "Juab County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7775,9 +7269,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Juab County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7804,9 +7296,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Kane County"
-    ],
+    "source": ["Kane County"],
     "dataType": 3,
     "description": "Kane County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7833,9 +7323,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Kane County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7862,9 +7350,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Millard County"
-    ],
+    "source": ["Millard County"],
     "dataType": 3,
     "description": "Millard County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7891,9 +7377,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Millard County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7920,9 +7404,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Morgan County"
-    ],
+    "source": ["Morgan County"],
     "dataType": 3,
     "description": "Morgan County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -7949,9 +7431,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Morgan County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -7978,9 +7458,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Piute County"
-    ],
+    "source": ["Piute County"],
     "dataType": 3,
     "description": "Piute County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8007,9 +7485,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Piute County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8036,9 +7512,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Rich County"
-    ],
+    "source": ["Rich County"],
     "dataType": 3,
     "description": "Rich County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8065,9 +7539,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Rich County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8094,9 +7566,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Bimonthly",
-    "source": [
-      "Salt Lake County"
-    ],
+    "source": ["Salt Lake County"],
     "dataType": 3,
     "description": "Salt Lake County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8123,9 +7593,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Salt Lake County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8152,9 +7620,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "San Juan County"
-    ],
+    "source": ["San Juan County"],
     "dataType": 3,
     "description": "San Juan County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8181,9 +7647,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Salt Juan County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8210,9 +7674,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Sanpete County"
-    ],
+    "source": ["Sanpete County"],
     "dataType": 3,
     "description": "Sanpete County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8239,9 +7701,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Sanpete County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8268,9 +7728,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Sevier County"
-    ],
+    "source": ["Sevier County"],
     "dataType": 3,
     "description": "Sevier County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8297,9 +7755,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Sevier County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8326,9 +7782,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Summit County"
-    ],
+    "source": ["Summit County"],
     "dataType": 3,
     "description": "Summit County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8355,9 +7809,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Summit County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8384,9 +7836,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Tooele County"
-    ],
+    "source": ["Tooele County"],
     "dataType": 3,
     "description": "Tooele County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8413,9 +7863,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Tooele County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8442,9 +7890,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Uintah County"
-    ],
+    "source": ["Uintah County"],
     "dataType": 3,
     "description": "Uintah County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8471,9 +7917,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Uintah County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8500,9 +7944,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "Utah County"
-    ],
+    "source": ["Utah County"],
     "dataType": 3,
     "description": "Utah County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8529,9 +7971,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Utah County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8558,9 +7998,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Wasatch County"
-    ],
+    "source": ["Wasatch County"],
     "dataType": 3,
     "description": "Wasatch County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8587,9 +8025,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Wasatch County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8616,9 +8052,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "Washington County"
-    ],
+    "source": ["Washington County"],
     "dataType": 3,
     "description": "Washington County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8645,9 +8079,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Washington County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8674,9 +8106,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "Wayne County"
-    ],
+    "source": ["Wayne County"],
     "dataType": 3,
     "description": "Wayne County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8703,9 +8133,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Wayne County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8732,9 +8160,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Quarterly",
-    "source": [
-      "Weber County"
-    ],
+    "source": ["Weber County"],
     "dataType": 3,
     "description": "Weber County parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information as required by HB113.",
     "inActionUrl": "https://parcels.utah.gov/",
@@ -8761,9 +8187,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "County/State Auditor/UGRC"
-    ],
+    "source": ["County/State Auditor/UGRC"],
     "dataType": 3,
     "description": "Weber County LIR parcel boundary and Land Information Records attributes.",
     "inActionUrl": "",
@@ -8790,9 +8214,7 @@
     "category": "recreation",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Local park locations",
     "inActionUrl": "",
@@ -8819,9 +8241,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 1,
     "description": "Permitted uranium mines (active and suspended operating status).",
     "inActionUrl": "",
@@ -8848,9 +8268,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Utah Petroleum Storage Tank Facilities contains the locations of above and below ground storage tanks.",
     "inActionUrl": "",
@@ -8877,9 +8295,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 3,
     "description": "Physiographic subdivisions of Utah as defined by W.L. Stokes on his 1977 map",
     "inActionUrl": "",
@@ -8906,10 +8322,7 @@
     "category": "location",
     "indexStatus": "live",
     "refreshCycle": "Decennially",
-    "source": [
-      "USGS",
-      "BGN"
-    ],
+    "source": ["USGS", "BGN"],
     "dataType": 1,
     "description": "USGS Geographic Names Information Systems (2019)",
     "inActionUrl": "",
@@ -8936,10 +8349,7 @@
     "category": "location",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USGS",
-      "BGN"
-    ],
+    "source": ["USGS", "BGN"],
     "dataType": 1,
     "description": "USGS Geographic Names Information Systems (2010)",
     "inActionUrl": "",
@@ -8966,10 +8376,7 @@
     "category": "location",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USGS",
-      "BGN"
-    ],
+    "source": ["USGS", "BGN"],
     "dataType": 1,
     "description": "USGS Geographic Names Information Systems (2000)",
     "inActionUrl": "",
@@ -8996,10 +8403,7 @@
     "category": "location",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USGS",
-      "BGN"
-    ],
+    "source": ["USGS", "BGN"],
     "dataType": 1,
     "description": "USGS Geographic Names Information Systems (1990)",
     "inActionUrl": "",
@@ -9026,10 +8430,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "USGS",
-      "BGN"
-    ],
+    "source": ["USGS", "BGN"],
     "dataType": 3,
     "description": "",
     "inActionUrl": "",
@@ -9056,9 +8457,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 1,
     "description": "Point dataset that depicts the Public Land Survey System (PLSS) for the State of Utah and is based on the Geographic Coordinate Data Base (GCDB). This dataset was created to provide continuous cadastre data for the state of Utah and is the CadNSDI Version 2.0 2015 of the Utah GCDB.",
     "inActionUrl": "https://plss.utah.gov",
@@ -9085,9 +8484,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "PLSSQuarterQuarterSections_GCDB is the fourth level of a hierarchical break down of the Public Land Survey System Rectangular surveys. This data is CadNSDI Version 2.0 2015 of the Utah GCDB.",
     "inActionUrl": "https://plss.utah.gov",
@@ -9114,9 +8511,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "PLSSQuarterSections_GCDB is the third level of a hierarchical break down of the Public Land Survey System Rectangular surveys. This data is Version 2.0 2015 of the Utah GCDB.",
     "inActionUrl": "https://plss.utah.gov",
@@ -9143,9 +8538,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "PLSSSections_GCDB is the second level of a hierarchical break down of the Public Land Survey System Rectangular surveys. This data is Version 2.0 2015 of the Utah GCDB.",
     "inActionUrl": "https://plss.utah.gov",
@@ -9172,9 +8565,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Semi-annually",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "PLSSTownship_GCDB is the first level of a hierarchical break down of the Public Land Survey System Rectangular surveys. This data is Version 2.0 2015 of the Utah GCDB.",
     "inActionUrl": "https://plss.utah.gov",
@@ -9201,9 +8592,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DWRi"
-    ],
+    "source": ["DWRi"],
     "dataType": 1,
     "description": "The Division of Water Rights maintains a Hosted Feature Layer of all the points of diversion in the state. The data is generated daily from basic information in their tabular database. For more information on this dataset visit https://waterrights.utah.gov/gisinfo/wrpod.htm.",
     "inActionUrl": "",
@@ -9230,9 +8619,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Census blocks that only represent populated areas.",
     "inActionUrl": "",
@@ -9259,9 +8646,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 1,
     "description": "Populated places - cities, towns, locations.",
     "inActionUrl": "",
@@ -9342,9 +8727,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Potential EPA Superfund sites",
     "inActionUrl": "",
@@ -9371,9 +8754,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 3,
     "description": "Liquefaction Potential Wasatch Front",
     "inActionUrl": "https://hazards.geology.utah.gov/",
@@ -9400,9 +8781,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 1,
     "description": "Power Plant locations from CO2 project for the State of Utah, July 2008.",
     "inActionUrl": "",
@@ -9456,9 +8835,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "BLM"
-    ],
+    "source": ["BLM"],
     "dataType": 3,
     "description": "Proposed areas described in the January 2016 Public Lands Initiative (PLI) preliminary proposal for Utah and referenced by HR 5780.",
     "inActionUrl": "",
@@ -9485,9 +8862,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "BLM"
-    ],
+    "source": ["BLM"],
     "dataType": 2,
     "description": "Proposed linear features (roads, rivers, etc) described in the January 2016 Public Lands Initiative (PLI) preliminary proposal for Utah and referenced by HR 5780. ",
     "inActionUrl": "",
@@ -9514,9 +8889,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "Utah State Library Division"
-    ],
+    "source": ["Utah State Library Division"],
     "dataType": 1,
     "description": "Public libraries, branches, and bookmobile locations of Utah. Additional information about libraries and the services provided by the Utah State Library Division can be found at library.utah.gov",
     "inActionUrl": "",
@@ -9597,9 +8970,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 2,
     "description": "Quaternary faults",
     "inActionUrl": "https://hazards.geology.utah.gov/",
@@ -9626,9 +8997,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 3,
     "description": "Quaternary volcanic flows",
     "inActionUrl": "",
@@ -9655,9 +9024,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 1,
     "description": "Quaternary volcanic vents",
     "inActionUrl": "",
@@ -9684,9 +9051,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 1,
     "description": "Ages and related dating information of sampled geologic material (soil and rock) using radiocarbon (14C) dating methods",
     "inActionUrl": "",
@@ -9713,9 +9078,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 2,
     "description": "Railroads data including transit rail",
     "inActionUrl": "",
@@ -9742,9 +9105,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC"
-    ],
+    "source": ["WFRC"],
     "dataType": 1,
     "description": "Locations of shopping malls and retail centers along the Wasatch Front.",
     "inActionUrl": "",
@@ -9771,9 +9132,7 @@
     "category": "utilities",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWRe"
-    ],
+    "source": ["DWRe"],
     "dataType": 3,
     "description": "Retail culinary water suppliers service area boundaries for the State of Utah. These include public community, public non-community (transient), self-supplied industry (non-transient), and non-public water suppliers. ",
     "inActionUrl": "",
@@ -9800,9 +9159,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "USFWS"
-    ],
+    "source": ["USFWS"],
     "dataType": 3,
     "description": "Riparian areas as defined by USFWS.",
     "inActionUrl": "",
@@ -9829,9 +9186,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 2,
     "description": "Utah street centerline data for address location, cartography, routing",
     "inActionUrl": "",
@@ -9858,10 +9213,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Quarterly",
-    "source": [
-      "USTC",
-      "UGRC"
-    ],
+    "source": ["USTC", "UGRC"],
     "dataType": 3,
     "description": "Approximate boundaries of Sales Tax Collection Areas in Utah. Sales Tax Areas are formed by municipality boundaries, special sales tax districts and the unincorporated areas of counties not in a special sales tax district.",
     "inActionUrl": "",
@@ -9888,9 +9240,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "Utah Legislature"
-    ],
+    "source": ["Utah Legislature"],
     "dataType": 3,
     "description": "Utah School Board Districts 2012 to 2022",
     "inActionUrl": "",
@@ -9917,9 +9267,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Utah school district boundaries.",
     "inActionUrl": "",
@@ -9946,9 +9294,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 1,
     "description": "Locations of public and private colleges and universities, technical colleges, and other higher education institutions.",
     "inActionUrl": "",
@@ -9975,10 +9321,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "UGRC",
-      "USBE"
-    ],
+    "source": ["UGRC", "USBE"],
     "dataType": 1,
     "description": "This dataset contains point locations for preschool and K-12 schools in the state of Utah - updated for the 2019-2020 school year. Higher education and adult vocational training are not included in the dataset. Provided by the Utah State Board of Education.",
     "inActionUrl": "",
@@ -10005,9 +9348,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DWRe"
-    ],
+    "source": ["DWRe"],
     "dataType": 3,
     "description": "This dataset attempts to represent the secondary water suppliers service area boundaries for the State of Utah. These are non-potable water suppliers for mostly lawn and garden use.",
     "inActionUrl": "",
@@ -10061,9 +9402,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "Utah Legislature"
-    ],
+    "source": ["Utah Legislature"],
     "dataType": 3,
     "description": "Utah Senate districts 2002 to 2012",
     "inActionUrl": "",
@@ -10090,9 +9429,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "Utah Legislature"
-    ],
+    "source": ["Utah Legislature"],
     "dataType": 3,
     "description": "Utah Senate districts 2012 to 2022",
     "inActionUrl": "",
@@ -10119,9 +9456,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 3,
     "description": "Shallow ground water depth",
     "inActionUrl": "https://hazards.geology.utah.gov/",
@@ -10148,9 +9483,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UTSHPO"
-    ],
+    "source": ["UTSHPO"],
     "dataType": 1,
     "description": "Cemetery location point data from Utah Division of State History. Search by cemetery name, city, county or by status (active, abandoned, inactive or unknown).",
     "inActionUrl": "",
@@ -10177,9 +9510,7 @@
     "category": "recreation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Utah ski area boundaries",
     "inActionUrl": "",
@@ -10233,9 +9564,7 @@
     "category": "recreation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 2,
     "description": "Utah ski lifts",
     "inActionUrl": "",
@@ -10262,9 +9591,7 @@
     "category": "recreation",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 2,
     "description": "Established cross country ski trails within in the State of Utah.",
     "inActionUrl": "",
@@ -10291,10 +9618,7 @@
     "category": "health",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC",
-      "DHHS"
-    ],
+    "source": ["UGRC", "DHHS"],
     "dataType": 3,
     "description": "Small areas showing the percent of population getting the recommended amount of activity and the percent obese ",
     "inActionUrl": "",
@@ -10321,9 +9645,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "NRCS"
-    ],
+    "source": ["NRCS"],
     "dataType": 3,
     "description": "Soil types and characteristics",
     "inActionUrl": "",
@@ -10377,9 +9699,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "This data shows the areas of responsibility for the State Department of Public Communications Centers for dispatching State agencies, such as Highway Patrol, Wildlife Resources, Corrections, Park Ranges etc.",
     "inActionUrl": "",
@@ -10406,9 +9726,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "State court jurisdiction.",
     "inActionUrl": "https://experience.arcgis.com/experience/c1b5822d55694628a5577bc218c7bee2/",
@@ -10462,9 +9780,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DFO"
-    ],
+    "source": ["DFO"],
     "dataType": 1,
     "description": "State fuel sites.",
     "inActionUrl": "https://experience.arcgis.com/experience/9a38f59e6f914367b18fbbde037028e2",
@@ -10491,9 +9807,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 2,
     "description": "Bike lanes located along Utah state highways.",
     "inActionUrl": "",
@@ -10520,9 +9834,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 1,
     "description": "Cattle guards located along Utah state highways.",
     "inActionUrl": "",
@@ -10549,9 +9861,7 @@
     "category": "transportation",
     "indexStatus": "draft",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 1,
     "description": "Facilities inventory from the Operations Management System (OMS). Facility types include: brake check areas, road-closed gates, material storage locations, offices, port of entries, rest areas, runaway truck lanes, view areas, and welcome centers.",
     "inActionUrl": "",
@@ -10578,9 +9888,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 1,
     "description": "Intersection dataset contains location information of any cross street location to a state route. At state route to state route intersections both routes are identified",
     "inActionUrl": "",
@@ -10607,9 +9915,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 2,
     "description": "This dataset contains lane counts for Utah state highways. Descriptive information includes lanes by type( Aux, Through, Decel, Accel, Turn, Passing) and count of each type lane. Information also includes location information including x,y and route & milepost.",
     "inActionUrl": "",
@@ -10636,9 +9942,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 2,
     "description": "Dataset contains median locations along state routes. Descriptive information includes median type, width, traffic island presence and protection presence. Width value of 999 generally indicates large median greater than 300ft. Location information is generally accurate to within 5ft ",
     "inActionUrl": "",
@@ -10665,9 +9969,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 1,
     "description": "Pavement messages data consists of message location, content and type. ",
     "inActionUrl": "",
@@ -10694,9 +9996,7 @@
     "category": "transportation",
     "indexStatus": "draft",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 2,
     "description": "This dataset contains pavement striping located along Utah state highways. Descriptive information includes paint color, pattern, and linear feet. Location information includes x,y and route & milepost.",
     "inActionUrl": "",
@@ -10723,9 +10023,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 2,
     "description": "This dataset contains rumble strips located along Utah state highways. Descriptive information includes lane type, pavement type, and paint striping attributes (color, style, width). Location information includes x,y and route & milepost. ",
     "inActionUrl": "",
@@ -10752,9 +10050,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 2,
     "description": "This dataset contains information about shoulder location and type. Descriptive information includes location; x&y, route and mile post, location (center,left,right). Also includes width  and edge type. The width has been rounded to the nearest whole foot for end use purposes. ",
     "inActionUrl": "",
@@ -10781,9 +10077,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 1,
     "description": "This dataset contains sign assemblies located along Utah state highways. Descriptive information includes support type, offset, and sign count. Also included is location information including x,y and route & milepost.",
     "inActionUrl": "",
@@ -10810,9 +10104,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 1,
     "description": "Sign face data includes the standard MUTCD or UDOT sign designation color and description, sign condition (good, fair, poor), and sign orientation (north, southwest, etc.). ",
     "inActionUrl": "",
@@ -10839,9 +10131,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 2,
     "description": "The station location and station boundary ",
     "inActionUrl": "",
@@ -10895,9 +10185,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DWRi"
-    ],
+    "source": ["DWRi"],
     "dataType": 1,
     "description": "These are points showing stream alteration applications. The shapefile is generated daily from basic information in the tabular database",
     "inActionUrl": "",
@@ -10978,9 +10266,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC"
-    ],
+    "source": ["WFRC"],
     "dataType": 2,
     "description": "Street Connectivity analysis datasets for the Wasatch Front and Back counties. Data set options include intersection points, dead ends/culdesacs, and intersection density scores by 1 km hexagon and by traffic analysis zone (TAZ). These can be viewed in WFRC's Street Connectivity interactive map.",
     "inActionUrl": "",
@@ -11007,9 +10293,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 2,
     "description": "ESRI street network dataset used for network analysis such as drive times, routes, and service areas",
     "inActionUrl": "",
@@ -11036,9 +10320,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 6,
     "description": "This map service contains pavement surface areas for 2012 and 2014. The data covers all state roads in Utah and is segmented into tenth-mile sections.",
     "inActionUrl": "",
@@ -11065,9 +10347,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 1,
     "description": "Tar sand resource locations.",
     "inActionUrl": "",
@@ -11094,9 +10374,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2018 Tax Area boundaries formed by each unique 2-dimensional intersection of incorporated taxing entities in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state.",
     "inActionUrl": "",
@@ -11123,9 +10401,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2019 Tax Area boundaries formed by each unique 2-dimensional intersection of incorporated taxing entities in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state.",
     "inActionUrl": "",
@@ -11152,9 +10428,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2020 Tax Area boundaries formed by each unique 2-dimensional intersection of incorporated taxing entities in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state.",
     "inActionUrl": "",
@@ -11181,9 +10455,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2021 Tax Area boundaries formed by each unique 2-dimensional intersection of incorporated taxing entities in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state.",
     "inActionUrl": "",
@@ -11210,9 +10482,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2022 Tax Area boundaries formed by each unique 2-dimensional intersection of incorporated taxing entities in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state.",
     "inActionUrl": "",
@@ -11239,9 +10509,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2024 Tax Area boundaries formed by each unique 2-dimensional intersection of incorporated taxing entities in Utah. Each taxing area represents at least a county and school district as members of these two categories cover the entire state.",
     "inActionUrl": "",
@@ -11268,9 +10536,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2018 Boundaries of incorporated political subdivisions that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts.",
     "inActionUrl": "",
@@ -11297,9 +10563,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2019 Boundaries of incorporated political subdivisions that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts.",
     "inActionUrl": "",
@@ -11326,9 +10590,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2020 Boundaries of incorporated political subdivisions that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts.",
     "inActionUrl": "",
@@ -11355,9 +10617,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2021 Boundaries of incorporated political subdivisions that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts.",
     "inActionUrl": "",
@@ -11384,9 +10644,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Shelved",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2022 Boundaries of incorporated political subdivisions that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts.",
     "inActionUrl": "",
@@ -11413,9 +10671,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2024 Boundaries of incorporated political subdivisions that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts.",
     "inActionUrl": "",
@@ -11442,9 +10698,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "2025 Boundaries of incorporated political subdivisions that have the power to levy a local property tax such as school districts, counties, cities, special service districts, redevelopment districts, library districts, cemetery districts, and mosquito abatement districts.",
     "inActionUrl": "",
@@ -11471,10 +10725,7 @@
     "category": "utilities",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "URTA",
-      "FCC"
-    ],
+    "source": ["URTA", "FCC"],
     "dataType": 3,
     "description": "Service territories of rural telephone providers and local urban exchange carriers in Utah",
     "inActionUrl": "",
@@ -11501,9 +10752,7 @@
     "category": "base_maps",
     "indexStatus": "live",
     "refreshCycle": "Bimonthly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 8,
     "description": "Contour lines with roads and placenames",
     "inActionUrl": "https://atlas.utah.gov",
@@ -11530,9 +10779,7 @@
     "category": "bioscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DWR"
-    ],
+    "source": ["DWR"],
     "dataType": 3,
     "description": "Threatened and endangered species locations represented by 1:24,000K quad locations.",
     "inActionUrl": "",
@@ -11559,9 +10806,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Locations of Tier II facilities under the Emergency Planning and Community Right-to-Know Act (EPCRA).",
     "inActionUrl": "",
@@ -11588,9 +10833,7 @@
     "category": "base_maps",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 8,
     "description": "USGS Scanned topographic maps",
     "inActionUrl": "https://atlas.utah.gov",
@@ -11617,9 +10860,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "TRI EPA database containing data on disposal or release of toxic chemicals",
     "inActionUrl": "",
@@ -11673,9 +10914,7 @@
     "category": "recreation",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 2,
     "description": "Polylines representing Utah's trails and pathways.  This layer is used for both recreation and transportion purposes.",
     "inActionUrl": "",
@@ -11702,9 +10941,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "USTC"
-    ],
+    "source": ["USTC"],
     "dataType": 3,
     "description": "Sales tax areas that are generally areas outside of incorporated municipalities where additional sales tax is collected to support transit activities (generally buses).",
     "inActionUrl": "",
@@ -11758,9 +10995,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 2,
     "description": "Represents the baselines between the The Utah Reference Network Global Positioning System (TURN GPS) base stations.",
     "inActionUrl": "",
@@ -11787,9 +11022,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 1,
     "description": "Points representing the Utah Reference Network Global Positioning System (TURN GPS) base station locations.",
     "inActionUrl": "",
@@ -11816,9 +11049,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 2,
     "description": "Average Annual Daily Traffic (AADT) on road sections of the State Highways or Local Federal-Aid roads",
     "inActionUrl": "",
@@ -11899,9 +11130,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 1,
     "description": "The Mile Reference Posts dataset contains the location of milepost signs as they are located along the roads.",
     "inActionUrl": "https://gis.udot.utah.gov/mileposts",
@@ -11928,9 +11157,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 2,
     "description": "Project data from ePM (Electronic Project Management). This service contains point and line layers for UDOT's roadway projects stored in ePM. ",
     "inActionUrl": "",
@@ -11957,9 +11184,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 2,
     "description": "GIS representation of the UDOT Advanced Linear Reference System.",
     "inActionUrl": "https://maps.udot.utah.gov/uplan_data/documents/HRO/",
@@ -11986,9 +11211,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 3,
     "description": "Uranium mining districts.",
     "inActionUrl": "",
@@ -12042,9 +11265,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 3,
     "description": "This dataset represents facilities that have one or more wells regulated by the Underground Injection Control (UIC) Program in the Division of Water Quality.",
     "inActionUrl": "",
@@ -12071,9 +11292,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "UIC-regulated facilities and wells",
     "inActionUrl": "",
@@ -12100,9 +11319,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Derived from 2010 census blocks to identify unincorporated areas.",
     "inActionUrl": "",
@@ -12129,9 +11346,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Approximate unpopulated areas of Utah",
     "inActionUrl": "",
@@ -12158,9 +11373,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "UPDES permitted water discharge facilities",
     "inActionUrl": "",
@@ -12187,9 +11400,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 3,
     "description": "Uranium deposit areas.",
     "inActionUrl": "",
@@ -12216,9 +11427,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 1,
     "description": "Uranium mill locations.",
     "inActionUrl": "",
@@ -12245,9 +11454,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "OGM"
-    ],
+    "source": ["OGM"],
     "dataType": 1,
     "description": "Locations of past mining production of uranium.",
     "inActionUrl": "",
@@ -12274,9 +11481,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Derived from 2010 census blocks to identify urban areas and urban clusters.",
     "inActionUrl": "",
@@ -12303,9 +11508,7 @@
     "category": "demographic",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "US Census Bureau"
-    ],
+    "source": ["US Census Bureau"],
     "dataType": 3,
     "description": "Urban areas identified from the 2020 Census",
     "inActionUrl": "",
@@ -12359,10 +11562,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC",
-      "Utah Energy Office"
-    ],
+    "source": ["UGRC", "Utah Energy Office"],
     "dataType": 3,
     "description": "Utah Renewable Energy Zones Phase 1, potential geothermal energy resource areas.",
     "inActionUrl": "",
@@ -12389,10 +11589,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC",
-      "Utah Energy Office"
-    ],
+    "source": ["UGRC", "Utah Energy Office"],
     "dataType": 3,
     "description": "Utah Renewable Energy Zones Phase 1, potential solar energy resource areas.",
     "inActionUrl": "",
@@ -12419,10 +11616,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC",
-      "Utah Energy Office"
-    ],
+    "source": ["UGRC", "Utah Energy Office"],
     "dataType": 2,
     "description": "Utah Renewable Energy Zones Phase 1, electrical transmission network schematic.",
     "inActionUrl": "",
@@ -12449,10 +11643,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC",
-      "Utah Energy Office"
-    ],
+    "source": ["UGRC", "Utah Energy Office"],
     "dataType": 1,
     "description": "Utah Renewable Energy Zones Phase 1, potential canyon wind energy resource areas.",
     "inActionUrl": "",
@@ -12479,10 +11670,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC",
-      "Utah Energy Office"
-    ],
+    "source": ["UGRC", "Utah Energy Office"],
     "dataType": 3,
     "description": "Utah Renewable Energy Zones Phase 1, potential wind energy resource areas.",
     "inActionUrl": "",
@@ -12509,10 +11697,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC",
-      "Utah Energy Office"
-    ],
+    "source": ["UGRC", "Utah Energy Office"],
     "dataType": 2,
     "description": "Utah Renewable Energy Zones Phase 2, conceptual electrical transmission network.",
     "inActionUrl": "",
@@ -12539,10 +11724,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC",
-      "Utah Energy Office"
-    ],
+    "source": ["UGRC", "Utah Energy Office"],
     "dataType": 1,
     "description": "Utah Renewable Energy Zones Phase 2, geothermal energy resource locations.",
     "inActionUrl": "",
@@ -12569,10 +11751,7 @@
     "category": "energy",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC",
-      "Utah Energy Office"
-    ],
+    "source": ["UGRC", "Utah Energy Office"],
     "dataType": 3,
     "description": "Utah Renewable Energy Zones Phase 2 zone boundaries.",
     "inActionUrl": "",
@@ -12599,9 +11778,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Decennially",
-    "source": [
-      "Utah Legislature"
-    ],
+    "source": ["Utah Legislature"],
     "dataType": 3,
     "description": "US Congress Districts boundaries for 2022 to 2032 ",
     "inActionUrl": "",
@@ -12628,9 +11805,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Decennially",
-    "source": [
-      "Utah Third Judicial District Court"
-    ],
+    "source": ["Utah Third Judicial District Court"],
     "dataType": 3,
     "description": "US Congress Districts boundaries for 2026 to 2032",
     "inActionUrl": "",
@@ -12657,9 +11832,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "Utah Legislature"
-    ],
+    "source": ["Utah Legislature"],
     "dataType": 3,
     "description": "US Congressional District Boundaries 2002 to 2012",
     "inActionUrl": "",
@@ -12686,9 +11859,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "Utah Legislature"
-    ],
+    "source": ["Utah Legislature"],
     "dataType": 3,
     "description": "US Congressional District Boundaries 2012 to 2022",
     "inActionUrl": "",
@@ -12715,9 +11886,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "United States and D.C. boundaries.",
     "inActionUrl": "",
@@ -12744,9 +11913,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "USGS"
-    ],
+    "source": ["USGS"],
     "dataType": 3,
     "description": "National forest inventoried roadless areas.",
     "inActionUrl": "",
@@ -12908,9 +12075,7 @@
     "category": "indices",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "USGS digital elevation model coverage",
     "inActionUrl": "",
@@ -12937,9 +12102,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UTA"
-    ],
+    "source": ["UTA"],
     "dataType": 2,
     "description": "Centerline of UTA's FrontRunner Commuter Rail from Ogden in the north to Provo in the south. This centerline is the Main (M1) track. Siding Track (S) is not included.",
     "inActionUrl": "",
@@ -12966,9 +12129,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UTA"
-    ],
+    "source": ["UTA"],
     "dataType": 1,
     "description": "Locations of Utah Transit Authority's FrontRunner North and South commuter rail stations.",
     "inActionUrl": "",
@@ -12995,9 +12156,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UTA"
-    ],
+    "source": ["UTA"],
     "dataType": 2,
     "description": "Location of UTA's light rail system.",
     "inActionUrl": "",
@@ -13024,9 +12183,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UTA"
-    ],
+    "source": ["UTA"],
     "dataType": 1,
     "description": "Locations of UTA's light rail stations.",
     "inActionUrl": "",
@@ -13053,9 +12210,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Biannual",
-    "source": [
-      "UTA"
-    ],
+    "source": ["UTA"],
     "dataType": 2,
     "description": "Bus, Trax, and Frontrunner routes along the Wasatch Front",
     "inActionUrl": "https://maps.rideuta.com/portal/apps/instant/sidebar/index.html?appid=b5db22dc09a24203886607cf3e2abb30",
@@ -13082,9 +12237,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Biannual",
-    "source": [
-      "UTA"
-    ],
+    "source": ["UTA"],
     "dataType": 1,
     "description": "Bus, Trax, and Frontrunner stops / boarding locations along the Wasatch Front",
     "inActionUrl": "",
@@ -13111,9 +12264,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Utah State boundary.",
     "inActionUrl": "",
@@ -13140,9 +12291,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UDAF"
-    ],
+    "source": ["UDAF"],
     "dataType": 3,
     "description": "Conservation District (formerly Soil Conservation District) boundaries in the state of Utah.",
     "inActionUrl": "",
@@ -13169,9 +12318,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UDAF"
-    ],
+    "source": ["UDAF"],
     "dataType": 3,
     "description": "Conservation District (formerly Soil Conservation District) zone boundaries in the state of Utah.",
     "inActionUrl": "",
@@ -13198,10 +12345,7 @@
     "category": "economy",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "State Auditors Office",
-      "UGRC"
-    ],
+    "source": ["State Auditors Office", "UGRC"],
     "dataType": 3,
     "description": "Utah State Entities that are not collecting tax but may be collecting fees.",
     "inActionUrl": "",
@@ -13228,9 +12372,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 1,
     "description": "This dataset contain mile point measures based on the UDOT ALRS. It was created by deriving a location from a polylineM route feature class that was calibrated at route endpoints and at intermediate points.",
     "inActionUrl": "",
@@ -13257,9 +12399,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 1,
     "description": "This dataset contain tenth of a mile point measures based on the UDOT ALRS. It was created by deriving a location from a polylineM route feature class that was calibrated at route endpoints and at intermediate points.",
     "inActionUrl": "",
@@ -13286,9 +12426,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Decennially",
-    "source": [
-      "Utah Legislature"
-    ],
+    "source": ["Utah Legislature"],
     "dataType": 3,
     "description": "Utah House Districts boundaries 2022 to 2032",
     "inActionUrl": "",
@@ -13315,9 +12453,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "Utah Office of Legislative Research"
-    ],
+    "source": ["Utah Office of Legislative Research"],
     "dataType": 3,
     "description": "Utah Inland Port Authority Boundary as described in House Bill 2001",
     "inActionUrl": "",
@@ -13398,9 +12534,7 @@
     "category": "cadastre",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "This dataset represents UGRC's best effort to compile statewide parcels for Utah. \"Database containing parcel boundary, parcel identifier, parcel address, owner type, and county recorder contact information\" - HB113. This is the reason we have this dataset. The intent of the bill was to not include any attributes that the counties rely on for data sales. If you want those other attributes you need to contact the county recorder ",
     "inActionUrl": "https://parcels.utah.gov",
@@ -13427,9 +12561,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Decennially",
-    "source": [
-      "Utah Legislature"
-    ],
+    "source": ["Utah Legislature"],
     "dataType": 3,
     "description": "Utah School Board Districts boundaries 2022 to 2032",
     "inActionUrl": "",
@@ -13456,9 +12588,7 @@
     "category": "political",
     "indexStatus": "live",
     "refreshCycle": "Decennially",
-    "source": [
-      "Utah Legislature"
-    ],
+    "source": ["Utah Legislature"],
     "dataType": 3,
     "description": "Utah Senate Districts boundaries 2022 to 2032",
     "inActionUrl": "",
@@ -13485,9 +12615,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UTA"
-    ],
+    "source": ["UTA"],
     "dataType": 12,
     "description": "Utah Transit Authority (UTA) ridership dashboard, includes views of Commuter Rail, Light Rail, Streetcar, Regular Bus, Express Bus, Ski Bus, BRT Bus (UVX), Vanpool, and Paratransit modes",
     "inActionUrl": "",
@@ -13514,10 +12642,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "BLM",
-      "USFS"
-    ],
+    "source": ["BLM", "USFS"],
     "dataType": 3,
     "description": "BLM and USFS designated wilderness areas in Utah",
     "inActionUrl": "",
@@ -13598,9 +12723,7 @@
     "category": "geoscience",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UGS"
-    ],
+    "source": ["UGS"],
     "dataType": 1,
     "description": "Volcanic cones",
     "inActionUrl": "",
@@ -13627,9 +12750,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "Daily",
-    "source": [
-      "DEQ"
-    ],
+    "source": ["DEQ"],
     "dataType": 1,
     "description": "Voluntary Release Cleanup Program (VCP) sites",
     "inActionUrl": "",
@@ -13656,10 +12777,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC",
-      "MAG"
-    ],
+    "source": ["WFRC", "MAG"],
     "dataType": 6,
     "description": "This dataset represents the regionally significant centers and other specialized land use from the Wasatch Choice 2050 Vision Map. Land use types in this dataset include four levels of centers (metropolitan, urban, city, neighborhood), employment districts, education districts, industrial districts, and special districts (airports, mining, military, etc.).",
     "inActionUrl": "",
@@ -13686,9 +12804,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "DWRe"
-    ],
+    "source": ["DWRe"],
     "dataType": 3,
     "description": "Water related land use",
     "inActionUrl": "",
@@ -13742,9 +12858,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "USFWS"
-    ],
+    "source": ["USFWS"],
     "dataType": 3,
     "description": "Wetland areas as defined by USFWS.",
     "inActionUrl": "",
@@ -13771,9 +12885,7 @@
     "category": "water",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "USFWS"
-    ],
+    "source": ["USFWS"],
     "dataType": 3,
     "description": "Status, extent, and approximate location of current and historic wetlands mapping projects.",
     "inActionUrl": "",
@@ -13800,9 +12912,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "BLM"
-    ],
+    "source": ["BLM"],
     "dataType": 3,
     "description": "1998 Bureau of Land Management (BLM) wilderness characteristics re-inventory.",
     "inActionUrl": "",
@@ -13829,9 +12939,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "BLM"
-    ],
+    "source": ["BLM"],
     "dataType": 3,
     "description": "Lands that were recommended to the President and Congress for wilderness designation as a result of the FLPMA Section 603 wilderness review mandate.",
     "inActionUrl": "",
@@ -13858,9 +12966,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Static",
-    "source": [
-      "BLM"
-    ],
+    "source": ["BLM"],
     "dataType": 3,
     "description": "Land identified and endorsed as wilderness study areas (WSAs) in the 1991 wilderness study reports sent to the President and Congress.",
     "inActionUrl": "",
@@ -14184,9 +13290,7 @@
     "category": "planning",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "WFRC"
-    ],
+    "source": ["WFRC"],
     "dataType": 3,
     "description": "Workplace Access to Opportunities (ATO) metrics for typical peak period auto and transit commutes, at the Traffic Analysis Zone (TAZ) level. Includes measures for household (access to jobs) and employer (access to workers/customers) perspectives. These datasets use a 'distance decay' travel cost weighting based on typical Wasatch Front commuting and are designed to take the place of \"jobs within x minutes\" datasets. This extent of this dataset currently is the Wasatch Front urban area although this will soon be expanded statewide. More info on ATO",
     "inActionUrl": "",
@@ -14240,9 +13344,7 @@
     "category": "boundaries",
     "indexStatus": "live",
     "refreshCycle": "Annually",
-    "source": [
-      "UGRC"
-    ],
+    "source": ["UGRC"],
     "dataType": 3,
     "description": "Geographic extents of 5 digit zip codes.",
     "inActionUrl": "",
@@ -14269,9 +13371,7 @@
     "category": "location",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "Utah Legislature"
-    ],
+    "source": ["Utah Legislature"],
     "dataType": 3,
     "description": "Zoom locations",
     "inActionUrl": "",
@@ -14298,9 +13398,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWMRC"
-    ],
+    "source": ["DWMRC"],
     "dataType": 1,
     "description": "Waste Management and Radion Control - Low Level Waste Disposal and Uranium Mills",
     "inActionUrl": "https://enviro.deq.utah.gov",
@@ -14327,9 +13425,7 @@
     "category": "environment",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DWMRC"
-    ],
+    "source": ["DWMRC"],
     "dataType": 1,
     "description": "Waste Management and Radiation Control - Hazardous Waste and Used Oil",
     "inActionUrl": "https://enviro.deq.utah.gov",
@@ -14383,10 +13479,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "WFRC",
-      "UGRC"
-    ],
+    "source": ["WFRC", "UGRC"],
     "dataType": 2,
     "description": "Planned bike-related features derived from Utah Roads and Utah Trails and Pathways. For existing features see Utah Bikeways.",
     "inActionUrl": "https://bikeways.utah.gov",
@@ -14413,10 +13506,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "WFRC",
-      "UGRC"
-    ],
+    "source": ["WFRC", "UGRC"],
     "dataType": 2,
     "description": "Bike-related features derived from Utah Roads and Utah Trails and Pathways.",
     "inActionUrl": "https://bikeways.utah.gov",
@@ -14443,9 +13533,7 @@
     "category": "bioscience",
     "indexStatus": "draft",
     "refreshCycle": "As needed",
-    "source": [
-      "FFSL"
-    ],
+    "source": ["FFSL"],
     "dataType": 1,
     "description": "",
     "inActionUrl": "",
@@ -14466,9 +13554,7 @@
     "category": "bioscience",
     "indexStatus": "draft",
     "refreshCycle": "As needed",
-    "source": [
-      "FFSL"
-    ],
+    "source": ["FFSL"],
     "dataType": 3,
     "description": "",
     "inActionUrl": "",
@@ -14489,9 +13575,7 @@
     "category": "bioscience",
     "indexStatus": "draft",
     "refreshCycle": "As needed",
-    "source": [
-      "FFSL"
-    ],
+    "source": ["FFSL"],
     "dataType": 3,
     "description": "No Product page but no inaction url. mapserver but no itemid",
     "inActionUrl": "",
@@ -14513,9 +13597,7 @@
     "category": "recreation",
     "indexStatus": "live",
     "refreshCycle": "Unknown",
-    "source": [
-      "UAC"
-    ],
+    "source": ["UAC"],
     "dataType": 3,
     "description": "Polygon representation of Utah Avalanche Center Forecast Zones.",
     "inActionUrl": "https://utahavalanchecenter.org/",
@@ -14542,9 +13624,7 @@
     "category": "transportation",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "UDOT"
-    ],
+    "source": ["UDOT"],
     "dataType": 1,
     "description": "Exit locations along UDOT Routes.",
     "inActionUrl": "",
@@ -14571,9 +13651,7 @@
     "category": "utilities",
     "indexStatus": "live",
     "refreshCycle": "Monthly",
-    "source": [
-      "FCC"
-    ],
+    "source": ["FCC"],
     "dataType": 3,
     "description": "Areas served by broadband providers' unique combinations of technology and speeds",
     "inActionUrl": "https://broadband.ugrc.utah.gov",
@@ -14600,9 +13678,7 @@
     "category": "society",
     "indexStatus": "live",
     "refreshCycle": "As needed",
-    "source": [
-      "DPS/BCI"
-    ],
+    "source": ["DPS/BCI"],
     "dataType": 1,
     "description": "Police and other law enforcement stations",
     "inActionUrl": "",
@@ -14629,9 +13705,7 @@
     "category": "climate",
     "indexStatus": "live",
     "refreshCycle": "Decennially",
-    "source": [
-      "Oregon State/PRISM"
-    ],
+    "source": ["Oregon State/PRISM"],
     "dataType": 3,
     "description": "Polygon dataset of average annual precipitation in Utah, measured in inches.",
     "inActionUrl": "https://wri.utah.gov/wri/map/map.html",
@@ -14658,9 +13732,7 @@
     "category": "boundaries",
     "indexStatus": "draft",
     "refreshCycle": "As needed",
-    "source": [
-      "FFSL"
-    ],
+    "source": ["FFSL"],
     "dataType": 3,
     "description": "Polygon dataset of high risk areas along Utah's wildland urban interface.",
     "inActionUrl": "",

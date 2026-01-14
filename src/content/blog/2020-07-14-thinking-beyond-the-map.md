@@ -56,15 +56,12 @@ As geospatial data and services become more widely used, GIS professionals shoul
 ![Collaboration](../../images/pillar-blog/2020-07-14-thinking-beyond-the-map/collaboration.jpg)[^collaboration]
 
 - Bridge the Gap between IT and GIS
-
   - GIS and IT are no longer two separate industries/entities. Moving forward, we need to see ourselves seated in the same room, speaking the same language, and working together to provide seamless solutions and services to our customers. This approach encourages not only cross-pollination but also the formation of fresh, new ideas.
 
 - Use APIs and Ensure Open Data
-
   - Our data should be open and usable to GIS and non-GIS users alike. The next wave of GIS will be built for applications and skills that rely heavily on APIs and [open data](https://opendatahandbook.org/guide/en/what-is-open-data/). Offering APIs allows us to expose our data to simple web queries. Additionally, as we open our data to a broader audience, it’s important that we are adhering to industry standards and conventions, such as uniform web standards described by the World Wide Web Consortium (W3C) and the Open Geospatial Consortium (OGC). Adhering to these standards guarantees that our data is open and usable.
 
 - Continue Coordination and Partnership Efforts
-
   - As we move into the next era of GIS, it’s critical that we are moving forward collectively. This can be achieved by coordinating our efforts with other agencies and also collaborating with the public. The goal is to collectively build shared resources when appropriate and possible.
 
   These relationships help us understand where we overlap and, therefore, where we can work together. Often, this leads to the creation of better, more-accurate authoritative data and services.
