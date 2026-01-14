@@ -15,7 +15,7 @@ These updates are also reflected in UGRC's [address locators](/products/sgid/add
 
 The following are highlights from this month's update.
 
-#### County Updates
+## County Updates
 
 New roads were added and road names and address ranges were updated for the following counties:
 
@@ -29,6 +29,6 @@ New roads were added and road names and address ranges were updated for the foll
 - **Wayne County:** Obtained roads data on 10/20/2025. Previous update was on 04/15/2025.
 - **Weber County:** Obtained roads data on 10/21/2025. Previous update was on 09/22/2025.
 
-#### UDOT Route System
+## UDOT Route System
 
 - Visit the [SGID LRS page](/products/sgid/transportation/highway-routes-lrs/) for information on UDOT's Advanced LRS (ALRS) data.
