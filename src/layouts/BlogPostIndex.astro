@@ -14,7 +14,7 @@ const hasCategories = await Astro.slots.render('categories');
 
 <Layout bannerHeading="From the blog" pageTitle={pageTitle} pageDescription={pageDescription}>
   <div class="mt-3 text-center dark:text-white">
-    <h3>{pageTitle}</h3>
+    <h1 class="text-xl font-bold md:text-2xl">{pageTitle}</h1>
   </div>
 
   <div class="text-center">
