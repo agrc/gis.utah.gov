@@ -62,6 +62,7 @@ export default function SgidIndexSearch({ records, astroSite }: Props) {
       <input
         type="search"
         className="focus:border-primary-500 h-10 w-full rounded-md border border-zinc-300 px-2 py-1 text-zinc-700 shadow-sm transition-all duration-200 ease-in-out placeholder:text-zinc-400 focus:outline-none focus:ring focus:ring-primary/80 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:opacity-50 sm:text-sm"
+        aria-label="Search SGID datasets"
         onChange={(e) => setSearchTerms(e.target.value)}
         onFocus={(e) => {
           window.scrollTo({ top: e.target.offsetTop - 30, behavior: 'smooth' });
@@ -82,9 +83,7 @@ export default function SgidIndexSearch({ records, astroSite }: Props) {
                 key={category}
                 className={clsx(
                   'relative shrink-0 rounded-md border border-black/30 px-2 py-1 text-sm shadow-sm first:ml-2 last:mr-1 dark:border-white/20',
-                  selected
-                    ? 'bg-primary text-slate-50 dark:bg-accent dark:text-slate-800'
-                    : 'bg-white  dark:bg-primary',
+                  selected ? 'bg-primary text-slate-50 dark:bg-accent dark:text-slate-800' : 'bg-white dark:bg-primary',
                 )}
                 onClick={() => toggleCategory(loweredCategory)}
               >
