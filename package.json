@@ -50,6 +50,7 @@
     "@types/react-dom": "^19.2.3",
     "astro": "^5.16.6",
     "astro-meta-tags": "^0.4.0",
+    "baseline-browser-mapping": "^2.9.14",
     "classnames": "^2.5.1",
     "fuse.js": "^7.1.0",
     "google-auth-library": "^10.3.0",
