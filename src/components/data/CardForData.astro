@@ -20,7 +20,7 @@ const { href, title, type, stewards } = Astro.props;
 >
   <div class="flex grow flex-col">
     <div class="inline-flex items-start justify-between lg:items-center">
-      <h4 class="uppercase text-primary dark:text-accent">{title}</h4>
+      <p class="text-lg font-bold uppercase text-primary md:text-xl dark:text-accent">{title}</p>
       <p class="text-sm font-semibold uppercase text-primary dark:text-zinc-50">{convertProductType(type)}</p>
     </div>
     <div class="primary-background px-2 py-2 dark:text-white">
