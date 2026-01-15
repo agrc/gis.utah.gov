@@ -28,4 +28,18 @@ const blog = defineCollection({
     }),
 });
 
-export const collections = { blog };
+const podcast = defineCollection({
+  loader: glob({ base: './src/pages/collaboration/knowledge/podcast', pattern: '_episode-*.{md,mdx}' }),
+  schema: z.object({
+    episode: z.number(),
+    title: z.string(),
+    date: z.coerce.date(),
+    audio: z.string(),
+    description: z.string(),
+    hosts: z.array(z.string()).optional(),
+    guests: z.array(z.string()).optional(),
+    published: z.boolean().optional().default(true),
+  }),
+});
+
+export const collections = { blog, podcast };
