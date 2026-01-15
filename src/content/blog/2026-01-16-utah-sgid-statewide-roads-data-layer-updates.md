@@ -15,7 +15,7 @@ These updates are also reflected in UGRC's [address locators](/products/sgid/add
 
 The following are highlights from this month's update.
 
-#### County Updates
+## County Updates
 
 New roads were added and road names and address ranges were updated for the following counties:
 
