@@ -28,32 +28,29 @@ jobs:
         uses: actions/github-script@v8
         with:
           script: |
-            const commentBody = context.payload.comment.body;
-            if (commentBody.startsWith('/validate-sgid-index')) {
-              github.rest.reactions.createForIssueComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                comment_id: context.payload.comment.id,
-                content: '+1'
-              });
-              console.log('Validating SGID Index');
+            github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: '+1'
+            });
+            console.log('Validating SGID Index');
 
-              github.rest.issues.listComments({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.payload.issue.number
-              }).then(({data}) => {
-                const comment = data.find(comment => comment.user.login === 'github-actions[bot]' && comment.body.includes(process.env.RESULTS_COMMENT_TITLE));
-                if (comment) {
-                  github.rest.issues.updateComment({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    comment_id: comment.id,
-                    body: `### ${process.env.RESULTS_COMMENT_TITLE}\n\n♻️Processing...♻️`
-                  });
-                }
-              });
-            }
+            github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number
+            }).then(({data}) => {
+              const comment = data.find(comment => comment.user.login === 'github-actions[bot]' && comment.body.includes(process.env.RESULTS_COMMENT_TITLE));
+              if (comment) {
+                github.rest.issues.updateComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  comment_id: comment.id,
+                  body: `### ${process.env.RESULTS_COMMENT_TITLE}\n\n♻️Processing...♻️`
+                });
+              }
+            });
 
       - name: ⬇️ Check out code
         uses: actions/checkout@v6
