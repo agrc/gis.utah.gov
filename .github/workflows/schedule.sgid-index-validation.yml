@@ -14,6 +14,7 @@ jobs:
   validate:
     name: Validate SGID Index
     runs-on: ubuntu-latest
+    if: github.event_name != 'issue_comment' || startsWith(github.event.comment.body, '/validate-sgid-index')
     defaults:
       run:
         working-directory: ./scripts
@@ -27,8 +28,9 @@ jobs:
         uses: actions/github-script@v8
         with:
           script: |
-            const commentBody = context.payload.comment.body;
-            if (commentBody.startsWith('/validate-sgid-index')) {
+            // This step only runs for issue_comment events due to the step-level conditional,
+            // but adding explicit check for defensive programming
+            if (context.payload.comment && context.payload.issue) {
               github.rest.reactions.createForIssueComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -52,9 +54,6 @@ jobs:
                   });
                 }
               });
-            } else {
-              console.log('Skipping SGID Index validation');
-              process.exit(78);
             }
 
       - name: ⬇️ Check out code
