@@ -1,0 +1,75 @@
+---
+import BreadCrumbs from '@components/page/BreadCrumbs.astro';
+import Section from '@components/page/Section.astro';
+import Layout from '@layouts/FullWidth.astro';
+import { Pillar } from '@models/types';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const episodes = await getCollection('podcast');
+  return episodes.map((episode) => ({
+    params: { slug: episode.id.replace('_episode-', 'episode-').replace('.md', '') },
+    props: episode,
+  }));
+}
+
+const episode = Astro.props;
+const { Content } = await render(episode);
+const { title, date, description, hosts, guests, audio } = episode.data;
+
+// Format date
+const dateObj = new Date(date);
+const formattedDate = dateObj.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<Layout pageTitle="UGRC Geospatial Podcast" pageDescription={description} pillar={Pillar.COLLABORATION}>
+  <BreadCrumbs path={Astro.url.pathname} slot="crumbs" />
+  <Section title={title} titlePosition="center" stripe>
+    <div class="flex flex-col items-center gap-2 text-sm" slot="sub-title">
+      <div class="flex gap-1">
+        <span class="font-semibold text-primary/80 dark:text-white">Recorded on</span>
+        <span>·</span>
+        <span>{formattedDate}</span>
+      </div>
+      {
+        hosts && hosts.length > 0 && (
+          <div class="flex gap-1">
+            <span class="font-semibold text-primary/80 dark:text-white">Hosts</span>
+            <span>·</span>
+            <span>{hosts.join(', ')}</span>
+          </div>
+        )
+      }
+      {
+        guests && guests.length > 0 && (
+          <div class="flex gap-1">
+            <span class="font-semibold text-primary/80 dark:text-white">Guests</span>
+            <span>·</span>
+            <span>{guests.join(', ')}</span>
+          </div>
+        )
+      }
+    </div>
+
+    {
+      audio && (
+        <div class="mb-8">
+          <audio controls controlslist="nodownload" preload="metadata" class="w-full">
+            <source src={audio} type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      )
+    }
+
+    <article
+      class="mdx mdx-zinc max-w-none space-y-6 overflow-hidden dark:mdx-invert mdx-headings:text-zinc-700 mdx-li:my-0 mdx-img:mx-auto mdx-img:rounded-lg mdx-img:border mdx-headings:dark:text-zinc-50 mdx-thead:dark:border-white/50 mdx-tr:dark:border-white/30"
+    >
+      <Content />
+    </article>
+  </Section>
+</Layout>
