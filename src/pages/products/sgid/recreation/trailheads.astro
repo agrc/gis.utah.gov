@@ -10,7 +10,6 @@ import UpdateHistory from '@components/data/UpdateHistory.astro';
 
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -55,14 +54,7 @@ const page: IPageMetadata = {
       View, Inc by the Governor's Office of Economic Opportunity's Outdoor Recreation Office in July 2014. We hope to
       expand it with data from the US Forest Service, National Parks, State Parks, and Open Street Map.
     </p>
-    <p>
-      The dataset's primary goal is to assign a location and a name to each trailhead. However, the data are stored
-      within a more complex <ExternalLink
-        href="https://docs.google.com/spreadsheets/d/1OPGKmRrLYUBr9qO9EtbX6AwcRla82xMvc-BDr26ia9k/edit?usp=sharing"
-        >data model</ExternalLink
-      >
-      that supports future collection and publishing of more robust trail and trailhead information.
-    </p>
+    <p>The dataset's primary goal is to assign a location and a name to each trailhead.</p>
   </Fragment>
 
   <UpdateHistory slot="update-history" updates={page.updateHistory} />
