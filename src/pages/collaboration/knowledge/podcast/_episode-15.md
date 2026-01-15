@@ -22,7 +22,7 @@ Also, I've asked our colleague, Sean Fernandez, the State Surveyor, to join us f
 
 **Sean Fernandez:** So Matt, 30 years. That's a long time. Tell us how you got started.
 
-**Matt Peters:** Well, I guess it started back in college. I was at the University of Utah studying Geography. I had a professor, Georgehepner, who really got me interested in GIS. Back then it was command line ARC/INFO. It was pretty rudimentary compared to what we have today.
+**Matt Peters:** Well, I guess it started back in college. I was at the University of Utah studying Geography. I had a professor, George Hepner, who really got me interested in GIS. Back then it was command line ARC/INFO. It was pretty rudimentary compared to what we have today.
 
 I started as an intern with AGRC, which is now UGRC, back in 1993. And I just never left. I loved the work, I loved the people, and I loved the mission.
 
