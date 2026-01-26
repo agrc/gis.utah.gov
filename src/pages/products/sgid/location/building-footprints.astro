@@ -59,9 +59,10 @@ const page: IPageMetadata = {
       > and within 500 meters of an <ExternalLink
         href="https://opendata.gis.utah.gov/datasets/3f4f7a8efcd147febeca8bacaea67a14_0/explore"
         >address point</ExternalLink
-      > were selected and identified as possible buildings in the <em>TYPE</em> field. Additional buildings from <ExternalLink
-        href="https://www.openstreetmap.org/">OpenStreetMap</ExternalLink
-      >
+      > were selected and identified as possible buildings in the <em>TYPE</em> field. Additional buildings were added from
+      <ExternalLink href="https://www.openstreetmap.org/">OpenStreetMap</ExternalLink> that were located more than three
+      meters from already-existing buildings in the dataset. Finally, attributes were added for address, city, county, and
+      ZIP code from other SGID data sources, where possible.
     </p>
 
     <UpdateHistory slot="update-history" updates={page.updateHistory} />
