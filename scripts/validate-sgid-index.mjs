@@ -168,13 +168,21 @@ async function validateItemIdAndCreateHubMetadata(row) {
   let serviceParts;
   let changed = false;
 
+  const kyOptions = {
+    retry: {
+      limit: 10,
+      retryOnTimeout: true,
+    },
+    timeout: 30000
+  };
+
   try {
-    hubData = await ky(`https://opendata.arcgis.com/api/v3/datasets/${cellValue}_${layerId}`).json();
+    hubData = await ky(`https://opendata.arcgis.com/api/v3/datasets/${cellValue}_${layerId}`, kyOptions).json();
     serviceParts = hubData.data.attributes.url.split('/rest/services/');
   } catch (error) {
     try {
       // maybe this is something other than a feature service such as a WMTS base map service
-      hubData = await ky(`https://opendata.arcgis.com/api/v3/datasets/${cellValue}`).json();
+      hubData = await ky(`https://opendata.arcgis.com/api/v3/datasets/${cellValue}`, kyOptions).json();
     } catch (error) {
       recordError(errors, `itemId hub request error: ${error.message}`, row);
 
