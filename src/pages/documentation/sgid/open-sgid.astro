@@ -191,20 +191,20 @@ const page: IStandardPageMetadata = {
 import geopandas as gpd
 from sqlalchemy import create_engine
 
-url = "postgresql://agrc:agrc@opensgid.agrc.utah.gov:5432/opensgid"
+url = "postgresql://agrc:agrc@opensgid.ugrc.utah.gov:5432/opensgid"
 opensgid_connection = create_engine(url)
 
 sql_query = "SELECT * FROM boundaries.county_boundaries"
 county_boundaries = gpd.read_postgis(
-    sql_query, 
-    opensgid_connection, 
+    sql_query,
+    opensgid_connection,
     geom_col="shape")
       `}
     />
     <NumberedList>
       <li>
         Create a <kbd>sqlalchemy engine</kbd> using the connection string <kbd
-          >postgresql://username:password@opensgid.agrc.utah.gov:5432/opensgid</kbd
+          >postgresql://username:password@opensgid.ugrc.utah.gov:5432/opensgid</kbd
         >.
       </li>
       <li>

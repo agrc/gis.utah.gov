@@ -15,7 +15,7 @@ It seems so long ago now, but it was less than a year ago when we first [hinted 
 
 <div class="flex flex-col justify-center items-center max-w-1/2">
   <h4><strong>Database Platform</strong>: PostgresSQL</h4>
-  <h4><strong>Instance</strong>: opensgid.agrc.utah.gov</h4>
+  <h4><strong>Instance</strong>: opensgid.ugrc.utah.gov</h4>
   <h4><strong>Username</strong>: agrc <strong>Password</strong>: agrc</h4>
 </div>
 

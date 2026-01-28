@@ -79,7 +79,7 @@ First, we need the actual polygons of the hexes themselves. The H3 API provides 
 In the code below we first buffer the state boundary so that we get all the hexes that cover the state. Then, we get the hex ids, get the polygons associated with those ids as geojson, and convert the geojson to a spatially-enabled dataframe. Finally, we write that dataframe out to disk.
 
 ```python
-state_boundary_df = pd.DataFrame.spatial.from_featureclass(r'H3\opensgid.agrc.utah.gov.sde\opensgid.boundaries.state_boundary')
+state_boundary_df = pd.DataFrame.spatial.from_featureclass(r'H3\opensgid.ugrc.utah.gov.sde\opensgid.boundaries.state_boundary')
 
 #: Buffer the state boundary by 5km
 #: Row index 0 is a mask outside the state boundary, index 1 is the boundary itself.
@@ -125,7 +125,7 @@ Now that we've got the boundaries, we can do our analysis and map it out. First,
 
 ```python
 #: Load the open source places, project to lat/long, and get hex ids at level 6
-osp_points_df = pd.DataFrame.spatial.from_featureclass(r'H3\opensgid.agrc.utah.gov.sde\opensgid.society.open_source_places')
+osp_points_df = pd.DataFrame.spatial.from_featureclass(r'H3\opensgid.ugrc.utah.gov.sde\opensgid.society.open_source_places')
 osp_points_df.spatial.project(4326)
 assign_h3(osp_points_df, 6)
 

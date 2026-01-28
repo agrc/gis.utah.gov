@@ -66,7 +66,7 @@ export async function validateOpenSgidTableName(table, schema) {
     dbClient = knex({
       client: 'postgres',
       connection: {
-        host: 'opensgid.agrc.utah.gov',
+        host: 'opensgid.ugrc.utah.gov',
         user: 'agrc',
         password: 'agrc',
         port: 5432,

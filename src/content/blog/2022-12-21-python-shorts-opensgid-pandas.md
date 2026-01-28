@@ -45,7 +45,7 @@ def load_open_sgid_table(table_name, as_esri=False):
     """
 
     #: Create the Open SGID connection and load the data as a geodataframe
-    engine = create_engine('postgresql+psycopg2://agrc:agrc@opensgid.agrc.utah.gov:5432/opensgid')
+    engine = create_engine('postgresql+psycopg2://agrc:agrc@opensgid.ugrc.utah.gov:5432/opensgid')
     with engine.connect() as connection:
         gdf = gpd.GeoDataFrame.from_postgis(f'select * from {table_name}', connection, geom_col='shape')
 

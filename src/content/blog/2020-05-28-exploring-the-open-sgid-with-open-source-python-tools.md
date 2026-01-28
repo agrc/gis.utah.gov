@@ -62,7 +62,7 @@ Let's start with a very simple example where you'll pull county boundaries from 
 ```py
 # Postgres database connection information
 con = psycopg2.connect(database="opensgid", user="agrc", password="agrc",
-    host="opensgid.agrc.utah.gov")
+    host="opensgid.ugrc.utah.gov")
 
 # Simple query to grab and plot Utah counties
 sql = "select * from opensgid.boundaries.county_boundaries"
