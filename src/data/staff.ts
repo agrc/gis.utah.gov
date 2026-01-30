@@ -48,14 +48,6 @@ export const staff = [
     tags: ['SGID', 'AGOL', 'data management', 'Databases', 'roads'],
   },
   {
-    name: 'Steve Gourley',
-    team: 'Development Team Lead',
-    phone: '385-202-3394',
-    email: 'sgourley@utah.gov',
-    x: '@steve_ugrc',
-    tags: ['Apps', 'Web Development', 'Programming', 'Google Cloud', 'Geocoding'],
-  },
-  {
     name: 'Jake Adams',
     team: 'Development Team',
     phone: '385-499-0786',

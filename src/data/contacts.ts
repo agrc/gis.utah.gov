@@ -268,9 +268,9 @@ export const contacts: Contacts = {
   ],
   newsletter: {
     agency: 'UGRC',
-    email: 'sgourley@utah.gov',
-    name: 'Steve Gourley',
-    phone: '385-202-3394',
+    email: 'lault@utah.gov',
+    name: 'Laura Ault',
+    phone: '801-550-7754',
   },
   nhd: {
     agency: 'DNR',
@@ -522,8 +522,8 @@ export const contacts: Contacts = {
   },
   webapi: {
     agency: 'UGRC',
-    email: 'SGourley@utah.gov',
-    name: 'Steve Gourley',
+    email: 'ugrc-developers@utah.gov',
+    name: 'UGRC Developers',
   },
   wetlands: {
     agency: 'Utah Geological Survey',
