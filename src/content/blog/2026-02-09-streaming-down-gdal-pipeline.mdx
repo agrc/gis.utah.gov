@@ -40,7 +40,7 @@ I want to process the 30 meter, float32-based output skyshade to a 10 meter, byt
 
 Here's what that pipeline looks like:
 
-```
+```bash
 gdal raster pipeline ! read 30m_all_turbid-315-15-250-200steps.tif ! scale --ot byte --dst-min=1 --dst-max=255 ! resize --resolution 10,10 -r cubic ! edit --nodata 0 ! write --co compress=lzw --co bigtiff=yes 30m_skyshade_10m-2.tif
 ```
 
