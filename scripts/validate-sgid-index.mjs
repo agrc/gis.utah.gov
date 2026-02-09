@@ -173,7 +173,7 @@ async function validateItemIdAndCreateHubMetadata(row) {
       limit: 5,
       retryOnTimeout: true,
     },
-    timeout: 20000,
+    timeout: 40000,
   };
 
   try {
