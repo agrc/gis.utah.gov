@@ -1,0 +1,17 @@
+{
+  "inputs": [
+    "package.json"
+  ],
+  "output": "./public/ThirdPartyNotices.txt",
+  "overwrite": true,
+  "ci": true,
+  "exclude": [
+    "/^@ugrc\\/.*$/"
+  ],
+  "omitVersions": true,
+  "replace": {
+    "@esri/arcgis-rest-fetch": "https://raw.githubusercontent.com/Esri/arcgis-rest-js/main/LICENSE",
+    "@esri/arcgis-rest-form-data": "https://raw.githubusercontent.com/Esri/arcgis-rest-js/main/LICENSE",
+    "type-fest": "https://raw.githubusercontent.com/sindresorhus/type-fest/main/license-mit"
+  }
+}
