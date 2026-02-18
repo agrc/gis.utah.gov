@@ -170,10 +170,10 @@ async function validateItemIdAndCreateHubMetadata(row) {
 
   const kyOptions = {
     retry: {
-      limit: 5,
+      limit: 10,
       retryOnTimeout: true,
     },
-    timeout: 40000,
+    timeout: 60000,
   };
 
   try {
