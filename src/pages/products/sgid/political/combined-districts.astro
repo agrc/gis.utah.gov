@@ -18,7 +18,7 @@ import { dataPages } from '@data/downloadMetadata';
 import { removeDateRange } from '@utils/data';
 
 export const metadata: IMetadata = {
-  pageTitle: 'Utah District Combination Areas 2022',
+  pageTitle: 'Utah District Combination Areas 2026',
   pageDescription: `The unique combination of Utah's state legislative, school board, and congressional districts`,
   stewards: ['UGRC', `Lieutenant Governor's Office`],
   type: ProductType.POLYGON,
@@ -27,7 +27,11 @@ export const metadata: IMetadata = {
 
 const page: IPageMetadata = {
   ...metadata,
-  updateHistory: [`2022: Redistricting after 2020 Census`, `2012: Redistricting after 2010 Census`],
+  updateHistory: [
+    `2026: Update after 2025 Court Decision`,
+    `2022: Redistricting after 2020 Census`,
+    `2012: Redistricting after 2010 Census`,
+  ],
   hub: {
     ...dataPages[metadata.pageTitle],
   },
@@ -50,7 +54,7 @@ const page: IPageMetadata = {
 
   <Fragment slot="description">
     <p>
-      Utah District Combination Areas 2022 is the geographic union of all 4 political districts including the House,
+      Utah District Combination Areas 2026 is the geographic union of all 4 political districts including the House,
       Senate, U.S. Congressional, and School Board districts, creating many different polygons each with its own unique
       combination of the input layers.
     </p>
