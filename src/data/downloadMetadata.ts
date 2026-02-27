@@ -2574,11 +2574,11 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'indices.h3_hexes_level_7',
     layerId: 0,
   },
-  'Utah District Combination Areas 2022': {
-    itemId: '12fb03b51a9a4ab9aacd90e19ac6a06f',
-    name: 'Utah District Combination Areas 2022',
-    featureServiceId: 'DistrictCombinationAreas2022',
-    openSgid: 'political.district_combination_areas_2022',
+  'Utah District Combination Areas 2026': {
+    itemId: '10a462bc2b184ac2bb0e69273b469083',
+    name: 'Utah District Combination Areas 2026',
+    featureServiceId: 'political_district_combination_areas_2026',
+    openSgid: 'political.district_combination_areas_2026',
     layerId: 0,
   },
   'Utah Land Ownership': {
