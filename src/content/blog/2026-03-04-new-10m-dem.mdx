@@ -1,0 +1,67 @@
+---
+title: 'SGID Data Updates: New 10m DEMs'
+author: Jake Adams
+date: '2026-03-04T14:00:00.000Z'
+category: SGID Updates
+cover_image: /src/images/pillar-blog/2026-03-04-new-10m-dem/cover.png
+cover_image_alt: A hillshade-enhanced aerial image of the San Rafael Swell.
+---
+
+import Jordanelle from '@images/blog/2026-03-04-new-10m-dem/Jordanelle.png';
+import BoulderMountain from '@images/blog/2026-03-04-new-10m-dem/BoulderMountain.png';
+import Kennecott from '@images/blog/2026-03-04-new-10m-dem/Kennecott.png';
+import UintahRiver from '@images/blog/2026-03-04-new-10m-dem/UintahRiver.png';
+import Tiles from '@images/blog/2026-03-04-new-10m-dem/tiles.png';
+import CoverBig from '@images/blog/2026-03-04-new-10m-dem/cover_big.png';
+
+import { Image } from 'astro:assets';
+
+Now that the US Geological Survey (USGS), in cooperation with UGRC and the Federal Emergency Management Agency (FEMA), have [completed](/blog/2024-12-13-statewide-lidar-products-now-available/) the initial acquisition of 0.5- or 1-meter resolution lidar data across the entire state under the [3DEP Program](https://www.usgs.gov/3d-elevation-program), we can turn our focus to the many derivative products of this juicy new high-resolution data.
+
+<Image src={CoverBig} alt="A hypsometric hillshade of the Wedge area of the San Rafael Swell" loading="eager" />
+
+## Introducing our new 10 meter DEMs
+
+We're excited to announce the latest update to our 10 meter DEMs (Digital Elevation Models) that take advantage of the updated elevation data available from the USGS. These 49 updated tiles (based on a one-degree grid) cover the entire state and portions of our neighbors to create a full-coverage dataset.
+
+<Image
+  src={Tiles}
+  alt="A map showing 49 individual tiles 1 degree by 1 degree covering all of Utah and some of the surrounding states"
+  loading="lazy"
+/>
+
+These tiles start from the USGS's [1/3 arc-second DEMs](https://data.usgs.gov/datacatalog/data/USGS:3a81321b-c153-416f-98b7-cc8e5f0e17c3) available on their [National Map Downloader](https://apps.nationalmap.gov/downloader/). The USGS has been updating these DEMs throughout the 3DEP lidar collection process to incorporate the latest elevation data.
+
+UGRC, in turn, downloads the relevant DEMs, mosaics them together, reprojects them to our standard UTM 12N NAD83 projection and a standardized 10 meter by 10 meter pixel size, and re-tiles them back to 1-degree by 1-degree tiles for download on [raster.utah.gov](https://raster.utah.gov). Yes, we appreciate the irony of recreating tiles with sizes based on degrees after reprojecting to a meters-based spatial reference.
+
+## What's New?
+
+The previous update of our 10-meter DEMs occurred in 2019 when much of the state was still lacking 3DEP lidar coverage. This led to some very interesting artifacts that are improved or completely removed in the new data.
+
+Perhaps the most visible artifact is the Kennecott copper mine that mostly lies west of the lidar that was collected by 2019. While there is still a visible seam between the new elevation data collected at different times in this highly dynamic area, the latest data provides a much cleaner and up-to-date picture in the activity in Bingham Canyon.
+
+<Image src={Kennecott} alt="A side-by-side comparison of hillshades around the Kennecott copper mine" loading="lazy" />
+
+Another highly visible artifact in the old DEMs is Jordanelle Reservoir, which seemed to straddle two different source datasets. The north half of the reservoir was completely missing, leading to an abrupt edge right in the middle of the lake. The new Lidar-derived DEMs fix this and provide much more detail in the surrounding hills.
+
+<Image src={Jordanelle} alt="A side-by-side comparison of hillshades around Jordanelle Reservoir" loading="lazy" />
+
+## Nice and Smooth
+
+As near as we can tell, the USGS used their comprehensive topography contours to create some of the original 1/3 arc-second DEMs. This left tell-tale bumps and ridges in the elevation data that are readily apparent in hillshades. The new, updated data have much cleaner and more accurate elevation data to work from. This scene of the Uintah River leaving the Uintah Mountains north of Neola is a prime example of both the artifacts from the old data and the highly-detailed riverine topography revealed in the new data.
+
+<Image
+  src={UintahRiver}
+  alt="A side-by-side comparison of hillshades of the Uintah River on the south slopes of the Uintah Mountains"
+  loading="lazy"
+/>
+
+These artifacts are most common in rural and mountainous parts of the state where high-resolution elevation data have not been available until now. This scene of the east slope of Boulder Mountain shows smaller, but still visible, contour artifacts in the old data. The new data provide more detail for this beautifully rugged part of the state, a pattern common across southern Utah.
+
+<Image
+  src={BoulderMountain}
+  alt="A side-by-side comparison of hillshades of the west slopes of Boulder Mountain"
+  loading="lazy"
+/>
+
+These new 10-meter DEMs are fantastic for small-scale slope analysis, basic hydrography, or just as pleasant backdrops to explain the topographical context of your data. From the top of King's Peak to the bottom of southern Utah's famed canyons, this update provides clean and consistent elevation data in right-sized resolutions.
