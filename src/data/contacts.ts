@@ -461,9 +461,9 @@ export const contacts: Contacts = {
   },
   ust: {
     agency: 'DEQ',
-    email: 'mhorning@utah.gov',
-    name: 'Michelle Horning',
-    phone: '801-536-4128',
+    email: 'rsparker@utah.gov',
+    name: 'Ryan Parker',
+    phone: '385-515-0343',
   },
   uta: {
     agency: 'UTA',
