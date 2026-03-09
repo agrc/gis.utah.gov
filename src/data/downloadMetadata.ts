@@ -964,7 +964,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah DWMRC Hazardous Waste and Used Oil Facilities': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     oddHubName: 'Hazardous Waste and Used Oil',
     name: 'Utah DWMRC Hazardous Waste and Used Oil Facilities',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
@@ -974,7 +974,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah DWMRC Low Level Waste Disposal and Uranium Mill Facilities': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     oddHubName: 'Low Level Waste Disposal and Uranium Mills WMRC',
     name: 'Utah DWMRC Low Level Waste Disposal and Uranium Mill Facilities',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
@@ -984,7 +984,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah DWMRC Solid Waste Facilities': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     oddHubName: 'Solid Waste Facilities gdb',
     name: 'Utah DWMRC Solid Waste Facilities',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
@@ -994,7 +994,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah DWQ Assessed Lakes': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     oddHubName: 'Utah Assessed Lakes',
     name: 'Utah DWQ Assessed Lakes',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
@@ -1004,7 +1004,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah DWQ Assessed Waters': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     oddHubName: 'Utah Assessed Waters',
     name: 'Utah DWQ Assessed Waters',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
@@ -1014,7 +1014,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah DWQ Groundwater Permits': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     oddHubName: 'Utah Groundwater Permits',
     name: 'Utah DWQ Groundwater Permits',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
@@ -1024,7 +1024,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah DWQ Mercury In Fish Tissue': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     oddHubName: 'Utah Mercury In Fish Tissue',
     name: 'Utah DWQ Mercury In Fish Tissue',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
@@ -1044,7 +1044,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah DWQ Monitoring Locations': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     oddHubName: 'Utah Monitoring Locations',
     name: 'Utah DWQ Monitoring Locations',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
@@ -1054,7 +1054,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah DWQ Storm Water Dischargers': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     oddHubName: 'Utah Storm Water Dischargers',
     name: 'Utah DWQ Storm Water Dischargers',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
@@ -1064,7 +1064,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah DWQ UPDES Dischargers': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     oddHubName: 'Utah UPDES Dischargers',
     name: 'Utah DWQ UPDES Dischargers',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
@@ -2212,7 +2212,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah Petroleum Storage Tank Facilities': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     name: 'Utah Petroleum Storage Tanks Facilities',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
     featureServiceId: 'pst_facilities',
@@ -2228,7 +2228,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah Petroleum Storage Tanks': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     name: 'Utah Petroleum Storage Tanks',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
     featureServiceId: 'pst_facility_tanks',
@@ -2251,7 +2251,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah Petroleum Storage Tank Releases': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
     featureServiceId: 'pst_facility_releases',
     openSgid: undefined,
@@ -2259,7 +2259,7 @@ export const dataPages: DownloadMetadata = {
   },
   'Utah Petroleum Storage Tank Compartments': {
     itemId: 'hosted by DEQ',
-    externalHubOrganization: 'utahDEQ',
+    externalHubOrganization: 'utahdeq',
     name: 'Utah Petroleum Storage Tank Compartments',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
     featureServiceId: 'pst_facility_compartments',
