@@ -2210,10 +2210,10 @@ export const dataPages: DownloadMetadata = {
     openSgid: undefined,
     layerId: 0,
   },
-  'Utah Petroleum Storage Tank Facilities': {
+  'Utah Petroleum Storage Tanks Facilities': {
     itemId: 'hosted by DEQ',
     externalHubOrganization: 'utahDEQ',
-    name: 'Utah Petroleum Storage Tank Facilities',
+    name: 'Utah Petroleum Storage Tanks Facilities',
     featureServiceHost: 'https://services2.arcgis.com/NnxP4LZ3zX8wWmP9/arcgis/rest/services/',
     featureServiceId: 'pst_facilities',
     openSgid: undefined,
