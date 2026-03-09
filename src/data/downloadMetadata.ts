@@ -2210,7 +2210,7 @@ export const dataPages: DownloadMetadata = {
     openSgid: undefined,
     layerId: 0,
   },
-  'Utah Petroleum Storage Tanks Facilities': {
+  'Utah Petroleum Storage Tank Facilities': {
     itemId: 'hosted by DEQ',
     externalHubOrganization: 'utahDEQ',
     name: 'Utah Petroleum Storage Tanks Facilities',
@@ -2265,7 +2265,7 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: 'pst_facility_compartments',
     openSgid: undefined,
     layerId: 0,
-  },  
+  },
   'Utah Fire Response Areas': {
     itemId: 'ee6b0673a1bb4e9c8a5e983dedb67e8e',
     name: 'Utah Fire Response Areas',
