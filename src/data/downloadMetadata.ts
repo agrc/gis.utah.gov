@@ -1879,11 +1879,11 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'boundaries.wilderness_areas',
     layerId: 0,
   },
-  'Utah US Congress Districts 2022 to 2032': {
-    itemId: 'b5ef0b24f994467fb4f22b27b1a47e25',
-    name: 'Utah US Congress Districts 2022 to 2032',
-    featureServiceId: 'USCongressDistricts2022to2032',
-    openSgid: 'political.us_congress_districts_2022_to_2032',
+  'Utah US Congress Districts 2022 to 2026': {
+    itemId: '2d26eeca0e24484b90c18899682475fa',
+    name: 'Utah US Congress Districts 2022 to 2026',
+    featureServiceId: 'political_us_congress_districts_2022_to_2026',
+    openSgid: 'political.us_congress_districts_2022_to_2026',
     layerId: 0,
   },
   'Utah US Congress Districts 2026 to 2032': {
