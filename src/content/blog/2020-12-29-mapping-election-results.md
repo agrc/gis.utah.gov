@@ -16,8 +16,6 @@ You've probably heard the saying, there are many ways to peel an orange. Similar
 
 Many of the maps that we see on election night, or in the media afterward, over-represent the distribution of voters. These maps work well for tabulation, but if we want a more representative view of our community -or the nation-, we can apply a few GIS techniques.
 
-> You can explore the maps from this post in the accompanying [interactive web map](https://utah.maps.arcgis.com/apps/webappviewer/index.html?id=8dbfe0d413af46b7920bf2303b175fbc). The methodology is described below.
-
 ### Remove the uninhabited areas
 
 In presidential elections, voting precincts are the lowest level of tabulation. Precincts primarily [cover all areas of the nation](https://www.nytimes.com/interactive/2018/upshot/election-2016-voting-precinct-maps.html) - whether inhabited or not. However, displaying results at the precinct level gives the impression that voters are evenly distributed across the landscape. Further confusing the viewer, precincts containing the fewest voters are often the largest in size - as they cover mountains and uninhabited areas. As a result, maps displayed at the precinct level often over-represent the vote count. A good example of this is in the surrounding areas of the Salt Lake Valley (Shown in Figure 1: Precinct Results). The large precinct in the northwest corner of the valley contains 27 registered voters. Likewise, one of the large precincts east of the valley, in the mountainous area, contains 15 registered voters. As you can see, when the results are mapped at the precinct level, these areas inflate the results.
@@ -43,8 +41,6 @@ Figure 2: Symbolizing the Winning Margin
 It’s no coincidence that maps have been used in elections for [more than a century](https://www.nationalgeographic.com/news/2016/10/united-states-election-map-history/). They’re the best medium for this type of data. However, as we’ve seen, maps can be misleading. Election geographies, such as voting precincts and counties, are not designed to represent the distribution of voters.
 
 This post has shown how using a few simple GIS techniques can yield a clearer picture of the election. These techniques not only aid in telling a compelling story, but they also give us a better understanding of the political landscape and our local communities.
-
-You can explore the maps from this post in the accompanying [interactive web map](https://utah.maps.arcgis.com/apps/webappviewer/index.html?id=8dbfe0d413af46b7920bf2303b175fbc) for Salt Lake County. The methodology is described below.
 
 I encourage you to apply these techniques when mapping other population-based data such as demographic, economic, or housing data.
 
