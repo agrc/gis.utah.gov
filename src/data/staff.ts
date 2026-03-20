@@ -33,11 +33,11 @@ export const staff = [
   },
   {
     name: 'Scott Davis',
-    team: 'Development Team',
+    team: 'Development Team Lead',
     phone: '801-699-7187',
     email: 'stdavis@utah.gov',
     x: '@SThomasDavis',
-    tags: ['web development', 'React', 'JavaScript', 'apps', 'data management'],
+    tags: ['web development', 'React', 'JavaScript', 'apps', 'data management', 'AI'],
   },
   {
     name: 'Michael Foulger',
