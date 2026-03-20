@@ -255,6 +255,7 @@
     "ngps",
     "NHDH",
     "Nibley",
+    "Nielson",
     "nlcs",
     "nocrumb",
     "nofollow",
@@ -333,6 +334,7 @@
     "SECDIVTXT",
     "SECDIVTYP",
     "Sectigo",
+    "Seely",
     "Sevier",
     "sgid",
     "sgourley",
@@ -446,11 +448,7 @@
     "Yampa",
     "zipcode"
   ],
-  "cSpell.enableFiletypes": [
-    "astro",
-    "markdown",
-    "mdx"
-  ],
+  "cSpell.enableFiletypes": ["astro", "markdown", "mdx"],
   "[astro]": {
     "editor.wordWrapColumn": 120,
     "editor.defaultFormatter": "astro-build.astro-vscode"
