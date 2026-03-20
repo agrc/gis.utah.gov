@@ -37,7 +37,7 @@ export const staff = [
     phone: '801-699-7187',
     email: 'stdavis@utah.gov',
     x: '@SThomasDavis',
-    tags: ['web development', 'React', 'JavaScript', 'apps', 'data management', 'AI'],
+    tags: ['web development', 'React', 'JavaScript', 'apps', 'data management', 'AI', 'google cloud'],
   },
   {
     name: 'Michael Foulger',
@@ -86,5 +86,21 @@ export const staff = [
     email: 'denisepeterson@utah.gov',
     x: '',
     tags: ['GPS', 'Configurable apps', 'AGOL', 'data management', 'boundaries'],
+  },
+  {
+    name: 'Miriam Seely',
+    team: 'Data Team',
+    phone: '',
+    email: 'miriamseely@utah.gov',
+    x: '',
+    tags: ['plss', 'data management', 'project support', 'cartography', 'communications'],
+  },
+  {
+    name: 'Emma Nielson',
+    team: 'Data Team',
+    phone: '',
+    email: 'emmanielson@utah.gov',
+    x: '',
+    tags: ['project-support', 'data-editing', 'web-maps', 'arcgis-pro', 'coordination'],
   },
 ];
