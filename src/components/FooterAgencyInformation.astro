@@ -1,0 +1,120 @@
+---
+/**
+ * Agency/Division information block for the Utah Design System footer.
+ *
+ * Uses the official `.footer-agency-information` markup and CSS classes
+ * documented at https://designsystem.utah.gov/library/utahFooter so that
+ * this block picks up the native UDS styling. The outer
+ * `<div class="utah-design-system">` wrapper is required because the UDS
+ * CSS scopes every selector under `.utah-design-system`.
+ */
+import ExternalLink from '@components/page/ExternalLink.astro';
+import { Image } from 'astro:assets';
+import { existsSync } from 'fs';
+
+import govOpsLogo from '@images/footer/govops-logo.png';
+import netlifyLogo from '@images/footer/netlify.svg';
+
+const sha = import.meta.env.COMMIT_REF ? `commit/${import.meta.env.COMMIT_REF.substring(0, 8)}` : 'commits/main';
+const shaName = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'only in CI';
+const empty = '';
+const isProductCategory = /products\/sgid\/(?<category>\w*)$/gi;
+const blogOrganizer = /blog\/(?<blog>(tags|authors|categories))/gi;
+
+const formatUrl = (path: string) => {
+  path = path.replace(/\/$/, empty);
+  if (path === empty) {
+    path = '/index';
+  }
+
+  const categoryMatch = isProductCategory.exec(path);
+  if (categoryMatch) {
+    return `pages${path.replace(categoryMatch.groups!.category, empty)}[category].astro`;
+  }
+
+  const specialBlogMatch = blogOrganizer.exec(path);
+  if (specialBlogMatch) {
+    return `pages/blog/${specialBlogMatch.groups!.blog}/[slug].astro`;
+  }
+
+  if (path.includes('/blog/')) {
+    path = path.replace('/blog/', '/content/blog/');
+
+    let markdown = `./src${path}.md`;
+    path = path.substring(1);
+    if (existsSync(markdown)) {
+      return `${path}.md`;
+    } else if (existsSync(`${markdown}x`)) {
+      return `${path}.mdx`;
+    } else {
+      console.error(`${markdown} does not exist`);
+      return '';
+    }
+  } else {
+    return `pages${path}.astro`;
+  }
+};
+---
+
+<div class="utah-design-system">
+  <div class="footer-agency-information">
+    <div class="footer-agency-information__column">
+      <Image
+        class="footer-agency-information__title-image"
+        src={govOpsLogo}
+        width="320"
+        alt="Department of Government Operations"
+      />
+      <div class="footer-agency-information__title">Division of Technology Services</div>
+      <div class="footer-agency-information__title">Utah Geospatial Resource Center</div>
+      <div class="footer-agency-information__address">
+        4315 South 2700 West<br />
+        Taylorsville, UT 84129
+      </div>
+    </div>
+    <div class="footer-agency-information__column">
+      <div class="footer-agency-information__column-title">Helpful Links</div>
+      <ul class="footer-agency-information__menu">
+        <li>
+          <a href="https://github.com/agrc/gis.utah.gov/blob/main/.github/contributing.md">Content contributing guide</a
+          >
+        </li>
+        <li><a href="/about/media/">Logos and media resources</a></li>
+        <li><a href="/documentation/policy/">UGRC Policies</a></li>
+        <li><a href="/about/code/">GIS-related Utah statute</a></li>
+        <li><a href="https://s.utah.gov/ugrc-newsletter">Sign up for our newsletter</a></li>
+      </ul>
+    </div>
+    <div class="footer-agency-information__column">
+      <div class="footer-agency-information__column-title">Website Information</div>
+      <ul class="footer-agency-information__menu">
+        <li>
+          Build: <a href={`https://github.com/agrc/gis.utah.gov/${sha}`}>{shaName}</a>
+        </li>
+        <li>
+          <a href={`https://github.com/agrc/gis.utah.gov/tree/main/src/${formatUrl(Astro.url.pathname)}`}>
+            Edit this page
+          </a>
+        </li>
+        <li><a href="/collaboration/community/contributors/">Contributors</a></li>
+        <li>
+          <ExternalLink href="https://github.com/agrc/gis.utah.gov/issues/new" type="custom">
+            Report an issue
+          </ExternalLink>
+        </li>
+        <li><a href="/ThirdPartyNotices.txt">Third-party Notices</a></li>
+        <li class="footer-agency-information__netlify">
+          <a href="https://www.netlify.com" aria-label="Hosted on Netlify">
+            <Image src={netlifyLogo} alt="hosted on netlify" width={100} height={44} />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style is:global>
+  .utah-design-system .footer-agency-information__netlify {
+    margin-top: var(--spacing);
+  }
+</style>
