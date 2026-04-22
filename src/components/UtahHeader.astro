@@ -1,0 +1,306 @@
+---
+/**
+ * Utah Design System Header bootstrap.
+ *
+ * Calls setUtahHeaderSettings() on every page load. The UDS header self-mounts
+ * at the top of <body> and renders the Utah footer into the element targeted
+ * by `footer.domLocationTarget` (see #utah-footer-placeholder in Chrome.astro).
+ */
+const currentPath = Astro.url.pathname;
+---
+
+<meta name="ugrc-current-path" content={currentPath} />
+
+<script>
+  import { setUtahHeaderSettings } from '@utahdts/utah-design-system-header';
+  import '@utahdts/utah-design-system-header/css';
+
+  type MenuItem = {
+    title: string;
+    actionUrl?: { url: string };
+    actionMenu?: MenuItem[];
+    isSelected?: boolean;
+    isDivider?: boolean;
+  };
+
+  const meta = document.querySelector('meta[name="ugrc-current-path"]');
+  const currentPath = meta?.getAttribute('content') ?? window.location.pathname;
+  const fullTitle = 'Utah Geospatial Resource Center';
+  const shortTitle = 'UGRC';
+
+  const isActive = (slug: string) => {
+    if (slug === '/') {
+      return currentPath === '/';
+    }
+    return currentPath.toLowerCase().startsWith(slug);
+  };
+
+  const productsChildren: MenuItem[] = [
+    { title: 'SGID', actionUrl: { url: '/products/sgid/' }, isSelected: isActive('/products/sgid/') },
+    { title: 'Discover', actionUrl: { url: '/products/discover/' }, isSelected: isActive('/products/discover/') },
+    { title: 'TURN GPS', actionUrl: { url: '/products/turn/' }, isSelected: isActive('/products/turn/') },
+    { title: 'UGRC API', actionUrl: { url: '/products/api/' }, isSelected: isActive('/products/api/') },
+  ];
+
+  const solutionsChildren: MenuItem[] = [
+    {
+      title: 'Government employees',
+      actionUrl: { url: '/solutions/for-government/' },
+      isSelected: isActive('/solutions/for-government/'),
+    },
+    {
+      title: 'GIS users',
+      actionUrl: { url: '/solutions/for-gis-users/' },
+      isSelected: isActive('/solutions/for-gis-users/'),
+    },
+    {
+      title: 'Application developers',
+      actionUrl: { url: '/solutions/for-application-developers/' },
+      isSelected: isActive('/solutions/for-application-developers/'),
+    },
+    {
+      title: 'Surveyors',
+      actionUrl: { url: '/solutions/for-surveyors/' },
+      isSelected: isActive('/solutions/for-surveyors/'),
+    },
+    {
+      title: 'Students',
+      actionUrl: { url: '/solutions/for-students/' },
+      isSelected: isActive('/solutions/for-students/'),
+    },
+    { title: '--divider--', isDivider: true },
+    {
+      title: 'Spatial data management',
+      actionUrl: { url: '/solutions/spatial-data-management/' },
+      isSelected: isActive('/solutions/spatial-data-management/'),
+    },
+    {
+      title: 'Emergency response (911)',
+      actionUrl: { url: '/solutions/for-emergency-response/' },
+      isSelected: isActive('/solutions/for-emergency-response/'),
+    },
+    {
+      title: 'GIS strategy',
+      actionUrl: { url: '/solutions/gis-strategy/' },
+      isSelected: isActive('/solutions/gis-strategy/'),
+    },
+    {
+      title: 'Integrating GIS',
+      actionUrl: { url: '/solutions/gis-integration/' },
+      isSelected: isActive('/solutions/gis-integration/'),
+    },
+    {
+      title: 'High precision location',
+      actionUrl: { url: '/solutions/high-precision-location/' },
+      isSelected: isActive('/solutions/high-precision-location/'),
+    },
+  ];
+
+  const menuItems: MenuItem[] = [
+    { title: 'Home', actionUrl: { url: '/' }, isSelected: isActive('/') },
+    {
+      title: 'Products',
+      actionUrl: { url: '/products/' },
+      actionMenu: productsChildren,
+      isSelected: isActive('/products'),
+    },
+    {
+      title: 'Solutions',
+      actionUrl: { url: '/solutions/' },
+      actionMenu: solutionsChildren,
+      isSelected: isActive('/solutions'),
+    },
+    { title: 'Documentation', actionUrl: { url: '/documentation/' }, isSelected: isActive('/documentation') },
+    { title: 'Collaboration', actionUrl: { url: '/collaboration/' }, isSelected: isActive('/collaboration') },
+    { title: 'Blog', actionUrl: { url: '/blog/' }, isSelected: isActive('/blog') },
+    { title: 'About', actionUrl: { url: '/about/' }, isSelected: isActive('/about') },
+    { title: 'Contact', actionUrl: { url: '/contact/' }, isSelected: isActive('/contact') },
+  ];
+
+  // Pagefind results rendering inside the UDS search modal.
+  type PagefindResultData = {
+    url: string;
+    excerpt?: string;
+    meta?: { title?: string };
+  };
+  type Pagefind = {
+    search: (q: string) => Promise<{
+      results: Array<{ data: () => Promise<PagefindResultData> }>;
+    }>;
+  };
+
+  let pagefindInstancePromise: Promise<Pagefind> | null = null;
+  const loadPagefind = () => {
+    if (!pagefindInstancePromise) {
+      // Pagefind bundle is generated at build time and served from /pagefind/pagefind.js.
+      // Build the path at runtime so Vite does not try to resolve it during dev/build.
+      const pagefindUrl = `${window.location.origin}/pagefind/pagefind.js`;
+      pagefindInstancePromise = import(/* @vite-ignore */ pagefindUrl).catch((error) => {
+        pagefindInstancePromise = null;
+        throw error;
+      }) as Promise<Pagefind>;
+    }
+    return pagefindInstancePromise;
+  };
+
+  const ensureResultsContainer = () => {
+    const modal = document.querySelector('#search-modal .search-modal');
+    if (!modal) {
+      return null;
+    }
+    let container = modal.querySelector<HTMLElement>('#ugrc-search-results');
+    if (!container) {
+      container = document.createElement('div');
+      container.id = 'ugrc-search-results';
+      container.className = 'ugrc-search-results';
+      modal.appendChild(container);
+    }
+    return container;
+  };
+
+  const escapeHtml = (value: string) =>
+    value
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+
+  const renderSearchResults = async (phrase: string) => {
+    const container = ensureResultsContainer();
+    if (!container) {
+      return;
+    }
+    const trimmed = (phrase ?? '').trim();
+    if (!trimmed) {
+      container.innerHTML = '';
+      return;
+    }
+    container.innerHTML = '<p class="ugrc-search-results__status">Searching…</p>';
+    try {
+      const pagefind = await loadPagefind();
+      const result = await pagefind.search(trimmed);
+      if (!result || !result.results || result.results.length === 0) {
+        container.innerHTML = '<p class="ugrc-search-results__status">No results found.</p>';
+        return;
+      }
+      const topResults = await Promise.all(result.results.slice(0, 10).map((r) => r.data()));
+      container.innerHTML = `
+        <ul class="ugrc-search-results__list">
+          ${topResults
+            .map((data) => {
+              const href = escapeHtml(data.url);
+              const title = escapeHtml(data.meta?.title ?? data.url);
+              // Pagefind returns excerpts with <mark> tags already; allow those through.
+              const excerpt = data.excerpt ?? '';
+              return `
+                <li class="ugrc-search-results__item">
+                  <a class="ugrc-search-results__link" href="${href}">${title}</a>
+                  <p class="ugrc-search-results__excerpt">${excerpt}</p>
+                </li>
+              `;
+            })
+            .join('')}
+        </ul>
+      `;
+    } catch (error) {
+      console.error('Pagefind search failed', error);
+      container.innerHTML = '<p class="ugrc-search-results__status">Search is unavailable.</p>';
+    }
+  };
+
+  const smallScreenBreakpoint = '550px';
+
+  const syncResponsiveTitle = () => {
+    const titleWrapper = document.querySelector<HTMLElement>('.utds-title-wrapper');
+    const titleElement = document.querySelector<HTMLElement>('.utds-title-wrapper__title');
+    if (!titleWrapper || !titleElement) {
+      return;
+    }
+
+    const useShortTitle = window.matchMedia(`(max-width: ${smallScreenBreakpoint})`).matches;
+    titleElement.textContent = useShortTitle ? shortTitle : fullTitle;
+    titleWrapper.setAttribute('aria-label', fullTitle);
+  };
+
+  const watchResponsiveTitle = () => {
+    const smallScreenMedia = window.matchMedia(`(max-width: ${smallScreenBreakpoint})`);
+    syncResponsiveTitle();
+
+    smallScreenMedia.addEventListener('change', syncResponsiveTitle);
+  };
+
+  setUtahHeaderSettings({
+    applicationType: 'static site',
+    title: fullTitle,
+    titleUrl: '/',
+    showTitle: true,
+    size: 'MEDIUM',
+    skipLinkUrl: '#main-content',
+    logo: {
+      imageUrl: '/images/ugrc-logo.svg',
+    },
+    mainMenu: {
+      title: `${fullTitle} Main Menu`,
+      menuItems,
+    },
+    utahId: true,
+    onSearch: (phrase: string) => {
+      void renderSearchResults(phrase);
+    },
+    footer: {
+      showHorizontalRule: true,
+      domLocationTarget: {
+        cssSelector: '#utah-footer-placeholder',
+      },
+    },
+  });
+
+  watchResponsiveTitle();
+</script>
+
+<style is:global>
+  /* Pagefind results injected into the UDS search modal */
+  .ugrc-search-results {
+    margin-top: var(--spacing-l, 1.5rem);
+    max-width: 720px;
+    width: 100%;
+  }
+  .ugrc-search-results__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing, 1rem);
+  }
+  .ugrc-search-results__item {
+    padding: var(--spacing-s, 0.75rem) var(--spacing, 1rem);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  .ugrc-search-results__link {
+    font-weight: 600;
+    color: var(--primary-color, #004f80);
+    text-decoration: none;
+  }
+  .ugrc-search-results__link:hover,
+  .ugrc-search-results__link:focus {
+    text-decoration: underline;
+  }
+  .ugrc-search-results__excerpt {
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.72);
+  }
+  .ugrc-search-results__status {
+    margin: 0;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.72);
+  }
+  .ugrc-search-results mark {
+    background-color: var(--accent-color-light, #fff2c0);
+    padding: 0 0.15em;
+  }
+</style>
