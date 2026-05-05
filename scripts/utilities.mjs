@@ -1,3 +1,6 @@
+import { access } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import axiosRetry from 'axios-retry';
 import * as changeCase from 'change-case';
 import { GoogleAuth, auth } from 'google-auth-library';
@@ -5,6 +8,9 @@ import { GoogleSpreadsheet } from 'google-spreadsheet';
 import knex from 'knex';
 import ky from 'ky';
 import random from 'lodash/random.js';
+
+const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const sitePageExtensions = ['.astro', '.md', '.mdx'];
 
 export async function validateUrl(url) {
   let parsedUrl;
@@ -58,6 +64,93 @@ export async function validateUrl(url) {
   return {
     valid: true,
   };
+}
+
+export async function hasLocalProductPage(url, root = repoRoot) {
+  let parsedUrl;
+
+  try {
+    parsedUrl = new URL(url);
+  } catch (error) {
+    return false;
+  }
+
+  if (parsedUrl.hostname !== 'gis.utah.gov' || !parsedUrl.pathname.startsWith('/products/')) {
+    return false;
+  }
+
+  const trimmedPath = parsedUrl.pathname.replace(/\/$/, '');
+  const basePath = path.join(root, 'src/pages', trimmedPath);
+  const candidates = [
+    ...sitePageExtensions.map((extension) => `${basePath}${extension}`),
+    ...sitePageExtensions.map((extension) => path.join(basePath, `index${extension}`)),
+  ];
+
+  for (const candidate of candidates) {
+    try {
+      await access(candidate);
+
+      return true;
+    } catch (error) {
+      // ignore missing candidates
+    }
+  }
+
+  return false;
+}
+
+async function requestJson(url, options) {
+  return ky(url, options).json();
+}
+
+function normalizeHubMetadata(data, source = 'hub') {
+  return {
+    source,
+    attributes: data?.data?.attributes ?? {},
+  };
+}
+
+export async function getHubDatasetMetadata(itemId, layerId = 0, jsonRequest = requestJson) {
+  const requestOptions = {
+    retry: {
+      limit: 10,
+      retryOnTimeout: true,
+    },
+    timeout: 60000,
+  };
+
+  try {
+    const hubData = await jsonRequest(`https://opendata.arcgis.com/api/v3/datasets/${itemId}_${layerId}`, requestOptions);
+
+    return normalizeHubMetadata(hubData);
+  } catch (layerError) {
+    try {
+      const hubData = await jsonRequest(`https://opendata.arcgis.com/api/v3/datasets/${itemId}`, requestOptions);
+
+      return normalizeHubMetadata(hubData);
+    } catch (datasetError) {
+      const agolItem = await jsonRequest(`https://www.arcgis.com/sharing/rest/content/items/${itemId}`, {
+        ...requestOptions,
+        searchParams: { f: 'json' },
+      });
+
+      if (agolItem?.error) {
+        throw datasetError;
+      }
+
+      return normalizeHubMetadata(
+        {
+          data: {
+            attributes: {
+              name: agolItem.title,
+              url: agolItem.url,
+            },
+          },
+        },
+        'agol',
+      );
+    }
+  }
 }
 
 let dbClient;

@@ -1,12 +1,13 @@
 import jsonToMarkdown from 'json-to-markdown-table';
-import ky from 'ky';
 import ProgressBar from 'progress';
 import * as tsImport from 'ts-import';
 import { v4 as uuid } from 'uuid';
 import {
   buildDuplicateIndex,
+  getHubDatasetMetadata,
   getFieldName,
   getSheet,
+  hasLocalProductPage,
   isLive,
   isOurs,
   normalizeValue,
@@ -94,6 +95,10 @@ async function validateProductPage(row) {
 
   let result = await validateUrl(url);
 
+  if (!result.valid && (await hasLocalProductPage(url))) {
+    return;
+  }
+
   if (result.valid && /\/datasets\//.test(url)) {
     result = await validateOpenDataUrl(url);
   }
@@ -164,30 +169,17 @@ async function validateItemIdAndCreateHubMetadata(row) {
     return;
   }
 
-  let hubData;
+  let metadata;
   let serviceParts;
   let changed = false;
 
-  const kyOptions = {
-    retry: {
-      limit: 10,
-      retryOnTimeout: true,
-    },
-    timeout: 60000,
-  };
-
   try {
-    hubData = await ky(`https://opendata.arcgis.com/api/v3/datasets/${cellValue}_${layerId}`, kyOptions).json();
-    serviceParts = hubData.data.attributes.url.split('/rest/services/');
+    metadata = await getHubDatasetMetadata(cellValue, layerId);
+    serviceParts = metadata.attributes.url?.split('/rest/services/');
   } catch (error) {
-    try {
-      // maybe this is something other than a feature service such as a WMTS base map service
-      hubData = await ky(`https://opendata.arcgis.com/api/v3/datasets/${cellValue}`, kyOptions).json();
-    } catch (error) {
-      recordError(errors, `itemId hub request error: ${error.message}`, row);
+    recordError(errors, `itemId hub request error: ${error.message}`, row);
 
-      return;
-    }
+    return;
   }
 
   const orgLookup = {
@@ -199,13 +191,13 @@ async function validateItemIdAndCreateHubMetadata(row) {
     'Utah SHPO': 'UtahSHPO',
   };
 
-  const fullSlug = hubData.data.attributes.slug || '';
+  const fullSlug = metadata.source === 'hub' ? metadata.attributes.slug || '' : '';
   const slugParts = fullSlug.split('::');
   const org = slugParts.length > 1 ? slugParts[0] : undefined;
   let slug = slugParts.length > 1 ? slugParts[1] : slugParts[0] || '';
 
-  const correctSlug = slugify(hubData.data.attributes.name);
-  if (slug !== correctSlug) {
+  const correctSlug = slugify(metadata.attributes.name || '');
+  if (metadata.source === 'hub' && slug !== correctSlug) {
     if (isOurs(row)) {
       recordError(
         errors,
@@ -222,18 +214,18 @@ async function validateItemIdAndCreateHubMetadata(row) {
     slug = '';
   }
 
-  const orgName = org || orgLookup[hubData.data.attributes.organization];
+  const orgName = metadata.source === 'hub' ? org || orgLookup[metadata.attributes.organization] : undefined;
 
-  if (!orgName) {
+  if (metadata.source === 'hub' && !orgName) {
     recordError(
       errors,
-      `No hubOrganization could be found! slug: "${slug}" organization: "${hubData.data.attributes.organization}"`,
+      `No hubOrganization could be found! slug: "${slug}" organization: "${metadata.attributes.organization}"`,
       row,
     );
   }
 
   const newData = {
-    hubName: hubData.data.attributes.name.replace(/[()]/g, ''),
+    hubName: metadata.source === 'hub' ? metadata.attributes.name.replace(/[()]/g, '') : undefined,
     hubOrganization: orgName,
     serverHost: serviceParts && serviceParts[0],
     serverServiceName: serviceParts && serviceParts[1].split(/\/(FeatureServer|MapServer)\//)[0],
