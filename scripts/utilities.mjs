@@ -135,7 +135,10 @@ export async function getHubDatasetMetadata(itemId, layerId = 0, jsonRequest = r
       });
 
       if (agolItem?.error) {
-        throw datasetError;
+        throw new Error(
+          `ArcGIS item lookup failed after dataset lookup failed: ${datasetError.message}. ` +
+            `ArcGIS item error: ${agolItem.error.message} (${agolItem.error.code})`,
+        );
       }
 
       return normalizeHubMetadata(

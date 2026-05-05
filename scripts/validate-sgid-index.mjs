@@ -215,6 +215,8 @@ async function validateItemIdAndCreateHubMetadata(row) {
   }
 
   const orgName = metadata.source === 'hub' ? org || orgLookup[metadata.attributes.organization] : undefined;
+  const serverHost = serviceParts?.[0];
+  const serverServiceName = serviceParts?.[1]?.split(/\/(FeatureServer|MapServer)\//)[0];
 
   if (metadata.source === 'hub' && !orgName) {
     recordError(
@@ -227,9 +229,9 @@ async function validateItemIdAndCreateHubMetadata(row) {
   const newData = {
     hubName: metadata.source === 'hub' ? metadata.attributes.name.replace(/[()]/g, '') : undefined,
     hubOrganization: orgName,
-    serverHost: serviceParts && serviceParts[0],
-    serverServiceName: serviceParts && serviceParts[1].split(/\/(FeatureServer|MapServer)\//)[0],
-    serverLayerId: serviceParts && layerId,
+    serverHost,
+    serverServiceName,
+    serverLayerId: serverServiceName ? layerId : undefined,
     correctedSlug: slug,
   };
 
