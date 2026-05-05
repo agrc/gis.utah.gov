@@ -103,7 +103,7 @@ async function requestJson(url, options) {
   return ky(url, options).json();
 }
 
-function normalizeHubMetadata(data, source = 'hub') {
+function normalizeDatasetMetadata(data, source = 'hub') {
   return {
     source,
     attributes: data?.data?.attributes ?? {},
@@ -122,12 +122,12 @@ export async function getHubDatasetMetadata(itemId, layerId = 0, jsonRequest = r
   try {
     const hubData = await jsonRequest(`https://opendata.arcgis.com/api/v3/datasets/${itemId}_${layerId}`, requestOptions);
 
-    return normalizeHubMetadata(hubData);
+    return normalizeDatasetMetadata(hubData);
   } catch (layerError) {
     try {
       const hubData = await jsonRequest(`https://opendata.arcgis.com/api/v3/datasets/${itemId}`, requestOptions);
 
-      return normalizeHubMetadata(hubData);
+      return normalizeDatasetMetadata(hubData);
     } catch (datasetError) {
       const agolItem = await jsonRequest(`https://www.arcgis.com/sharing/rest/content/items/${itemId}`, {
         ...requestOptions,
@@ -136,12 +136,13 @@ export async function getHubDatasetMetadata(itemId, layerId = 0, jsonRequest = r
 
       if (agolItem?.error) {
         throw new Error(
-          `ArcGIS dataset lookups (${itemId}_${layerId}, then ${itemId}) failed: ${datasetError.message}. ` +
+          `ArcGIS dataset lookups (${itemId}_${layerId}: ${layerError.message}; ` +
+            `${itemId}: ${datasetError.message}) failed. ` +
             `ArcGIS item error: ${agolItem.error.message} (${agolItem.error.code})`,
         );
       }
 
-      return normalizeHubMetadata(
+      return normalizeDatasetMetadata(
         {
           data: {
             attributes: {

@@ -175,7 +175,7 @@ async function validateItemIdAndCreateHubMetadata(row) {
 
   try {
     metadata = await getHubDatasetMetadata(cellValue, layerId);
-    serviceParts = metadata.attributes.url?.split('/rest/services/') ?? [];
+    serviceParts = metadata.attributes.url ? metadata.attributes.url.split('/rest/services/') : undefined;
   } catch (error) {
     recordError(errors, `itemId hub request error: ${error.message}`, row);
 
@@ -215,8 +215,9 @@ async function validateItemIdAndCreateHubMetadata(row) {
   }
 
   const orgName = metadata.source === 'hub' ? org || orgLookup[metadata.attributes.organization] : undefined;
-  const serverHost = serviceParts?.[0];
-  const serverServiceName = serviceParts?.[1]?.split(/\/(FeatureServer|MapServer)\//)[0];
+  const hasServiceParts = Array.isArray(serviceParts) && serviceParts.length > 1;
+  const serverHost = hasServiceParts ? serviceParts[0] : undefined;
+  const serverServiceName = hasServiceParts ? serviceParts[1]?.split(/\/(FeatureServer|MapServer)\//)[0] : undefined;
 
   if (metadata.source === 'hub' && !orgName) {
     recordError(
@@ -231,7 +232,7 @@ async function validateItemIdAndCreateHubMetadata(row) {
     hubOrganization: orgName,
     serverHost,
     serverServiceName,
-    serverLayerId: serviceParts.length > 1 && serverServiceName ? layerId : undefined,
+    serverLayerId: hasServiceParts && serverServiceName ? layerId : undefined,
     correctedSlug: slug,
   };
 
