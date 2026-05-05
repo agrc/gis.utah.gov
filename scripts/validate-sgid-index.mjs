@@ -175,7 +175,7 @@ async function validateItemIdAndCreateHubMetadata(row) {
 
   try {
     metadata = await getHubDatasetMetadata(cellValue, layerId);
-    serviceParts = metadata.attributes.url?.split('/rest/services/');
+    serviceParts = metadata.attributes.url?.split('/rest/services/') ?? [];
   } catch (error) {
     recordError(errors, `itemId hub request error: ${error.message}`, row);
 
@@ -231,7 +231,7 @@ async function validateItemIdAndCreateHubMetadata(row) {
     hubOrganization: orgName,
     serverHost,
     serverServiceName,
-    serverLayerId: serverServiceName ? layerId : undefined,
+    serverLayerId: serviceParts.length > 1 && serverServiceName ? layerId : undefined,
     correctedSlug: slug,
   };
 

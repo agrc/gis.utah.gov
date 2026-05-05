@@ -136,7 +136,7 @@ export async function getHubDatasetMetadata(itemId, layerId = 0, jsonRequest = r
 
       if (agolItem?.error) {
         throw new Error(
-          `ArcGIS item lookup failed after dataset lookup failed: ${datasetError.message}. ` +
+          `ArcGIS dataset lookups (${itemId}_${layerId}, then ${itemId}) failed: ${datasetError.message}. ` +
             `ArcGIS item error: ${agolItem.error.message} (${agolItem.error.code})`,
         );
       }
