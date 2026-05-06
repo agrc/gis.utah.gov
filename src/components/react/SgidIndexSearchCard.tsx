@@ -9,7 +9,6 @@ import { type StewardshipRecord } from '@models/types';
 import { Fragment } from 'react/jsx-runtime';
 import dnrLogo from './dnr-logo.svg';
 import udotLogo from './udot-logo.svg';
-import ugrcLogo from './ugrc-logo.svg';
 
 interface Props {
   astroSite: URL | undefined;
@@ -65,7 +64,7 @@ export default function SgidIndexSearchCard({ astroSite, record }: Props) {
     apps.push({ url: getFeatureServiceUrl(record.server), title: 'Feature service' });
   }
 
-  let logo = ugrcLogo.src;
+  let logo = '/favicon.svg';
   let alternateText = 'SGID UGRC dataset';
 
   if (urlString.startsWith('https://')) {
