@@ -27,10 +27,10 @@
     @apply font-ut text-2xl font-bold md:text-3xl;
   }
   h3 {
-    @apply font-ut text-xl font-bold md:text-2xl;
+    @apply text-xl font-bold md:text-2xl;
   }
   h4 {
-    @apply font-ut text-lg font-bold md:text-xl;
+    @apply text-lg font-bold md:text-xl;
   }
   h5 {
     @apply text-base font-bold md:text-lg;
