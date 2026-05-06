@@ -48,6 +48,9 @@
     font-style: normal;
     font-display: swap;
   }
+  .font-ut {
+    font-family: var(--ut-industry-font-family);
+  }
 }
 @tailwind components;
 @layer astroComponents {
