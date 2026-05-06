@@ -12,7 +12,7 @@ import ExternalLink from '@components/page/ExternalLink.astro';
 import { Image } from 'astro:assets';
 import { existsSync } from 'fs';
 
-import govOpsLogo from '@images/footer/govops-logo.png';
+import govOpsLogo from '@images/footer/govops-logo.svg';
 import netlifyLogo from '@images/footer/netlify.svg';
 
 const sha = import.meta.env.COMMIT_REF ? `commit/${import.meta.env.COMMIT_REF.substring(0, 8)}` : 'commits/main';
@@ -65,8 +65,7 @@ const formatUrl = (path: string) => {
         width="320"
         alt="Department of Government Operations"
       />
-      <div class="footer-agency-information__title">Division of Technology Services</div>
-      <div class="footer-agency-information__title">Utah Geospatial Resource Center</div>
+      <div class="footer-agency-information__title font-ut">Utah Geospatial Resource Center</div>
       <div class="footer-agency-information__address">
         4315 South 2700 West<br />
         Taylorsville, UT 84129
