@@ -113,6 +113,13 @@ const formatUrl = (path: string) => {
 </div>
 
 <style is:global>
+  /* prevent govops logo from overlapping other columns */
+  .utah-design-system .footer-agency-information__title-image {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
   .utah-design-system .footer-agency-information__netlify {
     margin-top: var(--spacing);
   }
