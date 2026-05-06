@@ -25,14 +25,14 @@ const { title, href, style = 'primary', class: className } = Astro.props;
   </div>
   {
     href.startsWith('/') && (
-      <span class="-mr-4 justify-center self-start text-2xl">
+      <span class="font-ut -mr-4 justify-center self-start text-2xl">
         <RightArrow />
       </span>
     )
   }
   {
     href.startsWith('http') && (
-      <span class="-mr-4 justify-center self-start text-2xl text-[1.3em]" aria-hidden="true">
+      <span class="font-ut -mr-4 justify-center self-start text-2xl text-[1.3em]" aria-hidden="true">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
