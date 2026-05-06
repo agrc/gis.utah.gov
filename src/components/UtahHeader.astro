@@ -209,27 +209,6 @@ const currentPath = Astro.url.pathname;
     }
   };
 
-  const smallScreenBreakpoint = '550px';
-
-  const syncResponsiveTitle = () => {
-    const titleWrapper = document.querySelector<HTMLElement>('.utds-title-wrapper');
-    const titleElement = document.querySelector<HTMLElement>('.utds-title-wrapper__title');
-    if (!titleWrapper || !titleElement) {
-      return;
-    }
-
-    const useShortTitle = window.matchMedia(`(max-width: ${smallScreenBreakpoint})`).matches;
-    titleElement.textContent = useShortTitle ? shortTitle : fullTitle;
-    titleWrapper.setAttribute('aria-label', fullTitle);
-  };
-
-  const watchResponsiveTitle = () => {
-    const smallScreenMedia = window.matchMedia(`(max-width: ${smallScreenBreakpoint})`);
-    syncResponsiveTitle();
-
-    smallScreenMedia.addEventListener('change', syncResponsiveTitle);
-  };
-
   setUtahHeaderSettings({
     applicationType: 'static site',
     title: fullTitle,
@@ -255,8 +234,6 @@ const currentPath = Astro.url.pathname;
       },
     },
   });
-
-  watchResponsiveTitle();
 </script>
 
 <style is:global>
@@ -302,5 +279,12 @@ const currentPath = Astro.url.pathname;
   .ugrc-search-results mark {
     background-color: var(--accent-color-light, #fff2c0);
     padding: 0 0.15em;
+  }
+
+  @media screen and (max-width: 445px) {
+    .utah-design-system .utds-title-wrapper__title {
+      font-size: 1.7rem !important;
+      line-height: 1 !important;
+    }
   }
 </style>
