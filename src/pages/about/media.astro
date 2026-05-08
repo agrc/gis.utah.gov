@@ -13,11 +13,9 @@ import sgidDark from '@images/media/ugrc-logo-SGID-dark.png';
 import sgidLight from '@images/media/ugrc-logo-SGID-light.png';
 import sgid from '@images/media/ugrc-logo-SGID-wavy_gravy.png';
 import turn from '@images/media/ugrc-logo-TURN.png';
-import ugrcDark from '@images/media/ugrc-logo-UGRC-dark.png';
-import ugrc from '@images/media/ugrc-logo-UGRC-light.png';
-import ugrcVertical from '@images/media/ugrc-logo-UGRC-vertical.png';
+import ugrc from '@images/media/ugrc-logo-UGRC.png';
 import api from '@images/media/ugrc-logo-WebAPI.png';
-import download from '@images/media/ugrc_wavy_gravy_logos.zip?url';
+import download from '@images/media/ugrc-logos.zip?url';
 
 const page: IStandardPageMetadata = {
   pageTitle: 'UGRC Media Kit',
@@ -104,12 +102,6 @@ const page: IStandardPageMetadata = {
     <div class="grid gap-10 lg:grid-cols-2">
       <CardForLogo download={download}>
         <Image src={ugrc} loading="eager" alt="UGRC Logo" />
-      </CardForLogo>
-      <CardForLogo download={download}>
-        <Image src={ugrcDark} loading="eager" alt="UGRC Logo" />
-      </CardForLogo>
-      <CardForLogo download={download}>
-        <Image src={ugrcVertical} loading="eager" alt="UGRC Logo" />
       </CardForLogo>
       <CardForLogo download={download}>
         <Image src={sgid} loading="eager" alt="SGID Logo" />
