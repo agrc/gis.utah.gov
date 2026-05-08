@@ -22,7 +22,7 @@ This is the **UGRC (Utah Geospatial Resource Center)** website at [gis.utah.gov]
 ### Code Style
 
 - TypeScript is used throughout; run `npm run ts-check` to validate types
-- Run `npm run format` (Prettier) before committing — CI enforces formatting
+- Run `npm run format` (Prettier) before committing
 - Comment only code that genuinely needs clarification; avoid redundant comments
 
 ### Content
