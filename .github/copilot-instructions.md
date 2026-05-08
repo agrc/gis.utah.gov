@@ -57,7 +57,7 @@ tags: string[]      # optional
 ```bash
 npm start        # local dev server at http://localhost:4321/
 npm run build    # production build
-npm run format   # format and lint
+npm run format   # fix formatting
 npm run ts-check # TypeScript check
 npm test         # run Vitest tests
 ```
