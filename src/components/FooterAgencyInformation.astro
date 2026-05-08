@@ -18,8 +18,8 @@ import netlifyLogo from '@images/footer/netlify.svg';
 const sha = import.meta.env.COMMIT_REF ? `commit/${import.meta.env.COMMIT_REF.substring(0, 8)}` : 'commits/main';
 const shaName = import.meta.env.COMMIT_REF?.substring(0, 8) ?? 'only in CI';
 const empty = '';
-const isProductCategory = /products\/sgid\/(?<category>\w*)$/gi;
-const blogOrganizer = /blog\/(?<blog>(tags|authors|categories))/gi;
+const isProductCategory = /products\/sgid\/(?<category>\w*)$/i;
+const blogOrganizer = /blog\/(?<blog>(tags|authors|categories))/i;
 
 const formatUrl = (path: string) => {
   path = path.replace(/\/$/, empty);
@@ -62,7 +62,7 @@ const formatUrl = (path: string) => {
       <Image
         class="footer-agency-information__title-image"
         src={govOpsLogo}
-        width="320"
+        width={320}
         alt="Department of Government Operations"
       />
       <div class="footer-agency-information__title font-ut">Utah Geospatial Resource Center</div>
