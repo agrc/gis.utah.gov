@@ -129,7 +129,12 @@ const currentPath = Astro.url.pathname;
     }>;
   };
 
+  const MIN_SEARCH_LENGTH = 2;
+  const SEARCH_DEBOUNCE_MS = 250;
+
   let pagefindInstancePromise: Promise<Pagefind> | null = null;
+  let activeSearchToken = 0;
+  let searchDebounceId: number | null = null;
   const loadPagefind = () => {
     if (!pagefindInstancePromise) {
       // Pagefind bundle is generated at build time and served from /pagefind/pagefind.js.
@@ -143,8 +148,35 @@ const currentPath = Astro.url.pathname;
     return pagefindInstancePromise;
   };
 
+  const getSearchModal = () => document.getElementById('search-modal');
+
+  const getSearchInput = () => document.getElementById('search-modal-input-id') as HTMLInputElement | null;
+
+  const showUdsSearchModal = () => {
+    const modal = getSearchModal();
+    if (!modal) {
+      return;
+    }
+
+    modal.classList.remove('visually-hidden');
+
+    const input = getSearchInput();
+    const closeButton = modal.querySelector<HTMLButtonElement>('.search-modal__close-button');
+    const hiddenLastFocusable = modal.querySelector<HTMLElement>('.search-modal__hidden-last-focusable');
+
+    input?.focus();
+
+    if (closeButton) {
+      closeButton.tabIndex = 0;
+    }
+
+    if (hiddenLastFocusable) {
+      hiddenLastFocusable.tabIndex = 0;
+    }
+  };
+
   const ensureResultsContainer = () => {
-    const modal = document.querySelector('#search-modal .search-modal');
+    const modal = document.querySelector<HTMLElement>('#search-modal .search-modal');
     if (!modal) {
       return null;
     }
@@ -153,9 +185,21 @@ const currentPath = Astro.url.pathname;
       container = document.createElement('div');
       container.id = 'ugrc-search-results';
       container.className = 'ugrc-search-results';
-      modal.appendChild(container);
+      const form = modal.querySelector('.search-modal__form');
+      if (form?.parentElement === modal) {
+        form.insertAdjacentElement('afterend', container);
+      } else {
+        modal.appendChild(container);
+      }
     }
     return container;
+  };
+
+  const clearSearchResults = () => {
+    const container = ensureResultsContainer();
+    if (container) {
+      container.innerHTML = '';
+    }
   };
 
   const escapeHtml = (value: string) =>
@@ -166,37 +210,70 @@ const currentPath = Astro.url.pathname;
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#39;');
 
-  const renderSearchResults = async (phrase: string) => {
+  const escapeExcerpt = (value: string) => escapeHtml(value).replace(/&lt;(\/?mark)&gt;/g, '<$1>');
+
+  const renderSearchResults = async (phrase: string, options: { reopenModal?: boolean } = {}) => {
+    const token = ++activeSearchToken;
+    const trimmed = (phrase ?? '').trim();
+
+    if (options.reopenModal) {
+      showUdsSearchModal();
+    }
+
+    const input = getSearchInput();
+    if (input && input.value !== phrase) {
+      input.value = phrase;
+    }
+
     const container = ensureResultsContainer();
     if (!container) {
       return;
     }
-    const trimmed = (phrase ?? '').trim();
+
     if (!trimmed) {
       container.innerHTML = '';
       return;
     }
-    container.innerHTML = '<p class="ugrc-search-results__status">Searching…</p>';
+    if (trimmed.length < MIN_SEARCH_LENGTH) {
+      container.innerHTML = `<p class="ugrc-search-results__status" role="status">Type at least ${MIN_SEARCH_LENGTH} characters.</p>`;
+      return;
+    }
+
+    container.innerHTML = '<p class="ugrc-search-results__status" role="status">Searching…</p>';
     try {
       const pagefind = await loadPagefind();
-      const result = await pagefind.search(trimmed);
-      if (!result || !result.results || result.results.length === 0) {
-        container.innerHTML = '<p class="ugrc-search-results__status">No results found.</p>';
+      if (token !== activeSearchToken) {
         return;
       }
+
+      const result = await pagefind.search(trimmed);
+      if (token !== activeSearchToken) {
+        return;
+      }
+
+      if (!result || !result.results || result.results.length === 0) {
+        container.innerHTML = '<p class="ugrc-search-results__status" role="status">No results found.</p>';
+        return;
+      }
+
       const topResults = await Promise.all(result.results.slice(0, 10).map((r) => r.data()));
+      if (token !== activeSearchToken) {
+        return;
+      }
+
       container.innerHTML = `
-        <ul class="ugrc-search-results__list">
+        <ul class="ugrc-search-results__list" aria-label="Search results">
           ${topResults
             .map((data) => {
               const href = escapeHtml(data.url);
               const title = escapeHtml(data.meta?.title ?? data.url);
-              // Pagefind returns excerpts with <mark> tags already; allow those through.
-              const excerpt = data.excerpt ?? '';
+              const excerpt = data.excerpt ? escapeExcerpt(data.excerpt) : '';
               return `
                 <li class="ugrc-search-results__item">
-                  <a class="ugrc-search-results__link" href="${href}">${title}</a>
-                  <p class="ugrc-search-results__excerpt">${excerpt}</p>
+                  <a class="ugrc-search-results__link" href="${href}">
+                    <span class="ugrc-search-results__title">${title}</span>
+                    ${excerpt ? `<p class="ugrc-search-results__excerpt">${excerpt}</p>` : ''}
+                  </a>
                 </li>
               `;
             })
@@ -204,9 +281,63 @@ const currentPath = Astro.url.pathname;
         </ul>
       `;
     } catch (error) {
+      if (token !== activeSearchToken) {
+        return;
+      }
+
       console.error('Pagefind search failed', error);
-      container.innerHTML = '<p class="ugrc-search-results__status">Search is unavailable.</p>';
+      container.innerHTML = '<p class="ugrc-search-results__status" role="status">Search is unavailable.</p>';
     }
+  };
+
+  const bindSearchInput = () => {
+    const input = getSearchInput();
+    if (!input) {
+      return false;
+    }
+    if (input.dataset.ugrcSearchBound === 'true') {
+      return true;
+    }
+
+    input.dataset.ugrcSearchBound = 'true';
+
+    input.addEventListener('focus', () => {
+      if (!input.value.trim()) {
+        activeSearchToken += 1;
+        clearSearchResults();
+      }
+    });
+
+    input.addEventListener('input', () => {
+      if (searchDebounceId !== null) {
+        window.clearTimeout(searchDebounceId);
+        searchDebounceId = null;
+      }
+
+      const query = input.value;
+      if (!query.trim()) {
+        activeSearchToken += 1;
+        clearSearchResults();
+        return;
+      }
+
+      searchDebounceId = window.setTimeout(() => {
+        searchDebounceId = null;
+        void renderSearchResults(query);
+      }, SEARCH_DEBOUNCE_MS);
+    });
+
+    return true;
+  };
+
+  const bindSearchInputWhenReady = (attempt = 0) => {
+    if (bindSearchInput() || attempt >= 30) {
+      return;
+    }
+
+    window.requestAnimationFrame(() => {
+      bindSearchInputWhenReady(attempt + 1);
+    });
   };
 
   setUtahHeaderSettings({
@@ -225,7 +356,8 @@ const currentPath = Astro.url.pathname;
     },
     utahId: true,
     onSearch: (phrase: string) => {
-      void renderSearchResults(phrase);
+      // this is required to handle when the user hits "Enter" in the search input, which triggers a form submit instead of an input event. In that case, we want to immediately render results without waiting for the debounce.
+      void renderSearchResults(phrase, { reopenModal: true });
     },
     footer: {
       showHorizontalRule: true,
@@ -234,37 +366,69 @@ const currentPath = Astro.url.pathname;
       },
     },
   });
+
+  bindSearchInputWhenReady();
 </script>
 
 <style is:global>
+  /* Keep the legacy submit affordance hidden; search is typeahead-driven. */
+  .utah-design-system .search-modal__button-wrapper,
+  .utah-design-system .search-modal__button {
+    display: none !important;
+  }
+
   /* Pagefind results injected into the UDS search modal */
   .ugrc-search-results {
-    margin-top: var(--spacing-l, 1.5rem);
-    max-width: 720px;
-    width: 100%;
+    position: fixed;
+    top: calc(40vh + 4.75rem);
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(720px, calc(100vw - 2rem));
+    max-height: calc(60vh - 6rem);
+    overflow: auto;
+    overscroll-behavior: contain;
+    padding: 0 0.25rem 0.25rem;
+    z-index: 4010;
   }
   .ugrc-search-results__list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
     display: flex;
     flex-direction: column;
     gap: var(--spacing, 1rem);
   }
   .ugrc-search-results__item {
+    margin: 0;
+  }
+  .ugrc-search-results__item > .ugrc-search-results__link {
+    display: block;
     padding: var(--spacing-s, 0.75rem) var(--spacing, 1rem);
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.75);
-  }
-  .ugrc-search-results__link {
-    font-weight: 600;
+    background: rgba(255, 255, 255, 0.96) !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
     color: var(--primary-color, #004f80);
     text-decoration: none;
+    transition:
+      box-shadow 120ms ease,
+      transform 120ms ease,
+      border-color 120ms ease;
   }
-  .ugrc-search-results__link:hover,
-  .ugrc-search-results__link:focus {
-    text-decoration: underline;
+  .ugrc-search-results__title {
+    display: block;
+    font-weight: 600;
+  }
+  .utah-design-system .ugrc-search-results__item > .ugrc-search-results__link:hover,
+  .utah-design-system .ugrc-search-results__item > .ugrc-search-results__link:focus {
+    text-decoration: none;
+    border-color: rgba(0, 79, 128, 0.35);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18) !important;
+    transform: translateY(-1px);
+  }
+  .ugrc-search-results__link:focus-visible {
+    outline: 3px solid rgba(0, 79, 128, 0.28);
+    outline-offset: 2px;
   }
   .ugrc-search-results__excerpt {
     margin: 0.25rem 0 0;
@@ -273,6 +437,11 @@ const currentPath = Astro.url.pathname;
   }
   .ugrc-search-results__status {
     margin: 0;
+    padding: var(--spacing-s, 0.75rem) var(--spacing, 1rem);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
     font-style: italic;
     color: rgba(0, 0, 0, 0.72);
   }
@@ -282,6 +451,12 @@ const currentPath = Astro.url.pathname;
   }
 
   @media screen and (max-width: 445px) {
+    .ugrc-search-results {
+      top: calc(40vh + 6.5rem);
+      width: calc(100vw - 1rem);
+      max-height: calc(60vh - 7rem);
+    }
+
     .utah-design-system .utds-title-wrapper__title {
       font-size: 1.7rem !important;
       line-height: 1 !important;
