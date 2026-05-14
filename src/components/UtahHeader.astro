@@ -33,8 +33,7 @@ const currentPath = Astro.url.pathname;
 </div>
 
 <script>
-  import { PagefindUI } from '@pagefind/default-ui';
-  import '@pagefind/default-ui/css/ui.css';
+  import type { PagefindUI } from '@pagefind/default-ui';
   import { setUtahHeaderSettings } from '@utahdts/utah-design-system-header';
   import '@utahdts/utah-design-system-header/css';
 
@@ -141,8 +140,8 @@ const currentPath = Astro.url.pathname;
 
   const PAGEFIND_DIALOG_ID = 'ugrc-pagefind-search';
   const PAGEFIND_CONTAINER_ID = 'ugrc-pagefind-ui';
-
   let pagefindUi: PagefindUI | null = null;
+  let pagefindUiPromise: Promise<PagefindUI | null> | null = null;
   let lastSearchTrigger: HTMLElement | null = null;
 
   const getUdsSearchModal = () => document.getElementById('search-modal');
@@ -176,9 +175,13 @@ const currentPath = Astro.url.pathname;
     getUdsSearchModal()?.classList.add('visually-hidden');
   };
 
-  const ensurePagefindUi = () => {
+  const ensurePagefindUi = async () => {
     if (pagefindUi) {
       return pagefindUi;
+    }
+
+    if (pagefindUiPromise) {
+      return pagefindUiPromise;
     }
 
     const container = getPagefindContainer();
@@ -186,20 +189,31 @@ const currentPath = Astro.url.pathname;
       return null;
     }
 
-    pagefindUi = new PagefindUI({
-      element: container,
-      bundlePath: '/pagefind/',
-      autofocus: true,
-      debounceTimeoutMs: 250,
-      excerptLength: 24,
-      focusOnSlash: false,
-      showImages: false,
-    });
+    pagefindUiPromise = Promise.all([import('@pagefind/default-ui'), import('@pagefind/default-ui/css/ui.css')])
+      .then(([pagefindModule]) => {
+        pagefindUi = new pagefindModule.PagefindUI({
+          element: container,
+          bundlePath: '/pagefind/',
+          autofocus: true,
+          debounceTimeoutMs: 250,
+          excerptLength: 24,
+          focusOnSlash: false,
+          showImages: false,
+        });
 
-    return pagefindUi;
+        return pagefindUi;
+      })
+      .catch((error) => {
+        pagefindUiPromise = null;
+        console.error('Unable to load site search', error);
+
+        return null;
+      });
+
+    return pagefindUiPromise;
   };
 
-  const openPagefindDialog = (trigger?: HTMLElement | null) => {
+  const openPagefindDialog = async (trigger?: HTMLElement | null) => {
     const dialog = getPagefindDialog();
     if (!dialog) {
       return;
@@ -207,12 +221,13 @@ const currentPath = Astro.url.pathname;
 
     lastSearchTrigger = trigger ?? (document.activeElement instanceof HTMLElement ? document.activeElement : null);
 
-    ensurePagefindUi();
     hideUdsSearchModal();
 
     dialog.hidden = false;
     dialog.setAttribute('aria-hidden', 'false');
     document.body.classList.add('ugrc-pagefind-search-open');
+
+    await ensurePagefindUi();
 
     window.requestAnimationFrame(() => {
       getPagefindInput()?.focus();
@@ -273,7 +288,7 @@ const currentPath = Astro.url.pathname;
         return;
       }
 
-      openPagefindDialog();
+      void openPagefindDialog();
     });
 
     return true;
@@ -303,7 +318,7 @@ const currentPath = Astro.url.pathname;
           event.preventDefault();
           event.stopImmediatePropagation();
           hideUdsSearchModal();
-          openPagefindDialog(button);
+          void openPagefindDialog(button);
         },
         { capture: true },
       );
@@ -333,13 +348,14 @@ const currentPath = Astro.url.pathname;
     size: 'MEDIUM',
     skipLinkUrl: '#main-content',
     logo: {
-      imageUrl: '/images/ugrc-logo.svg',
+      htmlString:
+        '<img src="/images/ugrc-logo.svg" id="design-system-logo" width="2169" height="577" decoding="async">',
     },
     mainMenu: {
       title: `${fullTitle} Main Menu`,
       menuItems,
     },
-    utahId: true,
+    utahId: false,
     // UDS only renders the search icon when onSearch is truthy.
     // We override the rendered button click after mount to open Pagefind's default UI instead.
     onSearch: () => {},
