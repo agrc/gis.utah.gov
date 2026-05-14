@@ -34,9 +34,9 @@ const currentPath = Astro.url.pathname;
 
 <script>
   import { PagefindUI } from '@pagefind/default-ui';
-import '@pagefind/default-ui/css/ui.css';
-import { setUtahHeaderSettings } from '@utahdts/utah-design-system-header';
-import '@utahdts/utah-design-system-header/css';
+  import '@pagefind/default-ui/css/ui.css';
+  import { setUtahHeaderSettings } from '@utahdts/utah-design-system-header';
+  import '@utahdts/utah-design-system-header/css';
 
   type MenuItem = {
     title: string;
@@ -259,7 +259,8 @@ import '@utahdts/utah-design-system-header/css';
         return;
       }
 
-      const isSearchShortcut = (event.metaKey || event.ctrlKey) && !event.shiftKey && !event.altKey && event.key.toLowerCase() === 'k';
+      const isSearchShortcut =
+        (event.metaKey || event.ctrlKey) && !event.shiftKey && !event.altKey && event.key.toLowerCase() === 'k';
 
       if (!isSearchShortcut || isEditableTarget(event.target)) {
         return;
@@ -326,7 +327,7 @@ import '@utahdts/utah-design-system-header/css';
 
   setUtahHeaderSettings({
     applicationType: 'static site',
-    title: fullTitle,
+    title: '',
     titleUrl: '/',
     showTitle: true,
     size: 'MEDIUM',
