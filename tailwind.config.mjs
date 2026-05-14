@@ -8,11 +8,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#4d2a54',
-        'primary-950': '#36163c',
-        secondary: '#33505d',
-        'secondary-200': '#385966',
-        accent: '#eaca00',
+        primary: '#071d49',
+        'primary-950': '#071d49',
+        secondary: '#093692',
+        'secondary-200': '#c8cffe',
+        accent: '#81d0f0',
       },
       gridTemplateColumns: {
         150: '150px minmax(0, 1fr)',
