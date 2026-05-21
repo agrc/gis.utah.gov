@@ -225,6 +225,113 @@ In line with the text where you want the contact to appear, include this line of
 
 The contactKey should match the key found in the typescript file.
 
+## Adding a new data page
+
+SGID product data pages live under `src/pages/products/sgid/<category>/`, where `<category>` is the kebab-case name of one of the `SgidCategory` enum values defined in `src/types/types.ts` (for example `energy`, `society`, `elevation`).
+
+### 1. Create the page file
+
+Copy the annotated template at `src/pages/products/sgid/example/_normal-data-page.astro` into the appropriate category folder and rename it using kebab-case to match the dataset (for example `src/pages/products/sgid/energy/coal.astro`).
+
+> [!NOTE]
+> Files whose names begin with `_` are excluded from the auto-generated category index, so the `_normal-data-page.astro` template is never published.
+
+### 2. Set the `metadata` export
+
+Every data page must export a `metadata` constant of type `IMetadata`. The `[category].astro` route reads this export to auto-populate the category index page, so it must be accurate.
+
+```astro
+---
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
+
+export const metadata: IMetadata = {
+  pageTitle: 'Utah Coal Deposits',           // Must match the ArcGIS Online / Hub item title — this value is used as the key into downloadMetadata.ts and is cross-checked by the SGID Index validator
+  pageDescription: `Areas of coal deposits in Utah as defined in 1988.`,
+  stewards: ['UGRC'],                        // One or more data steward abbreviations
+  type: ProductType.POLYGON,                 // ProductType enum: POINT | POLYLINE | POLYGON | RASTER | TABLE
+  category: SgidCategory.ENERGY,             // Primary SgidCategory enum value
+  // secondaryCategory: SgidCategory.ENVIRONMENT, // optional — appears in a second category index
+};
+---
+```
+
+### 3. Assemble the `page` object and render with `DataPage`
+
+Spread `metadata` into an `IPageMetadata` object to add runtime-only fields, then pass the whole object to the `DataPage` layout:
+
+```astro
+---
+import Layout from '@layouts/DataPage.astro';
+import { dataPages } from '@data/downloadMetadata';
+
+const page: IPageMetadata = {
+  ...metadata,
+  updateHistory: ['1988'],   // Newest entry first; index 0 is shown under the page title
+  hub: {
+    // Spreads the Hub item ID, feature service details, and Open SGID table name
+    // from downloadMetadata.ts into the page object. The key must equal metadata.pageTitle.
+    ...dataPages[metadata.pageTitle],
+  },
+};
+---
+
+<Layout {...page} subTitle={page.updateHistory[0]}>
+  <Metadata slot="metadata" {...page} />
+  …
+</Layout>
+```
+
+### 4. Wire downloads in `downloadMetadata.ts`
+
+Add an entry to `src/data/downloadMetadata.ts` whose **key exactly matches `metadata.pageTitle`** (and the Hub item title in ArcGIS Online):
+
+```ts
+'Utah Coal Deposits': {
+  itemId: '<ArcGIS Online item GUID>',
+  name: 'Utah Coal Deposits',
+  featureServiceId: 'CoalDeposits',   // Name of the feature service at services1.arcgis.com
+  openSgid: 'energy.coal_deposits',   // schema.table_name in the Open SGID (omit or set undefined if not in Open SGID)
+  layerId: 0,                          // Usually 0; verify against the feature service endpoint
+},
+```
+
+The SGID Index validation script checks that values in the Google Sheet match this file, so keep them in sync.
+
+### 5. Build the page body
+
+Use the named slots provided by `DataPage`:
+
+| Slot | Component | Purpose |
+|------|-----------|---------|
+| `metadata` | `<Metadata>` | Renders the sidebar card with type, stewards, and category |
+| `summary` | `<Fragment>` | 1–2 paragraph intro visible above the fold |
+| `downloads` | `<Section>` + `<HubDownloads>` or `<DirectDownloads>` | Download links |
+| `description` | `<Fragment>` | Extended description, schema notes, and contacts |
+| `update-history` | `<UpdateHistory>` | Changelog rendered from `page.updateHistory` |
+| `disclaimer` | `<Disclaimer>` | Dataset-specific legal disclaimer (omit for the default) |
+| `more-resources` | `<Section>` + `<GridForMoreResources>` | Related external links |
+| `you-might-also-like` | `<Section>` + `<GridForYouMightLike>` | Links to sibling pages |
+
+For contact information, import `<Contacts>` and place it inside the `description` slot (see `src/pages/products/sgid/elevation/500-foot-contours.astro` for an example). Contact keys are defined in `src/data/contacts.ts`.
+
+If the dataset has an associated web application, add the optional `application` property to `page` — this renders a _"See the data in action"_ button under the summary.
+
+### 6. Category index auto-discovery
+
+No manual registration is needed. `src/pages/products/sgid/[category].astro` uses `import.meta.glob` to scan every `.astro` file under `src/pages/products/sgid/` and groups them by `metadata.category` (and `metadata.secondaryCategory` when present). As long as `metadata` is exported correctly and the file does **not** start with `_`, it will appear automatically in the category index the next time the site is built.
+
+### 7. Validate your changes
+
+After adding the page and its `downloadMetadata.ts` entry, run the following to check for issues before opening a PR:
+
+- `npm run ts-check` — verifies TypeScript types across the project
+- `npm test` — runs the Vitest test suite
+- `npm start` — starts the local dev server so you can preview the page at `http://localhost:4321/products/sgid/<category>/<page-slug>/`
+- Confirm the new page appears on the category index at `http://localhost:4321/products/sgid/<category>/`
+
+If the dataset is referenced in the [SGID Index Google Sheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1024261148), ensure the `productPage` column points to the new page path. Also ensure the `hubName` value in the sheet matches `metadata.pageTitle` exactly so the nightly validation script does not flag a mismatch.
+
 ### SGID Index Validation
 
 The data that powers the [SGID Index search page](https://gis.utah.gov/data/sgid-index/) comes from a [Google Sheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1024261148). Fresh data is scraped from the sheet each time the website is built in Netlify.
