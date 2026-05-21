@@ -22,8 +22,8 @@ import Section from '@components/page/Section.astro';
 import { dataPages } from '@data/downloadMetadata';
 
 export const metadata: IMetadata = {
-  pageTitle: 'Utah Publicly Owned Parcels',
-  pageDescription: 'Parcel boundaries of publicly owned parcels in Utah.',
+  pageTitle: 'Utah Government Owned Parcels',
+  pageDescription: 'Parcel boundaries of government owned parcels in Utah.',
   stewards: ['UGRC', 'Local government'],
   type: ProductType.POLYGON,
   category: SgidCategory.CADASTRE,
@@ -52,7 +52,7 @@ const page: IPageMetadata = {
   <Fragment slot="summary">
     <p>
       This dataset contains geographic information system (GIS) mapping data representing parcel boundaries 
-      of Publicly Owned Parcels (POP) in the State of Utah.
+      of Government Owned Parcels (GOP) in the State of Utah.
 
     </p>
   </Fragment>
@@ -74,7 +74,7 @@ const page: IPageMetadata = {
       government-owned property parcels in internet-accessible, searchable, and map format.
     </CardForStatute>
 
-    <h4>POP Parcel Attributes</h4>
+    <h4>Government Owned Parcel Attributes</h4>
     <p>
       Parcel polygons contain attributes unique to each parcel such as 
       a unique parcel number <code>Parcel ID</code> & <code>Account Number</code>, 
@@ -84,9 +84,9 @@ const page: IPageMetadata = {
     </p>
 
     <h4>Updates</h4>
-    <p>POP parcels are updated annually or when new county data is provided.</p>
+    <p>The Government Owned Parcels are updated annually or when new county data is provided.</p>
 
-    <Contacts contactKey="parcels" subject="Utah Parcels" />
+    <Contacts contactKey="parcels" subject="Government Owned Parcels" />
   </Fragment>
 
   <Disclaimer slot="disclaimer">
