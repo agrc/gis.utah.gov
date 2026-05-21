@@ -1,0 +1,39 @@
+---
+title: 'Updated Hillshade Basemap Now Available'
+author: Jake Adams
+date: '2026-05-21T20:00:00.000Z'
+category: SGID Updates
+cover_image: /src/images/pillar-blog/2026-05-21-updated-hillshade-basemap/cover.png
+cover_image_alt: A skyshade-enhanced hillshade of the Island in the Sky, Canyonlands National Park
+---
+
+import weber from '/src/images/pillar-blog/2026-05-21-updated-hillshade-basemap/weber.png';
+import cover from ' /src/images/pillar-blog/2026-05-21-updated-hillshade-basemap/cover.png';
+
+import { Image } from 'astro:assets';
+
+Have you ever wanted to use our awesome skyshade/hillshade in your own maps? Now you can!
+
+<Image
+  src={cover}
+  alt="A skyshade-enhanced hillshade of the Island in the Sky, Canyonlands National Park"
+  loading="eager"
+/>
+
+## A long-awaited update to the hillshade Basemap
+
+For years we've offered up a basic multi-directional hillshade service in our [Discover basemap and imagery services](/products/discover). This was built from our old [5m auto-correlated DEMs](/products/sgid/elevation/auto-correlated-dem) and reflected all of the artifacts inherent in that data.
+
+[Now that we've got](/blog/2026-03-04-new-10m-dem) 10m DEMs that reflect the statewide data collected as part of the USGS' 3DEP lidar project, we've finally updated this service in Discover with new, clean, high-resolution data.
+
+## Hill and sky
+
+Our updated hillshade service blends two different DEM derivative products. The first is a hillshade created through `gdal`'s CLI with the `combined` option, which gives a good looking but traditional hillshade where each raster cell's value is still only determined by its own slope and aspect.
+
+The second product is where the magic comes in: an [implementation](https://wanderingcartographer.wordpress.com/2020/05/08/shaded-relief-using-skymodels-courtesy-of-raster-chunk-processing/) of [Kennelly and Stewart's skyshade algorithm](https://pure.psu.edu/en/publications/a-uniform-sky-illumination-model-to-enhance-shading-of-terrain-an/) that takes into account whether each raster cell would be in the shadow of adjacent terrain. This changes the hillshade from a glorified directional slope raster to a much more realistic depiction of tall peaks and deep canyons.
+
+<Image src={weber} alt="A skyshade-enhanced hillshade of the mouth of Weber Canyon" loading="lazy" />
+
+## I want it!
+
+How do you get it? Simple, just sign up for our [Discover basemap and imagery services](/products/discover). The hillshade service is available to both licensed and general access users. Anyone can use it as a backdrop for making amazing maps.
