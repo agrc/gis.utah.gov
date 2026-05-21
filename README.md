@@ -321,14 +321,9 @@ If the dataset has an associated web application, add the optional `application`
 
 No manual registration is needed. `src/pages/products/sgid/[category].astro` uses `import.meta.glob` to scan every `.astro` file under `src/pages/products/sgid/` and groups them by `metadata.category` (and `metadata.secondaryCategory` when present). As long as `metadata` is exported correctly and the file does **not** start with `_`, it will appear automatically in the category index the next time the site is built.
 
-### 7. Validate your changes
+### 7. Open a pull request
 
-After adding the page and its `downloadMetadata.ts` entry, run the following to check for issues before opening a PR:
-
-- `npm run ts-check` — verifies TypeScript types across the project
-- `npm test` — runs the Vitest test suite
-- `npm start` — starts the local dev server so you can preview the page at `http://localhost:4321/products/sgid/<category>/<page-slug>/`
-- Confirm the new page appears on the category index at `http://localhost:4321/products/sgid/<category>/`
+Once you have added the page file and the `downloadMetadata.ts` entry, open a pull request. CI will run TypeScript type checking and tests automatically.
 
 If the dataset is referenced in the [SGID Index Google Sheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1024261148), ensure the `productPage` column points to the new page path. Also ensure the `hubName` value in the sheet matches `metadata.pageTitle` exactly so the nightly validation script does not flag a mismatch.
 
