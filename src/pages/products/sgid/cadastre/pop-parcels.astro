@@ -24,7 +24,7 @@ import { dataPages } from '@data/downloadMetadata';
 export const metadata: IMetadata = {
   pageTitle: 'Utah Publicly Owned Parcels',
   pageDescription: 'Parcel boundaries of publicly owned lands in Utah.',
-  stewards: ['UGRC', 'Local governement'],
+  stewards: ['UGRC', 'Local government'],
   type: ProductType.POLYGON,
   category: SgidCategory.CADASTRE,
   secondaryCategory: SgidCategory.BOUNDARIES,
@@ -108,7 +108,7 @@ const page: IPageMetadata = {
   <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
     <GridForYouMightLike>
       <CardWithSmallLink title="Utah Parcels" href="/products/sgid/cadastre/parcels/"
-        >Utah Basic and Land Infrormation Record Parcels.
+        >Utah Basic and Land Information Record Parcels (LIR).
       </CardWithSmallLink>
       <CardWithSmallLink title="Utah Land Ownership" href="/products/sgid/cadastre/land-ownership/"
         >Land ownership status and areas of responsibility for the State of Utah surface lands.
