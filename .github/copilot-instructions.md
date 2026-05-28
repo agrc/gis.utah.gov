@@ -25,6 +25,12 @@ This is the **UGRC (Utah Geospatial Resource Center)** website at [gis.utah.gov]
 - Run `npm run format` (Prettier) before committing
 - Comment only code that genuinely needs clarification; avoid redundant comments
 
+### Styling
+
+- Shared UGRC color tokens for Utah Design System overrides are defined in `tailwind.config.mjs`
+- Tailwind emits the `.utah-design-system` CSS variable overrides, so update the shared tokens there instead of creating separate override files
+- Import `@utahdts/utah-design-system-header/css` before `src/styles/tailwind.css` so the generated overrides load after the UDS defaults
+
 ### Content
 
 Blog posts live in `src/content/blog/` as `.md` or `.mdx` files. Each post requires:
@@ -36,8 +42,8 @@ cover_image: (image reference)
 cover_image_alt: string
 date: YYYY-MM-DD
 title: string
-published: boolean  # optional, defaults to true
-tags: string[]      # optional
+published: boolean # optional, defaults to true
+tags: string[] # optional
 ```
 
 ### Pages
