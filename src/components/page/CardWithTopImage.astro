@@ -27,7 +27,7 @@ const { title, actionText = 'See more', actionUrl, class: className } = Astro.pr
       <slot />
     </p>
     <footer class="flex flex-row-reverse pt-4">
-      <ButtonLink href={actionUrl} decorate="arrow">
+      <ButtonLink href={actionUrl} decorate="arrow" color="secondary">
         {actionText}
       </ButtonLink>
     </footer>

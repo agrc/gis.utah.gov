@@ -10,6 +10,7 @@ import Qualtrics from '@components/Qualtrics.astro';
 import SocialMedia from '@components/SocialMedia.astro';
 import UtahHeader from '@components/UtahHeader.astro';
 
+import '@utahdts/utah-design-system-header/css';
 import '../styles/tailwind.css';
 
 export interface Props extends Omit<IStandardPageMetadata, 'section'> {}
@@ -22,7 +23,7 @@ const { pageTitle = 'UGRC', pillar, bannerHeading, pageDescription = SITE_DESCRI
   <head>
     <BaseHead title={`${SITE_TITLE} - ${pageTitle}`} description={pageDescription} image={image} />
   </head>
-  <body class="bg-white dark:bg-primary-950">
+  <body class="bg-white dark:bg-primary-dark">
     <UtahHeader />
     <Banner title={bannerHeading || pageTitle} pillar={pillar} />
     <main id="main-content">

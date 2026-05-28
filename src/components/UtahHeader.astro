@@ -35,7 +35,6 @@ const currentPath = Astro.url.pathname;
 <script>
   import type { PagefindUI } from '@pagefind/default-ui';
   import { setUtahHeaderSettings } from '@utahdts/utah-design-system-header';
-  import '@utahdts/utah-design-system-header/css';
 
   type MenuItem = {
     title: string;
@@ -348,8 +347,7 @@ const currentPath = Astro.url.pathname;
     size: 'MEDIUM',
     skipLinkUrl: '#main-content',
     logo: {
-      htmlString:
-        '<img src="/images/ugrc-logo.svg" id="design-system-logo" width="2169" height="577" decoding="async">',
+      imageUrl: '/images/ugrc-logo.png',
     },
     mainMenu: {
       title: `${fullTitle} Main Menu`,
