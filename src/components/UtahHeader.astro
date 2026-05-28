@@ -139,9 +139,23 @@ const currentPath = Astro.url.pathname;
 
   const PAGEFIND_DIALOG_ID = 'ugrc-pagefind-search';
   const PAGEFIND_CONTAINER_ID = 'ugrc-pagefind-ui';
+  const logoWidth = 410;
+  const logoHeight = 106;
   let pagefindUi: PagefindUI | null = null;
   let pagefindUiPromise: Promise<PagefindUI | null> | null = null;
   let lastSearchTrigger: HTMLElement | null = null;
+
+  const createLogoImage = () => {
+    const logo = document.createElement('img');
+
+    logo.src = '/images/ugrc-logo.png';
+    logo.id = 'design-system-logo';
+    logo.width = logoWidth;
+    logo.height = logoHeight;
+    logo.decoding = 'async';
+
+    return logo;
+  };
 
   const getUdsSearchModal = () => document.getElementById('search-modal');
 
@@ -347,7 +361,7 @@ const currentPath = Astro.url.pathname;
     size: 'MEDIUM',
     skipLinkUrl: '#main-content',
     logo: {
-      imageUrl: '/images/ugrc-logo.png',
+      element: createLogoImage,
     },
     mainMenu: {
       title: `${fullTitle} Main Menu`,
