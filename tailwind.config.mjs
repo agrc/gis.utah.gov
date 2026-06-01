@@ -2,21 +2,21 @@ const plugin = require('tailwindcss/plugin');
 const heroPatterns = require('tailwind-heropatterns');
 const colors = require('tailwindcss/colors');
 
-// ** secondary colors **
-// https://www.tints.dev/brown/52393B
+// main colors
+// primary
+const brown200 = '#C0B1A1';
 const brown = '#52393B';
-const brown200 = '#C0A8AA';
-const brown700 = '#352325';
+const brown700 = '#2C1E1B';
 
-// https://www.tints.dev/cream/E9DCC8
-const cream = '#E9DCC8';
-const cream200 = '#F5F0E9';
-const cream700 = '#897D68';
-
-// https://www.tints.dev/rust/A34818
+// secondary
+const rust200 = '#E37D49';
 const rust = '#A34818';
-const rust200 = '#FBAA95';
-const rust700 = '#652A0B';
+const rust700 = '#633D11';
+
+// accent
+const cream200 = '#F5F0E9';
+const cream = '#E9DCC8';
+const cream700 = '#897D68';
 
 const brandColors = {
   primary: {
