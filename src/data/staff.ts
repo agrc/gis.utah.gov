@@ -48,12 +48,12 @@ export const staff = [
     tags: ['SGID', 'AGOL', 'data management', 'Databases', 'roads'],
   },
   {
-    name: 'Jake Adams',
+    name: 'Alex Neville',
     team: 'Development Team',
-    phone: '385-499-0786',
-    email: 'jdadams@utah.gov',
-    x: '@gis_jake',
-    tags: ['Configurable Apps', 'Discover', 'Python', 'AGOL', 'ArcGIS Hub'],
+    phone: '',
+    email: 'acneville@utah.gov',
+    x: '',
+    tags: ['Python', 'JavaScript', 'React', 'ArcGIS', 'web', 'cloud'],
   },
   {
     name: 'Sean Fernandez',
