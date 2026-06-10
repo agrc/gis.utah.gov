@@ -2,48 +2,32 @@ const plugin = require('tailwindcss/plugin');
 const heroPatterns = require('tailwind-heropatterns');
 const colors = require('tailwindcss/colors');
 
-// main colors
-// primary
-const brown200 = '#C0B1A1';
-const brown = '#52393B';
-const brown700 = '#2C1E1B';
-
-// secondary
-const rust200 = '#E37D49';
-const rust = '#A34818';
-const rust700 = '#633D11';
-
-// accent
-const cream200 = '#F5F0E9';
-const cream = '#E9DCC8';
-const cream700 = '#897D68';
-
 const brandColors = {
   primary: {
-    DEFAULT: brown,
-    dark: brown700,
-    light: brown200,
+    default: '#52393B',
+    dark: '#2C1E1B',
+    light: '#E9DCC8',
   },
   secondary: {
-    DEFAULT: rust,
-    dark: rust700,
-    light: rust200,
+    default: '#A34818',
+    dark: '#633D11',
+    light: '#E9C997',
   },
   accent: {
-    DEFAULT: cream,
-    dark: cream700,
-    light: cream200,
+    default: '#FF8C03',
+    dark: '#4C2A00',
+    light: '#FFE2BF',
   },
 };
 
 const sharedColorVariables = {
-  '--ugrc-color-primary': brandColors.primary.DEFAULT,
+  '--ugrc-color-primary': brandColors.primary.default,
   '--ugrc-color-primary-dark': brandColors.primary.dark,
   '--ugrc-color-primary-light': brandColors.primary.light,
-  '--ugrc-color-secondary': brandColors.secondary.DEFAULT,
+  '--ugrc-color-secondary': brandColors.secondary.default,
   '--ugrc-color-secondary-dark': brandColors.secondary.dark,
   '--ugrc-color-secondary-light': brandColors.secondary.light,
-  '--ugrc-color-accent': brandColors.accent.DEFAULT,
+  '--ugrc-color-accent': brandColors.accent.default,
   '--ugrc-color-accent-dark': brandColors.accent.dark,
   '--ugrc-color-accent-light': brandColors.accent.light,
 };
@@ -58,8 +42,8 @@ const udsColorOverrides = {
   '--accent-color': 'var(--ugrc-color-accent)',
   '--accent-color-dark': 'var(--ugrc-color-accent-dark)',
   '--accent-color-light': 'var(--ugrc-color-accent-light)',
-  '--header-primary-color': 'var(--ugrc-color-primary)',
-  '--header-primary-color-dark': 'var(--ugrc-color-primary-dark)',
+  '--header-primary-color': 'var(--ugrc-color-secondary)',
+  '--header-primary-color-dark': 'var(--ugrc-color-secondary-dark)',
   '--link-color': 'var(--ugrc-color-primary)',
   '--link-color-dark': 'var(--ugrc-color-primary-dark)',
 };
@@ -70,13 +54,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: brandColors.primary.DEFAULT,
+        primary: brandColors.primary.default,
         'primary-dark': brandColors.primary.dark,
         'primary-light': brandColors.primary.light,
-        secondary: brandColors.secondary.DEFAULT,
+        secondary: brandColors.secondary.default,
         'secondary-dark': brandColors.secondary.dark,
         'secondary-light': brandColors.secondary.light,
-        accent: brandColors.accent.DEFAULT,
+        accent: brandColors.accent.default,
         'accent-dark': brandColors.accent.dark,
         'accent-light': brandColors.accent.light,
       },
