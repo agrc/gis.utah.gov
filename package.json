@@ -4,7 +4,7 @@
   "version": "7.0.0",
   "scripts": {
     "astro": "astro",
-    "build": "npm run ts-check && npm run generate-license-file && astro build",
+    "build": "pnpm ts-check && pnpm generate-license-file && astro build",
     "dev": "astro dev",
     "format": "prettier \"src/**/*.{astro,js,jsx,ts,json,mjs,md,mdx}\" --write",
     "generate-license-file": "generate-license-file --config glf.json",
@@ -45,6 +45,7 @@
     "astro": "^5.16.6",
     "astro-meta-tags": "^0.4.0",
     "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
     "fuse.js": "^7.1.0",
     "html-to-text": "^9.0.5",
     "lodash.capitalize": "^4.2.1",
@@ -79,6 +80,7 @@
     "pagefind": "^1.5.2",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
+    "sharp": "^0.34.5",
     "typescript": "^5.9.2",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^4.0.6"

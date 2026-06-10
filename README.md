@@ -24,20 +24,20 @@ License: [MIT](/LICENSE).
 1. Clone this repository
    `git clone https://github.com/agrc/gis.utah.gov.git`
 1. Install the dependencies
-   `npm install`
+  `pnpm install`
 1. Start the website
-   `npm start`
+  `pnpm start`
 1. browse to `localhost:4321`
 
 ### Search during local development
 
-Site search is powered by [Pagefind](https://pagefind.app/), whose index is generated at the end of `astro build`. The dev server cannot produce the index on its own, so search returns a 404 in `npm start` until an index exists.
+Site search is powered by [Pagefind](https://pagefind.app/), whose index is generated at the end of `astro build`. The dev server cannot produce the index on its own, so search returns a 404 in `pnpm start` until an index exists.
 
 To enable the search modal locally:
 
-1. Run `npm run build` once. The post-build hook writes the index to `dist/pagefind/` and mirrors it into `public/pagefind/` (gitignored) so the dev server can serve it.
-1. Run `npm start` as usual. The search modal now loads `/pagefind/pagefind.js` and returns results.
-1. Re-run `npm run build` whenever content changes if you need the local index refreshed.
+1. Run `pnpm build` once. The post-build hook writes the index to `dist/pagefind/` and mirrors it into `public/pagefind/` (gitignored) so the dev server can serve it.
+1. Run `pnpm start` as usual. The search modal now loads `/pagefind/pagefind.js` and returns results.
+1. Re-run `pnpm build` whenever content changes if you need the local index refreshed.
 
 ## Technology reference
 

@@ -32,11 +32,11 @@ export default defineConfig({
       name: 'pagefind',
       hooks: {
         'astro:build:done': () => {
-          execSync('npx pagefind --site dist', {
+          execSync('pnpm exec pagefind --site dist', {
             stdio: [process.stdin, process.stdout, process.stderr],
           });
           // Mirror the generated index into public/pagefind so `astro dev` can
-          // serve it locally after a one-time `npm run build`. This folder is
+          // serve it locally after a one-time `pnpm build`. This folder is
           // gitignored; production deploys consume dist/pagefind directly.
           try {
             rmSync('public/pagefind', { recursive: true, force: true });
