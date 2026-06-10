@@ -65,16 +65,14 @@ jobs:
             src/data
             .github/SGID_INDEX_ISSUE_TEMPLATE.md
 
+      - name: 📦 Setup pnpm
+        uses: pnpm/action-setup@v6
+
       - name: ⎔ Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
           cache: pnpm
-
-      - name: 📦 Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 11
 
       - name: 📦 Install script dependencies
         run: pnpm install --frozen-lockfile

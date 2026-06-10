@@ -23,16 +23,14 @@ jobs:
         with:
           show-progress: false
 
+      - name: 📦 Setup pnpm
+        uses: pnpm/action-setup@v6
+
       - name: ⎔ Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
           cache: pnpm
-
-      - name: 📦 Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 11
 
       - name: 🏗️ Build Site
         working-directory: ./
