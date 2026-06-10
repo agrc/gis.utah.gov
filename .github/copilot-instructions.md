@@ -8,7 +8,7 @@ This is the **UGRC (Utah Geospatial Resource Center)** website at [gis.utah.gov]
 - **Content**: Astro Content Collections — blog posts in `src/content/blog/`, podcast episodes in `src/pages/collaboration/knowledge/podcast/`
 - **Components**: Astro components in `src/components/`, React components in `src/components/react/`
 - **Styling**: Tailwind CSS utility classes; base styles in `src/styles/`
-- **Testing**: Vitest (`npm test`)
+- **Testing**: Vitest (`pnpm test`)
 - **Deployment**: Netlify
 
 ## Project Conventions
@@ -21,9 +21,12 @@ This is the **UGRC (Utah Geospatial Resource Center)** website at [gis.utah.gov]
 
 ### Code Style
 
-- TypeScript is used throughout; run `npm run ts-check` to validate types
-- Run `npm run format` (Prettier) before committing
+- TypeScript is used throughout; run `pnpm ts-check` to validate types
+- Run `pnpm format` (Prettier) before committing
 - Comment only code that genuinely needs clarification; avoid redundant comments
+- This repo uses pnpm v11. Root and nested standalone package roots keep pnpm settings in a local `pnpm-workspace.yaml` file even when they are not part of a multi-package workspace.
+- `scripts/` and `migrations/` are separate pnpm projects with their own lockfiles and `pnpm-workspace.yaml` files; do not treat them as workspace members of the root site.
+- pnpm v11 build approvals and release-age policy are configured in `pnpm-workspace.yaml`, not in `package.json`.
 
 ### Styling
 
@@ -61,11 +64,11 @@ tags: string[] # optional
 ## Scripts
 
 ```bash
-npm start        # local dev server at http://localhost:4321/
-npm run build    # production build
-npm run format   # fix formatting
-npm run ts-check # TypeScript check
-npm test         # run Vitest tests
+pnpm start    # local dev server at http://localhost:4321/
+pnpm build    # production build
+pnpm format   # fix formatting
+pnpm ts-check # TypeScript check
+pnpm test     # run Vitest tests
 ```
 
 ## After Every Code Change
@@ -73,9 +76,9 @@ npm test         # run Vitest tests
 After making any code change, always run these three commands and validate that they do not return any errors. If they do, fix the errors before committing your code. This ensures that your code adheres to the project's formatting, type safety, and testing standards.
 
 ```bash
-npm run format   # fix formatting
-npm run ts-check # check for type errors
-npm test         # run tests
+pnpm format   # fix formatting
+pnpm ts-check # check for type errors
+pnpm test     # run tests
 ```
 
 ## Keeping These Instructions Up to Date

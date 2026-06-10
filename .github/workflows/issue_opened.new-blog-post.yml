@@ -44,11 +44,16 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
-          cache: npm
+          cache: pnpm
+
+      - name: 📦 Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
 
       - name: 📦 Install script dependencies
         working-directory: scripts
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       - name: 📝 Create Blog Post
         working-directory: scripts
@@ -56,10 +61,11 @@ jobs:
 
       - name: 📌 Create Pull Request
         uses: peter-evans/create-pull-request@v8
+        id: cpr
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'feat: create new blog post'
-          title: 'feat: create new blog post'
+          commit-message: "feat: create new blog post"
+          title: "feat: create new blog post"
           body: |
             This PR was automatically created by the "Issue opened (new blog)" workflow.
 
