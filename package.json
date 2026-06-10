@@ -22,6 +22,7 @@
       "prettier-plugin-tailwindcss"
     ]
   },
+  "packageManager": "pnpm@11.5.2",
   "dependencies": {
     "@anuragroy/tailwindcss-animate": "^1.0.6",
     "@astro-community/astro-embed-youtube": "^0.5.9",
