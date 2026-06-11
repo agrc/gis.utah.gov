@@ -2729,4 +2729,11 @@ export const dataPages: DownloadMetadata = {
     featureServiceId: 'Utah_High_Risk_WUI_Properties',
     oddHubName: 'utah-high-risk-wui-properties-1',
   },
+  'Utah Government Owned Parcels': {
+    itemId: '??',
+    name: 'Utah Government Owned Parcels',
+    featureServiceId: '??',
+    openSgid: '??',
+    layerId: 0
+  }
 };

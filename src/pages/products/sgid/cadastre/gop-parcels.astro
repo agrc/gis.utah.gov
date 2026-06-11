@@ -1,0 +1,123 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import Disclaimer from '@components/data/Disclaimer.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import CardForStatute from '@components/page/CardForStatute.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Contacts from '@components/page/Contacts.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  pageTitle: 'Utah Government Owned Parcels',
+  pageDescription: 'Parcel boundaries of government owned parcels in Utah.',
+  stewards: ['UGRC', 'Local government'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.CADASTRE,
+  secondaryCategory: SgidCategory.BOUNDARIES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://utah.maps.arcgis.com/apps/instant/sidebar/index.html?appid=061402feba6641f4b6a8fe5e8f5bf48b',
+  updateHistory: [
+    'This dataset was first made public by UGRC July 2026',
+  ],
+  hub: {
+    ...dataPages[metadata.pageTitle],
+  },
+};
+---
+
+<Layout {...page} subTitle={page.updateHistory[0]}>
+  <Metadata slot="metadata" {...page} />
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub} />
+  </Section>
+
+  <Fragment slot="summary">
+    <p>
+      This dataset contains geographic information system (GIS) mapping data representing parcel boundaries 
+      of Government Owned Parcels in the State of Utah.
+
+    </p>
+  </Fragment>
+
+  <Fragment slot="description">
+    <p>
+      A parcel boundary is the legally defined border that outlines the limits of a specific piece of real estate.
+      This data layer contains polygons created using <a href="/products/sgid/cadastre/parcels/">Utah Parcels</a> 
+      and tax roll records provided by county Assessors in Utah. 
+    </p>  
+
+    <CardForStatute
+      href="https://le.utah.gov/xcode/Title63A/Chapter16/63A-16-S506.html"
+      code="63A-16-506.(5)"
+      title="State Geographic Information Database"
+    >
+      The center shall, in coordination with the Governor's Office of Planning and
+      Budget and county assessors, annually compile a statewide GIS database of all
+      government-owned property parcels in internet-accessible, searchable, and map format.
+    </CardForStatute>
+
+    <h4>Government Owned Parcel Attributes</h4>
+    <p>
+      Parcel polygons contain attributes unique to each parcel such as 
+      a unique parcel number <code>Parcel ID</code> & <code>Account Number</code>, 
+      a governmental ownership grouping <code>Category</code>, 
+      an address for the parcel if available <code>Address</code>, <code>City</code>, <code>Zip Code</code></code>,
+      a name </code>Owner</code>,
+      and a size <code>Acres</code>, <code>GIS_Acres</code>.
+    </p>
+
+    <h4>Updates</h4>
+    <p>The Government Owned Parcels are updated annually or when new county data is provided.</p>
+
+    <Contacts contactKey="parcels" subject="Government Owned Parcels" />
+  </Fragment>
+
+  <Disclaimer slot="disclaimer">
+    <p>
+      There are no constraints or warranties with regard to the use of this dataset. Users are encouraged to attribute
+      content to: State of Utah, SGID.
+    </p>
+  </Disclaimer>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink
+        title="H.B. 433"
+        href="https://le.utah.gov/~2023/bills/static/HB0433.html"
+      >
+        2023 General Session - H.B. 433
+      </CardWithPopularLink>
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Utah Parcels" href="/products/sgid/cadastre/parcels/"
+        >Utah Basic and Land Information Record Parcels (LIR).
+      </CardWithSmallLink>
+      <CardWithSmallLink title="Utah Land Ownership" href="/products/sgid/cadastre/land-ownership/"
+        >Land ownership status and areas of responsibility for the State of Utah surface lands.
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
