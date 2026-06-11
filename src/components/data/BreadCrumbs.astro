@@ -12,7 +12,7 @@ interface Props {
   gradients?: string;
 }
 
-const { product, category, class: className, gradients = 'from-white dark:from-primary-950' } = Astro.props;
+const { product, category, class: className, gradients = 'from-white dark:from-primary-dark' } = Astro.props;
 ---
 
 <BreadCrumbChrome class={className} gradients={gradients}>

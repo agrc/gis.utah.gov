@@ -3,7 +3,7 @@ name: Pull Request (Redirects)
 on:
   pull_request:
     paths:
-      - 'public/_redirects'
+      - "public/_redirects"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
@@ -23,11 +23,14 @@ jobs:
         with:
           show-progress: false
 
+      - name: 📦 Setup pnpm
+        uses: pnpm/action-setup@v6
+
       - name: ⎔ Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
-          cache: npm
+          cache: pnpm
 
       - name: 🏗️ Build Site
         working-directory: ./
@@ -35,13 +38,12 @@ jobs:
           GOOGLE_PRIVATE_KEY: ${{ secrets.SA }}
           NETLIFY: 1
         run: |
-          npm install
-          npm run build
+          pnpm install --frozen-lockfile
+          pnpm build
 
-      - name: 📦 Install Script Dependencies
+      - name: 📦 Install script dependencies
         working-directory: ./scripts
-        run: |
-          npm install
+        run: pnpm install --frozen-lockfile
 
       - name: ✔ Validate redirects
         uses: gh640/command-result-action@v1

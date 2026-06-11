@@ -1,0 +1,10 @@
+minimumReleaseAge: 10080
+minimumReleaseAgeStrict: true
+minimumReleaseAgeExclude:
+  - '@ugrc/*'
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
+allowBuilds:
+  esbuild: true
+  sharp: true

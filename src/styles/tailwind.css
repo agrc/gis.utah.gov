@@ -21,10 +21,10 @@
     @apply font-semibold text-primary hover:bg-black/10 dark:text-accent dark:hover:bg-white/10;
   }
   h1 {
-    @apply text-3xl font-bold md:text-4xl;
+    @apply font-ut text-3xl font-bold md:text-4xl;
   }
   h2 {
-    @apply text-2xl font-bold md:text-3xl;
+    @apply font-ut text-2xl font-bold md:text-3xl;
   }
   h3 {
     @apply text-xl font-bold md:text-2xl;
@@ -41,12 +41,8 @@
   kbd {
     @apply mx-px rounded-md border bg-white px-2 py-0.5 text-sm font-medium shadow-sm drop-shadow-md dark:text-zinc-700;
   }
-  @font-face {
-    font-family: 'SourceSansPro-Regular';
-    src: url('/fonts/SourceSans3-Regular.otf.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  .font-ut {
+    font-family: var(--ut-industry-font-family);
   }
 }
 @tailwind components;

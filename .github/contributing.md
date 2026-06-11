@@ -51,8 +51,8 @@ for getting things done and landing your contribution.
 6. Run the following to install the dependencies and start a local preview of your work.
 
    ```bash
-   npm ci # installs this project's dependencies
-   npm start # starts a preview of your local changes
+   pnpm install --frozen-lockfile # installs this project's dependencies
+   pnpm start # starts a preview of your local changes
    ```
 
 7. Perform your changes. In case you're unfamiliar with the structure of this repository, we recommend that you review the [Collaborator Guide](.github/collaborating.md).
@@ -64,10 +64,10 @@ for getting things done and landing your contribution.
    git rebase upstream/main
    ```
 
-9. Run `npm run format` to confirm that linting and formatting are passing.
+9. Run `pnpm format` to confirm that linting and formatting are passing.
 
    ```bash
-   npm run format
+   pnpm format
    ```
 
 10. Once you're happy with your changes, add and commit them to your branch, then push the branch to your fork.
@@ -91,18 +91,18 @@ This repository contains several scripts and commands for performing numerous ta
 <details>
   <summary>Commands for Running & Building the Website</summary>
 
-- `npm start` runs Astro's Local Development Server, listening by default on `http://localhost:4321/`.
-- `npm run build` builds the Application on Production mode. The output is by default within `dist` folder.
+- `pnpm start` runs Astro's Local Development Server, listening by default on `http://localhost:4321/`.
+- `pnpm build` builds the Application on Production mode. The output is by default within `dist` folder.
   - This is used for the Netlify Deployments (Preview & Production)
-- `npm run preview` runs Astro's Local Server pointed at the `dist` folder.
+- `pnpm preview` runs Astro's Local Server pointed at the `dist` folder.
 
 </details>
 
 <details>
   <summary>Commands for Maintenance Tasks and Tests</summary>
 
-- `npm run ts-check` runs Astro's typescript check utility to look for any type issues.
-- `npm run format` formats and fixes the whole codebase
+- `pnpm ts-check` runs Astro's typescript check utility to look for any type issues.
+- `pnpm format` formats and fixes the whole codebase
 
 </details>
 

@@ -1,0 +1,452 @@
+---
+/**
+ * Utah Design System Header bootstrap.
+ *
+ * Calls setUtahHeaderSettings() on every page load. The UDS header self-mounts
+ * at the top of <body> and renders the Utah footer into the element targeted
+ * by `footer.domLocationTarget` (see #utah-footer-placeholder in Chrome.astro).
+ */
+const currentPath = Astro.url.pathname;
+---
+
+<div id="ugrc-pagefind-search" class="ugrc-pagefind-search" data-current-path={currentPath} hidden aria-hidden="true">
+  <div class="ugrc-pagefind-search__backdrop" data-close-pagefind-dialog></div>
+  <div
+    class="ugrc-pagefind-search__panel flex flex-col overflow-hidden rounded-2xl bg-white"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="ugrc-pagefind-search-title"
+  >
+    <div class="ugrc-pagefind-search__header m-0 flex items-center justify-between gap-4 px-5 py-4">
+      <h2 id="ugrc-pagefind-search-title" class="ugrc-pagefind-search__title m-0 text-slate-900">Search</h2>
+      <button
+        type="button"
+        class="ugrc-pagefind-search__close cursor-pointer rounded-lg bg-transparent px-3 py-2 font-semibold text-slate-900"
+        data-close-pagefind-dialog
+        aria-label="Close site search"
+      >
+        Close
+      </button>
+    </div>
+    <div id="ugrc-pagefind-ui" class="ugrc-pagefind-search__body overflow-auto p-5"></div>
+  </div>
+</div>
+
+<script>
+  import type { PagefindUI } from '@pagefind/default-ui';
+  import { setUtahHeaderSettings } from '@utahdts/utah-design-system-header';
+
+  type MenuItem = {
+    title: string;
+    actionUrl?: { url: string };
+    actionMenu?: MenuItem[];
+    isSelected?: boolean;
+    isDivider?: boolean;
+  };
+
+  const currentPath = document.getElementById('ugrc-pagefind-search')?.dataset.currentPath ?? window.location.pathname;
+  const fullTitle = 'Utah Geospatial Resource Center';
+  const shortTitle = 'UGRC';
+
+  const isActive = (slug: string) => {
+    if (slug === '/') {
+      return currentPath === '/';
+    }
+    return currentPath.toLowerCase().startsWith(slug);
+  };
+
+  const productsChildren: MenuItem[] = [
+    { title: 'SGID', actionUrl: { url: '/products/sgid/' }, isSelected: isActive('/products/sgid/') },
+    { title: 'Discover', actionUrl: { url: '/products/discover/' }, isSelected: isActive('/products/discover/') },
+    { title: 'TURN GPS', actionUrl: { url: '/products/turn/' }, isSelected: isActive('/products/turn/') },
+    { title: 'UGRC API', actionUrl: { url: '/products/api/' }, isSelected: isActive('/products/api/') },
+  ];
+
+  const solutionsChildren: MenuItem[] = [
+    {
+      title: 'Government employees',
+      actionUrl: { url: '/solutions/for-government/' },
+      isSelected: isActive('/solutions/for-government/'),
+    },
+    {
+      title: 'GIS users',
+      actionUrl: { url: '/solutions/for-gis-users/' },
+      isSelected: isActive('/solutions/for-gis-users/'),
+    },
+    {
+      title: 'Application developers',
+      actionUrl: { url: '/solutions/for-application-developers/' },
+      isSelected: isActive('/solutions/for-application-developers/'),
+    },
+    {
+      title: 'Surveyors',
+      actionUrl: { url: '/solutions/for-surveyors/' },
+      isSelected: isActive('/solutions/for-surveyors/'),
+    },
+    {
+      title: 'Students',
+      actionUrl: { url: '/solutions/for-students/' },
+      isSelected: isActive('/solutions/for-students/'),
+    },
+    { title: '--divider--', isDivider: true },
+    {
+      title: 'Spatial data management',
+      actionUrl: { url: '/solutions/spatial-data-management/' },
+      isSelected: isActive('/solutions/spatial-data-management/'),
+    },
+    {
+      title: 'Emergency response (911)',
+      actionUrl: { url: '/solutions/for-emergency-response/' },
+      isSelected: isActive('/solutions/for-emergency-response/'),
+    },
+    {
+      title: 'GIS strategy',
+      actionUrl: { url: '/solutions/gis-strategy/' },
+      isSelected: isActive('/solutions/gis-strategy/'),
+    },
+    {
+      title: 'Integrating GIS',
+      actionUrl: { url: '/solutions/gis-integration/' },
+      isSelected: isActive('/solutions/gis-integration/'),
+    },
+    {
+      title: 'High precision location',
+      actionUrl: { url: '/solutions/high-precision-location/' },
+      isSelected: isActive('/solutions/high-precision-location/'),
+    },
+  ];
+
+  const menuItems: MenuItem[] = [
+    { title: 'Home', actionUrl: { url: '/' }, isSelected: isActive('/') },
+    {
+      title: 'Products',
+      actionUrl: { url: '/products/' },
+      actionMenu: productsChildren,
+      isSelected: isActive('/products'),
+    },
+    {
+      title: 'Solutions',
+      actionUrl: { url: '/solutions/' },
+      actionMenu: solutionsChildren,
+      isSelected: isActive('/solutions'),
+    },
+    { title: 'Documentation', actionUrl: { url: '/documentation/' }, isSelected: isActive('/documentation') },
+    { title: 'Collaboration', actionUrl: { url: '/collaboration/' }, isSelected: isActive('/collaboration') },
+    { title: 'Blog', actionUrl: { url: '/blog/' }, isSelected: isActive('/blog') },
+    { title: 'About', actionUrl: { url: '/about/' }, isSelected: isActive('/about') },
+    { title: 'Contact', actionUrl: { url: '/contact/' }, isSelected: isActive('/contact') },
+  ];
+
+  const PAGEFIND_DIALOG_ID = 'ugrc-pagefind-search';
+  const PAGEFIND_CONTAINER_ID = 'ugrc-pagefind-ui';
+  const logoWidth = 410;
+  const logoHeight = 106;
+  let pagefindUi: PagefindUI | null = null;
+  let pagefindUiPromise: Promise<PagefindUI | null> | null = null;
+  let lastSearchTrigger: HTMLElement | null = null;
+
+  const createLogoImage = () => {
+    const logo = document.createElement('img');
+
+    logo.src = '/images/ugrc-logo.png';
+    logo.id = 'design-system-logo';
+    logo.width = logoWidth;
+    logo.height = logoHeight;
+    logo.decoding = 'async';
+
+    return logo;
+  };
+
+  const getUdsSearchModal = () => document.getElementById('search-modal');
+
+  const getPagefindDialog = () => document.getElementById(PAGEFIND_DIALOG_ID);
+
+  const getPagefindContainer = () => document.getElementById(PAGEFIND_CONTAINER_ID);
+
+  const getPagefindInput = () =>
+    document.querySelector<HTMLInputElement>(`#${PAGEFIND_CONTAINER_ID} .pagefind-ui__search-input`);
+
+  const isPagefindDialogOpen = () => {
+    const dialog = getPagefindDialog();
+    return !!dialog && !dialog.hidden;
+  };
+
+  const isEditableTarget = (target: EventTarget | null) => {
+    const element = target instanceof HTMLElement ? target : null;
+    if (!element) {
+      return false;
+    }
+
+    return (
+      element.isContentEditable ||
+      ['INPUT', 'TEXTAREA', 'SELECT'].includes(element.tagName) ||
+      !!element.closest('[contenteditable="true"]')
+    );
+  };
+
+  const hideUdsSearchModal = () => {
+    getUdsSearchModal()?.classList.add('visually-hidden');
+  };
+
+  const ensurePagefindUi = async () => {
+    if (pagefindUi) {
+      return pagefindUi;
+    }
+
+    if (pagefindUiPromise) {
+      return pagefindUiPromise;
+    }
+
+    const container = getPagefindContainer();
+    if (!container) {
+      return null;
+    }
+
+    pagefindUiPromise = Promise.all([import('@pagefind/default-ui'), import('@pagefind/default-ui/css/ui.css')])
+      .then(([pagefindModule]) => {
+        pagefindUi = new pagefindModule.PagefindUI({
+          element: container,
+          bundlePath: '/pagefind/',
+          autofocus: true,
+          debounceTimeoutMs: 250,
+          excerptLength: 24,
+          focusOnSlash: false,
+          showImages: false,
+        });
+
+        return pagefindUi;
+      })
+      .catch((error) => {
+        pagefindUiPromise = null;
+        console.error('Unable to load site search', error);
+
+        return null;
+      });
+
+    return pagefindUiPromise;
+  };
+
+  const openPagefindDialog = async (trigger?: HTMLElement | null) => {
+    const dialog = getPagefindDialog();
+    if (!dialog) {
+      return;
+    }
+
+    lastSearchTrigger = trigger ?? (document.activeElement instanceof HTMLElement ? document.activeElement : null);
+
+    hideUdsSearchModal();
+
+    dialog.hidden = false;
+    dialog.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('ugrc-pagefind-search-open');
+
+    await ensurePagefindUi();
+
+    window.requestAnimationFrame(() => {
+      getPagefindInput()?.focus();
+    });
+  };
+
+  const closePagefindDialog = () => {
+    const dialog = getPagefindDialog();
+    if (!dialog || dialog.hidden) {
+      return;
+    }
+
+    dialog.hidden = true;
+    dialog.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('ugrc-pagefind-search-open');
+
+    if (lastSearchTrigger?.isConnected) {
+      lastSearchTrigger.focus();
+    }
+  };
+
+  const bindPagefindDialog = () => {
+    const dialog = getPagefindDialog();
+    if (!dialog) {
+      return false;
+    }
+
+    if (dialog.dataset.ugrcPagefindBound === 'true') {
+      return true;
+    }
+
+    dialog.dataset.ugrcPagefindBound = 'true';
+
+    dialog.addEventListener('click', (event) => {
+      const target = event.target as HTMLElement | null;
+      if (target?.closest('[data-close-pagefind-dialog]')) {
+        closePagefindDialog();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && isPagefindDialogOpen()) {
+        closePagefindDialog();
+        return;
+      }
+
+      const isSearchShortcut =
+        (event.metaKey || event.ctrlKey) && !event.shiftKey && !event.altKey && event.key.toLowerCase() === 'k';
+
+      if (!isSearchShortcut || isEditableTarget(event.target)) {
+        return;
+      }
+
+      event.preventDefault();
+
+      if (isPagefindDialogOpen()) {
+        getPagefindInput()?.focus();
+        return;
+      }
+
+      void openPagefindDialog();
+    });
+
+    return true;
+  };
+
+  const bindSearchButtons = () => {
+    const searchButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('button')).filter(
+      (button) => button.closest('.utah-design-system') && button.textContent?.trim().toLowerCase() === 'search',
+    );
+
+    if (!searchButtons.length) {
+      return false;
+    }
+
+    hideUdsSearchModal();
+
+    for (const button of searchButtons) {
+      if (button.dataset.ugrcPagefindBound === 'true') {
+        continue;
+      }
+
+      button.dataset.ugrcPagefindBound = 'true';
+      button.onclick = null;
+      button.addEventListener(
+        'click',
+        (event) => {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          hideUdsSearchModal();
+          void openPagefindDialog(button);
+        },
+        { capture: true },
+      );
+    }
+
+    return true;
+  };
+
+  const bindPagefindSearchWhenReady = (attempt = 0) => {
+    const dialogReady = bindPagefindDialog();
+    const buttonsReady = bindSearchButtons();
+
+    if ((dialogReady && buttonsReady) || attempt >= 60) {
+      return;
+    }
+
+    window.requestAnimationFrame(() => {
+      bindPagefindSearchWhenReady(attempt + 1);
+    });
+  };
+
+  setUtahHeaderSettings({
+    applicationType: 'static site',
+    title: '',
+    titleUrl: '/',
+    showTitle: true,
+    size: 'MEDIUM',
+    skipLinkUrl: '#main-content',
+    logo: {
+      element: createLogoImage,
+    },
+    mainMenu: {
+      title: `${fullTitle} Main Menu`,
+      menuItems,
+    },
+    utahId: false,
+    // UDS only renders the search icon when onSearch is truthy.
+    // We override the rendered button click after mount to open Pagefind's default UI instead.
+    onSearch: () => {},
+    footer: {
+      showHorizontalRule: true,
+      domLocationTarget: {
+        cssSelector: '#utah-footer-placeholder',
+      },
+    },
+  });
+
+  bindPagefindSearchWhenReady();
+</script>
+
+<style is:global>
+  #search-modal {
+    display: none !important;
+  }
+
+  body.ugrc-pagefind-search-open {
+    overflow: hidden;
+  }
+
+  .ugrc-pagefind-search {
+    position: fixed;
+    inset: 0;
+    z-index: 4100;
+  }
+
+  .ugrc-pagefind-search__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.58);
+    backdrop-filter: blur(6px);
+  }
+
+  .ugrc-pagefind-search__panel {
+    position: fixed;
+    top: clamp(4rem, 10vh, 6rem);
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(58rem, calc(100vw - 2rem));
+    max-height: calc(100vh - 8rem);
+    box-shadow: 0 32px 72px rgba(15, 23, 42, 0.24);
+  }
+
+  .ugrc-pagefind-search__header {
+    border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+    background: linear-gradient(180deg, rgba(244, 247, 251, 0.96), rgba(255, 255, 255, 0.98));
+  }
+
+  .ugrc-pagefind-search__close {
+    appearance: none;
+    border: 0;
+    font: inherit;
+  }
+
+  .ugrc-pagefind-search__close:hover,
+  .ugrc-pagefind-search__close:focus-visible {
+    background: rgba(15, 23, 42, 0.08);
+    outline: none;
+  }
+
+  @media screen and (max-width: 445px) {
+    .ugrc-pagefind-search__panel {
+      top: 1rem;
+      width: calc(100vw - 1rem);
+      max-height: calc(100vh - 2rem);
+      border-radius: 0.85rem;
+    }
+
+    .ugrc-pagefind-search__header,
+    .ugrc-pagefind-search__body {
+      padding-inline: 0.9rem;
+    }
+
+    .utah-design-system .utds-title-wrapper__title {
+      font-size: 1.7rem !important;
+      line-height: 1 !important;
+    }
+  }
+</style>

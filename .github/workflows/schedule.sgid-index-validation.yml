@@ -2,7 +2,7 @@ name: Schedule (SGID Index Validation)
 
 on:
   schedule:
-    - cron: '0 0 * * 1-5'
+    - cron: "0 0 * * 1-5"
   workflow_dispatch:
   issue_comment:
     types: [created, edited]
@@ -65,14 +65,17 @@ jobs:
             src/data
             .github/SGID_INDEX_ISSUE_TEMPLATE.md
 
+      - name: 📦 Setup pnpm
+        uses: pnpm/action-setup@v6
+
       - name: ⎔ Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
-          cache: npm
+          cache: pnpm
 
       - name: 📦 Install script dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       - name: ✔ Running script
         uses: gh640/command-result-action@v1

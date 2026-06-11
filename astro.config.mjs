@@ -6,6 +6,7 @@ import tailwind from '@astrojs/tailwind';
 import metaTags from 'astro-meta-tags';
 import { defineConfig } from 'astro/config';
 import { execSync } from 'child_process';
+import { cpSync, rmSync } from 'fs';
 import rehypeExternalLinks from 'rehype-external-links';
 import remarkCodeTitles from 'remark-code-titles';
 
@@ -31,9 +32,18 @@ export default defineConfig({
       name: 'pagefind',
       hooks: {
         'astro:build:done': () => {
-          execSync('npx pagefind --site dist', {
+          execSync('pnpm exec pagefind --site dist', {
             stdio: [process.stdin, process.stdout, process.stderr],
           });
+          // Mirror the generated index into public/pagefind so `astro dev` can
+          // serve it locally after a one-time `pnpm build`. This folder is
+          // gitignored; production deploys consume dist/pagefind directly.
+          try {
+            rmSync('public/pagefind', { recursive: true, force: true });
+            cpSync('dist/pagefind', 'public/pagefind', { recursive: true });
+          } catch (error) {
+            console.warn('Unable to mirror pagefind index into public/pagefind:', error);
+          }
         },
       },
     },
