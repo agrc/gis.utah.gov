@@ -24,10 +24,10 @@ License: [MIT](/LICENSE).
 1. Clone this repository
    `git clone https://github.com/agrc/gis.utah.gov.git`
 1. Install the dependencies
-  `pnpm install`
+   `pnpm install`
 1. Start the website
-  `pnpm start`
-1. browse to `localhost:4321`
+   `pnpm start`
+1. Browse to `localhost:4321`
 
 ### Search during local development
 
