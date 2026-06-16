@@ -42,7 +42,7 @@
     @apply mx-px rounded-md border bg-white px-2 py-0.5 text-sm font-medium shadow-sm drop-shadow-md dark:text-zinc-700;
   }
   .font-ut {
-    font-family: var(--ut-industry-font-family);
+    font-family: var(--ut-industry-font-family), Georgia, serif;
   }
 }
 @tailwind components;
