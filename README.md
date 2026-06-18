@@ -237,105 +237,70 @@ The contactKey should match the key found in the typescript file.
 
 ## Adding a new data page
 
-SGID product data pages live under `src/pages/products/sgid/<category>/`, where `<category>` is the kebab-case name of one of the `SgidCategory` enum values defined in `src/types/types.ts` (for example `energy`, `society`, `elevation`).
+Each dataset documented on this site has its own page under `src/pages/products/sgid/`. Pages are organized into category folders (for example `elevation`, `energy`, `society`).
 
-### 1. Create the page file
+### 1. Copy the template
 
-Copy the annotated template at `src/pages/products/sgid/example/_normal-data-page.astro` into the appropriate category folder and rename it using kebab-case to match the dataset (for example `src/pages/products/sgid/energy/coal.astro`).
+The easiest way to start is to copy the annotated template:
+
+`src/pages/products/sgid/example/_normal-data-page.astro`
+
+Copy that file into the correct category folder and rename it to match your dataset, using lowercase words separated by hyphens (for example `src/pages/products/sgid/energy/coal-deposits.astro`).
 
 > [!NOTE]
-> Files whose names begin with `_` are excluded from the auto-generated category index, so the `_normal-data-page.astro` template is never published.
+> The template filename starts with `_`, which keeps it from being published as a real page. Your new file should **not** start with `_`.
 
-### 2. Set the `metadata` export
+The template includes comments throughout explaining each part. The steps below highlight the most important things to update.
 
-Every data page must export a `metadata` constant of type `IMetadata`. The `[category].astro` route reads this export to auto-populate the category index page, so it must be accurate.
+### 2. Fill in the page information
 
-```astro
----
-import type { IMetadata, IPageMetadata } from '@models/types';
-import { ProductType, SgidCategory } from '@models/types';
+Near the top of the file, find the block that starts with `export const metadata`. Update each field with information about your dataset:
 
-export const metadata: IMetadata = {
-  pageTitle: 'Utah Coal Deposits',           // Must match the ArcGIS Online / Hub item title — this value is used as the key into downloadMetadata.ts and is cross-checked by the SGID Index validator
-  pageDescription: `Areas of coal deposits in Utah as defined in 1988.`,
-  stewards: ['UGRC'],                        // One or more data steward abbreviations
-  type: ProductType.POLYGON,                 // ProductType enum: POINT | POLYLINE | POLYGON | RASTER | TABLE
-  category: SgidCategory.ENERGY,             // Primary SgidCategory enum value
-  // secondaryCategory: SgidCategory.ENVIRONMENT, // optional — appears in a second category index
-};
----
-```
+- **`pageTitle`** — The exact title of the dataset in ArcGIS Online / Hub (for example `Utah Coal Deposits`). This must match exactly, including capitalization, because it is used to connect download links and is checked against the SGID Index.
+- **`pageDescription`** — A one- to three-sentence description that appears in dataset lists.
+- **`stewards`** — The organization(s) responsible for the data (for example `['UGRC']`).
+- **`type`** — The geometry type of the dataset: `ProductType.POINT`, `ProductType.POLYLINE`, `ProductType.POLYGON`, `ProductType.RASTER`, or `ProductType.TABLE`.
+- **`category`** — The primary category for the dataset (for example `SgidCategory.ENERGY`). Look at the existing folders under `src/pages/products/sgid/` for available category names.
+- **`secondaryCategory`** *(optional)* — A second category if the dataset belongs to two groups.
 
-### 3. Assemble the `page` object and render with `DataPage`
+Also update the `updateHistory` list with the dates and descriptions of past updates, newest first.
 
-Spread `metadata` into an `IPageMetadata` object to add runtime-only fields, then pass the whole object to the `DataPage` layout:
+### 3. Add the download information
 
-```astro
----
-import Layout from '@layouts/DataPage.astro';
-import { dataPages } from '@data/downloadMetadata';
+Open `src/data/downloadMetadata.ts` and add an entry for the dataset. The entry label must exactly match the `pageTitle` you set above. Fill in:
 
-const page: IPageMetadata = {
-  ...metadata,
-  updateHistory: ['1988'],   // Newest entry first; index 0 is shown under the page title
-  hub: {
-    // Spreads the Hub item ID, feature service details, and Open SGID table name
-    // from downloadMetadata.ts into the page object. The key must equal metadata.pageTitle.
-    ...dataPages[metadata.pageTitle],
-  },
-};
----
+- **`itemId`** — The unique ID of the ArcGIS Online item (visible in the item's URL on arcgis.com).
+- **`featureServiceId`** — The name of the hosted feature service (visible in the [services list](https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services)).
+- **`openSgid`** — The `schema.table_name` of the dataset in the Open SGID database (for example `energy.coal_deposits`). Leave this out if the dataset is not in the Open SGID.
+- **`layerId`** — Almost always `0`. Check the feature service endpoint to confirm.
 
-<Layout {...page} subTitle={page.updateHistory[0]}>
-  <Metadata slot="metadata" {...page} />
-  …
-</Layout>
-```
+If the dataset is listed in the [SGID Index Google Sheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1024261148), the `hubName` column value must match `pageTitle` exactly and the `productPage` column must point to the new page's URL path.
 
-### 4. Wire downloads in `downloadMetadata.ts`
+### 4. Write the page content
 
-Add an entry to `src/data/downloadMetadata.ts` whose **key exactly matches `metadata.pageTitle`** (and the Hub item title in ArcGIS Online):
+The template is divided into named sections. Replace the placeholder text in each section with real content for your dataset:
 
-```ts
-'Utah Coal Deposits': {
-  itemId: '<ArcGIS Online item GUID>',
-  name: 'Utah Coal Deposits',
-  featureServiceId: 'CoalDeposits',   // Name of the feature service at services1.arcgis.com
-  openSgid: 'energy.coal_deposits',   // schema.table_name in the Open SGID (omit or set undefined if not in Open SGID)
-  layerId: 0,                          // Usually 0; verify against the feature service endpoint
-},
-```
+| Section | What goes here |
+|---------|----------------|
+| `summary` | A short intro (1–2 paragraphs) shown at the top of the page |
+| `downloads` | Download links — use `HubDownloads` for Hub-hosted data or `DirectDownloads` for other links |
+| `description` | Longer description, schema notes, coordinate system, contact information, etc. |
+| `update-history` | Driven automatically by the `updateHistory` list you filled in above |
+| `disclaimer` | A dataset-specific legal disclaimer; delete the section to use the site default |
+| `more-resources` | Links to related external resources |
+| `you-might-also-like` | Links to related pages on this site |
 
-The SGID Index validation script checks that values in the Google Sheet match this file, so keep them in sync.
+For contact information, use the `Contacts` component inside the `description` section (see `src/pages/products/sgid/elevation/500-foot-contours.astro` for an example). Contact keys are defined in `src/data/contacts.ts`.
 
-### 5. Build the page body
+If the dataset has an associated web application, uncomment the `application` field near the top of the file — this adds a _"See the data in action"_ button to the page.
 
-Use the named slots provided by `DataPage`:
+### 5. How the page gets listed
 
-| Slot | Component | Purpose |
-|------|-----------|---------|
-| `metadata` | `<Metadata>` | Renders the sidebar card with type, stewards, and category |
-| `summary` | `<Fragment>` | 1–2 paragraph intro visible above the fold |
-| `downloads` | `<Section>` + `<HubDownloads>` or `<DirectDownloads>` | Download links |
-| `description` | `<Fragment>` | Extended description, schema notes, and contacts |
-| `update-history` | `<UpdateHistory>` | Changelog rendered from `page.updateHistory` |
-| `disclaimer` | `<Disclaimer>` | Dataset-specific legal disclaimer (omit for the default) |
-| `more-resources` | `<Section>` + `<GridForMoreResources>` | Related external links |
-| `you-might-also-like` | `<Section>` + `<GridForYouMightLike>` | Links to sibling pages |
+Once the file is in the correct folder with a valid title and category, it will automatically appear in the category index the next time the site builds. No additional registration is needed.
 
-For contact information, import `<Contacts>` and place it inside the `description` slot (see `src/pages/products/sgid/elevation/500-foot-contours.astro` for an example). Contact keys are defined in `src/data/contacts.ts`.
+### 6. Open a pull request
 
-If the dataset has an associated web application, add the optional `application` property to `page` — this renders a _"See the data in action"_ button under the summary.
-
-### 6. Category index auto-discovery
-
-No manual registration is needed. `src/pages/products/sgid/[category].astro` uses `import.meta.glob` to scan every `.astro` file under `src/pages/products/sgid/` and groups them by `metadata.category` (and `metadata.secondaryCategory` when present). As long as `metadata` is exported correctly and the file does **not** start with `_`, it will appear automatically in the category index the next time the site is built.
-
-### 7. Open a pull request
-
-Once you have added the page file and the `downloadMetadata.ts` entry, open a pull request. CI will run TypeScript type checking and tests automatically.
-
-If the dataset is referenced in the [SGID Index Google Sheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1024261148), ensure the `productPage` column points to the new page path. Also ensure the `hubName` value in the sheet matches `metadata.pageTitle` exactly so the nightly validation script does not flag a mismatch.
+Once you have created the page file and updated `downloadMetadata.ts`, open a pull request on GitHub. Automated checks will run and flag any issues.
 
 ### SGID Index Validation
 
