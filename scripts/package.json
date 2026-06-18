@@ -4,23 +4,23 @@
     "test": "NODE_ENV=test node --test --watch"
   },
   "dependencies": {
-    "@octokit/rest": "^21.1.1",
+    "@octokit/rest": "^22.0.1",
     "axios-retry": "^4.5.0",
     "change-case": "^5.4.4",
     "fast-xml-parser": "^5.3.6",
-    "glob": "^11.1.0",
-    "google-auth-library": "^9.15.1",
-    "google-spreadsheet": "^4.1.4",
+    "glob": "^13.0.6",
+    "google-auth-library": "^10.6.2",
+    "google-spreadsheet": "^5.2.0",
     "gray-matter": "^4.0.3",
     "json-to-markdown-table": "^1.0.0",
     "knex": "^3.1.0",
-    "ky": "^1.8.1",
+    "ky": "^2.0.1",
     "lodash.capitalize": "^4.2.1",
     "lodash.random": "^3.2.0",
     "pg": "^8.16.0",
     "progress": "^2.0.3",
     "ts-import": "^5.0.0-beta.1",
-    "uuid": "^11.1.0"
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "mock-fs": "^5.5.0"
