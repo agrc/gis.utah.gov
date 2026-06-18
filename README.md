@@ -270,9 +270,10 @@ Also update the `updateHistory` list with the dates and descriptions of past upd
 Open `src/data/downloadMetadata.ts` and add an entry for the dataset. The entry label must exactly match the `pageTitle` you set above. Fill in:
 
 - **`itemId`** — The unique ID of the ArcGIS Online item (visible in the item's URL on arcgis.com).
-- **`featureServiceId`** — The name of the hosted feature service (visible in the [services list](https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services)).
-- **`openSgid`** — The `schema.table_name` of the dataset in the Open SGID database (for example `energy.coal_deposits`). Leave this out if the dataset is not in the Open SGID.
-- **`layerId`** — Almost always `0`. Check the feature service endpoint to confirm.
+- **`name`** — The dataset title (usually the same as the entry key / `pageTitle`).
+- **`featureServiceId`** *(optional)* — The name of the hosted feature service (visible in the [services list](https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services)).
+- **`openSgid`** *(optional)* — The `schema.table_name` of the dataset in the Open SGID database (for example `energy.coal_deposits`). Leave this out if the dataset is not in the Open SGID.
+- **`layerId`** *(optional)* — Usually `0`. Check the service endpoint to confirm.
 
 If the dataset is listed in the [SGID Index Google Sheet](https://docs.google.com/spreadsheets/d/11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ/edit#gid=1024261148), the `hubName` column value must match `pageTitle` exactly and the `productPage` column must point to the new page's URL path.
 
