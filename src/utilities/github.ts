@@ -18,13 +18,12 @@ export const getGithubReleases = async (repo: string) => {
   };
 
   if (import.meta.env.PROD) {
-    const response = await octokit.request('GET /repos/{owner}/{repo}/releases', {
+    const response = await octokit.request('GET /repos/{owner}/{repo}/releases/latest', {
       owner: 'agrc',
       repo,
-      per_page: 1,
     });
 
-    return response.data[0];
+    return response.data;
   }
 
   return releaseMetadata;
