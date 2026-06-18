@@ -259,7 +259,7 @@ Near the top of the file, find the block that starts with `export const metadata
 - **`pageTitle`** — The exact title of the dataset in ArcGIS Online / Hub (for example `Utah Coal Deposits`). This must match exactly, including capitalization, because it is used to connect download links and is checked against the SGID Index.
 - **`pageDescription`** — A one- to three-sentence description that appears in dataset lists.
 - **`stewards`** — The organization(s) responsible for the data (for example `['UGRC']`).
-- **`type`** — The geometry type of the dataset: `ProductType.POINT`, `ProductType.POLYLINE`, `ProductType.POLYGON`, `ProductType.RASTER`, or `ProductType.TABLE`.
+- **`type`** — The geometry type of the dataset: `ProductType.POINT`, `ProductType.POLYLINE`, `ProductType.POLYGON`, `ProductType.ELEVATION_RASTER`, `ProductType.IMAGERY_RASTER`, or `ProductType.TABLE`.
 - **`category`** — The primary category for the dataset (for example `SgidCategory.ENERGY`). Look at the existing folders under `src/pages/products/sgid/` for available category names.
 - **`secondaryCategory`** *(optional)* — A second category if the dataset belongs to two groups.
 
