@@ -10,12 +10,11 @@ import Metadata from '@components/data/Metadata.astro';
 import Disclaimer from '@components/data/Disclaimer.astro';
 import UpdateHistory from '@components/data/UpdateHistory.astro';
 
+import BulletedList from '@components/page/BulletedList.astro';
 import CardForStatute from '@components/page/CardForStatute.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import Contacts from '@components/page/Contacts.astro';
-import BulletedList from '@components/page/BulletedList.astro';
-import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
 import Section from '@components/page/Section.astro';
@@ -34,9 +33,7 @@ export const metadata: IMetadata = {
 const page: IPageMetadata = {
   ...metadata,
   application: 'https://utah.maps.arcgis.com/apps/instant/sidebar/index.html?appid=d53a3aaa4c464eb09b4a4638945acaa2',
-  updateHistory: [
-    'This dataset was first made public by UGRC July 2026',
-  ],
+  updateHistory: ['This dataset was first made public by UGRC July 2026'],
   hub: {
     ...dataPages[metadata.pageTitle],
   },
@@ -52,49 +49,48 @@ const page: IPageMetadata = {
 
   <Fragment slot="summary">
     <p>
-      This dataset contains geographic information system (GIS) mapping data representing parcel boundaries 
-      of Government Owned Parcels in the State of Utah. It was created using the most recent parcel boundaries available
-      for a county and a table of government owned parcels provided by the counties.
-
-      Parcel categories are best guess unless provided by county.
+      This dataset contains geographic information system (GIS) mapping data representing parcel boundaries of
+      Government Owned Parcels in the State of Utah. It was created using the most recent parcel boundaries available
+      for a county and a table of government owned parcels provided by the counties. Parcel categories are a best-effort
+      estimate from UGRC, unless provided by the county.
     </p>
   </Fragment>
 
   <Fragment slot="description">
     <p>
-      A parcel boundary is the legally defined border that outlines the limits of a specific piece of real estate.
-      This data layer contains polygons created using <a href="/products/sgid/cadastre/parcels/">Utah Parcels</a> 
-      and tax roll records provided by county Assessors in Utah. 
-    </p>  
+      A parcel boundary is the legally defined border that outlines the limits of a specific piece of real estate. This
+      data layer contains polygons created using <a href="/products/sgid/cadastre/parcels/">Utah Parcels</a>
+      and tax roll records provided by county Assessors in Utah.
+    </p>
 
     <CardForStatute
       href="https://le.utah.gov/xcode/Title63A/Chapter16/63A-16-S506.html"
       code="63A-16-506.(5)"
       title="State Geographic Information Database"
     >
-      The center shall, in coordination with the Governor's Office of Planning and
-      Budget and county assessors, annually compile a statewide GIS database of all
-      government-owned property parcels in internet-accessible, searchable, and map format.
+      The center shall, in coordination with the Governor's Office of Planning and Budget and county assessors, annually
+      compile a statewide GIS database of all government-owned property parcels in internet-accessible, searchable, and
+      map format.
     </CardForStatute>
 
     <h4>Government Owned Parcel Attributes</h4>
 
-      <BulletedList>
-        <li>County / County_Name (County name)</li>
-        <li>Parcel ID / Parcel_ID (Unique parcel number)</li>
-        <li>Account Number / Account_Num (Unique account number if available)</li>
-        <li>Category (Parcel category)</li>
-        <li>Address / Parcel_Add (Situs address if provided)</li>
-        <li>City / Parcel_City (Municipality of parcel centroid)</li>
-        <li>Zip Code / Parcel_Zip (Zip Code of parcel centroid)</li>
-        <li>Owner Name / Owner_name_Raw (Parcel owner name as provided)</li>
-        <li>Acres (Parcel acreage if provided)</li>
-        <li>GIS Acres / GIS_Acres (Calculated acreage)</li>
-        <li>Parcels Current As Of / ParcelsCur (Last parcel boundary update)</li>
-        <li>Source (Source and date of county data received)</li>
-        <li>Updated (Date updated)</li>
-        <li>GOPID (Unique parcel GUID)</li>
-      </BulletedList>
+    <BulletedList>
+      <li>County / County_Name (County name)</li>
+      <li>Parcel ID / Parcel_ID (Unique parcel number)</li>
+      <li>Account Number / Account_Num (Unique account number, if available)</li>
+      <li>Category (Parcel category)</li>
+      <li>Address / Parcel_Add (Situs address, if provided)</li>
+      <li>City / Parcel_City (Municipality of parcel centroid)</li>
+      <li>Zip Code / Parcel_Zip (Zip Code of parcel centroid)</li>
+      <li>Owner Name / Owner_name_Raw (Parcel owner name as provided)</li>
+      <li>Acres (Parcel acreage if provided)</li>
+      <li>GIS Acres / GIS_Acres (Calculated acreage)</li>
+      <li>Parcels Current As Of / ParcelsCur (Last parcel boundary update)</li>
+      <li>Source (Source and date of county data received)</li>
+      <li>Updated (Date updated)</li>
+      <li>GOPID (Unique parcel GUID)</li>
+    </BulletedList>
 
     <h4>Updates</h4>
     <p>The Government Owned Parcels are updated annually or when new county data is provided.</p>
@@ -113,10 +109,7 @@ const page: IPageMetadata = {
 
   <Section title="More resources" slot="more-resources" titlePosition="center">
     <GridForMoreResources>
-      <CardWithPopularLink
-        title="H.B. 433"
-        href="https://le.utah.gov/~2023/bills/static/HB0433.html"
-      >
+      <CardWithPopularLink title="H.B. 433" href="https://le.utah.gov/~2023/bills/static/HB0433.html">
         2023 General Session - H.B. 433
       </CardWithPopularLink>
     </GridForMoreResources>
