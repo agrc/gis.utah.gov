@@ -2730,10 +2730,10 @@ export const dataPages: DownloadMetadata = {
     oddHubName: 'utah-high-risk-wui-properties-1',
   },
   'Utah Government Owned Parcels': {
-    itemId: '??',
+    itemId: 'de9c47282dc8453786ba5873eb3117f1',
     name: 'Utah Government Owned Parcels',
-    featureServiceId: '??',
-    openSgid: '??',
+    featureServiceId: 'cadastre_government_owned_parcels',
+    openSgid: 'cadastre.government_owned_parcels',
     layerId: 0
   }
 };
