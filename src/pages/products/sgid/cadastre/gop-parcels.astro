@@ -14,7 +14,6 @@ import CardForStatute from '@components/page/CardForStatute.astro';
 import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import Contacts from '@components/page/Contacts.astro';
-import DefinitionListItem from '@components/page/DefinitionListItem.astro';
 import BulletedList from '@components/page/BulletedList.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForMoreResources from '@components/page/GridForMoreResources.astro';
@@ -80,24 +79,22 @@ const page: IPageMetadata = {
 
     <h4>Government Owned Parcel Attributes</h4>
 
-      <DefinitionListItem term="attributes">
-        <BulletedList>
-          <li>County / County_Name (County name)</li>
-          <li>Parcel ID / Parcel_ID (Unique parcel number)</li>
-          <li>Account Number / Account_Num (Unique account number if available)</li>
-          <li>Category (Parcel category)</li>
-          <li>Address / Parcel_Add (Situs address if provided)</li>
-          <li>City / Parcel_City (Municipality of parcel centroid)</li>
-          <li>Zip Code / Parcel_Zip (Zip Code of parcel centroid)</li>
-          <li>Owner Name / Owner_name_Raw (Parcel owner name as provided)</li>
-          <li>Acres (Parcel acreage if provided)</li>
-          <li>GIS Acres / GIS_Acres (Calculated acreage)</li>
-          <li>Parcels Current As Of / ParcelsCur (Last parcel boundary update)</li>
-          <li>Source (Source and date of county data received)</li>
-          <li>Updated (Date updated)</li>
-          <li>GOPID (Unique parcel GUID)</li>
-        </BulletedList>
-      </DefinitionListItem>
+      <BulletedList>
+        <li>County / County_Name (County name)</li>
+        <li>Parcel ID / Parcel_ID (Unique parcel number)</li>
+        <li>Account Number / Account_Num (Unique account number if available)</li>
+        <li>Category (Parcel category)</li>
+        <li>Address / Parcel_Add (Situs address if provided)</li>
+        <li>City / Parcel_City (Municipality of parcel centroid)</li>
+        <li>Zip Code / Parcel_Zip (Zip Code of parcel centroid)</li>
+        <li>Owner Name / Owner_name_Raw (Parcel owner name as provided)</li>
+        <li>Acres (Parcel acreage if provided)</li>
+        <li>GIS Acres / GIS_Acres (Calculated acreage)</li>
+        <li>Parcels Current As Of / ParcelsCur (Last parcel boundary update)</li>
+        <li>Source (Source and date of county data received)</li>
+        <li>Updated (Date updated)</li>
+        <li>GOPID (Unique parcel GUID)</li>
+      </BulletedList>
 
     <h4>Updates</h4>
     <p>The Government Owned Parcels are updated annually or when new county data is provided.</p>
