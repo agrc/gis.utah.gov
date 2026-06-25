@@ -23,7 +23,14 @@ const page: IStandardPageMetadata = {
   pillar: Pillar.DOCUMENTATION,
   section: stripeSections([
     { actionUrl: '/documentation/discover/basics/', actionText: 'Learn the basics' },
-    { title: 'Connecting your client', actionUrl: '/documentation/discover/clients/', actionText: 'Get Connected' },
+    { 
+      title: 'Prohibition of Automated Processing', 
+    },
+    { 
+      title: 'Connecting your client', 
+      actionUrl: '/documentation/discover/clients/', 
+      actionText: 'Get Connected' 
+    },
     {
       title: 'Licensed imagery',
       actionUrl: '/documentation/discover/licensed-imagery/',
@@ -60,7 +67,25 @@ const page: IStandardPageMetadata = {
       should be used wherever possible to access any of our base maps or imagery services.
     </p>
   </Section>
+
   <Section {...page.section[1]}>
+    <Image
+      slot="image"
+      loading="eager"
+      src={getConnected}
+      alt="A person signaling no"
+      class="w-full max-w-[400px] rounded-2xl"
+    />
+    <p>
+      Automated, large-scale processing of imagery from the WMTS and WMS services is prohibited. This includes 
+      mass data extraction, scraping, automated Python scripts, computer vision algorithms, machine learning tools, 
+      or artificial intelligence (AI) model training and inference against the live service endpoints. 
+      A local copy of data can be arranged, if it is needed for these purposes. UGRC reserves the right to 
+      cut off any users that are abusing the Discover service with exceedingly high-volume usage. 
+    </p>
+  </Section>
+
+  <Section {...page.section[2]}>
     <Image
       slot="image"
       loading="eager"
@@ -73,7 +98,7 @@ const page: IStandardPageMetadata = {
       ArcGIS Online.
     </p>
   </Section>
-  <Section {...page.section[2]}>
+  <Section {...page.section[3]}>
     <Image
       slot="image"
       src={licensedAccess}
@@ -85,7 +110,7 @@ const page: IStandardPageMetadata = {
       own considerations and restrictions and are only available to users associated with the State or its entities.
     </p>
   </Section>
-  <Section {...page.section[3]}>
+  <Section {...page.section[4]}>
     <Image
       slot="image"
       src={accuracy}
@@ -98,7 +123,7 @@ const page: IStandardPageMetadata = {
     </p>
     <p>Discover hosts several different imagery services, each with its own accuracy and resolution.</p>
   </Section>
-  <Section {...page.section[4]}>
+  <Section {...page.section[5]}>
     <Image
       slot="image"
       src={problems}
