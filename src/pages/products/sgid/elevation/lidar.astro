@@ -44,6 +44,7 @@ import washakie2017Map from '@images/sgid/lidar_wvw_coverage.png';
 import zionNP2015Map from '@images/sgid/lidar_zion_np_2015_coverage.png';
 import moab2025Map from '@images/sgid/lidar_moab_utah_2025_coverage.png';
 import slco2023Map from '@images/sgid/lidar_slco_utah_2023_coverage.png';
+import gsl2023Map from '@images/sgid/lidar_gsl_topobathy_utah_2023_coverage.png';
 
 import { stripeSections } from '@utils/page';
 
@@ -227,6 +228,12 @@ const page: IStandardPageMetadata = {
         'https://raster.utah.gov/?cat=.5%20Meter%20%7B2023%20Salt%20Lake%20County%20Utah%20LiDAR%7D&title=Salt%20Lake%20County%20Utah%202023%20LiDAR',
     },
     {
+      title: '2023 Great Salt Lake (topo-bathy)',
+      actionText: 'Download from Raster',
+      actionUrl:
+        'https://raster.utah.gov/?cat=1%20Meter%20%7B2023%20GSL%20LiDAR%7D&title=Great%20Salt%20Lake%202023%20Topo-Bathy%20LiDAR',
+    },
+    {
       title: '2025 Moab Utah',
       actionText: 'Download from Raster',
       actionUrl:
@@ -248,6 +255,16 @@ const projectAssets = {
     {
       title: 'Download shapefiles of project area, tile indices, and breaklines',
       url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/moab-2025/Moab_Utah_2025_shps.zip',
+    },
+  ],
+  gsl2023: [
+    {
+      title: 'Download project reports',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2023/GSL_Topobathymetric_Lidar_Final_Report.zip',
+    },
+    {
+      title: 'Download shapefiles of project area, tile indices, and breaklines',
+      url: 'https://storage.googleapis.com/state-of-utah-sgid-downloads/lidar/great-salt-lake-2023/GSL_Utah_2023_shps.zip',
     },
   ],
   slco2023: [
@@ -739,7 +756,7 @@ const projectAssets = {
     </p>
   </Section>
 
-  <Section {...page.section[31]}>
+  <Section {...page.section[32]}>
     <a href={moab2025Map.src} slot="image">
       <Image
         src={moab2025Map}
@@ -755,6 +772,27 @@ const projectAssets = {
       accuracy and are available for download. This elevation data was collected March 23rd, 2025.
     </p>
     <DirectDownloads title="Project assets" links={projectAssets.moab2025} />
+  </Section>
+
+  <Section {...page.section[31]}>
+    <a href={gsl2023Map.src} slot="image">
+      <Image
+        src={gsl2023Map}
+        loading="lazy"
+        width="400"
+        alt="A map with project boundary"
+        class="w-full max-w-[400px]"
+      /></a
+    >
+    <p>
+      In 2023 the Utah Geological Survey (UGS) acquired ~88 square miles of topobathymetric lidar 
+      with a first return density of ~15 points per sq. meter (~5.6 points per sq. meter of bathymetric 
+      bottom classified returns) off the west shore of Antelope Island in Great Salt Lake. The 1 meter 
+      resolution bathymetric bottom DEMs, first-return/highest-hit DSMs, water surface, and bathymetric 
+      confidence in .tif format have a 28 cm vertical RMSE accuracy and are available for download. This 
+      elevation data was collected between June 22 and June 25 of 2023. 
+    </p>
+    <DirectDownloads title="Project assets" links={projectAssets.gsl2023} />
   </Section>
 
   <Section {...page.section[30]}>
