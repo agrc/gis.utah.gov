@@ -2734,6 +2734,6 @@ export const dataPages: DownloadMetadata = {
     name: 'Utah Government Owned Parcels',
     featureServiceId: 'cadastre_government_owned_parcels',
     openSgid: 'cadastre.government_owned_parcels',
-    layerId: 0
-  }
+    layerId: 0,
+  },
 };
