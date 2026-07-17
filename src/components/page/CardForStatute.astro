@@ -10,19 +10,25 @@ interface Props {
 const { href, code, title, style = 'primary' } = Astro.props;
 ---
 
-<a
-  href={href}
+<div
   class:list={[
-    'custom-style flex rounded-lg border border-zinc-400 bg-primary px-6 py-3 text-zinc-50 shadow focus:border-transparent focus:outline-none focus:ring-4 focus:ring-accent dark:border-white/20',
+    'custom-style rounded-lg border border-zinc-400 bg-primary px-6 py-3 text-zinc-50 shadow dark:border-white/20',
     style === 'secondary' && 'dark:bg-secondary',
   ]}
 >
   <div class="flex grow flex-col">
-    <h4 class="uppercase text-zinc-50">{title}</h4>
-    <p class="font-semibold uppercase text-accent">{code}</p>
+    <a
+      href={href}
+      class="group -mx-2 flex rounded px-2 py-1 transition-colors hover:bg-white/10 focus:border-transparent focus:outline-none focus:ring-4 focus:ring-accent"
+    >
+      <div class="grow">
+        <h4 class="uppercase text-zinc-50 transition-colors group-hover:text-accent">{title}</h4>
+        <p class="font-semibold uppercase text-accent">{code}</p>
+      </div>
+      <span class="transition-transform group-hover:translate-x-1"><RightArrow /></span>
+    </a>
     <div class="primary-background pr-2 text-sm text-zinc-50">
       <slot />
     </div>
   </div>
-  <RightArrow />
-</a>
+</div>
