@@ -4,7 +4,7 @@ import { GoogleAuth, auth } from 'google-auth-library';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import knex from 'knex';
 import ky from 'ky';
-import random from 'lodash/random.js';
+import random from 'lodash.random';
 
 export async function validateUrl(url) {
   let parsedUrl;
