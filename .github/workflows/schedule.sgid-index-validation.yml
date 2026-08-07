@@ -73,6 +73,7 @@ jobs:
         with:
           node-version: lts/*
           cache: pnpm
+          cache-dependency-path: scripts/pnpm-lock.yaml
 
       - name: 📦 Install script dependencies
         run: pnpm install --frozen-lockfile

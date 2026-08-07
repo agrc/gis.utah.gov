@@ -31,6 +31,9 @@ jobs:
         with:
           node-version: lts/*
           cache: pnpm
+          cache-dependency-path: |
+            pnpm-lock.yaml
+            scripts/pnpm-lock.yaml
 
       - name: 🏗️ Build Site
         working-directory: ./
