@@ -27,9 +27,9 @@
     "@anuragroy/tailwindcss-animate": "^1.0.6",
     "@astro-community/astro-embed-youtube": "^0.5.9",
     "@astro-github-elements/clipboard-copy": "^0.0.4",
-    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/mdx": "^6.0.2",
     "@astrojs/partytown": "^2.1.4",
-    "@astrojs/react": "^4.4.2",
+    "@astrojs/react": "^5.0.7",
     "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/tailwind": "^6.0.2",
@@ -43,12 +43,12 @@
     "@radix-ui/react-tooltip": "^1.2.8",
     "@tailwindcss/typography": "^0.5.16",
     "@utahdts/utah-design-system-header": "^5.1.0",
-    "astro": "^5.16.6",
+    "astro": "^6.4.4",
     "astro-meta-tags": "^0.4.0",
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "fuse.js": "^7.1.0",
-    "html-to-text": "^9.0.5",
+    "html-to-text": "^10.0.0",
     "lodash.capitalize": "^4.2.1",
     "lodash.startcase": "^4.4.0",
     "mdast-util-from-markdown": "^2.0.2",
@@ -62,8 +62,8 @@
     "rehype-external-links": "^3.0.0",
     "remark-code-titles": "^0.1.2",
     "tailwind-heropatterns": "^0.0.8",
-    "tailwind-merge": "^2.6.0",
-    "tailwindcss": "^3.4.19",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.3.0",
     "unist-util-remove": "^4.0.0"
   },
   "devDependencies": {
@@ -83,8 +83,8 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "sharp": "^0.34.5",
-    "typescript": "^5.9.2",
-    "vite-tsconfig-paths": "^5.1.4",
+    "typescript": "^6.0.3",
+    "vite-tsconfig-paths": "^6.1.1",
     "vitest": "^4.0.6"
   }
 }
