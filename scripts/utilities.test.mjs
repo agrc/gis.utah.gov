@@ -8,10 +8,14 @@ describe('validateUrl', () => {
     assert(result.valid);
   });
 
-  it('handles a redirected url', async () => {
+  it('follows redirects', async () => {
     const result = await validateUrl('https://google.com');
     assert(result.valid);
-    assert.equal(result.redirect, 'https://www.google.com/');
+  });
+
+  it('handles a Cloudflare-protected url', async () => {
+    const result = await validateUrl('https://utahavalanchecenter.org/');
+    assert(result.valid);
   });
 
   it('handles a 404 url', async () => {

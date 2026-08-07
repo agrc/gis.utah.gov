@@ -13,7 +13,7 @@ importers:
         version: 21.1.1
       axios-retry:
         specifier: ^4.5.0
-        version: 4.5.0(axios@1.17.0)
+        version: 4.5.0(axios@1.17.0(debug@4.4.3))
       change-case:
         specifier: ^5.4.4
         version: 5.4.4
@@ -28,10 +28,13 @@ importers:
         version: 9.15.1
       google-spreadsheet:
         specifier: ^4.1.4
-        version: 4.1.5(google-auth-library@9.15.1)
+        version: 4.1.5(debug@4.4.3)(google-auth-library@9.15.1)
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
+      impit:
+        specifier: 0.14.3
+        version: 0.14.3
       json-to-markdown-table:
         specifier: ^1.0.0
         version: 1.0.0
@@ -370,6 +373,62 @@ packages:
   https-proxy-agent@7.0.6:
     resolution: {integrity: sha512-vK9P5/iUfdl95AI+JVyUuIcVtd4ofvtrOr3HNtM2yxC9bnMbEdp3x01OhQNnjb8IJYi38VlTE3mBXwcfvywuSw==}
     engines: {node: '>= 14'}
+
+  impit-darwin-arm64@0.14.3:
+    resolution: {integrity: sha512-kMoQB+CR+a954pnhe4kf1O2RyJCsqGRE95jIXfgqNOiIMS5O1z0cOMzG/sohJk/nodZVSJ5VdWEV4BKhRWPFSA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  impit-darwin-x64@0.14.3:
+    resolution: {integrity: sha512-ft9+kjz1pR8H5xbbf5U1EgwaaIea5iXHxBf2Q3NoinPpiV7KgyzYSr83pCSrAY6evWk+smG9shHgzhQtgbj1Rg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  impit-linux-arm64-gnu@0.14.3:
+    resolution: {integrity: sha512-+mwta93S6Ndfpca3DDblvrqV1g8Bg6gZFOlEiJHfGJZpiUIQE+A/Pjg2e+inV+WrTtlnLsvff8lgwFvkIGnRug==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  impit-linux-arm64-musl@0.14.3:
+    resolution: {integrity: sha512-wYhfH1J8laWkpSN2SAFCKx9npY4vXrk23ex+tOzTGf2xBBqIhpMUff2wa6dOFb0or6EhZHBssoRf0HK3h/htXQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  impit-linux-x64-gnu@0.14.3:
+    resolution: {integrity: sha512-hAYnutJDGQO5bPvTPKBBFkHgbB7QL7QLDse8c4s21VSzC/EqGliSS3UqR5ZUUwaFdm3t8DJsXOr+gboAUwDR7w==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  impit-linux-x64-musl@0.14.3:
+    resolution: {integrity: sha512-wXBeHiqCjuyqxg4u5eY4OBNVzsS4Karz/ms/0mjB8aqVZLNER1NaUTeE4J3eZCdytFaJRaAeQvKTH8HfjpPsQg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  impit-win32-arm64-msvc@0.14.3:
+    resolution: {integrity: sha512-XiF8MYpm4tF8TMbtsWrcEDDs6NxRNeirfiHM/AyKcr2jiN34hZwbZDM0EseD30PDwb2Pny2JWB+zTxpE1P5CZg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+
+  impit-win32-x64-msvc@0.14.3:
+    resolution: {integrity: sha512-HIaLSpU5SGVx3UDH/R3ZaGMURVgyRVjmalqXj65ABxVUqfXiBo1t5ZObDPPjqvLT3klPnrya1+xF1DQ4dfT+og==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  impit@0.14.3:
+    resolution: {integrity: sha512-SbCLoeW0YDRox5kQoy71jtpjZE+BwjWO411OdgfbLMbNmSX79s5Y0Y2vCE7AO6zQSq9F4Fu8SJTCKnp8rXQzpg==}
+    engines: {node: '>= 20'}
 
   interpret@2.2.0:
     resolution: {integrity: sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==}
@@ -781,14 +840,14 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios-retry@4.5.0(axios@1.17.0):
+  axios-retry@4.5.0(axios@1.17.0(debug@4.4.3)):
     dependencies:
-      axios: 1.17.0
+      axios: 1.17.0(debug@4.4.3)
       is-retry-allowed: 2.2.0
 
-  axios@1.17.0:
+  axios@1.17.0(debug@4.4.3):
     dependencies:
-      follow-redirects: 1.16.0
+      follow-redirects: 1.16.0(debug@4.4.3)
       form-data: 4.0.5
       https-proxy-agent: 5.0.1
       proxy-from-env: 2.1.0
@@ -895,7 +954,9 @@ snapshots:
       strnum: 2.3.0
       xml-naming: 0.1.0
 
-  follow-redirects@1.16.0: {}
+  follow-redirects@1.16.0(debug@4.4.3):
+    optionalDependencies:
+      debug: 4.4.3
 
   foreground-child@3.3.1:
     dependencies:
@@ -977,9 +1038,9 @@ snapshots:
 
   google-logging-utils@0.0.2: {}
 
-  google-spreadsheet@4.1.5(google-auth-library@9.15.1):
+  google-spreadsheet@4.1.5(debug@4.4.3)(google-auth-library@9.15.1):
     dependencies:
-      axios: 1.17.0
+      axios: 1.17.0(debug@4.4.3)
       lodash: 4.18.1
     optionalDependencies:
       google-auth-library: 9.15.1
@@ -1027,6 +1088,41 @@ snapshots:
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
+
+  impit-darwin-arm64@0.14.3:
+    optional: true
+
+  impit-darwin-x64@0.14.3:
+    optional: true
+
+  impit-linux-arm64-gnu@0.14.3:
+    optional: true
+
+  impit-linux-arm64-musl@0.14.3:
+    optional: true
+
+  impit-linux-x64-gnu@0.14.3:
+    optional: true
+
+  impit-linux-x64-musl@0.14.3:
+    optional: true
+
+  impit-win32-arm64-msvc@0.14.3:
+    optional: true
+
+  impit-win32-x64-msvc@0.14.3:
+    optional: true
+
+  impit@0.14.3:
+    optionalDependencies:
+      impit-darwin-arm64: 0.14.3
+      impit-darwin-x64: 0.14.3
+      impit-linux-arm64-gnu: 0.14.3
+      impit-linux-arm64-musl: 0.14.3
+      impit-linux-x64-gnu: 0.14.3
+      impit-linux-x64-musl: 0.14.3
+      impit-win32-arm64-msvc: 0.14.3
+      impit-win32-x64-msvc: 0.14.3
 
   interpret@2.2.0: {}
 

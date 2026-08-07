@@ -2,15 +2,19 @@ import axiosRetry from 'axios-retry';
 import * as changeCase from 'change-case';
 import { GoogleAuth, auth } from 'google-auth-library';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
+import { Impit } from 'impit';
 import knex from 'knex';
 import ky from 'ky';
 import random from 'lodash.random';
 
-export async function validateUrl(url) {
-  let parsedUrl;
+const impit = new Impit({
+  browser: 'chrome',
+  ignoreTlsErrors: true,
+});
 
+export async function validateUrl(url) {
   try {
-    parsedUrl = new URL(url);
+    new URL(url);
   } catch (error) {
     return {
       valid: false,
@@ -20,14 +24,8 @@ export async function validateUrl(url) {
 
   let response;
   try {
-    response = await ky(url, {
-      throwHttpErrors: false,
-      redirect: 'manual',
-      timeout: 15000,
-      headers: {
-        'User-Agent':
-          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36',
-      },
+    response = await impit.fetch(url, {
+      signal: AbortSignal.timeout(15000),
     });
   } catch (error) {
     return {
@@ -37,18 +35,6 @@ export async function validateUrl(url) {
   }
 
   if (!response.ok) {
-    if ([301, 302].includes(response.status)) {
-      let redirect = response.headers.get('location');
-      if (redirect.startsWith('/')) {
-        redirect = new URL(redirect, url).href;
-      }
-
-      return {
-        redirect: `${redirect}${parsedUrl.hash}${parsedUrl.search}`,
-        ...(await validateUrl(`${redirect}`)),
-      };
-    }
-
     return {
       valid: false,
       message: `failed request with status: ${response.statusText} (${response.status})`,
