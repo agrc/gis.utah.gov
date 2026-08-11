@@ -123,10 +123,15 @@ export async function validateOpenDataUrl(url) {
   let response;
   try {
     response = await ky(openDataQuery, {
+      retry: {
+        limit: 3,
+        retryOnTimeout: true,
+      },
       searchParams: {
         'fields[datasets]': 'slug,boundary,extent,recordCount,searchDescription,statistics',
         'filter[slug]': `${org}::${slug}`,
       },
+      timeout: 60000,
     }).json();
   } catch (error) {
     return {
