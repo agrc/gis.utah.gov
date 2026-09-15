@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: 🎬 Update status
         id: update_status
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const response = await github.rest.reactions.createForIssue({
@@ -22,7 +22,7 @@ jobs:
 
             return response.data.id;
       - name: 🔬 Check actor
-        uses: tspascoal/get-user-teams-membership@v3
+        uses: tspascoal/get-user-teams-membership@v4
         id: checkUserMember
         with:
           username: ${{ github.actor }}
@@ -36,7 +36,7 @@ jobs:
           exit 86
 
       - name: ⬇️ Checkout Repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           show-progress: false
 
@@ -44,7 +44,7 @@ jobs:
         uses: pnpm/action-setup@v6
 
       - name: ⎔ Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: lts/*
           cache: pnpm
@@ -73,7 +73,7 @@ jobs:
           draft: true
 
       - name: 🗑️ Remove reaction
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             github.rest.reactions.deleteForIssue({
@@ -84,7 +84,7 @@ jobs:
             })
 
       - name: ✅ Set complete reaction
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         if: ${{ steps.cpr.outputs.pull-request-number }}
         with:
           script: |
