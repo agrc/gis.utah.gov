@@ -1,6 +1,5 @@
 ---
 title: Updates to Discover Imagery Service Terms of Use
-published: false
 author: UGRC Discover Admins
 date: 2026-09-16 15:55:01 -0600
 category: Discover
