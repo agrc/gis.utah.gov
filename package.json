@@ -11,7 +11,7 @@
     "preview": "astro preview",
     "start": "astro dev",
     "ts-check": "astro check --minimumSeverity=warning",
-    "test": "vitest",
+    "test": "vitest --typecheck",
     "validate-site-map": "cd scripts && node ./validate-site-map.mjs"
   },
   "prettier": {

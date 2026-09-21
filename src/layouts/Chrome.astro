@@ -3,6 +3,7 @@ import type { IStandardPageMetadata } from '@models/types';
 
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
+import AnnouncementBanner from '@components/AnnouncementBanner.astro';
 import Banner from '@components/Banner.astro';
 import BaseHead from '@components/BaseHead.astro';
 import FooterAgencyInformation from '@components/FooterAgencyInformation.astro';
@@ -25,6 +26,7 @@ const { pageTitle = 'UGRC', pillar, bannerHeading, pageDescription = SITE_DESCRI
   </head>
   <body class="bg-white dark:bg-primary-dark">
     <UtahHeader />
+    <AnnouncementBanner />
     <Banner title={bannerHeading || pageTitle} pillar={pillar} />
     <main id="main-content">
       <slot />
