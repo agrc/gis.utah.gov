@@ -39,6 +39,25 @@ To enable the search modal locally:
 1. Run `pnpm start` as usual. The search modal now loads `/pagefind/pagefind.js` and returns results.
 1. Re-run `pnpm build` whenever content changes if you need the local index refreshed.
 
+## Site announcements
+
+Configure the optional sitewide announcement in [`src/data/announcement.ts`](src/data/announcement.ts). Set the export to `undefined` to hide the announcement in the next deployment. The file includes a copyable example of every option.
+
+- `message` is required.
+- `scope` is `all-pages` or `home-page`.
+- `startsAt` and `endsAt` are optional timezone-qualified ISO timestamps. Without `startsAt`, the announcement appears when deployed; without `endsAt`, it remains visible until a later deployment removes or changes it.
+- `action` is an optional link with `href` and `label`.
+
+Visitors can dismiss an announcement. The dismissal is stored in their browser for that exact configuration, so changing the configuration displays it again. To restore all dismissed announcements while testing, paste this into the browser developer-tools console:
+
+```js
+Object.keys(localStorage)
+  .filter((key) => key.startsWith('ugrc-dismissed-announcement:'))
+  .forEach((key) => localStorage.removeItem(key));
+
+location.reload();
+```
+
 ## Technology reference
 
 - [Astro docs](https://docs.astro.build/en/getting-started/)
