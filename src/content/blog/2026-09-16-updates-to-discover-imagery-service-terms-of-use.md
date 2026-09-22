@@ -17,7 +17,7 @@ The users of our [Discover imagery and basemap services](https://gis.utah.gov/pr
 
 The rapid growth of AI tools has made it easier than ever to perform complex analysis and automated processing of high-resolution aerial imagery. However, running these automated workflows directly against live Discover streaming endpoints (WMTS/WMS) creates large, unpredictable, and costly spikes in data transfer and cloud egress that are not budgeted for. As a result, it puts the services at-risk for everyone. A few recent instances of sudden, high-volume processing has prompted us to update our terms of service. 
 
-## New Guidelines to Ensure Longevity and Stability
+### New Guidelines to Ensure Longevity and Stability
 
 Automated, large-scale processing of imagery from the WMTS and WMS services is prohibited. This includes:
 
@@ -25,7 +25,7 @@ Automated, large-scale processing of imagery from the WMTS and WMS services is p
 - Computer vision or AI model training
 - Any inference against the live service endpoints
 
-A local copy of data can be provided, if it is needed for these purposes. UGRC reserves the right to cut off any users that are abusing the Discover service with exceedingly high-volume usage.
+We can provide a local copy of the data if it is needed for these purposes. UGRC reserves the right to cut off any users that are abusing the Discover service with exceedingly high-volume usage.
 
 ### Additional Guidelines
 
