@@ -25,7 +25,7 @@ Automated, large-scale processing of imagery from the WMTS and WMS services is p
 - Computer vision or AI model training
 - Any inference against the live service endpoints
 
-We can provide a local copy of the data if it is needed for these purposes. UGRC reserves the right to cut off any users that are abusing the Discover service with exceedingly high-volume usage.
+We can provide a local copy of the data if it is needed for these purposes. UGRC reserves the right to cut off any users that are abusing the Discover service with exceedingly high-volume usage or failure to comply with usage guidelines.
 
 ### Additional Guidelines
 
