@@ -33,7 +33,7 @@ A local copy of data can be provided, if it is needed for these purposes. UGRC r
 - Only use the licensed Discover services for work associated with your organization (personal projects do not meet licensing requirements).
 - Be mindful that the service is intended for desktop and web-based GIS usage. 
 
-For more details on the licensing agreement for Discover, check out the [latest version](https://docs.google.com/forms/d/18FnT2fdg7nrA9xZYKUYV5UvxG0GO9w9DNFfeNG1D4TU/edit) of the terms and services.
+For more details on the licensing agreement for Discover, check out the [latest version](https://docs.google.com/forms/d/18FnT2fdg7nrA9xZYKUYV5UvxG0GO9w9DNFfeNG1D4TU/edit) of the terms of service.
 
 If you have any questions or would like to reach out about a bulk data transfer, please contact our team at ugrc-discover-admins@utah.gov.
 
