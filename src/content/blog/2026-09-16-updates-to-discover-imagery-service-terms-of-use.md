@@ -11,7 +11,7 @@ cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-## Prohibition on Automated Processing of Aerial Imagery
+## Prohibition on Automated Processing of Aerial Imagery Services
 
 The users of our [Discover imagery and basemap services](https://gis.utah.gov/products/discover/) play a vital role in keeping Utah’s geospatial infrastructure fast, reliable, and accessible. To ensure these services remain financially sustainable and available to all public partners, we need your help addressing a growing challenge regarding automated data processing. 
 
