@@ -2736,4 +2736,18 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'cadastre.government_owned_parcels',
     layerId: 0,
   },
+  'Utah SPCS2022 Regional Zones': {
+    itemId: 'b02d4dcdd8414966a1743b8a13434f04',
+    name: 'Utah SPCS2022 Regional Zones',
+    featureServiceId: 'cadastre_spcs2022_regional_zones',
+    openSgid: 'cadastre.spcs2022_regional_zones',
+    layerId: 0,
+  },
+  'Utah SPCS2022 Low Distortion Zones': {
+    itemId: '72c4a74390054e0f80e69d4bb7f9a929',
+    name: 'Utah SPCS2022 Low Distortion Zones',
+    featureServiceId: 'cadastre_spcs2022_low_distortion_zones',
+    openSgid: 'cadastre.spcs2022_low_distortion_zones',
+    layerId: 0,
+  },
 };
