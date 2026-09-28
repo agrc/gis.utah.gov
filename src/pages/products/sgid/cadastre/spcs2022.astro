@@ -1,0 +1,164 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
+
+import Metadata from '@components/data/Metadata.astro';
+import UpdateHistory from '@components/data/UpdateHistory.astro';
+
+import Alert from '@components/page/Alert.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Clipboard from '@components/page/Clipboard.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import ExternalLink from '@components/react/ExternalLink';
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  pageTitle: 'SPCS 2022 Zones',
+  pageDescription: `State Plane Coordinate System (SPCS) of 2022 zones for Utah.`,
+  stewards: ['UGRC'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.CADASTRE,
+  secondaryCategory: SgidCategory.BOUNDARIES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://experience.arcgis.com/experience/dddb7bc0be6f4e56a1c370c8d529d1a0',
+  updateHistory: [`September 2026`],
+  hub: {
+    ...dataPages['Utah SPCS2022 Regional Zones'],
+  },
+};
+
+const hubParts = (hub) => {
+  let id = hub.name.toLowerCase().replaceAll(' ', '-');
+  let name = hub.name;
+  const featureServiceHost = 'https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/';
+
+  const featureService = hub.featureServiceId || hub.name.toLowerCase().replaceAll(' ', '');
+  let serviceUrl: string;
+  if (hub.featureServiceId) {
+    serviceUrl = `${featureServiceHost}${featureService}/FeatureServer/${hub.layerId}`;
+  } else {
+    serviceUrl = `${featureServiceHost}${hub.mapServiceId}/MapServer/${hub.layerId}`;
+  }
+
+  return { id, name, serviceUrl };
+};
+
+const primary = hubParts(page.hub);
+const secondary = hubParts(dataPages['Utah SPCS2022 Low Distortion Zones']);
+---
+
+<Layout {...page} pageTitle={page.pageTitle} subTitle={page.updateHistory[0]}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      The SPCS2022 layeres represent the regional and low distortion zones of the National Oceanic and Atmospheric
+      Administration's (NOAA) modernization of the State Plane Coordinate System of (SPCS2022) under NOAA's National
+      Geodetic Survey (NGS).
+    </p>
+    <p>
+      The Regional Zones constitute what NOAA refers to as the "Multizone Complete" layer, but local entitie often refer
+      to them as "Regional Zones." These 11 zones provide seamless, full coverage for the entire state of Utah,
+      balancing minimal distortion with practical multi-county administrative coverage for surveying, mapping, and
+      engineering.
+    </p>
+    <p>
+      The Low Distortion Zones are what the NOAA refers to as the "Multizone Partial" layer, but local entities often
+      refer to them as "Low Distortion Zones." The 79 low distortion zones have partial coverage of the state and
+      provide the lowest amount of linear distortion for high-precision work in localized areas.
+    </p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <div class="grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:gap-4 lg:px-0">
+      <div class="flex flex-col">
+        <h2 class="pb-1">Explore and Download</h2>
+        <span>
+          <ExternalLink href={`https://opendata.gis.utah.gov/datasets/${primary.id}/about`}>{primary.name}</ExternalLink
+          > in the SGID on ArcGIS
+        </span>
+        <ExternalLink href={primary.serviceUrl}>{primary.name} feature service</ExternalLink>
+        <span class="pt-2">
+          <ExternalLink href={`https://opendata.gis.utah.gov/datasets/${secondary.id}/about`}
+            >{secondary.name}</ExternalLink
+          > in the SGID on ArcGIS
+        </span>
+        <ExternalLink href={secondary.serviceUrl}>{secondary.name} feature service</ExternalLink>
+        <slot name="more-links" />
+      </div>
+      <div class="flex flex-col gap-1">
+        <h2 class="pb-1">Quick clips</h2>
+        <Clipboard title={`${primary.name} Feature service URL`} value={primary.serviceUrl} />
+        <span class="pt-2"></span>
+        <Clipboard title={`${secondary.name} Feature service URL`} value={secondary.serviceUrl} />
+      </div>
+      <div class="flex flex-col">
+        <h2 class="pb-1">Getting started</h2>
+        <div>Learn more about the <a href="/documentation/sgid/#sgid-on-arcgis">SGID on ArcGIS</a>.</div>
+      </div>
+      <Alert title="Tip">
+        You can copy and paste the feature service URL above into ArcGIS Pro or a web map to visualize this data or
+        access the query endpoint to query the data with your favorite programming language.
+      </Alert>
+    </div>
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      This dataset provides GIS professionals, land surveyors, and civil engineers with boudnary and projection
+      parameters for Utah's complete SPCS2022 zones. It allows users to identify appropriate SPCS2022 coordinate zones
+      for regional and multi-county projects while aligning with modern National Spatial Reference System (NSRS)
+      standards.
+    </p>
+    <p>
+      Each polygon represents the designated geographic extent of an individual SPCS2022 zone. Features contain
+      attribute metadata defining zone codes, zone names, central meridians, scale factors, and official projection
+      parameters defined by NOAA NGS.
+    </p>
+    <p>
+      These datasets were created by NOAA. UGRC imported NOAA's Shapefiles into a file geodatabase, projected them into
+      UTM 12N (EPSG: 26912), and then imported them into an enterprise geodatabase. No other alterations were made to
+      the data.
+    </p>
+    <p>
+      Additional information can be found at NOAA's [Beta SPCS2022 page](https://beta.ngs.noaa.gov/SPCS/) and [SPCS2022
+      Zone Definitions page](https://beta.ngs.noaa.gov/SPCS/zone-definitions.shtml). Please reach out to [our
+      team](https://gis.utah.gov/contact/) with questions or concerns about this dataset.
+    </p>
+  </Fragment>
+
+  <UpdateHistory slot="update-history" updates={page.updateHistory} />
+
+  <Section title="More resources" slot="more-resources" titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="NOAA NGS" href="https://beta.ngs.noaa.gov/SPCS/index.html"
+        >NOAA SPCS2022 Webpage.</CardWithPopularLink
+      >
+      <CardWithPopularLink
+        title="NOAA NGS"
+        href="https://experience.arcgis.com/experience/dddb7bc0be6f4e56a1c370c8d529d1a0"
+        >SPCS2022 Interactive Maps</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" stripe titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="SPCS2022 Zone Definitions" href="https://beta.ngs.noaa.gov/SPCS/zone-definitions.shtml"
+        >Zone Definitions Parameters.</CardWithSmallLink
+      >
+      <CardWithSmallLink title="Linear Distortion Maps" href="https://beta.ngs.noaa.gov/SPCS/distortion-maps.html"
+        >Distortion Maps for all US zones.</CardWithSmallLink
+      >
+    </GridForYouMightLike>
+  </Section>
+</Layout>
