@@ -1,8 +1,10 @@
 name: New Issue (Create Blog Post)
 
 on:
-  # Do not commit me to main, this is for testing purposes only
-  workflow_dispatch:
+  # # Do not commit me to main, this is for testing purposes only
+  push:
+    branches:
+      - bugfix/3430-bad-credentials-error
   issues:
     types: [opened]
 
@@ -18,7 +20,7 @@ jobs:
             const response = await github.rest.reactions.createForIssue({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.payload.issue.number,
+              issue_number: context.payload.issue?.number ?? 3430,
               content: 'eyes'
             });
 
@@ -37,6 +39,9 @@ jobs:
           username: ${{ github.actor }}
           team: committers
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
+
+      - name: Debug membership
+        run: echo "isTeamMember=${{ steps.checkUserMember.outputs.isTeamMember }}"
 
       - name: 🛑 Stop if not member
         if: ${{ steps.checkUserMember.outputs.isTeamMember == false }}
@@ -65,7 +70,7 @@ jobs:
 
       - name: 📝 Create Blog Post
         working-directory: scripts
-        run: node new-blog.mjs ${{ github.event.issue.number }}
+        run: node new-blog.mjs ${{ github.event.issue.number || 3430 }}
 
       - name: 📌 Create Pull Request
         uses: peter-evans/create-pull-request@v8
@@ -77,8 +82,8 @@ jobs:
           body: |
             This PR was automatically created by the "Issue opened (new blog)" workflow.
 
-            closes #${{ github.event.issue.number}}
-          branch: feat/new-blog-post-${{ github.event.issue.number }}
+            closes #${{ github.event.issue.number || 3430 }}
+          branch: feat/new-blog-post-${{ github.event.issue.number || 3430 }}
           draft: true
 
       - name: 🗑️ Remove reaction
@@ -88,7 +93,7 @@ jobs:
             github.rest.reactions.deleteForIssue({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.payload.issue.number,
+              issue_number: context.payload.issue?.number ?? 3430,
               reaction_id: ${{ steps.update_status.outputs.result }}
             })
 
@@ -100,6 +105,6 @@ jobs:
             github.rest.reactions.createForIssue({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.payload.issue.number,
+              issue_number: context.payload.issue?.number ?? 3430,
               content: 'rocket'
             });
