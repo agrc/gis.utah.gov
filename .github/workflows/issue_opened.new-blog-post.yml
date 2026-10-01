@@ -34,11 +34,12 @@ jobs:
           owner: ${{ github.repository_owner }}
 
       - name: 🔬 Check actor
-        uses: tspascoal/get-user-teams-membership@v3
+        uses: tspascoal/get-user-teams-membership@v4
         id: checkUserMember
         with:
           username: ${{ github.actor }}
           team: ugrc-staff
+          use_team_slug: true
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
 
       - name: Debug membership
