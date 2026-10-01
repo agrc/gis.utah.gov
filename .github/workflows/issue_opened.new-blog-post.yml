@@ -1,6 +1,8 @@
 name: New Issue (Create Blog Post)
 
 on:
+  # Do not commit me to main, this is for testing purposes only
+  workflow_dispatch:
   issues:
     types: [opened]
 
