@@ -38,14 +38,14 @@ jobs:
         id: checkUserMember
         with:
           username: ${{ github.actor }}
-          team: committers
+          team: ugrc-staff
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
 
       - name: Debug membership
         run: echo "isTeamMember=${{ steps.checkUserMember.outputs.isTeamMember }}"
 
       - name: 🛑 Stop if not member
-        if: ${{ steps.checkUserMember.outputs.isTeamMember == false }}
+        if: ${{ steps.checkUserMember.outputs.isTeamMember == 'false' }}
         run: |
           echo "You cannot run this job."
           exit 86
