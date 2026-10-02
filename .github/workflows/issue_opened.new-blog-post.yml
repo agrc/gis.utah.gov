@@ -63,8 +63,6 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
-          cache: pnpm
-          cache-dependency-path: scripts/pnpm-lock.yaml
 
       - name: 📦 Install script dependencies
         working-directory: scripts
