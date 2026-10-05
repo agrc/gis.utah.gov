@@ -2,8 +2,6 @@ name: ✍️ New blog post idea
 description: Request the addition of a new blog post.
 title: ✍️ New blog post idea
 labels: ['blog-post']
-assignees:
-  - steveoh
 body:
   - type: markdown
     attributes:
@@ -28,18 +26,19 @@ body:
       multiple: false
       description: Who is writing the blog?
       options:
+        - Alex Neville
+        - Chris Wnek
+        - Danielle Dupuy
         - Denise Peterson
-        - Hang Chou
+        - Erik Neemann
+        - Hank Chou
         - Jake Adams
         - Laura Ault
-        - Chris Wnek
-        - Erik Neemann
         - Michael Foulger
         - Miriam Seely
         - Rick Kelson
         - Scott Davis
         - Sean Fernandez
-        - Steve Gourley
         - Zach Beck
       default: 1
     validations:
