@@ -23,4 +23,14 @@ import type { Announcement } from '@utils/announcement';
 //     label: 'Learn more',
 //   },
 // };
-export const announcement: Announcement | undefined = undefined;
+export const announcement: Announcement | undefined = {
+  message:
+    'Scheduled maintenance of TURN GPS and NevadaGPS systems on Tuesday, October 20th, between 6:00 a.m. and 10:00 a.m.',
+  scope: 'all-pages',
+  startsAt: '2026-10-06T16:27:05.164Z',
+  endsAt: '2026-10-20T10:00:00-06:00',
+  action: {
+    href: '/status/',
+    label: 'View status',
+  },
+};
