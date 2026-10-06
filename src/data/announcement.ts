@@ -30,7 +30,7 @@ export const announcement: Announcement | undefined = {
   startsAt: '2026-10-06T16:27:05.164Z',
   endsAt: '2026-10-20T10:00:00-06:00',
   action: {
-    href: '/status/',
+    href: '/blog/2026-10-06-turn-gps-and-nevadagps-scheduled-maintenance/',
     label: 'View status',
   },
 };
