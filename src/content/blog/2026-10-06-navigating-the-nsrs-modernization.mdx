@@ -1,5 +1,5 @@
 ---
-title: Navigating the nsrs modernization
+title: 'Navigating the NSRS Modernization: Preparing Utah for NATRF2022 and SPCS2022'
 author: Sean Fernandez
 description: >-
   Preparing Utah for the NSRS modernization, the new terrestrial reference frame
@@ -10,13 +10,73 @@ cover_image: /src/images/pillar-blog/default-social-card.png
 cover_image_alt: ugrc social card
 ---
 
-{/* remove if not using images
-import { Image } from 'astro:assets'; */}
+import { Image } from 'astro:assets';
 
-{/* remove if not using an image
-import myImage from '@images/blog/2026-10-06-navigating-the-nsrs-modernization/image.png'; */}
+import spcs2022 from '@images/blog/2026-10-06-navigating-the-nsrs-modernization/SPCS_zones_60.png';
 
-My blog post content starts here.
+The National Geodetic Survey (NGS) is modernizing the National Spatial Reference System (NSRS), the foundation that allows surveyors, engineers, and GIS professionals to accurately define and share locations. This modernization will eventually replace NAD83 with new terrestrial reference frames, including the North American Terrestrial Reference Frame of 2022 (NATRF2022), and replace the current State Plane Coordinate System with SPCS2022.
 
-{/* remove if not using an image
-<Image src={myImage} loading="eager" alt="A sample image" /> */}
+For Utah, this is a significant change, but it is not a change that requires everyone to immediately convert their existing data.
+
+## What is changing?
+
+NATRF2022 is part of a new generation of reference frames designed to work with modern Global Navigation Satellite System (GNSS) technology and account for the fact that the Earth's surface is constantly moving. SPCS2022 provides the projected coordinate systems that will be used with these new reference frames.
+
+Utah's SPCS2022 design includes [11 Regional Zones](https://opendata.gis.utah.gov/datasets/utah::utah-spcs2022-regional-zones/explore) that provide complete coverage of the state. Utah also has [79 Low Distortion Zones](https://opendata.gis.utah.gov/datasets/utah::utah-spcs2022-low-distortion-zones/explore) designed to provide lower linear distortion for high-precision surveying, engineering, and mapping in localized areas. UGRC has now published datasets for both of these new zone layers.
+
+These new systems are intended to provide a better foundation for modern positioning technologies and high-accuracy geospatial applications.
+
+<Image
+  src={spcs2022}
+  alt="SPCS2022 regional and low distortion zones for Utah over a light gray basemap"
+  loading="lazy"
+/>
+
+## Do I need to convert my existing data?
+
+Not yet.
+
+Existing NAD83 data will continue to be important for years to come. Historical surveys, parcel data, infrastructure records, imagery, GIS layers, and countless other datasets were created using NAD83 and will not suddenly become obsolete when the modernized NSRS is implemented.
+
+The first step is understanding what you already have.
+
+For important datasets, make sure you know and document:
+
+- What reference system or datum the data uses _(for example, NAD83(2011), NAD83(HARN), or NATRF2022)_
+- What coordinate system and zone it uses _(for example, Utah Central State Plane, Utah North, or one of the new SPCS2022 Regional or Low Distortion Zones)_
+- What units are being used _(for example, U.S. survey feet, international feet, or meters)_
+- The date or epoch associated with the coordinates, when applicable _(for example, coordinates referenced to the 2022.00 epoch or another specified date)_
+- What vertical datum and type of height are being used, when applicable _(for example, NAVD 88 orthometric heights or ellipsoid heights measured by GNSS)_
+- Where the data came from and how it was created _(for example, a county survey, GNSS observation, aerial imagery, engineering project, or existing GIS dataset)_
+
+Good metadata will become increasingly important as organizations begin working with data referenced to both NAD83 and the modernized NSRS.
+
+## Start preparing now
+
+While there is no need to convert your existing GIS database simply because NATRF2022 and SPCS2022 are available, now is a good time to prepare your systems and workflows.
+
+For new projects—particularly those involving GNSS, surveying, engineering, or high-accuracy GIS—consider how the project will work in the modernized NSRS. Make sure your GIS, survey, database, and software systems can identify and manage the different reference systems.
+
+It is also important to understand the difference between assigning a coordinate system and transforming coordinates. Simply assigning a new coordinate system does not change the coordinates. Moving data from NAD83 into NATRF2022 requires an appropriate transformation that accounts for the relationship between the reference frames and, where applicable, changes through time.
+
+NGS is developing the tools needed to support these workflows. In September 2026, NGS announced the public beta release of several [core modernization products](https://beta.ngs.noaa.gov/), including updated versions of the NGS Coordinate Conversion and Transformation Tool (NCAT) and Online Positioning User Service (OPUS)-Static. These tools allow the geospatial community to begin testing modernized NSRS workflows with real-world data.
+
+The beta products are intended for testing and evaluation and should not yet be used for authoritative or operational purposes.
+
+## What is UGRC doing?
+
+UGRC is working with the National Geodetic Survey and the Utah geospatial and surveying community to help Utah prepare for the transition.
+
+We also have the Utah Geodetic Advisory Committee and stakeholders to help evaluate and prepare for the new reference systems and coordinate zones. UGRC has made Utah's [SPCS2022 Regional and Low Distortion Zone information](/products/sgid/cadastre/spcs2022/) available through the SGID, so surveyors, GIS professionals, and engineers can begin familiarizing themselves with the new system. https://gis.utah.gov/products/sgid/cadastre/spcs2022/
+
+Making this information available now gives Utah's surveying and GIS community an opportunity to become familiar with the new zones before they become part of everyday workflows. It also provides organizations with a starting point for evaluating how SPCS2022 may fit into future projects, software, databases, and data-management practices.
+
+The transition will take time. Organizations will need to manage existing NAD83 data while gradually incorporating data based on NATRF2022 and SPCS2022. UGRC will continue providing information, guidance, and resources as the NGS implementation progresses.
+
+## The best first step
+
+The modernization of the NSRS is a major change, but there is no reason to panic—or to start converting everything today.
+
+Know what you have. Document it. Make sure your software can support it. And begin planning for what is coming.
+
+By taking these steps now, Utah's GIS and surveying community will be better prepared to take advantage of the improved accuracy and capabilities of the modernized NSRS when the time comes.
