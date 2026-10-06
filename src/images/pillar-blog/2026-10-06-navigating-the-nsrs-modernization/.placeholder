@@ -1,6 +1,0 @@
-The purpose of this file is to create a temporary folder place holder since git does not preserve empty folders.
-
-1. Delete this file if there will be no blog post images since the folder has no purpose.
-2. Delete this file after adding images since git will preserve the folder and this file has no purpose.
-
-This file should not be merged into main.
