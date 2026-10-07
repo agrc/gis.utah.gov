@@ -4,6 +4,7 @@ import Layout from '@layouts/FullWidth.astro';
 import type { IStandardPageMetadata } from '@models/types';
 
 import Blockquote from '@components/page/Blockquote.astro';
+import BulletedList from '@components/page/BulletedList.astro';
 import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
 import ExternalLink from '@components/page/ExternalLink.astro';
 import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
@@ -56,11 +57,11 @@ const page: IStandardPageMetadata = {
       high level of coordination among Utah GIS users and an effective, efficient use of GIS resources.
     </p>
     <p>Our other services include:</p>
-    <ul>
+    <BulletedList>
       <li>Stewardship of the State Geographic Information Datasource (SGID)</li>
       <li>Facilitation of programs and activities to implement GIS technology across the state</li>
       <li>Coordination of GIS policy development and implementation activities</li>
-    </ul>
+    </BulletedList>
     <p>
       We also provide consulting services to federal, state, and local government agencies, as well as other
       organizations. These services include GIS analysis, application development, and map and web service development
