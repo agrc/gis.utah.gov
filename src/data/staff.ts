@@ -19,7 +19,7 @@ export const staff = [
     name: 'Chris Wnek',
     team: 'Project Management',
     phone: '385-589-3603',
-    email: 'chrisw+ugrc@utah.gov',
+    email: 'chrisw@utah.gov',
     x: '',
     tags: ['collaboration', 'partnerships', 'budgets', 'new projects', 'ongoing support'],
   },
