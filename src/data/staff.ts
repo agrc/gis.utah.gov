@@ -58,7 +58,7 @@ export const staff = [
   {
     name: 'Danielle Dupuy',
     team: 'Development Team',
-    phone: '',
+    phone: '801-833-2296',
     email: 'didupuy@utah.gov',
     x: '',
     tags: [ 'ArcGIS', 'AGOL', 'Configurable Apps', 'Python', 'JavaScript',],
