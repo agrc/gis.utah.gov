@@ -202,6 +202,31 @@ You should place this line of code in the spot where you want the image to appea
 
 When editing blog posts created by the issue template, remember to delete the placeholder file after you have uploaded your images or when you decide you are not going to include images. The placeholder file should not be merged with the blog post.
 
+#### staff contact photos
+
+All staff photos should be high-contrast, black-and-white, and set against a solid white background.
+
+Requirements:
+
+- Crop: square
+- Dimensions: 400 × 400 pixels
+
+**Option 1: Capture In-Camera (iPhone)**
+
+1. Open the **Camera** app and switch to **Portrait** mode.
+1. Select the **High-Key Light Mono** lighting filter.
+1. Take the photo against a clean background.
+
+**Option 2: Edit an Existing Photo (iPhone)**
+
+1. Open the photo in **Photos** and tap **Edit**.
+1. Select the **Mono** filter.
+1. Under the **Adjust** menu, use these settings as a starting point to get the right look:
+  - **Highlights:** `+80` to `Max`
+  - **Contrast:** `+45`
+  - **Brightness:** `+50`
+  - **Black Point:** Decrease slightly to soften harsh blacks.
+
 ### font matter
 
 - `title: Title` - the title of the content
