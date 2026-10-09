@@ -9,7 +9,7 @@ cover_image: /src/images/pillar-blog/road-update-social-card.png
 cover_image_alt: ugrc sgid road update social card
 ---
 
-## New Tools! :toolbox:
+## New Tools! 🧰
 
 UGRC recently upgraded several of the tools that we use to process road updates from the counties. These tools will allow us aggregate and edit road data in a more modern, sustainable framework and with a simpler code base. We've also incorporated [Attribute Rules](https://doc.esri.com/en/arcgis-pro/latest/help/data/geodatabases/overview/create-modify-and-delete-attribute-rules.html) into our editing database to perform data cleanup and field calculation tasks. This should help ensure cleaner, more consistent data and prevent human/data entry errors.
 
@@ -45,7 +45,7 @@ These updates are also reflected in UGRC's [address locators](/products/sgid/add
 
 The following are highlights from this month's update.
 
-## County Updates :eyes:
+## County Updates 👀
 
 New roads were added and road names and address ranges were updated for the following counties:
 
