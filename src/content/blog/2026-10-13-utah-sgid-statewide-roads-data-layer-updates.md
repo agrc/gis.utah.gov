@@ -29,7 +29,7 @@ Specific updates include the following:
 - Added default values to specific fields:
   - ONEWAY = '0' (two way)
   - VERT_LEVEL = '0' (ground/lowest)
-  - STATUS = Active'
+  - STATUS = 'Active'
   - CARTOCODE = '11' (Other Local, Neighborhood, Rural Roads)
   - STATE_L = 'UT'
   - STATE_L = 'UT'
