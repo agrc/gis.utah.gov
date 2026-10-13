@@ -13,7 +13,7 @@ cover_image_alt: ugrc sgid road update social card
 
 UGRC recently upgraded several of the tools that we use to process road updates from the counties. These tools will allow us aggregate and edit road data in a more modern, sustainable framework and with a simpler code base. We've also incorporated [Attribute Rules](https://doc.esri.com/en/arcgis-pro/latest/help/data/geodatabases/overview/create-modify-and-delete-attribute-rules.html) into our editing database to perform data cleanup and field calculation tasks. This should help ensure cleaner, more consistent data and reduce human/data entry errors.
 
-You can find more information about these tools in our [utrans-tools repo](https://github.com/agrc/utrans-tools/tree/main) on Github.
+You can find more information about these tools in our [utrans-tools repo](https://github.com/agrc/utrans-tools/) on Github.
 
 Specific updates include the following:
 
