@@ -16,6 +16,7 @@ import externalLinkConfig from './plugins/externalLinks';
 // https://astro.build/config
 export default defineConfig({
   site: process.env.BRANCH === 'main' ? process.env.URL : process.env.DEPLOY_URL || 'https://gis.utah.gov',
+  compressHTML: true,
   image: {
     domains: ['gis.utah.gov'],
   },

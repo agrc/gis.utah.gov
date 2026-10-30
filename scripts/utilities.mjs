@@ -1,4 +1,3 @@
-import axiosRetry from 'axios-retry';
 import * as changeCase from 'change-case';
 import { GoogleAuth, auth } from 'google-auth-library';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
@@ -270,17 +269,6 @@ export function buildDuplicateIndex(rows, config = duplicateFieldConfig) {
   return reverseIndex;
 }
 
-export function configureRetries(client) {
-  axiosRetry(client, {
-    retries: 7,
-    retryDelay: (retryCount) => {
-      const randomNumberMS = random(1000, 8000);
-      return Math.min(4 ** retryCount + randomNumberMS, 20000);
-    },
-    retryCondition: (error) => error.response.status === 429,
-  });
-}
-
 export async function getSheet(spreadsheetId = '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ') {
   const scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'];
   let client;
@@ -296,10 +284,16 @@ export async function getSheet(spreadsheetId = '11ASS7LnxgpnD0jN4utzklREgMf1pcvY
   }
 
   console.log('loading spreadsheet');
-  const spreadsheet = new GoogleSpreadsheet(spreadsheetId, client);
-
-  configureRetries(spreadsheet.sheetsApi);
-  configureRetries(spreadsheet.driveApi);
+  const spreadsheet = new GoogleSpreadsheet(spreadsheetId, client, {
+    retryConfig: {
+      limit: 7,
+      methods: ['get', 'put', 'post', 'patch', 'head', 'delete', 'options', 'trace'],
+      statusCodes: [429],
+      shouldRetry: ({ error }) => (error.response?.status === 429 ? undefined : false),
+      maxRetryAfter: 20000,
+      delay: (retryCount) => Math.min(4 ** retryCount + random(1000, 8000), 20000),
+    },
+  });
 
   await spreadsheet.loadInfo();
 

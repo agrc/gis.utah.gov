@@ -4,70 +4,69 @@
     "strictNullChecks": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "baseUrl": ".",
     "paths": {
       "@layouts/*": [
-        "src/layouts/*"
+        "./src/layouts/*"
       ],
       "@components/*": [
-        "src/components/*"
+        "./src/components/*"
       ],
       "@images/header/*": [
-        "src/images/header/*"
+        "./src/images/header/*"
       ],
       "@images/landing/*": [
-        "src/images/landing/*"
+        "./src/images/landing/*"
       ],
       "@images/solutions/*": [
-        "src/images/pillar-solutions/*"
+        "./src/images/pillar-solutions/*"
       ],
       "@images/media/*": [
-        "src/images/media/*"
+        "./src/images/media/*"
       ],
       "@images/sgid/*": [
-        "src/images/product-sgid/*"
+        "./src/images/product-sgid/*"
       ],
       "@images/discover/*": [
-        "src/images/product-discover/*"
+        "./src/images/product-discover/*"
       ],
       "@images/turn/*": [
-        "src/images/product-turn/*"
+        "./src/images/product-turn/*"
       ],
       "@images/api/*": [
-        "src/images/product-api/*"
+        "./src/images/product-api/*"
       ],
       "@images/about/*": [
-        "src/images/pillar-about/*"
+        "./src/images/pillar-about/*"
       ],
       "@images/blog/*": [
-        "src/images/pillar-blog/*"
+        "./src/images/pillar-blog/*"
       ],
       "@images/contact/*": [
-        "src/images/pillar-contact/*"
+        "./src/images/pillar-contact/*"
       ],
       "@images/collaboration/*": [
-        "src/images/pillar-collaboration/*"
+        "./src/images/pillar-collaboration/*"
       ],
       "@images/documentation/*": [
-        "src/images/pillar-documentation/*"
+        "./src/images/pillar-documentation/*"
       ],
       "@images/footer/*": [
-        "src/images/footer/*"
+        "./src/images/footer/*"
       ],
       "@utils/*": [
-        "src/utilities/*"
+        "./src/utilities/*"
       ],
       "@data/*": [
-        "src/data/*"
+        "./src/data/*"
       ],
       "@models/*": [
-        "src/types/*"
+        "./src/types/*"
       ],
       "@partials/*": [
-        "src/pages/_partials/*"
+        "./src/pages/_partials/*"
       ],
       "@downloads/*": [
-        "src/downloads/*"
+        "./src/downloads/*"
       ]
     }
   },
