@@ -39,7 +39,7 @@ export const getFeatureServiceUrl = ({
   layerId = 0,
   host = 'https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/',
   serviceName,
-}) => `${host}/rest/services/${serviceName}/FeatureServer/${layerId}`;
+}: NonNullable<StewardshipRecord['server']>) => `${host}/rest/services/${serviceName}/FeatureServer/${layerId}`;
 ``;
 export const getArcGisHubUrl = (hub: StewardshipRecord['hub']) => {
   if (!hub) {

@@ -1,6 +1,8 @@
-const plugin = require('tailwindcss/plugin');
-const heroPatterns = require('tailwind-heropatterns');
-const colors = require('tailwindcss/colors');
+import animatePlugin from '@anuragroy/tailwindcss-animate';
+import typography from '@tailwindcss/typography';
+import colors from 'tailwindcss/colors';
+import plugin from 'tailwindcss/plugin';
+import heroPatterns from 'tailwind-heropatterns';
 
 const brandColors = {
   primary: {
@@ -20,6 +22,16 @@ const brandColors = {
   },
 };
 
+const legacyHeroPatterns = heroPatterns({
+  patterns: ['graph-paper', 'topography'],
+  opacity: {
+    default: '.1',
+  },
+  colors: {
+    default: colors.black,
+  },
+});
+
 const sharedColorVariables = {
   '--ugrc-color-primary': brandColors.primary.default,
   '--ugrc-color-primary-dark': brandColors.primary.dark,
@@ -30,22 +42,6 @@ const sharedColorVariables = {
   '--ugrc-color-accent': brandColors.accent.default,
   '--ugrc-color-accent-dark': brandColors.accent.dark,
   '--ugrc-color-accent-light': brandColors.accent.light,
-};
-
-const udsColorOverrides = {
-  '--primary-color': 'var(--ugrc-color-primary)',
-  '--primary-color-dark': 'var(--ugrc-color-primary-dark)',
-  '--primary-color-light': 'var(--ugrc-color-primary-light)',
-  '--secondary-color': 'var(--ugrc-color-secondary)',
-  '--secondary-color-dark': 'var(--ugrc-color-secondary-dark)',
-  '--secondary-color-light': 'var(--ugrc-color-secondary-light)',
-  '--accent-color': 'var(--ugrc-color-accent)',
-  '--accent-color-dark': 'var(--ugrc-color-accent-dark)',
-  '--accent-color-light': 'var(--ugrc-color-accent-light)',
-  '--header-primary-color': 'var(--ugrc-color-secondary)',
-  '--header-primary-color-dark': 'var(--ugrc-color-secondary-dark)',
-  '--link-color': 'var(--ugrc-color-primary)',
-  '--link-color-dark': 'var(--ugrc-color-primary-dark)',
 };
 
 /** @type {import('tailwindcss').Config} */
@@ -86,7 +82,6 @@ export default {
     plugin(({ addBase, matchUtilities }) => {
       addBase({
         ':root': sharedColorVariables,
-        '.utah-design-system': udsColorOverrides,
       });
 
       matchUtilities({
@@ -95,17 +90,16 @@ export default {
         }),
       });
     }),
-    require('@anuragroy/tailwindcss-animate'),
-    heroPatterns({
-      patterns: ['graph-paper', 'topography'],
-      opacity: {
-        default: '.1',
-      },
-      colors: {
-        default: colors.black,
-      },
+    animatePlugin,
+    // tailwind-heropatterns still expects Tailwind v3's escaping and nested utility APIs.
+    plugin(({ addUtilities, theme }) => {
+      legacyHeroPatterns({
+        e: (className) => className,
+        addUtilities: (utilities) => addUtilities(Object.assign({}, ...utilities.flat(Infinity))),
+        theme,
+      });
     }),
-    require('@tailwindcss/typography')({
+    typography({
       className: 'mdx',
     }),
   ],

@@ -1,7 +1,7 @@
 import { ProductType, type StewardshipRecord } from '@models/types';
 import { GoogleAuth } from 'google-auth-library';
 import type { JSONClient } from 'google-auth-library/build/src/auth/googleauth';
-import { GoogleSpreadsheet } from 'google-spreadsheet';
+import { GoogleSpreadsheet, type GoogleSpreadsheetRow } from 'google-spreadsheet';
 
 const stewardshipId = '11ASS7LnxgpnD0jN4utzklREgMf1pcvYjcXcIcESHweQ';
 
@@ -58,7 +58,7 @@ function toProductTypeEnum(type: string): ProductType {
   return productType;
 }
 
-export function etlRow(row): StewardshipRecord | null {
+export function etlRow(row: Pick<GoogleSpreadsheetRow, 'get'>): StewardshipRecord | null {
   if ((row.get('indexStatus') ?? '') !== 'live') {
     return null;
   }
@@ -97,7 +97,7 @@ export function etlRow(row): StewardshipRecord | null {
       openSgid: row.get('openSGIDtableName'),
     };
   } catch (error) {
-    console.warn(`Error processing row id: ${row.id}...`);
+    console.warn(`Error processing row id: ${row.get('id')}...`);
     console.warn(error);
 
     return null;

@@ -1,5 +1,5 @@
 ---
-import { getBlogFilters, slugify } from '@utils/collections';
+import { getBlogFilters, slugify, type BlogFilter } from '@utils/collections';
 import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 
@@ -19,7 +19,7 @@ const { name, team, x, tags, email } = Astro.props;
 const location = '/src/images/pillar-contact/staff/';
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/pillar-contact/staff/*.{svg,png}');
 const authorFilters = await getBlogFilters('authors');
-const authorFiltersLookup = authorFilters.reduce((acc, filter) => {
+const authorFiltersLookup = authorFilters.reduce<Record<string, BlogFilter>>((acc, filter) => {
   acc[filter.slug] = filter;
 
   return acc;
@@ -28,23 +28,23 @@ const authorFilter = authorFiltersLookup[slugify(name)];
 ---
 
 <li>
-  <div class="grid h-60 grid-cols-150 items-center gap-1 p-3 sm:grid-cols-3-150">
+  <div class="sm:grid-cols-3-150 grid h-60 grid-cols-150 items-center gap-1 p-3">
     <Image
-      class="size-32 rounded-full border-2 border-primary/90 shadow-xl dark:border-accent"
+      class="border-primary/90 dark:border-accent size-32 rounded-full border-2 shadow-xl"
       src={images[`${location}${convert(name)}.png`]()}
       alt={`portrait of ${name} with a white background`}
       width={128}
       height={128}
     />
     <div>
-      <h3 class="text-base font-semibold leading-7 tracking-tight">{name}</h3>
-      <div class="text-base text-secondary dark:text-accent">
-        <p class="text-sm font-semibold leading-6">
+      <h3 class="text-base leading-7 font-semibold tracking-tight">{name}</h3>
+      <div class="text-secondary dark:text-accent text-base">
+        <p class="text-sm leading-6 font-semibold">
           <a href={`mailto:${email}`}>{email}</a>
         </p>
         {
           x && (
-            <p class="text-sm font-semibold leading-6">
+            <p class="text-sm leading-6 font-semibold">
               <a href={`https://x.com/${x}`}>{x}</a>
             </p>
           )
@@ -57,9 +57,9 @@ const authorFilter = authorFiltersLookup[slugify(name)];
           </a>
         ) : null
       }
-      <div class="text-sm font-semibold leading-6">
+      <div class="text-sm leading-6 font-semibold">
         <div class="flex items-center text-base text-zinc-600 dark:text-zinc-300">
-          <p class="text-sm font-medium leading-6">{team}</p>
+          <p class="text-sm leading-6 font-medium">{team}</p>
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@ const authorFilter = authorFiltersLookup[slugify(name)];
           tags
             .sort((a, b) => a.length - b.length)
             .map((tag) => (
-              <div class="select-none self-center rounded-full border border-secondary bg-primary/90 px-4 py-1 text-center font-semibold lowercase text-zinc-50 dark:border-accent/30 dark:bg-secondary">
+              <div class="border-secondary bg-primary/90 dark:border-accent/30 dark:bg-secondary self-center rounded-full border px-4 py-1 text-center font-semibold text-zinc-50 lowercase select-none">
                 {tag.replaceAll(' ', '-')}
               </div>
             ))

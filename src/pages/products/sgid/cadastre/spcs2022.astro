@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/types';
+import type { IHubDownload, IMetadata, IPageMetadata } from '@models/types';
 import { ProductType, SgidCategory } from '@models/types';
 
 import Metadata from '@components/data/Metadata.astro';
@@ -27,16 +27,16 @@ export const metadata: IMetadata = {
   secondaryCategory: SgidCategory.BOUNDARIES,
 };
 
+const pageHub = { ...dataPages['Utah SPCS2022 Regional Zones'] };
+
 const page: IPageMetadata = {
   ...metadata,
   application: 'https://experience.arcgis.com/experience/dddb7bc0be6f4e56a1c370c8d529d1a0',
   updateHistory: [`September 2026`],
-  hub: {
-    ...dataPages['Utah SPCS2022 Regional Zones'],
-  },
+  hub: pageHub,
 };
 
-const hubParts = (hub) => {
+const hubParts = (hub: IHubDownload) => {
   let id = hub.name.toLowerCase().replaceAll(' ', '-');
   let name = hub.name;
   const featureServiceHost = 'https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/';
@@ -52,7 +52,7 @@ const hubParts = (hub) => {
   return { id, name, serviceUrl };
 };
 
-const primary = hubParts(page.hub);
+const primary = hubParts(pageHub);
 const secondary = hubParts(dataPages['Utah SPCS2022 Low Distortion Zones']);
 ---
 

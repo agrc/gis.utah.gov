@@ -2,7 +2,8 @@ import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
+import { unified } from '@astrojs/markdown-remark';
 import metaTags from 'astro-meta-tags';
 import { defineConfig } from 'astro/config';
 import { execSync } from 'child_process';
@@ -15,18 +16,19 @@ import externalLinkConfig from './plugins/externalLinks';
 // https://astro.build/config
 export default defineConfig({
   site: process.env.BRANCH === 'main' ? process.env.URL : process.env.DEPLOY_URL || 'https://gis.utah.gov',
+  compressHTML: true,
   image: {
     domains: ['gis.utah.gov'],
   },
   build: {
     assets: '_assets',
   },
+  vite: {
+    plugins: [tailwindcss()],
+  },
   integrations: [
     mdx(),
     sitemap(),
-    tailwind({
-      applyBaseStyles: false,
-    }),
     react(),
     {
       name: 'pagefind',
@@ -64,10 +66,12 @@ export default defineConfig({
     }),
   ],
   markdown: {
+    processor: unified({
+      rehypePlugins: [[rehypeExternalLinks, externalLinkConfig]],
+      remarkPlugins: [remarkCodeTitles],
+    }),
     shikiConfig: {
       theme: 'github-dark-high-contrast',
     },
-    rehypePlugins: [[rehypeExternalLinks, externalLinkConfig]],
-    remarkPlugins: [remarkCodeTitles],
   },
 });
