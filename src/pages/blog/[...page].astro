@@ -1,14 +1,14 @@
 ---
 import Layout from '@layouts/BlogPostIndex.astro';
 
-import type { Page } from 'astro';
+import type { GetStaticPathsOptions, Page } from 'astro';
 
 import Pagination from '@components/Pagination.astro';
 import CardForBlog from '@components/page/CardForBlog.astro';
 
 import { getBlogFilters, getBlogPosts, type BlogFilter, type DecoratedBlogEntry } from '@utils/collections';
 
-export async function getStaticPaths({ paginate }) {
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const posts = await getBlogPosts();
 
   return paginate(posts, { pageSize: 9 });

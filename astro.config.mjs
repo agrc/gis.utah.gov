@@ -2,7 +2,8 @@ import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
+import { unified } from '@astrojs/markdown-remark';
 import metaTags from 'astro-meta-tags';
 import { defineConfig } from 'astro/config';
 import { execSync } from 'child_process';
@@ -21,12 +22,12 @@ export default defineConfig({
   build: {
     assets: '_assets',
   },
+  vite: {
+    plugins: [tailwindcss()],
+  },
   integrations: [
     mdx(),
     sitemap(),
-    tailwind({
-      applyBaseStyles: false,
-    }),
     react(),
     {
       name: 'pagefind',
@@ -64,10 +65,12 @@ export default defineConfig({
     }),
   ],
   markdown: {
+    processor: unified({
+      rehypePlugins: [[rehypeExternalLinks, externalLinkConfig]],
+      remarkPlugins: [remarkCodeTitles],
+    }),
     shikiConfig: {
       theme: 'github-dark-high-contrast',
     },
-    rehypePlugins: [[rehypeExternalLinks, externalLinkConfig]],
-    remarkPlugins: [remarkCodeTitles],
   },
 });

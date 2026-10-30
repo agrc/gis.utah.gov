@@ -1,6 +1,8 @@
-const plugin = require('tailwindcss/plugin');
-const heroPatterns = require('tailwind-heropatterns');
-const colors = require('tailwindcss/colors');
+import animatePlugin from '@anuragroy/tailwindcss-animate';
+import typography from '@tailwindcss/typography';
+import colors from 'tailwindcss/colors';
+import plugin from 'tailwindcss/plugin';
+import heroPatterns from 'tailwind-heropatterns';
 
 const brandColors = {
   primary: {
@@ -19,6 +21,16 @@ const brandColors = {
     light: '#FFE2BF',
   },
 };
+
+const legacyHeroPatterns = heroPatterns({
+  patterns: ['graph-paper', 'topography'],
+  opacity: {
+    default: '.1',
+  },
+  colors: {
+    default: colors.black,
+  },
+});
 
 const sharedColorVariables = {
   '--ugrc-color-primary': brandColors.primary.default,
@@ -95,17 +107,16 @@ export default {
         }),
       });
     }),
-    require('@anuragroy/tailwindcss-animate'),
-    heroPatterns({
-      patterns: ['graph-paper', 'topography'],
-      opacity: {
-        default: '.1',
-      },
-      colors: {
-        default: colors.black,
-      },
+    animatePlugin,
+    // tailwind-heropatterns still expects Tailwind v3's escaping and nested utility APIs.
+    plugin(({ addUtilities, theme }) => {
+      legacyHeroPatterns({
+        e: (className) => className,
+        addUtilities: (utilities) => addUtilities(Object.assign({}, ...utilities.flat(Infinity))),
+        theme,
+      });
     }),
-    require('@tailwindcss/typography')({
+    typography({
       className: 'mdx',
     }),
   ],

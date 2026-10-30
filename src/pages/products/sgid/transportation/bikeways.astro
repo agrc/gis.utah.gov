@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/DataPage.astro';
 
-import type { IMetadata, IPageMetadata } from '@models/types';
+import type { IHubDownload, IMetadata, IPageMetadata } from '@models/types';
 import { ProductType, SgidCategory } from '@models/types';
 
 import Metadata from '@components/data/Metadata.astro';
@@ -27,6 +27,8 @@ export const metadata: IMetadata = {
   secondaryCategory: SgidCategory.RECREATION,
 };
 
+const pageHub = { ...dataPages['Utah Bikeways'] };
+
 const page: IPageMetadata = {
   ...metadata,
   application: 'https://bikeways.utah.gov/',
@@ -50,12 +52,10 @@ const page: IPageMetadata = {
     `May 2025`,
     `April 2025`,
   ],
-  hub: {
-    ...dataPages['Utah Bikeways'],
-  },
+  hub: pageHub,
 };
 
-const hubParts = (hub) => {
+const hubParts = (hub: IHubDownload) => {
   let id = hub.name.toLowerCase().replaceAll(' ', '-');
   let name = hub.name;
   const featureServiceHost = 'https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/';
@@ -71,7 +71,7 @@ const hubParts = (hub) => {
   return { id, name, serviceUrl };
 };
 
-const primary = hubParts(page.hub);
+const primary = hubParts(pageHub);
 const secondary = hubParts(dataPages['Utah Planned Bikeways']);
 ---
 
@@ -141,9 +141,9 @@ const secondary = hubParts(dataPages['Utah Planned Bikeways']);
       which side of the road the best feature is on. The script also calculates a <ExternalLink
         href="https://docs.google.com/document/d/1eo9BscAbXFHKlw8EONFRi4lntBwvON8JzV6tN2D_j6I/edit?tab=t.0"
         >Level of Traffic Stress</ExternalLink
-      > metric that represents the amount of discomfort people feel when they ride their bicycles near traffic. Finally,
-      the data is split into existing and planned features, for use in the <ExternalLink
-        href="https://bikeways.utah.gov/">Utah Bikeways</ExternalLink
+      > metric that represents the amount of discomfort people feel when they ride their bicycles near traffic. Finally, the
+      data is split into existing and planned features, for use in the <ExternalLink href="https://bikeways.utah.gov/"
+        >Utah Bikeways</ExternalLink
       > app.
     </p>
   </Fragment>
