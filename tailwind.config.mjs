@@ -44,22 +44,6 @@ const sharedColorVariables = {
   '--ugrc-color-accent-light': brandColors.accent.light,
 };
 
-const udsColorOverrides = {
-  '--primary-color': 'var(--ugrc-color-primary)',
-  '--primary-color-dark': 'var(--ugrc-color-primary-dark)',
-  '--primary-color-light': 'var(--ugrc-color-primary-light)',
-  '--secondary-color': 'var(--ugrc-color-secondary)',
-  '--secondary-color-dark': 'var(--ugrc-color-secondary-dark)',
-  '--secondary-color-light': 'var(--ugrc-color-secondary-light)',
-  '--accent-color': 'var(--ugrc-color-accent)',
-  '--accent-color-dark': 'var(--ugrc-color-accent-dark)',
-  '--accent-color-light': 'var(--ugrc-color-accent-light)',
-  '--header-primary-color': 'var(--ugrc-color-secondary)',
-  '--header-primary-color-dark': 'var(--ugrc-color-secondary-dark)',
-  '--link-color': 'var(--ugrc-color-primary)',
-  '--link-color-dark': 'var(--ugrc-color-primary-dark)',
-};
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx}'],
@@ -98,7 +82,6 @@ export default {
     plugin(({ addBase, matchUtilities }) => {
       addBase({
         ':root': sharedColorVariables,
-        '.utah-design-system': udsColorOverrides,
       });
 
       matchUtilities({

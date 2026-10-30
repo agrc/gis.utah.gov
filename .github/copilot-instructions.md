@@ -31,8 +31,8 @@ This is the **UGRC (Utah Geospatial Resource Center)** website at [gis.utah.gov]
 ### Styling
 
 - Shared UGRC color tokens for Utah Design System overrides are defined in `tailwind.config.mjs`
-- Tailwind emits the `.utah-design-system` CSS variable overrides, so update the shared tokens there instead of creating separate override files
-- Import `@utahdts/utah-design-system-header/css` before `src/styles/tailwind.css` so the generated overrides load after the UDS defaults
+- Keep shared color values in `tailwind.config.mjs`; `src/styles/tailwind.css` maps them to UDS variables outside cascade layers because UDS defaults are unlayered
+- Import `@utahdts/utah-design-system-header/css` before `src/styles/tailwind.css` so the unlayered overrides load after the UDS defaults
 
 ### Content
 
