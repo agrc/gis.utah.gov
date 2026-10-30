@@ -21,7 +21,7 @@
     "pg": "^8.16.0",
     "progress": "^2.0.3",
     "ts-import": "^5.0.0-beta.1",
-    "uuid": "^11.1.0"
+    "uuid": "^14.0.2"
   },
   "devDependencies": {
     "mock-fs": "^5.5.0"
