@@ -2,6 +2,31 @@ minimumReleaseAge: 10080
 minimumReleaseAgeStrict: true
 minimumReleaseAgeExclude:
   - '@ugrc/*'
+  - '@babel/parser@7.29.12'
+  - '@napi-rs/wasm-runtime@1.2.6'
+  - '@oxc-project/types@0.156.0'
+  - '@rolldown/binding-android-arm-eabi@1.2.16'
+  - '@rolldown/binding-android-arm64@1.2.16'
+  - '@rolldown/binding-darwin-arm64@1.2.16'
+  - '@rolldown/binding-darwin-x64@1.2.16'
+  - '@rolldown/binding-freebsd-x64@1.2.16'
+  - '@rolldown/binding-linux-arm-gnueabihf@1.2.16'
+  - '@rolldown/binding-linux-arm64-gnu@1.2.16'
+  - '@rolldown/binding-linux-arm64-musl@1.2.16'
+  - '@rolldown/binding-linux-ppc64-gnu@1.2.16'
+  - '@rolldown/binding-linux-s390x-gnu@1.2.16'
+  - '@rolldown/binding-linux-x64-gnu@1.2.16'
+  - '@rolldown/binding-linux-x64-musl@1.2.16'
+  - '@rolldown/binding-openharmony-arm64@1.2.16'
+  - '@rolldown/binding-win32-arm64-msvc@1.2.16'
+  - '@rolldown/binding-win32-x64-msvc@1.2.16'
+  - 'hast-util-to-html@9.0.6'
+  - 'magic-string@1.4.5'
+  - 'postcss@8.5.32'
+  - 'rolldown@1.2.16'
+  - 'tslib@2.9.1'
+  - 'unist-util-visit-parents@6.1.0'
+  - 'unist-util-visit@5.2.0'
 storeDir: node_modules/.pnpm-store
 onlyBuiltDependencies:
   - esbuild

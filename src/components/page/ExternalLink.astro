@@ -9,8 +9,8 @@ const { href, type = 'normal' } = Astro.props;
 <a
   href={href}
   class:list={[
-    'inline-flex flex-wrap items-center gap-x-1',
-    type === 'custom' ? ['custom-style', 'focus:outline-none focus:ring-1 focus:ring-accent'] : null,
+    'inline-flex flex-wrap items-center gap-x-[0.25rem]',
+    type === 'custom' ? ['custom-style', 'focus:ring-accent focus:ring-1 focus:outline-none'] : null,
   ]}
   rel="nofollow"
 >
@@ -24,7 +24,7 @@ const { href, type = 'normal' } = Astro.props;
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="currentColor"
-      class="size-4"
+      class="size-[1rem]"
     >
       <path
         stroke-linecap="round"
