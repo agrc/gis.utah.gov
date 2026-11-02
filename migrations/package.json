@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "glob": "^11.0.2",
+    "glob": "^14.0.2",
     "google-auth-library": "^9.15.1",
     "google-spreadsheet": "^4.1.4",
     "gray-matter": "^4.0.3",
