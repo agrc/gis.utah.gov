@@ -1746,11 +1746,11 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'political.vista_ballot_areas_proposed',
     layerId: 0,
   },
-  'Utah Tax Entities 2025': {
-    itemId: '987e0f104f584f119516cfebe5ca4bf1',
-    name: 'Utah Tax Entities 2025',
-    featureServiceId: 'economy_tax_entities_2025',
-    openSgid: 'economy.tax_entities_2025',
+  'Utah Tax Entities 2026': {
+    itemId: 'e1ae206e85704e92b1a2960cf418368f',
+    name: 'Utah Tax Entities 2026',
+    featureServiceId: 'economy_tax_entities_2026',
+    openSgid: 'economy.tax_entities_2026',
     layerId: 0,
   },
   'Utah Telecom Boundaries': {
