@@ -79,151 +79,98 @@ const page: IPageMetadata = {
       />, or visiting <ExternalLink href="https://trustlands.utah.gov">https://trustlands.utah.gov</ExternalLink>.
     </p>
     <h3>Field definitions</h3>
+    <p>
+      <ExternalLink href="https://storymaps.arcgis.com/stories/0b8efe1e5e464e578c8a1087822447c4">The Land Ownership Agency Schema Storymap
+      </ExternalLink> has more information about the fields and attributes available. 
+    </p>
     <dl>
-      <DefinitionListItem term="owner">
-        <p>The physical Owner of the parcel of land.</p>
+      <DefinitionListItem term="Land Manager Type">
         <p class="font-bold">Values</p>
         <BulletedList>
-          <li>Federal (Owned by The United States of America)</li>
-          <li>Private (Private, County, City or Town Ownership)</li>
-          <li>State (Owned by the State of Utah)</li>
-          <li>Tribal (Native American Tribal Ownership)</li>
+          <li>1 - Federal</li>
+          <li>2 - Non-Federal</li>
         </BulletedList>
       </DefinitionListItem>
-      <DefinitionListItem term="agency">
-        <p>
-          The physical Agency who is responsible for the parcel ownership, OWNER AGENCY may differ from ADMIN if the
-          agency is NOT the administrator of the parcel.
-        </p>
-        <p class="font-bold">Values</p>
+
+      <DefinitionListItem term="Land Owner">
+        <p>The name of the entity that holds the deed to the land.</p>
+        <p class="font-bold">Code Description</p>
+        <BulletedList>     
+          <li>BIA	(Bureau of Indian Affairs)</li>
+          <li>BLM	(Bureau of Land Management)</li>
+          <li>BOP	(Federal Bureau of Prisons)</li>
+          <li>BOR	(Bureau of Reclamation)</li>
+          <li>BPA	(Bonneville Power Administration)</li>
+          <li>DHS	(Department of Homeland Security)</li>
+          <li>DOD	(Department of Defense)</li>
+          <li>DOE	(Department of Energy)</li>
+          <li>DOI	(Department of the Interior)</li>
+          <li>DOT	(Department of Transportation)</li>
+          <li>FAA	(Federal Aviation Administration)</li>
+          <li>FHA	(Federal Housing Administration)</li>
+          <li>GSA	(General Services Administration)</li>
+          <li>HHS	(Department of Health and Human Services)</li>
+          <li>IBC	(International Boundary Commission)</li>
+          <li>IBWC(	International Boundary and Water Commission)</li>
+          <li>LG (Local Government)</li>
+          <li>NOAA (National Oceanic Atmospheric Administration)</li>
+          <li>NPS	(National Park Service)</li>
+          <li>NTVALL (Alaska Native Allotment)</li>
+          <li>WTR	(Water)</li>
+        </BulletedList>
+      </DefinitionListItem>
+
+      <DefinitionListItem term="Federal Status">
+        <p>Shows federal status categories at a more granular level.</p>
+        <p class="font-bold">Code	Description</p>
         <BulletedList>
-          <li>BLM (US Bureau of Land Management)</li>
-          <li>BR (US Bureau of Reclamation)</li>
-          <li>DNR (State of Utah Department of Natural Resources)</li>
-          <li>DOD (US Department of Defense)</li>
-          <li>DOE (US Department of Energy)</li>
-          <li>NPS (US National Park Service)</li>
-          <li>OS (Other State Agency, State Facilities, and others state holdings)</li>
-          <li>OF (United States Other Federal Land may include any of the following: AEC, BOM, FAA, GSA, or others)</li>
-          <li>Private (Privately held properties, including City, County and Non-Profit)</li>
-          <li>SITLA (State of Utah School and Institutional Trust Lands Administration)</li>
-          <li>Tribal (Tribal Lands)</li>
-          <li>UDOT (State of Utah Department of Transportation)</li>
-          <li>USFS (US Forest Service)</li>
-          <li>USFWS (US Fish and Wildlife Service)</li>
+          <li>AQ (Other Land Acquisitions)</li>
+          <li>CB (Revested Coos Bay Wagon Road Lands)</li>
+          <li>HST (Historic State Lands)</li>
+          <li>IAF (Indian Fee Lands)</li>
+          <li>IAT (Indian Trust Lands)</li>
+          <li>LU (Bankhead Jones Land Utilization Projects)</li>
+          <li>LWCF (Land Acquired with the Land and Water Conservation Fund)</li>
+          <li>OC (Revested Oregon and California Railroad Lands)</li>
+          <li>PD (PD Vacant)</li>
+          <li>PD_RECON (PD Reconveyed)</li>
+          <li>UND (Undetermined Ownership)</li>
+          <li>NA (Not Applicable)</li>
         </BulletedList>
       </DefinitionListItem>
-      <DefinitionListItem term="admin">
-        <p class="font-bold">Values</p>
+
+      <DefinitionListItem term="Public Access">
+        <p>Known restrictions governing access to and use of the land.</p>
+        <p class="font-bold">Code	Description</p>
         <BulletedList>
-          <li>BLM (US Bureau of Land Management)</li>
-          <li>BR (US Bureau of Reclamation)</li>
-          <li>DOD (US Department of Defense)</li>
-          <li>DOE (US Department of Energy)</li>
-          <li>NPS (National Park Service)</li>
-          <li>OS (State of Utah, Other holdings)</li>
-          <li>Private (Privately held properties)</li>
-          <li>SITLA (School and Institutional Trust Lands Administration)</li>
-          <li>FFSL (Utah DNR - Div. of Forestry, Fire & State Lands)</li>
-          <li>Tribal (Tribal lands)</li>
-          <li>UDWR (Utah DNR - Div. of Wildlife Resources)</li>
-          <li>UDOT (Utah Department of Transportation)</li>
-          <li>USFS (US Forest Service)</li>
-          <li>USFWS (US Fish and Wildlife Service)</li>
-          <li>USP (Utah DNR - State Parks)</li>
+          <li>OPN	(Open)</li>
+          <li>PA (Permit Only)</li>
+          <li>RS (Restricted)</li>
         </BulletedList>
       </DefinitionListItem>
-      <DefinitionListItem term="desig">
-        <p>
-          Describes the "Type" of Land Use or Designation. This field characterizes general land management designations
-          for parcels of land and describes how, or for what use the land is to be managed (ex: Designated as
-          Wilderness, National Park, State Park). This field can accommodate, if necessary, further withdrawals, leases,
-          or permits designated by the ADMIN. E.g. If the USFS places a withdrawal on a parcel, i.e. for wilderness
-          designation, the DESIG field can be used to account for this case. However, only a single designation can be
-          addressed in the DESIG field; we cannot account for multiple withdrawals, leases, or permits on a parcel in
-          this data standard. The data steward or editor must decide the most pertinent information to describe in the
-          <code>DESIG</code> field.
-        </p>
-        <p class="font-bold">Values</p>
+
+      <DefinitionListItem term="State Symbology">
+        <p>State of utah state agency symbology category to be used for display on state of utah agency maps.</p>
+        <p class="font-bold">Code	Description</p>
         <BulletedList>
-          <li>Bankhead Jones (Federal lands (BLM and USFS) acquired under the Bankhead-Jones Farm Tenant Act)</li>
-          <li>
-            Conservation Lands (Land that is being protected, through outright purchase or the purchase of development
-            rights. Easements are held by private non-profit organizations, municipalities and fed or state agencies.)
-          </li>
-          <li>Indian Reservation (Indian Reservations and/or Native American Tribal Lands)</li>
-          <li>Military (Military Reservations and Corps of Engineers)</li>
-          <li>N/A (No specified designation)</li>
-          <li>National Forest (US National Forest)</li>
-          <li>National Historic Site (US National Historic Site)</li>
-          <li>National Monument (US National Monument)</li>
-          <li>National Park (US National Park)</li>
-          <li>National Recreation Area (US National Recreation Area)</li>
-          <li>National Wildlife Refuge (US National Wildlife Refuge)</li>
-          <li>Other (Designation not specified in detail)</li>
-          <li>Parks and Recreation (Parks and Recreation Areas)</li>
-          <li>Primitive Area (US Primitive Area)</li>
-          <li>Public Water Reserve (US Public Water Reserve)</li>
-          <li>Reclamation Withdrawal (US Reclamation Withdrawal)</li>
-          <li>Repository (US Repository)</li>
-          <li>State Sovereign Land (Sovereign Land consists of the beds of Utah's navigable rivers and lakes)</li>
-          <li>
-            State Trust Land (State of Utah School and Institutional Trust Lands Administration (SITLA) is an
-            independent agency of state government. It was created in 1994 by the Utah state legislature to manage lands
-            granted to the state of Utah by the United States for the support of public schools and other beneficiary
-            institutions.)
-          </li>
-          <li>Wilderness (Congressionally Designated Wilderness)</li>
-          <li>Wildlife Reserve/Management Area (Federal, State, Private or Tribal Designated Wildlife Areas)</li>
+          <li>LU (Bankhead Jones Land Utilization Project)</li>
+          <li>BLM	(Bureau of Land Management)</li>
+          <li>BOR	(Bureau of Reclamation)</li>
+          <li>DOD	(Department of Defense)</li>
+          <li>NM (National Monument)</li>
+          <li>NPS	(National Park and Historic Site)</li>
+          <li>NRA	(National Recreation Area)</li>
+          <li>NRGA (National Recreation and Geologic Area)</li>
+          <li>NWPS (National Wilderness Area)</li>
+          <li>NWR	(National Wildlife Refuge)</li>
+          <li>OF (Other Federal)</li>
+          <li>PVT	(Private)</li>
+          <li>STOTH	(State Other)</li>
+          <li>STP	(State Park)</li>
+          <li>FFSL vState Sovereign Land)</li>
+          <li>TLA	(State Trust Land)</li>
+          <li>BIA	(Tribal Lands)</li>
         </BulletedList>
-      </DefinitionListItem>
-      <DefinitionListItem term="label_federal">
-        <p>
-          Administrative names for identifying State Lands, including State Parks, Wildlife Areas, State Trust Lands
-          Administrative Blocks and Sovereign Lands and the Private Lands within each proclamation boundary, where
-          applicable.
-        </p>
-        <p>This field contains label text if the feature is one of the following values:</p>
-        <p class="font-bold">Values</p>
-        <BulletedList>
-          <li>Federal Bird Refuge</li>
-          <li>Federal Military installation</li>
-          <li>USFS National Forest (and corresponding districts)</li>
-          <li>National Historic Site</li>
-          <li>National Monument</li>
-          <li>National Park (and corresponding units)</li>
-          <li>National Recreation Area</li>
-          <li>Federal Primitive Area</li>
-          <li>Tribal Land or Reservation</li>
-          <li>Congressionally Designated Wilderness Area</li>
-        </BulletedList>
-        <p class="italic">
-          Examples: Arches National Park (Klondike Bluffs), Canyonlands National Park (The Needles District), Dugway
-          Proving Grounds US Army, Fish Springs National Wildlife Refuge, Grand Gulch Primitive Area, Uinta National
-          Forest (Mount Nebo Wilderness Area), White Mesa Ute Tribal Lands.
-        </p>
-      </DefinitionListItem>
-      <DefinitionListItem term="label_state">
-        <p>
-          Administrative names for identifying State Lands, including State Parks, Wildlife Areas, State Trust Lands
-          Administrative Blocks and Sovereign Lands and the Private Lands within each proclamation boundary, where
-          applicable.
-        </p>
-        <p>This field contains label text if the feature is one of the following values:</p>
-        <p class="font-bold">Values</p>
-        <BulletedList>
-          <li>State Fish Hatchery</li>
-          <li>School and Institutional Trust Lands Administration (SITLA) Block</li>
-          <li>State Park</li>
-          <li>State Wildlife Area</li>
-        </BulletedList>
-        <p class="italic">
-          Examples: 9-Mile State Wildlife Area, Dead Horse Point State Park, State Trust Lands Book Cliffs Block,
-          Whiterocks Fish Hatchery.
-        </p>
-      </DefinitionListItem>
-      <DefinitionListItem term="shape">
-        <p>The area of land in square meters.</p>
       </DefinitionListItem>
     </dl>
   </Fragment>
