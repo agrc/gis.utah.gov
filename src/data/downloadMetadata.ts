@@ -2605,6 +2605,16 @@ export const dataPages: DownloadMetadata = {
     openSgid: 'cadastre.land_ownership',
     layerId: 0,
   },
+  'Utah Land Ownership Agency': {
+    externalHubOrganization: 'SITLA',
+    oddHubName: 'land-ownership-agency',
+    itemId: '8be831968b464107a22bd877d8cac112',
+    name: 'Utah Land Ownership Agency',
+    featureServiceHost: 'https://gis.trustlands.utah.gov/mapping/rest/services/',
+    featureServiceId: 'Land_Ownership_Agency',
+    openSgid: 'cadastre.land_ownership_agency',
+    layerId: 0,
+  },
   'Utah H3 Hexes Level 8': {
     itemId: '008865ed31514569a9fd11a6dc8a7ee0',
     name: 'Utah H3 Hexes Level 8',
