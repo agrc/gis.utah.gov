@@ -254,8 +254,8 @@ const page: IPageMetadata = {
         Department of State Parks.
       </p>
       <Clipboard
-        title=`To work with only federal lands, specify a where statement of owner='Federal'`
-        value=`owner='Federal'`
+        title=`To work with only federal lands, specify a where statement of land_mngr_= 1`
+        value=`land_mngr_= 1`
       />
     </div>
 
@@ -266,8 +266,8 @@ const page: IPageMetadata = {
         harvesting, while protecting a wide array of natural, cultural, and historical resources.
       </p>
       <Clipboard
-        title=`To work with only BLM administered lands (may be different than BLM-owned lands), specify a where statement of admin='BLM'`
-        value=`admin='BLM'`
+        title=`To work with only BLM administered lands (may be different than BLM-owned lands), specify a where statement of land_mngr='BLM'`
+        value=`land_mngr='BLM'`
       />
     </div>
 
@@ -283,6 +283,7 @@ const page: IPageMetadata = {
         value=`admin='NPS'`
       />
     </div>
+
     <div class="space-y-3 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-700">
       <h4>Private land</h4>
       <p>
@@ -300,6 +301,7 @@ const page: IPageMetadata = {
         >.
       </p>
     </div>
+
     <div class="space-y-3 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-700">
       <h4>School and Institutional Trust Lands Administration (SITLA)</h4>
       <p>
@@ -313,6 +315,7 @@ const page: IPageMetadata = {
         value=`agency='SITLA'`
       />
     </div>
+
     <div class="space-y-3 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-700">
       <h4>Native American Tribally-Owned Land</h4>
       <p>
