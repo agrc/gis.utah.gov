@@ -1,0 +1,365 @@
+---
+import Layout from '@layouts/DataPage.astro';
+
+import type { IMetadata, IPageMetadata } from '@models/types';
+import { ProductType, SgidCategory } from '@models/types';
+
+import HubDownloads from '@components/data/HubDownloads.astro';
+import Metadata from '@components/data/Metadata.astro';
+
+import Alert from '@components/page/Alert.astro';
+import BulletedList from '@components/page/BulletedList.astro';
+import CardWithPopularLink from '@components/page/CardWithPopularLink.astro';
+import CardWithSmallLink from '@components/page/CardWithSmallLink.astro';
+import Clipboard from '@components/page/Clipboard.astro';
+import Contacts from '@components/page/Contacts.astro';
+import DefinitionListItem from '@components/page/DefinitionListItem.astro';
+import ExternalLink from '@components/page/ExternalLink.astro';
+import GridForMoreResources from '@components/page/GridForMoreResources.astro';
+import GridForYouMightLike from '@components/page/GridForYouMightLike.astro';
+import Section from '@components/page/Section.astro';
+
+import { dataPages } from '@data/downloadMetadata';
+
+export const metadata: IMetadata = {
+  pageTitle: 'Utah Land Ownership Agency',
+  pageDescription: `The official State of Utah School and Institutional Trust Lands Administration surface land ownership data.`,
+  stewards: ['School and Institutional Trust Lands Administration (SITLA)', 'BLM', 'Partners'],
+  type: ProductType.POLYGON,
+  category: SgidCategory.CADASTRE,
+  secondaryCategory: SgidCategory.BOUNDARIES,
+};
+
+const page: IPageMetadata = {
+  ...metadata,
+  application: 'https://platmap.trustlands.utah.gov',
+  updateHistory: [`Weekly`],
+  hub: {
+    ...dataPages[metadata.pageTitle],
+  },
+};
+---
+
+<Layout {...page} subTitle={page.updateHistory[0]}>
+  <Metadata slot="metadata" {...page} />
+
+  <Fragment slot="summary">
+    <p>
+      This data depicts the official State of Utah School and Institutional Trust Lands Administration surface land 
+      ownership data. This dataset depicts the 1:24,000 scale land ownership status and areas of responsibility for 
+      the state of Utah. Revisions are posted weekly. Maintenance of this data layer is performed by a cooperative 
+      federal and state effort. The Trust Lands Administration revises this data regularly to reflect changes in 
+      State Trust Lands as needed. The BLM revises this data regularly to reflect changes in Federal Lands. 
+      Other information is edited and updated as needed but not on a regular basis.
+    </p>
+    <p><b>Land ownership can be different from land management or jurisdictional authority.</b></p>
+  </Fragment>
+
+  <Section title="Use the data" slot="downloads" titlePosition="center">
+    <HubDownloads {...page.hub}>
+      <ExternalLink
+        slot="more-links"
+        href="https://gis.trustlands.utah.gov/hosting/rest/services/Hosted/Land_Ownership_Agency_Web_Mercator_Vector_T/VectorTileServer"
+      >
+        Utah Land Ownership Agency vector tile service
+      </ExternalLink>
+    </HubDownloads>
+  </Section>
+
+  <Fragment slot="description">
+    <p>
+      The Bureau of Land Management (BLM) has implementing National Data Standards for Surface Management Areas (SMAS) 
+      starting November 20, 2026. The SMA is also known as Utah Land Ownership Agency by the Utah School and 
+      Institutional Trust Lands Administration. "The purpose of this is to fulfill the public and Government's need to know which agency is managing federal land in a given area."
+    </p>
+    <p>
+      Maintenance of this data layer is performed by a cooperative federal and state effort between the Bureau of Land
+      Management (BLM) and the State of Utah School and Institutional Trust Lands Administration (SITLA). Both Trust
+      Lands Administration and the BLM update this dataset regularly. Revisions of the dataset are made available
+      weekly.
+    </p>
+    <p>
+      Standard colors are recommended when displaying this feature class. A layer file containing the standard color
+      scheme is available by contacting SITLA GIS staff directly at <Contacts
+        contactKey="sitla"
+        subject="gis.utah.gov land ownership layer file request"
+        inline
+      />, or visiting <ExternalLink href="https://trustlands.utah.gov">https://trustlands.utah.gov</ExternalLink>.
+    </p>
+    <h3>Field definitions</h3>
+    <p>
+      The <ExternalLink href="https://storymaps.arcgis.com/stories/0b8efe1e5e464e578c8a1087822447c4">Land Ownership Agency Schema Storymap
+      </ExternalLink> has more information about the fields and attributes available. 
+    </p>
+    <dl>
+      <DefinitionListItem term="Land Manager Type">
+        <p class="font-bold">Values</p>
+        <BulletedList>
+          <li>1 - Federal</li>
+          <li>2 - Non-Federal</li>
+        </BulletedList>
+      </DefinitionListItem>
+
+      <DefinitionListItem term="Land Manager">
+        <p>The federal agency that administors or manages the land, could be different than owner.</p>
+        <p class="font-bold">Code Description</p>
+        <BulletedList>
+          <li>BIA	(Bureau of Indian Affairs)</li>
+          <li>BLM	(Bureau of Land Management)</li>
+          <li>BOP	(Federal Bureau of Prisons)</li>
+          <li>BOR	(US Bureau of Reclamation)</li>
+          <li>BPA	(Bonneville Power Administration)</li>
+          <li>DHS	(Department of Homeland Security)</li>
+          <li>DOD	(Department of Defense)</li>
+          <li>DOE	(Department of Energy)</li>
+          <li>DOI	(Department of the Interior)</li>
+          <li>DOT	(Department of Transportation)</li>
+          <li>FAA	(Federal Aviation Administration)</li>
+          <li>FHA	(Federal Housing Administration)</li>
+          <li>GSA	(General Services Administration)</li>
+          <li>HHS	(Department of Health and Human Services)</li>
+          <li>IBC	(International Boundary Commission)</li>
+          <li>IBWC (International Boundary and Water Commission)</li>
+          <li>NOAA (National Oceanic Atmospheric Administration)</li>
+          <li>NPS	(National Park Service)</li>
+          <li>OTHFE	(Other Federal)</li>
+          <li>PVT	(Private)</li>
+          <li>UND	(Undetermined)</li>
+          <li>USA	(US Army)</li>
+          <li>USACE	(US Army Corps of Engineers)</li>
+          <li>WTR	(Water)</li>
+        </BulletedList>
+
+        <p>The non-federal entity that manages the land, could be different than owner.</p>
+        <p class="font-bold">Code Description</p>
+        <BulletedList>
+          <li>LGLocal (Government)</li>
+          <li>PVT	(Private)</li>
+          <li>ST (State)</li>
+          <li>STE	(State Educational/Research Institutions)</li>
+          <li>STF	(State Forestry)</li>
+          <li>STL	(State Lands)</li>
+          <li>STOTH	(State Other)</li>
+          <li>STP	(State Park)</li>
+          <li>STW	(State Wildlife)</li>
+          <li>UND	(Undetermined)</li>
+          <li>WTR	(Water)</li>
+        </BulletedList>
+      </DefinitionListItem>
+
+      <DefinitionListItem term="Land Owner">
+        <p>The name of the entity that holds the deed to the land.</p>
+        <p class="font-bold">Code Description</p>
+        <BulletedList>     
+          <li>BIA (Bureau of Indian Affairs)</li>
+          <li>BLM (Bureau of Land Management)</li>
+          <li>BOP (Federal Bureau of Prisons)</li>
+          <li>BOR (Bureau of Reclamation)</li>
+          <li>BPA (Bonneville Power Administration)</li>
+          <li>DHS (Department of Homeland Security)</li>
+          <li>DOD (Department of Defense)</li>
+          <li>DOE (Department of Energy)</li>
+          <li>DOI (Department of the Interior)</li>
+          <li>DOT (Department of Transportation)</li>
+          <li>FAA (Federal Aviation Administration)</li>
+          <li>FHA (Federal Housing Administration)</li>
+          <li>GSA (General Services Administration)</li>
+          <li>HHS (Department of Health and Human Services)</li>
+          <li>IBC (International Boundary Commission)</li>
+          <li>IBWC (International Boundary and Water Commission)</li>
+          <li>LG (Local Government)</li>
+          <li>NOAA (National Oceanic Atmospheric Administration)</li>
+          <li>NPS (National Park Service)</li>
+          <li>WTR (Water)</li>
+        </BulletedList>
+      </DefinitionListItem>
+
+      <DefinitionListItem term="Federal Status">
+        <p>Shows federal status categories at a more granular level.</p>
+        <p class="font-bold">Code	Description</p>
+        <BulletedList>
+          <li>AQ (Other Land Acquisitions)</li>
+          <li>HST (Historic State Lands)</li>
+          <li>IAF (Indian Fee Lands)</li>
+          <li>IAT (Indian Trust Lands)</li>
+          <li>LU (Bankhead Jones Land Utilization Projects)</li>
+          <li>LWCF (Land Acquired with the Land and Water Conservation Fund)</li>
+          <li>OC (Revested Oregon and California Railroad Lands)</li>
+          <li>PD (PD Vacant)</li>
+          <li>PD_RECON (PD Reconveyed)</li>
+          <li>UND (Undetermined Ownership)</li>
+          <li>NA (Not Applicable)</li>
+        </BulletedList>
+      </DefinitionListItem>
+
+      <DefinitionListItem term="Public Access">
+        <p>Known restrictions governing access to and use of the land.</p>
+        <p class="font-bold">Code	Description</p>
+        <BulletedList>
+          <li>OPN (Open)</li>
+          <li>PA (Permit Only)</li>
+          <li>RS (Restricted)</li>
+        </BulletedList>
+      </DefinitionListItem>
+
+      <DefinitionListItem term="State Symbology">
+        <p>State of utah state agency symbology category to be used for display on state of utah agency maps.</p>
+        <p class="font-bold">Code	Description</p>
+        <BulletedList>
+          <li>LU (Bankhead Jones Land Utilization Project)</li>
+          <li>BLM (Bureau of Land Management)</li>
+          <li>BOR (Bureau of Reclamation)</li>
+          <li>DOD (Department of Defense)</li>
+          <li>NM (National Monument)</li>
+          <li>NPS (National Park and Historic Site)</li>
+          <li>NRA (National Recreation Area)</li>
+          <li>NRGA (National Recreation and Geologic Area)</li>
+          <li>NWPS (National Wilderness Area)</li>
+          <li>NWR (National Wildlife Refuge)</li>
+          <li>OF (Other Federal)</li>
+          <li>PVT (Private)</li>
+          <li>STOTH (State Other)</li>
+          <li>STP (State Park)</li>
+          <li>FFSL (State Sovereign Land)</li>
+          <li>TLA (State Trust Land)</li>
+          <li>BIA (Tribal Lands)</li>
+        </BulletedList>
+      </DefinitionListItem>
+      <DefinitionListItem term="GIS Acres">
+        <p>Calculated GIS Acres.</p>
+      </DefinitionListItem>
+    </dl>
+  </Fragment>
+
+  <Section title="Subset query examples" slot="extra">
+    <div class="grid space-y-4 lg:grid-cols-2 lg:gap-10">
+      <p>
+        The following land ownership-related data layers can easily be derived from land ownership by using subset
+        (definition) queries to select a specific set of features:
+      </p>
+      <div class="self-center justify-self-center">
+        <Alert title="Tip">
+          Use the copy icon next to each where statement to copy the statement to your clipboard. You can then paste the
+          value into a feature service query endpoint or ArcGIS Pro.
+        </Alert>
+      </div>
+    </div>
+
+    <div class="space-y-3 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-700">
+      <h4>Land owned by the Federal Government</h4>
+      <p>
+        This includes land administered by the US Bureau of Land Management, the US Bureau of Reclamation, the US
+        Department of Defense, the US Department of Energy, the US National Park Service, the Utah State Department of
+        Wildlife Resources, the US Forest Service, the US Fish and Wildlife Service and, in some cases, the Utah State
+        Department of State Parks.
+      </p>
+      <Clipboard
+        title=`To work with only federal lands, specify a where statement of land_mngr_= 1`
+        value=`land_mngr_= 1`
+      />
+    </div>
+
+    <div class="space-y-3 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-700">
+      <h4>Bureau of Land Management (BLM)</h4>
+      <p>
+        The BLM has a multi-use mission. Land uses include energy development, livestock grazing, recreation, and timber
+        harvesting, while protecting a wide array of natural, cultural, and historical resources.
+      </p>
+      <Clipboard
+        title=`To work with only BLM administered lands (may be different than BLM-owned lands), specify a where statement of land_mngr='BLM'`
+        value=`land_mngr='BLM'`
+      />
+    </div>
+
+    <div class="space-y-3 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-700">
+      <h4>National Parks and Monuments</h4>
+      <p>There are five national parks in Utah and seven national monuments in Utah.</p>
+      <Clipboard
+        title=`To work with only National Parks and Monuments (Grand Staircase Escalante NM is administered by the BLM), specify a where statement of (admin='NPS' or admin='BLM') and (desig='National Park' or desig='National Monument')`
+        value=`(admin='NPS' or admin='BLM') and (desig='National Park' or desig='National Monument')`
+      />
+      <Clipboard
+        title=`To work with all National Park Service Parks, Monuments, & Recreation areas specify a where statement of admin='NPS'`
+        value=`admin='NPS'`
+      />
+    </div>
+
+    <div class="space-y-3 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-700">
+      <h4>Private land</h4>
+      <p>
+        In this subset, all non-public lands are assumed private. Private land includes town, city, and county held
+        properties.
+      </p>
+      <Clipboard
+        title=`To work with only Privately* held lands, specify a where statement of owner='Private'`
+        value=`owner='Private'`
+      />
+      <p>
+        * <span class="italic">
+          Note that lands designated as private may include land currently held by local and other government agencies,
+          not considered to be part of the public lands inventory</span
+        >.
+      </p>
+    </div>
+
+    <div class="space-y-3 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-700">
+      <h4>School and Institutional Trust Lands Administration (SITLA)</h4>
+      <p>
+        SITLA is an independent agency of Utah State government. It was created in 1994 by the Utah State Legislature to
+        manage lands granted to the State of Utah by the United States for the support of public schools and other
+        beneficiary institutions.
+      </p>
+      <Clipboard
+        title=`To work with only land held by the State of Utah School and Institutional Trust Lands Administration (SITLA),
+        specify a where statement of agency='SITLA'`
+        value=`agency='SITLA'`
+      />
+    </div>
+
+    <div class="space-y-3 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-700">
+      <h4>Native American Tribally-Owned Land</h4>
+      <p>
+        The land identified as under Tribal ownership is not guaranteed to include all Tribal land or reflect
+        reservation boundaries. Further, Tribal jurisdictional authority can extend beyond land ownership boundaries.
+      </p>
+      <p>
+        <b>This query does not create official tribal boundaries.</b>
+      </p>
+      <Clipboard
+        title=`To work with only Tribal lands* specify a where statement of owner='Tribal'`
+        value=`owner='Tribal'`
+      />
+      <p>* <span class="italic">Note, some private land held by tribes may not be reflected</span>.</p>
+    </div>
+    <div class="space-y-3 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-700">
+      <h4>Wilderness</h4>
+      <p>Congressional designated wilderness (BLM and US Forest Service)</p>
+      <Clipboard
+        title=`To work with only formally designated wilderness areas (USFS and BLM), specify a where statement of desig='Wilderness'`
+        value=`desig='Wilderness'`
+      />
+    </div>
+  </Section>
+
+  <Section title="More resources" slot="more-resources" stripe titlePosition="center">
+    <GridForMoreResources>
+      <CardWithPopularLink title="Trust Lands administration" href="https://trustlands.utah.gov/"
+        >SITLA website.</CardWithPopularLink
+      >
+      <CardWithPopularLink title="Trust Lands GIS" href="https://trustlands.utah.gov/tools/maps/"
+        >Trust Lands GIS Group.</CardWithPopularLink
+      >
+    </GridForMoreResources>
+  </Section>
+
+  <Section title="You might also like" slot="you-might-also-like" titlePosition="center">
+    <GridForYouMightLike>
+      <CardWithSmallLink title="Bureau of Land Management" href="https://www.blm.gov/services/land-records"
+        >BLM land records</CardWithSmallLink
+      >
+      <CardWithSmallLink title="SITLA GIS Portal" href="https://gis.trustlands.utah.gov">
+        Discover spatial data and tools that empower informed land management decisions
+      </CardWithSmallLink>
+    </GridForYouMightLike>
+  </Section>
+</Layout>
