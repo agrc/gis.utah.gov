@@ -291,8 +291,8 @@ const page: IPageMetadata = {
         properties.
       </p>
       <Clipboard
-        title=`To work with only Privately* held lands, specify a where statement of owner='Private'`
-        value=`owner='Private'`
+        title=`To work with only Privately* held lands, specify a where statement of land_owner='PVT'`
+        value=`land_owner='PVT'`
       />
       <p>
         * <span class="italic">
@@ -311,8 +311,8 @@ const page: IPageMetadata = {
       </p>
       <Clipboard
         title=`To work with only land held by the State of Utah School and Institutional Trust Lands Administration (SITLA),
-        specify a where statement of agency='SITLA'`
-        value=`agency='SITLA'`
+        specify a where statement of land_owner='STL'`
+        value=`land_owner='STL'`
       />
     </div>
 
@@ -326,8 +326,8 @@ const page: IPageMetadata = {
         <b>This query does not create official tribal boundaries.</b>
       </p>
       <Clipboard
-        title=`To work with only Tribal lands* specify a where statement of owner='Tribal'`
-        value=`owner='Tribal'`
+        title=`To work with only Tribal lands* specify a where statement of land_owner='BIA'`
+        value=`land_owner='BIA'`
       />
       <p>* <span class="italic">Note, some private land held by tribes may not be reflected</span>.</p>
     </div>
@@ -335,8 +335,8 @@ const page: IPageMetadata = {
       <h4>Wilderness</h4>
       <p>Congressional designated wilderness (BLM and US Forest Service)</p>
       <Clipboard
-        title=`To work with only formally designated wilderness areas (USFS and BLM), specify a where statement of desig='Wilderness'`
-        value=`desig='Wilderness'`
+        title=`To work with only formally designated wilderness areas (USFS and BLM), specify a where statement of st_sym='NWPS'`
+        value=`st_sym='NWPS'`
       />
     </div>
   </Section>
