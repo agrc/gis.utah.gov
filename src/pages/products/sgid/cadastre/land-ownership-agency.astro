@@ -272,15 +272,11 @@ const page: IPageMetadata = {
     </div>
 
     <div class="space-y-3 rounded border border-black/30 bg-white px-3 py-2 dark:border-white/30 dark:bg-zinc-700">
-      <h4>National Parks and Monuments</h4>
-      <p>There are five national parks in Utah and seven national monuments in Utah.</p>
+      <h4>National Parks, Monuments, and Recreation Areas</h4>
       <Clipboard
-        title=`To work with only National Parks and Monuments (Grand Staircase Escalante NM is administered by the BLM), specify a where statement of (admin='NPS' or admin='BLM') and (desig='National Park' or desig='National Monument')`
-        value=`(admin='NPS' or admin='BLM') and (desig='National Park' or desig='National Monument')`
-      />
-      <Clipboard
-        title=`To work with all National Park Service Parks, Monuments, & Recreation areas specify a where statement of admin='NPS'`
-        value=`admin='NPS'`
+        title=`To work with all National Park Service Parks, Monuments, & Recreation areas specify a where statement of 
+        (land_mngr in ('NPS','BLM','USFS')) and (st_sym in ('NM','NPS','NRA','NRGA')`
+        value=`(land_mngr in ('NPS','BLM','USFS')) and (st_sym in ('NM','NPS','NRA','NRGA')`
       />
     </div>
 
